@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /Users/rebeccakaplan/Desktop && ls)",
+      "Bash(npm create *)"
+    ]
+  }
+}
