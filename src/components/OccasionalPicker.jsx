@@ -1,18 +1,8 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
 
-const SECTION_LABELS = {
-  morning_shared:    'Morning — Everyone',
-  morning_rebecca:   "Rebecca's Morning",
-  morning_pz:        "PZ's Morning",
-  evening_shared:    'Evening — Everyone',
-  evening_rebecca:   "Rebecca's Evening",
-  evening_pz:        "PZ's Evening",
-  before_bed_discuss:'Before Bed — Discuss Together',
-  last_to_bed:       'Last One to Bed',
-}
-
-export function OccasionalPicker({ occasionalActive, onToggle, onClose }) {
+export function OccasionalPicker({ sections, occasionalActive, onToggle, onClose, viewDate }) {
+  const SECTION_LABELS = Object.fromEntries(sections.map(s => [s.id, s.label]))
   const [allOccasional, setAllOccasional] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -41,11 +31,17 @@ export function OccasionalPicker({ occasionalActive, onToggle, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
-          <h2>Add Items for Today</h2>
+          <h2>Add Items</h2>
           <button className="close-btn" onClick={onClose}>✕</button>
         </div>
         <p className="modal-subtitle">
-          These items don't appear automatically. Toggle the ones you need today.
+          {(() => {
+            const todayStr = (() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` })()
+            if (!viewDate || viewDate === todayStr) return 'Toggle occasional items to add them to today\'s list.'
+            const [y, m, d] = viewDate.split('-').map(Number)
+            const label = new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })
+            return `Toggle items to add them to ${label}.`
+          })()}
         </p>
         {loading ? (
           <p>Loading…</p>

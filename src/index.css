@@ -73,7 +73,27 @@ input, select { font: inherit; }
   position: sticky; top: 0; z-index: 10;
 }
 .app-title { font-size: 1.4rem; font-weight: 700; }
-.date-label { font-size: 0.95rem; color: var(--text-muted); margin-top: 0.1rem; }
+.date-nav { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.1rem; }
+.date-label { font-size: 0.95rem; color: var(--text-muted); }
+.date-nav-btn {
+  padding: 0.1rem 0.5rem; font-size: 1.2rem; font-weight: 700;
+  color: var(--text-muted); background: none; border: none;
+  border-radius: 4px; line-height: 1;
+}
+.date-nav-btn:hover { background: var(--border); color: var(--text); }
+.date-jump-input {
+  font-size: 0.9rem; color: var(--text); background: none;
+  border: none; outline: none; cursor: pointer;
+  font-family: inherit; padding: 0 0.15rem;
+  /* hide the default calendar icon on most browsers */
+  -webkit-appearance: none;
+}
+.date-jump-input::-webkit-calendar-picker-indicator { opacity: 0.4; cursor: pointer; }
+.today-jump-btn {
+  padding: 0.15rem 0.55rem; font-size: 0.8rem; font-weight: 600;
+  color: var(--accent); background: var(--accent-light);
+  border: none; border-radius: 12px; cursor: pointer;
+}
 .header-right { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-end; }
 .header-btn {
   padding: 0.55rem 1rem;
@@ -105,6 +125,18 @@ input, select { font: inherit; }
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.5rem;
 }
+.section-label { flex: 1; }
+.section-header-actions {
+  display: flex; gap: 0.3rem; opacity: 0; transition: opacity 0.15s;
+}
+.section-header:hover .section-header-actions { opacity: 1; }
+.section-action-btn {
+  font-size: 0.7rem; font-weight: 500; letter-spacing: 0.03em;
+  padding: 0.15rem 0.4rem; border-radius: 4px; text-transform: lowercase;
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text-muted); cursor: pointer; white-space: nowrap;
+}
+.section-action-btn:hover { background: var(--bg); color: var(--text); border-color: #aaa; }
 .read-only-badge {
   font-size: 0.7rem; font-weight: 500; letter-spacing: 0.04em;
   background: var(--border); color: var(--text-muted);
@@ -113,23 +145,33 @@ input, select { font: inherit; }
 .spouse-section .section-header { color: #999; }
 .section-items { display: flex; flex-direction: column; gap: 0.35rem; }
 
-/* ── Checklist items ────────────────────────────────────── */
-.checklist-item {
-  display: flex; align-items: center; gap: 0.75rem;
-  width: 100%; padding: 0.9rem 1rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
+/* ── Checklist item rows ─────────────────────────────────── */
+.checklist-item-row {
+  display: flex; align-items: stretch; gap: 0.3rem;
+}
+
+/* Drag handle — now on the LEFT */
+.drag-handle {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 0.5rem; color: var(--text-muted);
+  background: none; border: none;
+  font-size: 1.1rem; cursor: grab; flex-shrink: 0;
+  opacity: 0.35; touch-action: none;
+}
+.drag-handle:hover { opacity: 0.8; }
+
+/* Separate checkbox button */
+.item-check-btn {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 0.6rem;
+  background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius);
-  text-align: left;
-  transition: background 0.1s, opacity 0.1s;
-  min-height: 56px;     /* big tap target */
+  flex-shrink: 0; min-width: 52px; min-height: 56px;
+  transition: background 0.1s;
 }
-.checklist-item:active:not(:disabled) { background: var(--accent-light); }
-.checklist-item.checked {
-  background: var(--accent-light);
-  border-color: transparent;
-}
-.checklist-item.read-only { cursor: default; opacity: 0.7; background: var(--spouse-bg); }
+.item-check-btn:active:not(:disabled) { background: var(--accent-light); }
+.item-check-btn.checked { background: var(--accent-light); border-color: transparent; }
+.item-check-btn.read-only { cursor: default; opacity: 0.6; background: var(--spouse-bg); }
 .check-box {
   width: 28px; height: 28px; min-width: 28px;
   border: 2px solid var(--border);
@@ -138,16 +180,138 @@ input, select { font: inherit; }
   font-size: 1rem; font-weight: 700; color: var(--accent);
   background: white;
 }
-.checklist-item.checked .check-box { background: var(--accent); border-color: var(--accent); color: white; }
-.item-text { flex: 1; font-size: 1.05rem; }
-.checklist-item.checked .item-text { color: var(--checked-text); }
+.item-check-btn.checked .check-box { background: var(--accent); border-color: var(--accent); color: white; }
+
+/* Item body — contains editable text */
+.item-body {
+  flex: 1; display: flex; align-items: center; gap: 0.6rem;
+  padding: 0 1rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius);
+  min-height: 56px;
+  transition: background 0.1s;
+}
+.item-body.checked { background: var(--accent-light); border-color: transparent; }
+.item-body.read-only { background: var(--spouse-bg); opacity: 0.7; }
+
+.item-text {
+  flex: 1; font-size: 1.05rem; cursor: text;
+  user-select: none;
+}
+.item-body.checked .item-text { color: var(--checked-text); text-decoration: line-through; }
+.item-name-input {
+  flex: 1; font-size: 1.05rem;
+  border: none; outline: none; background: transparent;
+  padding: 0; font-family: inherit;
+}
+
 .checked-by {
   font-size: 0.8rem; color: var(--text-muted);
   background: white; padding: 0.2rem 0.5rem;
-  border-radius: 4px;
+  border-radius: 4px; flex-shrink: 0;
 }
 
+/* Skip (✕) and template (✎) action buttons */
+.item-skip-btn, .item-template-btn, .item-convert-btn {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 0.65rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.95rem; flex-shrink: 0;
+  opacity: 0.4; color: var(--text-muted);
+}
+.item-skip-btn:hover { opacity: 1; background: #fff0f0; border-color: #ffbbbb; color: #c0392b; }
+.item-template-btn:hover { opacity: 1; background: var(--bg); color: var(--text); }
+.item-convert-btn:hover { opacity: 1; background: #eef3ff; border-color: #c2d4f5; color: var(--accent); }
+
+/* Drag overlay preview */
+.drag-preview-row {
+  display: flex; align-items: center;
+  padding: 0.9rem 1rem;
+  background: var(--surface); border: 1px solid var(--accent);
+  border-radius: var(--radius); box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  opacity: 0.95;
+}
+.drag-preview-text { font-size: 1.05rem; }
+
+/* Completed-area checklist items still use the old full-row style */
+.checklist-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  width: 100%; padding: 0.9rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: left;
+  transition: background 0.1s, opacity 0.1s;
+  min-height: 56px;
+}
+.checklist-item.checked {
+  background: var(--accent-light);
+  border-color: transparent;
+}
+.item-text { flex: 1; font-size: 1.05rem; }
+
 .empty-state { text-align: center; color: var(--text-muted); padding: 3rem 1rem; }
+
+/* ── Quick add & new section ────────────────────────────── */
+.quick-add-trigger {
+  width: 100%; padding: 0.6rem 1rem; margin-top: 0.35rem;
+  border: 1.5px dashed var(--border); border-radius: var(--radius);
+  color: var(--text-muted); font-size: 0.95rem; text-align: left;
+  background: transparent;
+}
+.quick-add-trigger:hover { border-color: var(--accent); color: var(--accent); }
+.quick-add-form {
+  margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.6rem;
+  padding: 0.75rem; background: var(--bg); border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+}
+.quick-add-input {
+  width: 100%; padding: 0.75rem 1rem;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  font-size: 1rem; outline: none; background: white;
+}
+.quick-add-input:focus { border-color: var(--accent); }
+.quick-add-rec {
+  display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.9rem;
+}
+.quick-add-rec label { display: flex; align-items: center; gap: 0.3rem; cursor: pointer; }
+.quick-add-actions { display: flex; gap: 0.5rem; justify-content: flex-end; }
+.new-section-btn {
+  width: 100%; padding: 0.75rem 1rem; margin-top: 0.5rem;
+  border: 2px dashed var(--border); border-radius: var(--radius);
+  color: var(--text-muted); font-size: 1rem; font-weight: 600;
+  background: transparent; text-align: center;
+}
+.new-section-btn:hover { border-color: var(--accent); color: var(--accent); }
+.new-section-form {
+  margin-top: 0.5rem; padding: 1rem;
+  border: 2px dashed var(--accent); border-radius: var(--radius);
+  display: flex; flex-direction: column; gap: 0.75rem;
+}
+
+/* ── Completed area ─────────────────────────────────────── */
+.completed-area {
+  margin-top: 2rem;
+  border-top: 2px solid var(--border);
+  padding-top: 1rem;
+  opacity: 0.55;
+}
+.completed-area-header {
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.completed-section { margin-bottom: 1.25rem; }
+.completed-section-label {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+.completed-item {
+  width: 100%; margin-bottom: 0.3rem;
+  cursor: pointer; /* tapping still unchecks */
+}
 
 /* ── Modals ─────────────────────────────────────────────── */
 .modal-overlay {
@@ -222,6 +386,23 @@ input, select { font: inherit; }
   background: white;
 }
 .day-btn.selected { background: var(--accent); color: white; border-color: var(--accent); }
+.scheduled-dates { display: flex; flex-direction: column; gap: 0.5rem; }
+.scheduled-dates-label { font-size: 0.85rem; font-weight: 600; color: var(--text-muted); }
+.scheduled-dates-empty { font-size: 0.85rem; color: var(--text-muted); font-style: italic; }
+.scheduled-dates-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.scheduled-date-chip {
+  display: flex; align-items: center; gap: 0.4rem;
+  background: var(--accent-light); color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 20px;
+  padding: 0.25rem 0.6rem; font-size: 0.85rem;
+}
+.scheduled-date-chip button {
+  background: none; border: none; color: var(--accent);
+  font-size: 0.8rem; padding: 0; cursor: pointer; line-height: 1;
+}
+.scheduled-date-chip button:hover { color: #c0392b; }
+.scheduled-date-add { display: flex; gap: 0.5rem; align-items: center; }
+.scheduled-date-add .form-input { flex: 1; }
 .form-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 .form-row label { font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
 .form-actions { display: flex; gap: 0.5rem; }
@@ -236,7 +417,8 @@ input, select { font: inherit; }
 }
 
 /* ── Item list in manager ───────────────────────────────── */
-.manager-filter { margin-bottom: -0.5rem; }
+.manager-filter { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: -0.5rem; }
+.manager-filter .form-input { flex: 1; min-width: 140px; }
 .item-list { display: flex; flex-direction: column; gap: 0.4rem; }
 .item-row {
   display: flex; align-items: center; justify-content: space-between;
@@ -244,15 +426,38 @@ input, select { font: inherit; }
   background: var(--bg); border-radius: 8px;
   border: 1px solid var(--border);
 }
-.item-row.inactive { opacity: 0.45; }
-.item-row-text { flex: 1; display: flex; flex-direction: column; gap: 0.15rem; }
+.item-row.inactive { opacity: 0.55; }
+.deactivated-section { margin-top: 0.5rem; }
+.deactivated-header {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-muted);
+  padding: 0.6rem 0 0.4rem;
+  border-top: 1px solid var(--border);
+  margin-bottom: 0.4rem;
+}
+.item-row-text { flex: 1; display: flex; flex-direction: column; gap: 0.2rem; }
+.item-meta-row { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
 .item-meta { font-size: 0.75rem; color: var(--text-muted); }
+.item-meta-section {
+  background: var(--border); padding: 0.1rem 0.4rem;
+  border-radius: 4px; font-size: 0.7rem;
+}
 .item-row-actions { display: flex; gap: 0.4rem; flex-shrink: 0; }
+.text-overridden { font-style: italic; color: var(--accent); }
 .btn-small {
   padding: 0.35rem 0.7rem; border: 1px solid var(--border);
   border-radius: 6px; font-size: 0.8rem; background: white;
 }
 .btn-danger { color: var(--danger); border-color: #f5c6c2; }
+.btn-convert { color: var(--accent); border-color: #c2d4f5; }
+.drag-handle:active { cursor: grabbing; }
+.dragging-overlay {
+  background: var(--surface); border: 1px solid var(--accent);
+  border-radius: 8px; padding: 0.75rem 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.manager-hint { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem; }
 
 /* ── Responsive tweaks ──────────────────────────────────── */
 @media (max-width: 480px) {
