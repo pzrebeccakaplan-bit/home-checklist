@@ -3,7 +3,7 @@ import {
   DndContext, DragOverlay, closestCenter,
   PointerSensor, TouchSensor, useSensor, useSensors,
 } from '@dnd-kit/core'
-import { SortableContext, arrayMove, verticalListSortingStrategy } from '@dnd-kit/sortable'
+import { arrayMove } from '@dnd-kit/sortable'
 import { supabase } from '../lib/supabase'
 import { ChecklistSection } from './ChecklistSection'
 
@@ -51,27 +51,6 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   async function handleDragEnd({ active, over }) {
     setActiveId(null)
     if (!over || active.id === over.id) return
-
-    // Section reorder
-    if (active.data.current?.type === 'section') {
-      const oldIdx = localSections.findIndex(s => `section:${s.id}` === active.id)
-      // over could be a section droppable or an item inside a section
-      const overId = over.id.toString()
-      const targetSectionId = overId.startsWith('section:')
-        ? overId.replace('section:', '')
-        : (over.data.current?.sectionId ?? null)
-      const newIdx = localSections.findIndex(s => s.id === targetSectionId)
-      if (oldIdx === -1 || newIdx === -1) return
-      const reordered = arrayMove(localSections, oldIdx, newIdx)
-      setLocalSections(reordered)
-      await Promise.all(
-        reordered.map((sec, idx) =>
-          supabase.from('sections').update({ sort_order: (idx + 1) * 10 }).eq('id', sec.id)
-        )
-      )
-      onSectionAdded?.()
-      return
-    }
 
     const activeItem = localItems.find(i => i.id === active.id)
     if (!activeItem) return
@@ -127,6 +106,20 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     }
   }
 
+  async function moveSectionBy(sectionId, delta) {
+    const idx = localSections.findIndex(s => s.id === sectionId)
+    const newIdx = idx + delta
+    if (newIdx < 0 || newIdx >= localSections.length) return
+    const reordered = arrayMove(localSections, idx, newIdx)
+    setLocalSections(reordered)
+    await Promise.all(
+      reordered.map((sec, i) =>
+        supabase.from('sections').update({ sort_order: (i + 1) * 10 }).eq('id', sec.id)
+      )
+    )
+    onSectionAdded?.()
+  }
+
   async function submitNewSection(e) {
     e?.preventDefault()
     if (!newSectionLabel.trim()) return
@@ -175,7 +168,6 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
           onDragEnd={handleDragEnd}
           onDragCancel={() => setActiveId(null)}
         >
-          <SortableContext items={localSections.map(s => `section:${s.id}`)} strategy={verticalListSortingStrategy}>
           {localSections.map((sec, idx) => (
             <ChecklistSection
               key={sec.id}
@@ -195,9 +187,10 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
               prevSectionSortOrder={idx > 0 ? sections[idx - 1].sort_order : null}
               prevSectionId={idx > 0 ? localSections[idx - 1].id : null}
               nextSectionId={idx < localSections.length - 1 ? localSections[idx + 1].id : null}
+              onMoveUp={idx > 0 ? () => moveSectionBy(sec.id, -1) : null}
+              onMoveDown={idx < localSections.length - 1 ? () => moveSectionBy(sec.id, 1) : null}
             />
           ))}
-          </SortableContext>
 
           <DragOverlay>
             {activeItem && (

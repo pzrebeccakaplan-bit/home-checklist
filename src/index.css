@@ -125,12 +125,11 @@ input, select { font: inherit; }
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.5rem;
 }
-.section-drag-handle {
-  background: none; border: none; cursor: grab; padding: 0 0.3rem;
-  color: var(--text-muted); opacity: 0.4; font-size: 1rem; flex-shrink: 0;
+.section-move-btn {
+  background: none; border: none; cursor: pointer; padding: 0 0.2rem;
+  color: var(--text-muted); opacity: 0.4; font-size: 0.85rem; flex-shrink: 0; line-height: 1;
 }
-.section-drag-handle:hover { opacity: 1; }
-.section-drag-handle:active { cursor: grabbing; }
+.section-move-btn:hover { opacity: 1; color: var(--text); }
 .section-label { flex: 1; cursor: pointer; }
 .section-label:hover { color: var(--text); }
 .section-label-input {

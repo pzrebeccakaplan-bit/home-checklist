@@ -104,17 +104,7 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
   )
 }
 
-export function ChecklistSection({ section, label, items, completions, onToggle, onEdit, onSkip, onDelete, onItemAdded, onSectionAdded, currentRole, viewDate, sectionSortOrder, prevSectionSortOrder, prevSectionId, nextSectionId }) {
-  const {
-    attributes: secAttributes,
-    listeners: secListeners,
-    setNodeRef: secNodeRef,
-    transform: secTransform,
-    transition: secTransition,
-    isDragging: secIsDragging,
-  } = useSortable({ id: `section:${section}`, data: { type: 'section', sectionId: section } })
-  const secStyle = { transform: CSS.Transform.toString(secTransform), transition: secTransition, opacity: secIsDragging ? 0.4 : 1 }
-
+export function ChecklistSection({ section, label, items, completions, onToggle, onEdit, onSkip, onDelete, onItemAdded, onSectionAdded, currentRole, viewDate, sectionSortOrder, prevSectionSortOrder, prevSectionId, nextSectionId, onMoveUp, onMoveDown }) {
   const [editingLabel, setEditingLabel] = useState(false)
   const [labelText, setLabelText] = useState(label)
   const labelInputRef = useRef(null)
@@ -223,9 +213,10 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
   const DAY_LABELS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
   if (items.length === 0 && !showQuickAdd) return (
-    <section className="checklist-section" ref={secNodeRef} style={secStyle}>
+    <section className="checklist-section">
       <h2 className="section-header">
-        <button className="section-drag-handle" {...secAttributes} {...secListeners} aria-label="Drag to reorder section">≡</button>
+        {onMoveUp && <button className="section-move-btn" onClick={onMoveUp} aria-label="Move section up">↑</button>}
+        {onMoveDown && <button className="section-move-btn" onClick={onMoveDown} aria-label="Move section down">↓</button>}
         <span className="section-label" onClick={() => setEditingLabel(true)}>{label}</span>
         <span className="section-header-actions">
           <button className="section-action-btn" onClick={handleConvertSectionToItem} title="Convert section back to item">↩ item</button>
@@ -236,9 +227,10 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
   )
 
   return (
-    <section className="checklist-section" ref={secNodeRef} style={secStyle}>
+    <section className="checklist-section">
       <h2 className="section-header">
-        <button className="section-drag-handle" {...secAttributes} {...secListeners} aria-label="Drag to reorder section">≡</button>
+        {onMoveUp && <button className="section-move-btn" onClick={onMoveUp} aria-label="Move section up">↑</button>}
+        {onMoveDown && <button className="section-move-btn" onClick={onMoveDown} aria-label="Move section down">↓</button>}
         {editingLabel ? (
           <input
             ref={labelInputRef}
