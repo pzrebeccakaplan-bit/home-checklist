@@ -116,13 +116,28 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
   }
 
   async function toggleActive(item) {
+    if (!item.active) {
+      // Check if the item's section still exists
+      const sectionExists = sections.some(s => s.id === item.section)
+      if (!sectionExists) {
+        const firstSection = SECTIONS[0]?.value
+        if (!firstSection) return
+        const newSection = prompt(
+          `The section this item belonged to no longer exists. Which section should it go in?\n\n${SECTIONS.map((s, i) => `${i + 1}. ${s.label}`).join('\n')}\n\nEnter a number:`)
+        const idx = parseInt(newSection) - 1
+        const targetSection = SECTIONS[idx]?.value ?? firstSection
+        await supabase.from('checklist_items').update({ active: true, section: targetSection }).eq('id', item.id)
+        fetchItems()
+        return
+      }
+    }
     await supabase.from('checklist_items').update({ active: !item.active }).eq('id', item.id)
     fetchItems()
   }
 
   async function deleteItem(item) {
-    if (!confirm(`Remove "${item.text}"? It will be deactivated and its history preserved.`)) return
-    await supabase.from('checklist_items').update({ active: false }).eq('id', item.id)
+    if (!confirm(`Permanently delete "${item.text}"?`)) return
+    await supabase.from('checklist_items').delete().eq('id', item.id)
     fetchItems()
   }
 
