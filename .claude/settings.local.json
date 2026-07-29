@@ -4,7 +4,9 @@
       "Bash(cd /Users/rebeccakaplan/Desktop && ls)",
       "Bash(npm create *)",
       "Bash(npx vite *)",
-      "Bash(curl -s -X POST https://daabixyswgwcljmgmqqa.supabase.co/rest/v1/checklist_items -H 'apikey: sb_publishable_VkOyI9IQnrPcgmZJP0bPdQ_Zi9DlO5A' -H 'Authorization: Bearer sb_publishable_VkOyI9IQnrPcgmZJP0bPdQ_Zi9DlO5A' -H 'Content-Type: application/json' -d '[ *)"
+      "Bash(curl -s -X POST https://daabixyswgwcljmgmqqa.supabase.co/rest/v1/checklist_items -H 'apikey: sb_publishable_VkOyI9IQnrPcgmZJP0bPdQ_Zi9DlO5A' -H 'Authorization: Bearer sb_publishable_VkOyI9IQnrPcgmZJP0bPdQ_Zi9DlO5A' -H 'Content-Type: application/json' -d '[ *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -)"
     ]
   }
 }

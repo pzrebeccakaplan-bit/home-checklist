@@ -318,11 +318,22 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
           <p className="empty-state">No items match this filter.</p>
         ) : (
           <>
-            {activeFiltered.length > 0 && (
-              <div className="item-list">
-                {activeFiltered.map(item => <ItemRow key={item.id} item={item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} />)}
-              </div>
-            )}
+            {activeFiltered.length > 0 && (() => {
+              const grouped = []
+              let lastSection = null
+              for (const item of activeFiltered) {
+                if (item.section !== lastSection) {
+                  grouped.push({ type: 'header', section: item.section })
+                  lastSection = item.section
+                }
+                grouped.push({ type: 'item', item })
+              }
+              return grouped.map((entry, i) =>
+                entry.type === 'header'
+                  ? <div key={`h-${entry.section}`} className="item-section-group-header">{sectionLabel[entry.section] || entry.section}</div>
+                  : <ItemRow key={entry.item.id} item={entry.item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} />
+              )
+            })()}
             {inactiveFiltered.length > 0 && (
               <div className="deactivated-section">
                 <div className="deactivated-header">Deactivated</div>
