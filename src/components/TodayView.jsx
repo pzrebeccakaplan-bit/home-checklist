@@ -3,7 +3,7 @@ import {
   DndContext, DragOverlay, closestCenter,
   PointerSensor, TouchSensor, useSensor, useSensors,
 } from '@dnd-kit/core'
-import { arrayMove } from '@dnd-kit/sortable'
+import { SortableContext, arrayMove, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { supabase } from '../lib/supabase'
 import { ChecklistSection } from './ChecklistSection'
 
@@ -19,6 +19,10 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   // Local items state for optimistic DnD reordering across sections
   const [localItems, setLocalItems] = useState(items)
   useEffect(() => { setLocalItems(items) }, [items])
+
+  // Local sections state for optimistic section reordering
+  const [localSections, setLocalSections] = useState(sections)
+  useEffect(() => { setLocalSections(sections) }, [sections])
   const [activeId, setActiveId] = useState(null)
 
   const sensors = useSensors(
@@ -29,7 +33,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   // Split into unchecked (localItems) and checked (items) by section
   const bySection = {}
   const completedBySection = {}
-  for (const sec of sections) {
+  for (const sec of localSections) {
     bySection[sec.id] = []
     completedBySection[sec.id] = []
   }
@@ -41,12 +45,28 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
 
   const totalItems = items.length
   const doneCount = Object.keys(completions).filter(id => items.find(i => i.id === id)).length
-  const completedSections = sections.filter(s => completedBySection[s.id]?.length > 0)
+  const completedSections = localSections.filter(s => completedBySection[s.id]?.length > 0)
   const activeItem = activeId ? localItems.find(i => i.id === activeId) : null
 
   async function handleDragEnd({ active, over }) {
     setActiveId(null)
     if (!over || active.id === over.id) return
+
+    // Section reorder
+    if (active.data.current?.type === 'section') {
+      const oldIdx = localSections.findIndex(s => `section:${s.id}` === active.id)
+      const newIdx = localSections.findIndex(s => `section:${s.id}` === over.id)
+      if (oldIdx === -1 || newIdx === -1) return
+      const reordered = arrayMove(localSections, oldIdx, newIdx)
+      setLocalSections(reordered)
+      await Promise.all(
+        reordered.map((sec, idx) =>
+          supabase.from('sections').update({ sort_order: (idx + 1) * 10 }).eq('id', sec.id)
+        )
+      )
+      onSectionAdded?.()
+      return
+    }
 
     const activeItem = localItems.find(i => i.id === active.id)
     if (!activeItem) return
@@ -150,7 +170,8 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
           onDragEnd={handleDragEnd}
           onDragCancel={() => setActiveId(null)}
         >
-          {sections.map((sec, idx) => (
+          <SortableContext items={localSections.map(s => `section:${s.id}`)} strategy={verticalListSortingStrategy}>
+          {localSections.map((sec, idx) => (
             <ChecklistSection
               key={sec.id}
               section={sec.id}
@@ -167,10 +188,11 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
               viewDate={viewDate}
               sectionSortOrder={sec.sort_order}
               prevSectionSortOrder={idx > 0 ? sections[idx - 1].sort_order : null}
-              prevSectionId={idx > 0 ? sections[idx - 1].id : null}
-              nextSectionId={idx < sections.length - 1 ? sections[idx + 1].id : null}
+              prevSectionId={idx > 0 ? localSections[idx - 1].id : null}
+              nextSectionId={idx < localSections.length - 1 ? localSections[idx + 1].id : null}
             />
           ))}
+          </SortableContext>
 
           <DragOverlay>
             {activeItem && (

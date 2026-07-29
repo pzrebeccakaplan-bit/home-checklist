@@ -105,6 +105,30 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
 }
 
 export function ChecklistSection({ section, label, items, completions, onToggle, onEdit, onSkip, onDelete, onItemAdded, onSectionAdded, currentRole, viewDate, sectionSortOrder, prevSectionSortOrder, prevSectionId, nextSectionId }) {
+  const {
+    attributes: secAttributes,
+    listeners: secListeners,
+    setNodeRef: secNodeRef,
+    transform: secTransform,
+    transition: secTransition,
+    isDragging: secIsDragging,
+  } = useSortable({ id: `section:${section}`, data: { type: 'section', sectionId: section } })
+  const secStyle = { transform: CSS.Transform.toString(secTransform), transition: secTransition, opacity: secIsDragging ? 0.4 : 1 }
+
+  const [editingLabel, setEditingLabel] = useState(false)
+  const [labelText, setLabelText] = useState(label)
+  const labelInputRef = useRef(null)
+  useEffect(() => { if (editingLabel) labelInputRef.current?.select() }, [editingLabel])
+  useEffect(() => { setLabelText(label) }, [label])
+
+  async function saveLabel() {
+    setEditingLabel(false)
+    const trimmed = labelText.trim()
+    if (!trimmed || trimmed === label) { setLabelText(label); return }
+    await supabase.from('sections').update({ label: trimmed }).eq('id', section)
+    onSectionAdded?.()
+  }
+
   const [showQuickAdd, setShowQuickAdd] = useState(false)
   const [quickText, setQuickText] = useState('')
   const [quickRec, setQuickRec] = useState('daily')
@@ -199,9 +223,10 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
   const DAY_LABELS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
   if (items.length === 0 && !showQuickAdd) return (
-    <section className="checklist-section" ref={setNodeRef}>
+    <section className="checklist-section" ref={secNodeRef} style={secStyle}>
       <h2 className="section-header">
-        <span className="section-label">{label}</span>
+        <button className="section-drag-handle" {...secAttributes} {...secListeners} aria-label="Drag to reorder section">≡</button>
+        <span className="section-label" onClick={() => setEditingLabel(true)}>{label}</span>
         <span className="section-header-actions">
           <button className="section-action-btn" onClick={handleConvertSectionToItem} title="Convert section back to item">↩ item</button>
         </span>
@@ -211,9 +236,24 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
   )
 
   return (
-    <section className="checklist-section">
+    <section className="checklist-section" ref={secNodeRef} style={secStyle}>
       <h2 className="section-header">
-        <span className="section-label">{label}</span>
+        <button className="section-drag-handle" {...secAttributes} {...secListeners} aria-label="Drag to reorder section">≡</button>
+        {editingLabel ? (
+          <input
+            ref={labelInputRef}
+            className="section-label-input"
+            value={labelText}
+            onChange={e => setLabelText(e.target.value)}
+            onBlur={saveLabel}
+            onKeyDown={e => {
+              if (e.key === 'Enter') saveLabel()
+              if (e.key === 'Escape') { setEditingLabel(false); setLabelText(label) }
+            }}
+          />
+        ) : (
+          <span className="section-label" onClick={() => setEditingLabel(true)} title="Click to rename">{label}</span>
+        )}
         <span className="section-header-actions">
           {items.length > 0 && (
             <button className="section-action-btn" onClick={handleSkipSection} title="Remove section from today">✕ today</button>
