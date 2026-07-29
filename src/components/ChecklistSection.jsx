@@ -104,7 +104,7 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
   )
 }
 
-export function ChecklistSection({ section, label, items, completions, onToggle, onEdit, onSkip, onDelete, onItemAdded, onSectionAdded, currentRole, viewDate, sectionSortOrder, prevSectionSortOrder, prevSectionId, nextSectionId, onMoveUp, onMoveDown }) {
+export function ChecklistSection({ section, label, items, completions, onToggle, onEdit, onSkip, onDelete, onItemAdded, onSectionAdded, currentRole, viewDate, sectionSortOrder, prevSectionSortOrder, prevSectionId, nextSectionId, onMoveUp, onMoveDown, onDeleteSection }) {
   const [editingLabel, setEditingLabel] = useState(false)
   const [labelText, setLabelText] = useState(label)
   const labelInputRef = useRef(null)
@@ -128,6 +128,14 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
 
   // Make the section itself droppable so items can be dragged onto empty sections
   const { setNodeRef } = useDroppable({ id: section, data: { type: 'section', sectionId: section } })
+
+  async function handleDeleteSection() {
+    if (!confirm(`Permanently delete the "${label}" section? All its items will be deactivated.`)) return
+    await supabase.from('checklist_items').update({ active: false }).eq('section', section)
+    await supabase.from('sections').delete().eq('id', section)
+    onSectionAdded?.()
+    onItemAdded?.()
+  }
 
   async function handleSkipSection() {
     if (items.length === 0) return
@@ -220,6 +228,7 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
         <span className="section-label" onClick={() => setEditingLabel(true)}>{label}</span>
         <span className="section-header-actions">
           <button className="section-action-btn" onClick={handleConvertSectionToItem} title="Convert section back to item">↩ item</button>
+          <button className="section-action-btn section-action-danger" onClick={handleDeleteSection} title="Delete section permanently">✕ section</button>
         </span>
       </h2>
       <button className="quick-add-trigger" onClick={() => setShowQuickAdd(true)}>+ Add item</button>
@@ -251,6 +260,7 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
             <button className="section-action-btn" onClick={handleSkipSection} title="Remove section from today">✕ today</button>
           )}
           <button className="section-action-btn" onClick={handleConvertSectionToItem} title="Convert section back to item">↩ item</button>
+          <button className="section-action-btn section-action-danger" onClick={handleDeleteSection} title="Delete section permanently">✕ section</button>
         </span>
       </h2>
 

@@ -168,9 +168,8 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
           onDragEnd={handleDragEnd}
           onDragCancel={() => setActiveId(null)}
         >
-          {localSections.map((sec, idx) => {
-            if (!bySection[sec.id]?.length && !completedBySection[sec.id]?.length) return null
-            return <ChecklistSection
+          {localSections.map((sec, idx) => (
+            <ChecklistSection
               key={sec.id}
               section={sec.id}
               label={sec.label}
@@ -191,7 +190,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
               onMoveUp={idx > 0 ? () => moveSectionBy(sec.id, -1) : null}
               onMoveDown={idx < localSections.length - 1 ? () => moveSectionBy(sec.id, 1) : null}
             />
-          })}
+          ))}
 
           <DragOverlay>
             {activeItem && (

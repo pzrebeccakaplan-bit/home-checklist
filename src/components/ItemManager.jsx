@@ -121,8 +121,17 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
   }
 
   async function deleteItem(item) {
-    if (!confirm(`Delete "${item.text}"? This also deletes all history for this item.`)) return
-    await supabase.from('checklist_items').delete().eq('id', item.id)
+    if (!confirm(`Remove "${item.text}"? It will be deactivated and its history preserved.`)) return
+    await supabase.from('checklist_items').update({ active: false }).eq('id', item.id)
+    fetchItems()
+  }
+
+  async function deleteSection(sectionId) {
+    const label = sectionLabel[sectionId] || sectionId
+    if (!confirm(`Delete section "${label}"? All its items will be deactivated.`)) return
+    await supabase.from('checklist_items').update({ active: false }).eq('section', sectionId)
+    await supabase.from('sections').delete().eq('id', sectionId)
+    onSectionAdded?.()
     fetchItems()
   }
 
@@ -137,7 +146,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
       ? ((prev.sort_order || 0) + (current?.sort_order || 0)) / 2
       : (current?.sort_order || 10) - 5
     await supabase.from('sections').insert({ id: slug, label: item.text, sort_order: newSortOrder })
-    await supabase.from('checklist_items').delete().eq('id', item.id)
+    await supabase.from('checklist_items').update({ active: false }).eq('id', item.id)
     onSectionAdded?.()
     fetchItems()
   }
@@ -314,26 +323,25 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
           </select>
         </div>
 
-        {loading ? <p>Loading…</p> : filtered.length === 0 ? (
-          <p className="empty-state">No items match this filter.</p>
-        ) : (
+        {loading ? <p>Loading…</p> : (
           <>
-            {activeFiltered.length > 0 && (() => {
-              const grouped = []
-              let lastSection = null
-              for (const item of activeFiltered) {
-                if (item.section !== lastSection) {
-                  grouped.push({ type: 'header', section: item.section })
-                  lastSection = item.section
-                }
-                grouped.push({ type: 'item', item })
-              }
-              return grouped.map((entry, i) =>
-                entry.type === 'header'
-                  ? <div key={`h-${entry.section}`} className="item-section-group-header">{sectionLabel[entry.section] || entry.section}</div>
-                  : <ItemRow key={entry.item.id} item={entry.item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} />
+            {SECTIONS.map(sec => {
+              const secActive = activeFiltered.filter(i => i.section === sec.value)
+              if (filterSection !== 'all' && sec.value !== filterSection) return null
+              if (secActive.length === 0 && filterRecurrence !== 'all') return null
+              return (
+                <div key={sec.value} className="manager-section-group">
+                  <div className="item-section-group-header">
+                    <span>{sec.label}</span>
+                    <button className="btn-small btn-danger" onClick={() => deleteSection(sec.value)}>Delete Section</button>
+                  </div>
+                  {secActive.length === 0
+                    ? <p className="empty-state" style={{ padding: '0.4rem 0', fontSize: '0.85rem' }}>No active items</p>
+                    : <div className="item-list">{secActive.map(item => <ItemRow key={item.id} item={item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} />)}</div>
+                  }
+                </div>
               )
-            })()}
+            })}
             {inactiveFiltered.length > 0 && (
               <div className="deactivated-section">
                 <div className="deactivated-header">Deactivated</div>

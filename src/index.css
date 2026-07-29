@@ -148,6 +148,7 @@ input, select { font: inherit; }
   color: var(--text-muted); cursor: pointer; white-space: nowrap;
 }
 .section-action-btn:hover { background: var(--bg); color: var(--text); border-color: #aaa; }
+.section-action-danger:hover { background: #fff0f0; color: #c0392b; border-color: #ffbbbb; }
 .read-only-badge {
   font-size: 0.7rem; font-weight: 500; letter-spacing: 0.04em;
   background: var(--border); color: var(--text-muted);
