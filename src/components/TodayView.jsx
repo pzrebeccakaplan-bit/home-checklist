@@ -55,7 +55,12 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     // Section reorder
     if (active.data.current?.type === 'section') {
       const oldIdx = localSections.findIndex(s => `section:${s.id}` === active.id)
-      const newIdx = localSections.findIndex(s => `section:${s.id}` === over.id)
+      // over could be a section droppable or an item inside a section
+      const overId = over.id.toString()
+      const targetSectionId = overId.startsWith('section:')
+        ? overId.replace('section:', '')
+        : (over.data.current?.sectionId ?? null)
+      const newIdx = localSections.findIndex(s => s.id === targetSectionId)
       if (oldIdx === -1 || newIdx === -1) return
       const reordered = arrayMove(localSections, oldIdx, newIdx)
       setLocalSections(reordered)
