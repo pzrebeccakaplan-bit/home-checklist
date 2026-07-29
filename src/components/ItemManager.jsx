@@ -48,6 +48,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
   const [saving, setSaving] = useState(false)
   const [filterSection, setFilterSection] = useState('all')
   const [filterRecurrence, setFilterRecurrence] = useState('all')
+  const [search, setSearch] = useState('')
   const [newScheduleDate, setNewScheduleDate] = useState('')
   const modalRef = useRef(null)
 
@@ -208,8 +209,10 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     return rule.type
   }
 
+  const searchLower = search.trim().toLowerCase()
   const filtered = items.filter(item => {
     if (filterSection !== 'all' && item.section !== filterSection) return false
+    if (searchLower && !item.text.toLowerCase().includes(searchLower)) return false
     const type = item.recurrence_rule.type
     if (filterRecurrence === 'daily') return type === 'daily' && item.active
     if (filterRecurrence === 'weekly') return type === 'weekly' && item.active
@@ -325,6 +328,12 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
         </div>
 
         <div className="manager-filter">
+          <input
+            className="form-input"
+            placeholder="Search items…"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+          />
           <select className="form-input" value={filterSection} onChange={e => setFilterSection(e.target.value)}>
             <option value="all">All sections</option>
             {SECTIONS.map(s => <option key={s.value} value={s.value}>{s.label}</option>)}
