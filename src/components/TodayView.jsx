@@ -55,7 +55,6 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     const activeItem = localItems.find(i => i.id === active.id)
     if (!activeItem) return
 
-    // Determine target section: over an item → use that item's section; over a section droppable → use section id
     const overIsSection = over.data.current?.type === 'section'
     const overItem = overIsSection ? null : localItems.find(i => i.id === over.id)
     const targetSectionId = overIsSection ? over.id : (overItem?.section ?? over.data.current?.sectionId)
@@ -64,45 +63,44 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     const sourceSectionId = activeItem.section
 
     if (sourceSectionId === targetSectionId) {
-      // Same-section reorder
-      const sectionItems = localItems
-        .filter(i => i.section === sourceSectionId && !completions[i.id])
-        .sort((a, b) => a.sort_order - b.sort_order)
+      // Use localItems order directly — don't re-sort by sort_order, which would revert to DB order
+      const sectionItems = localItems.filter(i => i.section === sourceSectionId && !completions[i.id])
       const oldIdx = sectionItems.findIndex(i => i.id === active.id)
       const newIdx = sectionItems.findIndex(i => i.id === over.id)
       if (oldIdx === -1 || newIdx === -1) return
-      const reordered = arrayMove(sectionItems, oldIdx, newIdx)
-      setLocalItems(prev => {
-        const others = prev.filter(i => i.section !== sourceSectionId || completions[i.id])
-        return [...others, ...reordered]
-      })
+      // Assign updated sort_orders immediately so subsequent drags use the correct baseline
+      const reordered = arrayMove(sectionItems, oldIdx, newIdx).map((item, idx) => ({
+        ...item, sort_order: (idx + 1) * 10,
+      }))
+      setLocalItems(prev => [
+        ...prev.filter(i => i.section !== sourceSectionId || completions[i.id]),
+        ...reordered,
+      ])
       await Promise.all(
-        reordered.map((item, idx) =>
-          supabase.from('checklist_items').update({ sort_order: (idx + 1) * 10 }).eq('id', item.id)
+        reordered.map(item =>
+          supabase.from('checklist_items').update({ sort_order: item.sort_order }).eq('id', item.id)
         )
       )
     } else {
-      // Cross-section move: find insertion point in target section
-      const targetItems = localItems
-        .filter(i => i.section === targetSectionId && i.id !== active.id && !completions[i.id])
-        .sort((a, b) => a.sort_order - b.sort_order)
+      // Use localItems order for target section — don't re-sort by sort_order
+      const targetItems = localItems.filter(i => i.section === targetSectionId && i.id !== active.id && !completions[i.id])
       const overIdx = overItem ? targetItems.findIndex(i => i.id === over.id) : targetItems.length
       const insertIdx = overIdx === -1 ? targetItems.length : overIdx
-      const prev = targetItems[insertIdx - 1]
-      const next = targetItems[insertIdx]
-      const newSortOrder = prev && next
-        ? (prev.sort_order + next.sort_order) / 2
-        : prev ? prev.sort_order + 10
-        : next ? next.sort_order - 5
+      const prevItem = targetItems[insertIdx - 1]
+      const nextItem = targetItems[insertIdx]
+      const newSortOrder = prevItem && nextItem
+        ? (prevItem.sort_order + nextItem.sort_order) / 2
+        : prevItem ? prevItem.sort_order + 10
+        : nextItem ? nextItem.sort_order - 5
         : 10
 
-      setLocalItems(prevItems =>
-        prevItems.map(i => i.id === active.id ? { ...i, section: targetSectionId, sort_order: newSortOrder } : i)
+      setLocalItems(prev =>
+        prev.map(i => i.id === active.id ? { ...i, section: targetSectionId, sort_order: newSortOrder } : i)
       )
-      await supabase.from('checklist_items')
+      // Fire-and-forget — don't call onItemAdded/refetch here, which would reset localItems
+      supabase.from('checklist_items')
         .update({ section: targetSectionId, sort_order: newSortOrder })
         .eq('id', active.id)
-      onItemAdded?.()
     }
   }
 
@@ -152,8 +150,8 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
         </div>
         <div className="header-right">
           <span className="progress-badge">{doneCount}/{totalItems}</span>
-          <button className="header-btn" onClick={onOpenPicker}>Add Occasional Items</button>
-          <button className="header-btn" onClick={onOpenManager}>Manage Template</button>
+          <button className="header-btn" onClick={onOpenPicker}>Occasional</button>
+          <button className="header-btn" onClick={onOpenManager}>Template</button>
           <button className="header-btn secondary" onClick={onSignOut}>
             {profile?.display_name || 'Sign out'}
           </button>
