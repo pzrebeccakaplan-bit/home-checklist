@@ -1,0 +1,58 @@
+name: Daily Database Backup
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 6am UTC = ~11pm PT / midnight ET
+  workflow_dispatch:        # allows manual trigger from GitHub UI
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Export Supabase tables to JSON
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          mkdir -p backups
+
+          TABLES=(
+            sections
+            checklist_items
+            checklist_completions
+            daily_item_skips
+            daily_item_overrides
+            daily_item_text_overrides
+            profiles
+          )
+
+          for TABLE in "${TABLES[@]}"; do
+            echo "Backing up $TABLE..."
+            curl -sf \
+              "$SUPABASE_URL/rest/v1/$TABLE?select=*&order=id" \
+              -H "apikey: $SUPABASE_SERVICE_KEY" \
+              -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" \
+              -H "Accept: application/json" \
+              -o "backups/$TABLE.json"
+          done
+
+          echo "Backup complete: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          ls -lh backups/
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add backups/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "backup: $(date -u '+%Y-%m-%d')"
+            git push
+          fi
