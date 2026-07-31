@@ -37,7 +37,7 @@ function ItemRow({ item, sectionLabel, recurrenceMeta, onEdit, onToggleActive, o
   )
 }
 
-export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded }) {
+export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded, onItemChanged }) {
   const SECTIONS = sections.map(s => ({ value: s.id, label: s.label }))
   const sectionLabel = Object.fromEntries(sections.map(s => [s.id, s.label]))
   const [items, setItems] = useState([])
@@ -108,17 +108,18 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     if (editingId) {
       await supabase.from('checklist_items').update(payload).eq('id', editingId)
     } else {
-      const maxOrder = Math.max(0, ...items.filter(i => i.section === form.section).map(i => i.sort_order))
-      await supabase.from('checklist_items').insert({ ...payload, active: true, sort_order: maxOrder + 10 })
+      const sectionItems = items.filter(i => i.section === form.section)
+      const minOrder = sectionItems.length > 0 ? Math.min(...sectionItems.map(i => i.sort_order)) : 10
+      await supabase.from('checklist_items').insert({ ...payload, active: true, sort_order: minOrder - 5 })
     }
     cancelEdit()
     setSaving(false)
     fetchItems()
+    onItemChanged?.()
   }
 
   async function toggleActive(item) {
     if (!item.active) {
-      // Check if the item's section still exists
       const sectionExists = sections.some(s => s.id === item.section)
       if (!sectionExists) {
         const firstSection = SECTIONS[0]?.value
@@ -129,17 +130,20 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
         const targetSection = SECTIONS[idx]?.value ?? firstSection
         await supabase.from('checklist_items').update({ active: true, section: targetSection }).eq('id', item.id)
         fetchItems()
+        onItemChanged?.()
         return
       }
     }
     await supabase.from('checklist_items').update({ active: !item.active }).eq('id', item.id)
     fetchItems()
+    onItemChanged?.()
   }
 
   async function deleteItem(item) {
-    if (!confirm(`Permanently delete "${item.text}"?`)) return
-    await supabase.from('checklist_items').delete().eq('id', item.id)
+    if (!confirm(`Remove "${item.text}" from all future days? Past completion history will be preserved.`)) return
+    await supabase.from('checklist_items').update({ active: false }).eq('id', item.id)
     fetchItems()
+    onItemChanged?.()
   }
 
   async function deleteSection(sectionId) {
@@ -149,6 +153,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     await supabase.from('sections').delete().eq('id', sectionId)
     onSectionAdded?.()
     fetchItems()
+    onItemChanged?.()
   }
 
   async function convertToSection(item) {
@@ -165,6 +170,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     await supabase.from('checklist_items').update({ active: false }).eq('id', item.id)
     onSectionAdded?.()
     fetchItems()
+    onItemChanged?.()
   }
 
   async function addScheduledDate(date) {
@@ -236,6 +242,17 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
 
         <div className="manager-form">
           <h3>{editingId ? 'Edit Item' : 'Add New Item'}</h3>
+          {editingId && (() => {
+            const editingItem = items.find(i => i.id === editingId)
+            return editingItem ? (
+              <div className="edit-item-quick-actions">
+                <button className="btn-small btn-danger" onClick={() => { deleteItem(editingItem); cancelEdit() }}>Delete permanently</button>
+                <button className="btn-small" onClick={() => { toggleActive(editingItem); cancelEdit() }}>
+                  {editingItem.active ? 'Deactivate' : 'Reactivate'}
+                </button>
+              </div>
+            ) : null
+          })()}
           <input
             className="form-input"
             placeholder="Item text"

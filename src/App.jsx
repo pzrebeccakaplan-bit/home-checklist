@@ -9,6 +9,7 @@ import { ItemManager } from './components/ItemManager'
 
 function todayLocal() {
   const d = new Date()
+  if (d.getHours() < 5) d.setDate(d.getDate() - 1)
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
@@ -74,6 +75,7 @@ export default function App() {
           onClose={() => { setShowManager(false); setEditItem(null) }}
           initialEditItem={editItem}
           onSectionAdded={fetchSections}
+          onItemChanged={refetch}
         />
       )}
     </>

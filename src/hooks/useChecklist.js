@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { supabase } from '../lib/supabase'
 
 // Parse YYYY-MM-DD as local time to get day of week (avoids UTC midnight shifts)
@@ -13,26 +13,30 @@ export function useChecklist(user, viewDate) {
   const [occasionalActive, setOccasionalActive] = useState(new Set())
   const [profilesById, setProfilesById] = useState({})
   const [loading, setLoading] = useState(true)
+  const localToggleIds = useRef(new Set())
 
   const fetchData = useCallback(async () => {
     if (!user || !viewDate) return
     setLoading(true)
 
-    const { data: allItems } = await supabase
-      .from('checklist_items')
-      .select('*')
-      .eq('active', true)
-      .order('sort_order')
-
-    const { data: overrides } = await supabase
-      .from('daily_item_overrides')
-      .select('item_id')
-      .eq('active_on', viewDate)
-
-    const [{ data: dayCompletions }, { data: allProfiles }] = await Promise.all([
+    const [{ data: activeItems }, { data: overrides }, { data: dayCompletions }, { data: allProfiles }] = await Promise.all([
+      supabase.from('checklist_items').select('*').eq('active', true).order('sort_order'),
+      supabase.from('daily_item_overrides').select('item_id').eq('active_on', viewDate),
       supabase.from('checklist_completions').select('*').eq('completed_on', viewDate),
       supabase.from('profiles').select('id, display_name, role'),
     ])
+
+    // Also fetch inactive items that have a completion for this date (historical records)
+    const completedItemIds = (dayCompletions || []).map(c => c.item_id)
+    const activeItemIds = new Set((activeItems || []).map(i => i.id))
+    const inactiveCompletedIds = completedItemIds.filter(id => !activeItemIds.has(id))
+    let historicalItems = []
+    if (inactiveCompletedIds.length > 0) {
+      const { data } = await supabase
+        .from('checklist_items').select('*').in('id', inactiveCompletedIds)
+      historicalItems = data || []
+    }
+    const allItems = [...(activeItems || []), ...historicalItems]
     const profiles = Object.fromEntries((allProfiles || []).map(p => [p.id, p]))
     setProfilesById(profiles)
 
@@ -46,7 +50,9 @@ export function useChecklist(user, viewDate) {
     const activeOccasional = new Set((overrides || []).map(o => o.item_id))
     const dow = dowFromDateStr(viewDate)
 
+    const historicalIds = new Set(historicalItems.map(i => i.id))
     const dayItems = (allItems || []).filter(item => {
+      if (historicalIds.has(item.id)) return true // always show historically completed items
       if (skippedIds.has(item.id)) return false
       const rule = item.recurrence_rule
       if (rule.type === 'daily') return true
@@ -98,7 +104,14 @@ export function useChecklist(user, viewDate) {
         schema: 'public',
         table: 'checklist_completions',
         filter: `completed_on=eq.${viewDate}`
-      }, () => fetchCompletions())
+      }, (payload) => {
+        const itemId = payload.new?.item_id ?? payload.old?.item_id
+        if (itemId && localToggleIds.current.has(itemId)) {
+          localToggleIds.current.delete(itemId)
+          return
+        }
+        fetchCompletions()
+      })
       .subscribe()
 
     const overrideSub = supabase
@@ -119,6 +132,7 @@ export function useChecklist(user, viewDate) {
 
   async function toggleItem(item) {
     const existing = completions[item.id]
+    localToggleIds.current.add(item.id)
 
     if (existing) {
       setCompletions(prev => {
@@ -127,7 +141,7 @@ export function useChecklist(user, viewDate) {
         return next
       })
       const { error } = await supabase.from('checklist_completions').delete().eq('id', existing.id)
-      if (error) fetchData()
+      if (error) { localToggleIds.current.delete(item.id); fetchData() }
     } else {
       const optimistic = { item_id: item.id, completed_by: user.id, completed_on: viewDate, profile: profilesById[user.id] }
       setCompletions(prev => ({ ...prev, [item.id]: optimistic }))
@@ -136,7 +150,7 @@ export function useChecklist(user, viewDate) {
         completed_by: user.id,
         completed_on: viewDate,
       }).select().single()
-      if (error) fetchData()
+      if (error) { localToggleIds.current.delete(item.id); fetchData() }
       else setCompletions(prev => ({ ...prev, [item.id]: { ...data, profile: prev[item.id]?.profile } }))
     }
   }

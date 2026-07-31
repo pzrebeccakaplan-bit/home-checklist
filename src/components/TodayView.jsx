@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import {
   DndContext, DragOverlay, closestCenter,
   PointerSensor, TouchSensor, useSensor, useSensors,
@@ -7,14 +7,107 @@ import { arrayMove } from '@dnd-kit/sortable'
 import { supabase } from '../lib/supabase'
 import { ChecklistSection } from './ChecklistSection'
 
+function UnassignedItem({ item, sections, completion, onToggle, onAssigned }) {
+  const [assigning, setAssigning] = useState(false)
+  const selectRef = useRef(null)
+  const isChecked = !!completion
+  const checkedBy = completion?.profile?.display_name
+
+  async function assign(sectionId) {
+    if (!sectionId) return
+    await supabase.from('checklist_items').update({ section: sectionId }).eq('id', item.id)
+    onAssigned?.()
+  }
+
+  return (
+    <div className="checklist-item-row">
+      <button className={`item-check-btn ${isChecked ? 'checked' : ''}`} onClick={() => onToggle(item)} aria-pressed={isChecked}>
+        <span className="check-box">{isChecked ? '✓' : ''}</span>
+      </button>
+      <div className={`item-body ${isChecked ? 'checked' : ''}`}>
+        <span className="item-text">{item.displayText ?? item.text}</span>
+        {isChecked && checkedBy && <span className="checked-by">{checkedBy}</span>}
+      </div>
+      {assigning ? (
+        <select
+          ref={selectRef}
+          autoFocus
+          className="assign-section-select"
+          defaultValue=""
+          onChange={e => { assign(e.target.value); setAssigning(false) }}
+          onBlur={() => setAssigning(false)}
+        >
+          <option value="" disabled>Assign to…</option>
+          {sections.map(s => <option key={s.id} value={s.id}>{s.label}</option>)}
+        </select>
+      ) : (
+        <button className="item-assign-btn" onClick={() => setAssigning(true)} title="Assign to section">assign</button>
+      )}
+    </div>
+  )
+}
+
 export function TodayView({ sections, items, completions, onToggle, onEdit, onDelete, onSkip, onItemAdded, currentRole, onOpenPicker, onOpenManager, onSignOut, profile, onAddSection, onSectionAdded, viewDate, onPrevDay, onNextDay, onGoToday, onJumpToDate }) {
-  const todayStr = (() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` })()
+  const todayStr = (() => { const d = new Date(); if (d.getHours() < 5) d.setDate(d.getDate() - 1); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` })()
   const isToday = viewDate === todayStr
   const [y, m, d] = viewDate.split('-').map(Number)
   const dateLabel = new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })
+  const [completedQuickAdd, setCompletedQuickAdd] = useState(null)
+  const [completedQuickText, setCompletedQuickText] = useState('')
+  const [completedQuickRec, setCompletedQuickRec] = useState('once')
+  const [completedQuickDays, setCompletedQuickDays] = useState([])
+  const [completedQuickDate, setCompletedQuickDate] = useState(viewDate)
+  const [completedQuickSaving, setCompletedQuickSaving] = useState(false)
   const [showNewSection, setShowNewSection] = useState(false)
   const [newSectionLabel, setNewSectionLabel] = useState('')
   const [addingSec, setAddingSec] = useState(false)
+  const [undoAction, setUndoAction] = useState(null)
+  const undoTimer = useRef(null)
+
+  function pushUndo(label, fn) {
+    clearTimeout(undoTimer.current)
+    setUndoAction({ label, fn })
+    undoTimer.current = setTimeout(() => setUndoAction(null), 8000)
+  }
+
+  function executeUndo() {
+    clearTimeout(undoTimer.current)
+    undoAction?.fn()
+    setUndoAction(null)
+  }
+
+  function handleToggle(item) {
+    const wasChecked = !!completions[item.id]
+    onToggle(item)
+    pushUndo(
+      wasChecked ? `Unchecked "${item.displayText ?? item.text}"` : `Checked "${item.displayText ?? item.text}"`,
+      () => onToggle(item)
+    )
+  }
+
+  function handleSkip(itemId) {
+    const item = items.find(i => i.id === itemId)
+    onSkip(itemId)
+    pushUndo(`Removed "${item?.displayText ?? item?.text}"`, async () => {
+      await supabase.from('daily_item_skips').delete().eq('item_id', itemId).eq('skip_on', viewDate)
+      onItemAdded?.()
+    })
+  }
+
+  async function handleSkipSection(sectionId, sectionLabel, sectionItems) {
+    if (!sectionItems.length) return
+    if (!confirm(`Remove all "${sectionLabel}" items from today's list?`)) return
+    await Promise.all(sectionItems.map(item =>
+      supabase.from('daily_item_skips').insert({ item_id: item.id, skip_on: viewDate })
+    ))
+    onItemAdded?.()
+    pushUndo(`Removed "${sectionLabel}" section`, async () => {
+      await Promise.all(sectionItems.map(item =>
+        supabase.from('daily_item_skips').delete().eq('item_id', item.id).eq('skip_on', viewDate)
+      ))
+      onItemAdded?.()
+    })
+  }
 
   // Local items state for optimistic DnD reordering across sections
   const [localItems, setLocalItems] = useState(items)
@@ -43,8 +136,12 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     else bySection[item.section].push(item)
   }
 
-  const totalItems = items.length
-  const doneCount = Object.keys(completions).filter(id => items.find(i => i.id === id)).length
+  const knownSectionIds = new Set(localSections.map(s => s.id))
+  const orphanedItems = localItems.filter(i => !knownSectionIds.has(i.section) && !completions[i.id])
+  const orphanedCompleted = localItems.filter(i => !knownSectionIds.has(i.section) && completions[i.id])
+  const visibleItems = localItems.filter(i => knownSectionIds.has(i.section))
+  const totalItems = visibleItems.length + orphanedItems.length + orphanedCompleted.length
+  const doneCount = visibleItems.filter(i => completions[i.id]).length + orphanedCompleted.length
   const completedSections = localSections.filter(s => completedBySection[s.id]?.length > 0)
   const activeItem = activeId ? localItems.find(i => i.id === activeId) : null
 
@@ -118,6 +215,39 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     onSectionAdded?.()
   }
 
+  const DAY_LABELS_SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+
+  async function submitCompletedQuickAdd(sectionId, e) {
+    e?.preventDefault()
+    if (!completedQuickText.trim()) return
+    if (completedQuickRec === 'once' && !completedQuickDate) return
+    setCompletedQuickSaving(true)
+    const sectionItems = localItems.filter(i => i.section === sectionId)
+    const minOrder = sectionItems.length > 0 ? Math.min(...sectionItems.map(i => i.sort_order)) : 10
+    const rule = completedQuickRec === 'weekly'
+      ? { type: 'weekly', days: completedQuickDays }
+      : completedQuickRec === 'once'
+        ? { type: 'occasional' }
+        : { type: completedQuickRec }
+    const { data: newItem } = await supabase.from('checklist_items').insert({
+      text: completedQuickText.trim(),
+      section: sectionId,
+      recurrence_rule: rule,
+      active: true,
+      sort_order: minOrder - 5,
+    }).select().single()
+    if (completedQuickRec === 'once' && newItem) {
+      await supabase.from('daily_item_overrides').insert({ item_id: newItem.id, active_on: completedQuickDate })
+    }
+    setCompletedQuickText('')
+    setCompletedQuickRec('once')
+    setCompletedQuickDays([])
+    setCompletedQuickDate(viewDate)
+    setCompletedQuickAdd(null)
+    setCompletedQuickSaving(false)
+    onItemAdded?.()
+  }
+
   async function submitNewSection(e) {
     e?.preventDefault()
     if (!newSectionLabel.trim()) return
@@ -173,10 +303,12 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
               section={sec.id}
               label={sec.label}
               items={bySection[sec.id] || []}
+              completedItems={completedBySection[sec.id] || []}
               completions={completions}
-              onToggle={onToggle}
+              onToggle={handleToggle}
               onEdit={onEdit}
-              onSkip={onSkip}
+              onSkip={handleSkip}
+              onSkipSection={handleSkipSection}
               onDelete={onDelete}
               onItemAdded={onItemAdded}
               onSectionAdded={onSectionAdded}
@@ -223,13 +355,40 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
           </button>
         )}
 
+        {/* Unassigned items (section deleted/missing) */}
+        {(orphanedItems.length > 0 || orphanedCompleted.length > 0) && (
+          <div className="checklist-section">
+            <h2 className="section-header">
+              <span className="section-label-group"><span className="section-label">Unassigned</span></span>
+            </h2>
+            <div className="section-items">
+              {[...orphanedItems, ...orphanedCompleted].map(item => (
+                <UnassignedItem
+                  key={item.id}
+                  item={item}
+                  sections={localSections}
+                  completion={completions[item.id]}
+                  onToggle={handleToggle}
+                  onAssigned={onItemAdded}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Completed items at bottom */}
         {completedSections.length > 0 && (
           <div className="completed-area">
             <div className="completed-area-header">Completed</div>
             {completedSections.map(sec => (
               <div key={sec.id} className="completed-section">
-                <div className="completed-section-label">{sec.label}</div>
+                <div className="completed-section-label">
+                  {sec.label}
+                  <button className="section-uncheck-all-btn" onClick={() => Promise.all(completedBySection[sec.id].map(item => handleToggle(item)))} title="Uncheck all">↺ uncheck all</button>
+                  {completedQuickAdd !== sec.id && (
+                    <button className="section-add-btn" onClick={() => { setCompletedQuickAdd(sec.id); setCompletedQuickText('') }}>+ Add</button>
+                  )}
+                </div>
                 {completedBySection[sec.id].map(item => {
                   const completion = completions[item.id]
                   const checkedBy = completion?.profile?.display_name
@@ -237,7 +396,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
                     <button
                       key={item.id}
                       className="checklist-item checked completed-item"
-                      onClick={() => onToggle(item)}
+                      onClick={() => handleToggle(item)}
                     >
                       <span className="check-box">✓</span>
                       <span className="item-text">{item.text}</span>
@@ -245,10 +404,64 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
                     </button>
                   )
                 })}
+                {completedQuickAdd === sec.id && (
+                  <form className="completed-quick-add" onSubmit={e => submitCompletedQuickAdd(sec.id, e)}>
+                    <input
+                      autoFocus
+                      className="quick-add-input"
+                      placeholder="New item…"
+                      value={completedQuickText}
+                      onChange={e => setCompletedQuickText(e.target.value)}
+                    />
+                    <div className="quick-add-rec">
+                      {[
+                        { value: 'once', label: 'One-time' },
+                        { value: 'daily', label: 'Every day' },
+                        { value: 'weekly', label: 'Specific days' },
+                        { value: 'occasional', label: 'Occasional' },
+                      ].map(({ value, label }) => (
+                        <label key={value}>
+                          <input type="radio" name={`crec-${sec.id}`} value={value}
+                            checked={completedQuickRec === value}
+                            onChange={() => setCompletedQuickRec(value)} />
+                          {' '}{label}
+                        </label>
+                      ))}
+                    </div>
+                    {completedQuickRec === 'weekly' && (
+                      <div className="day-picker">
+                        {DAY_LABELS_SHORT.map((d, i) => (
+                          <button key={i} type="button"
+                            className={`day-btn ${completedQuickDays.includes(i) ? 'selected' : ''}`}
+                            onClick={() => setCompletedQuickDays(prev => prev.includes(i) ? prev.filter(x => x !== i) : [...prev, i])}>
+                            {d}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                    {completedQuickRec === 'once' && (
+                      <input type="date" className="form-input" value={completedQuickDate}
+                        onChange={e => setCompletedQuickDate(e.target.value)} />
+                    )}
+                    <div className="quick-add-actions">
+                      <button type="button" className="btn-secondary" onClick={() => { setCompletedQuickAdd(null); setCompletedQuickText(''); setCompletedQuickRec('once'); setCompletedQuickDays([]); setCompletedQuickDate(viewDate) }}>Cancel</button>
+                      <button type="submit" className="btn-primary" disabled={completedQuickSaving || !completedQuickText.trim() || (completedQuickRec === 'once' && !completedQuickDate)}>
+                        {completedQuickSaving ? 'Adding…' : 'Add'}
+                      </button>
+                    </div>
+                  </form>
+                )}
               </div>
             ))}
           </div>
         )}
+      {undoAction && (
+        <div className="undo-toast">
+          <span className="undo-toast-label">{undoAction.label}</span>
+          <button className="undo-toast-btn" onClick={executeUndo}>Undo</button>
+          <button className="undo-toast-dismiss" onClick={() => { clearTimeout(undoTimer.current); setUndoAction(null) }}>✕</button>
+        </div>
+      )}
       </main>
     </div>
   )
