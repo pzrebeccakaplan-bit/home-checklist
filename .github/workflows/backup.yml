@@ -34,12 +34,17 @@ jobs:
 
           for TABLE in "${TABLES[@]}"; do
             echo "Backing up $TABLE..."
-            curl -sf \
-              "$SUPABASE_URL/rest/v1/$TABLE?select=*&order=id" \
+            HTTP_STATUS=$(curl -s -o "backups/$TABLE.json" -w "%{http_code}" \
+              "$SUPABASE_URL/rest/v1/$TABLE?select=*" \
               -H "apikey: $SUPABASE_SERVICE_KEY" \
               -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" \
               -H "Accept: application/json" \
-              -o "backups/$TABLE.json"
+              -H "Prefer: count=none")
+            echo "  → HTTP $HTTP_STATUS"
+            if [ "$HTTP_STATUS" != "200" ]; then
+              echo "  → Error response: $(cat backups/$TABLE.json)"
+              exit 1
+            fi
           done
 
           echo "Backup complete: $(date -u '+%Y-%m-%d %H:%M UTC')"
