@@ -16,18 +16,22 @@ export function useSections() {
     setLoading(false)
   }
 
-  async function addSection(label) {
-    // Generate a slug from the label, e.g. "Afternoon Kids" → "afternoon_kids"
+  async function addSection(label, fridayOnly = false) {
     const id = label.trim().toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '')
     const maxOrder = Math.max(0, ...sections.map(s => s.sort_order))
     const { data } = await supabase
       .from('sections')
-      .insert({ id, label: label.trim(), sort_order: maxOrder + 10 })
+      .insert({ id, label: label.trim(), sort_order: maxOrder + 10, friday_only: fridayOnly })
       .select()
       .single()
     if (data) setSections(prev => [...prev, data])
     return data
   }
 
-  return { sections, loading, fetchSections, addSection }
+  async function updateSectionTags(sectionId, tags) {
+    await supabase.from('sections').update({ tags }).eq('id', sectionId)
+    fetchSections()
+  }
+
+  return { sections, loading, fetchSections, addSection, updateSectionTags }
 }

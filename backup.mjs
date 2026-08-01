@@ -16,6 +16,9 @@ const TABLES = [
   'daily_item_overrides',
   'daily_item_text_overrides',
   'profiles',
+  'shabbat_sections',
+  'shabbat_items',
+  'shabbat_completions',
 ]
 
 mkdirSync('backups', { recursive: true })
