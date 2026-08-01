@@ -44,8 +44,10 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
     }
   }
 
+  const recType = item.recurrence_rule?.type ?? 'daily'
+
   return (
-    <div ref={setNodeRef} style={style} className="checklist-item-row">
+    <div ref={setNodeRef} style={style} className={`checklist-item-row recurrence-${recType}`}>
       {!readOnly && (
         <button className="drag-handle" {...attributes} {...listeners} aria-label="Drag to reorder">⠿</button>
       )}
@@ -57,7 +59,7 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
       >
         <span className="check-box">{isChecked ? '✓' : ''}</span>
       </button>
-      <div className={`item-body ${isChecked ? 'checked' : ''} ${readOnly ? 'read-only' : ''}`}>
+      <div className={`item-body ${isChecked ? 'checked' : ''} ${readOnly ? 'read-only' : ''} recurrence-${recType}`}>
         {editingText ? (
           <input
             ref={inputRef}
@@ -104,7 +106,7 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
   )
 }
 
-export function ChecklistSection({ section, label, items, completions, onToggle, onEdit, onSkip, onDelete, onItemAdded, onSectionAdded, currentRole, viewDate, sectionSortOrder, prevSectionSortOrder, prevSectionId, nextSectionId, onMoveUp, onMoveDown, onDeleteSection }) {
+export function ChecklistSection({ section, label, items, completedItems, completions, onToggle, onEdit, onSkip, onSkipSection, onDelete, onItemAdded, onSectionAdded, currentRole, viewDate, sectionSortOrder, prevSectionSortOrder, prevSectionId, nextSectionId, onMoveUp, onMoveDown, onDeleteSection }) {
   const [editingLabel, setEditingLabel] = useState(false)
   const [labelText, setLabelText] = useState(label)
   const labelInputRef = useRef(null)
@@ -121,7 +123,7 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
 
   const [showQuickAdd, setShowQuickAdd] = useState(false)
   const [quickText, setQuickText] = useState('')
-  const [quickRec, setQuickRec] = useState('daily')
+  const [quickRec, setQuickRec] = useState('once')
   const [quickDays, setQuickDays] = useState([])
   const [quickDate, setQuickDate] = useState(viewDate || '')
   const [saving, setSaving] = useState(false)
@@ -129,13 +131,8 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
   // Make the section itself droppable so items can be dragged onto empty sections
   const { setNodeRef } = useDroppable({ id: section, data: { type: 'section', sectionId: section } })
 
-  async function handleSkipSection() {
-    if (items.length === 0) return
-    if (!confirm(`Remove all "${label}" items from today's list?`)) return
-    await Promise.all(
-      items.map(item => supabase.from('daily_item_skips').insert({ item_id: item.id, skip_on: viewDate }))
-    )
-    onItemAdded?.()
+  function handleSkipSection() {
+    onSkipSection?.(section, label, items)
   }
 
   async function handleConvertSectionToItem() {
@@ -162,16 +159,24 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
       ? (prevSectionSortOrder + sectionSortOrder) / 2
       : sectionSortOrder - 5
     await supabase.from('sections').insert({ id: slug, label: item.text, sort_order: newSortOrder })
-    await supabase.from('checklist_items').delete().eq('id', item.id)
+    await supabase.from('checklist_items').update({ active: false }).eq('id', item.id)
     onSectionAdded?.()
     onItemAdded?.()
+  }
+
+  async function handleCheckAll() {
+    await Promise.all(items.map(item => onToggle(item)))
+  }
+
+  async function handleUncheckAll() {
+    await Promise.all((completedItems || []).map(item => onToggle(item)))
   }
 
   async function submitQuickAdd(e) {
     e?.preventDefault()
     if (!quickText.trim()) return
     setSaving(true)
-    const maxOrder = Math.max(0, ...items.map(i => i.sort_order))
+    const minOrder = items.length > 0 ? Math.min(...items.map(i => i.sort_order)) : 10
 
     if (quickRec === 'once') {
       const { data: newItem } = await supabase.from('checklist_items').insert({
@@ -179,7 +184,7 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
         section,
         recurrence_rule: { type: 'occasional' },
         active: true,
-        sort_order: maxOrder + 10,
+        sort_order: minOrder - 5,
       }).select().single()
       if (newItem && quickDate) {
         await supabase.from('daily_item_overrides').insert({ item_id: newItem.id, active_on: quickDate })
@@ -193,12 +198,12 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
         section,
         recurrence_rule: rule,
         active: true,
-        sort_order: maxOrder + 10,
+        sort_order: minOrder - 5,
       })
     }
 
     setQuickText('')
-    setQuickRec('daily')
+    setQuickRec('once')
     setQuickDays([])
     setQuickDate(viewDate || '')
     setShowQuickAdd(false)
@@ -217,12 +222,14 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
       <h2 className="section-header">
         {onMoveUp && <button className="section-move-btn" onClick={onMoveUp} aria-label="Move section up">↑</button>}
         {onMoveDown && <button className="section-move-btn" onClick={onMoveDown} aria-label="Move section down">↓</button>}
-        <span className="section-label" onClick={() => setEditingLabel(true)}>{label}</span>
+        <span className="section-label-group">
+          <span className="section-label" onClick={() => setEditingLabel(true)}>{label}</span>
+          <button className="section-add-btn" onClick={() => setShowQuickAdd(true)} title="Add item">+ Add</button>
+        </span>
         <span className="section-header-actions">
           <button className="section-action-btn" onClick={handleConvertSectionToItem} title="Convert section back to item">↩ item</button>
         </span>
       </h2>
-      <button className="quick-add-trigger" onClick={() => setShowQuickAdd(true)}>+ Add item</button>
     </section>
   )
 
@@ -231,21 +238,27 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
       <h2 className="section-header">
         {onMoveUp && <button className="section-move-btn" onClick={onMoveUp} aria-label="Move section up">↑</button>}
         {onMoveDown && <button className="section-move-btn" onClick={onMoveDown} aria-label="Move section down">↓</button>}
-        {editingLabel ? (
-          <input
-            ref={labelInputRef}
-            className="section-label-input"
-            value={labelText}
-            onChange={e => setLabelText(e.target.value)}
-            onBlur={saveLabel}
-            onKeyDown={e => {
-              if (e.key === 'Enter') saveLabel()
-              if (e.key === 'Escape') { setEditingLabel(false); setLabelText(label) }
-            }}
-          />
-        ) : (
-          <span className="section-label" onClick={() => setEditingLabel(true)} title="Click to rename">{label}</span>
-        )}
+        <button className="section-check-btn" onClick={handleCheckAll} title="Check all items" aria-label="Check all">
+          <span className="section-check-box" />
+        </button>
+        <span className="section-label-group">
+          {editingLabel ? (
+            <input
+              ref={labelInputRef}
+              className="section-label-input"
+              value={labelText}
+              onChange={e => setLabelText(e.target.value)}
+              onBlur={saveLabel}
+              onKeyDown={e => {
+                if (e.key === 'Enter') saveLabel()
+                if (e.key === 'Escape') { setEditingLabel(false); setLabelText(label) }
+              }}
+            />
+          ) : (
+            <span className="section-label" onClick={() => setEditingLabel(true)} title="Click to rename">{label}</span>
+          )}
+          {!editingLabel && <button className="section-add-btn" onClick={() => setShowQuickAdd(true)} title="Add item">+ Add</button>}
+        </span>
         <span className="section-header-actions">
           {items.length > 0 && (
             <button className="section-action-btn" onClick={handleSkipSection} title="Remove section from today">✕ today</button>
@@ -273,7 +286,7 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
         </div>
       </SortableContext>
 
-      {showQuickAdd ? (
+      {showQuickAdd && (
         <form className="quick-add-form" onSubmit={submitQuickAdd}>
           <input
             autoFocus
@@ -284,10 +297,10 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
           />
           <div className="quick-add-rec">
             {[
+              { value: 'once', label: 'One-time' },
               { value: 'daily', label: 'Every day' },
               { value: 'weekly', label: 'Specific days' },
               { value: 'occasional', label: 'Occasional' },
-              { value: 'once', label: 'One-time date' },
             ].map(({ value, label }) => (
               <label key={value}>
                 <input type="radio" name={`rec-${section}`} value={value}
@@ -316,14 +329,12 @@ export function ChecklistSection({ section, label, items, completions, onToggle,
             />
           )}
           <div className="quick-add-actions">
-            <button type="button" className="btn-secondary" onClick={() => { setShowQuickAdd(false); setQuickText('') }}>Cancel</button>
+            <button type="button" className="btn-secondary" onClick={() => { setShowQuickAdd(false); setQuickText(''); setQuickRec('once') }}>Cancel</button>
             <button type="submit" className="btn-primary" disabled={saving || !quickText.trim() || (quickRec === 'once' && !quickDate)}>
               {saving ? 'Adding…' : 'Add'}
             </button>
           </div>
         </form>
-      ) : (
-        <button className="quick-add-trigger" onClick={() => setShowQuickAdd(true)}>+ Add item</button>
       )}
     </section>
   )

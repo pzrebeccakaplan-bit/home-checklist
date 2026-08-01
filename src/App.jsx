@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useAuth } from './hooks/useAuth'
 import { useChecklist } from './hooks/useChecklist'
 import { useSections } from './hooks/useSections'
+import { useSchedule } from './hooks/useSchedule'
 import { Login } from './components/Login'
 import { TodayView } from './components/TodayView'
 import { OccasionalPicker } from './components/OccasionalPicker'
@@ -9,6 +10,7 @@ import { ItemManager } from './components/ItemManager'
 
 function todayLocal() {
   const d = new Date()
+  if (d.getHours() < 5) d.setDate(d.getDate() - 1)
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
@@ -18,27 +20,41 @@ function offsetDate(dateStr, days) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
 }
 
+function dowFromDateStr(dateStr) {
+  const [y, m, d] = dateStr.split('-').map(Number)
+  return new Date(y, m - 1, d).getDay()
+}
+
 export default function App() {
   const { user, profile, loading: authLoading, signIn, signOut } = useAuth()
   const [viewDate, setViewDate] = useState(todayLocal)
   const { items, completions, occasionalActive, loading: listLoading, toggleItem, toggleOccasional, skipItem, refetch } = useChecklist(user, viewDate)
-  const { sections, loading: sectionsLoading, addSection, fetchSections } = useSections()
+  const { sections, loading: sectionsLoading, addSection, fetchSections, updateSectionTags } = useSections()
+  const { schedule, loading: scheduleLoading, tagsForDay, updateDayTags, fetchSchedule } = useSchedule()
   const [showPicker, setShowPicker] = useState(false)
   const [showManager, setShowManager] = useState(false)
   const [editItem, setEditItem] = useState(null)
+
+  const dow = dowFromDateStr(viewDate)
+  const activeTags = tagsForDay(dow)
+
+  // A section is visible if it has no tags (always show) or shares at least one tag with today's active tags
+  const visibleSections = sections.filter(s =>
+    !s.tags || s.tags.length === 0 || s.tags.some(t => activeTags.includes(t))
+  )
 
   function handleEditItem(item) {
     setEditItem(item)
     setShowManager(true)
   }
 
-  if (authLoading || sectionsLoading) return <div className="loading-screen">Loading…</div>
+  if (authLoading || sectionsLoading || scheduleLoading) return <div className="loading-screen">Loading…</div>
   if (!user) return <Login signIn={signIn} />
 
   return (
     <>
       <TodayView
-        sections={sections}
+        sections={visibleSections}
         items={items}
         completions={completions}
         onToggle={toggleItem}
@@ -73,7 +89,11 @@ export default function App() {
           sections={sections}
           onClose={() => { setShowManager(false); setEditItem(null) }}
           initialEditItem={editItem}
-          onSectionAdded={fetchSections}
+          onSectionAdded={() => { fetchSections(); fetchSchedule() }}
+          onItemChanged={refetch}
+          schedule={schedule}
+          onUpdateDayTags={updateDayTags}
+          onUpdateSectionTags={updateSectionTags}
         />
       )}
     </>

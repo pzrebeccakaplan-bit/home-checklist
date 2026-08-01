@@ -12,6 +12,10 @@
   --checked-text: #888;
   --spouse-bg: #fafaf8;
   --danger: #c0392b;
+  --occasional-bg: #fdf0ff;
+  --occasional-border: #ddb8f5;
+  --weekly-bg: #f0f9ff;
+  --weekly-border: #b8ddf5;
   --radius: 12px;
   --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
@@ -73,7 +77,24 @@ input, select { font: inherit; }
   position: sticky; top: 0; z-index: 10;
 }
 .app-title { font-size: 1.4rem; font-weight: 700; }
+
+/* ── Manager pane tabs ───────────────────────────────────── */
+.manager-pane-tabs { display: flex; gap: 0.25rem; }
+.manager-pane-tab {
+  padding: 0.2rem 0.75rem; font-size: 0.85rem; font-weight: 600;
+  border-radius: 20px; border: 1.5px solid var(--border);
+  color: var(--text-muted); background: none; transition: all 0.15s;
+}
+.manager-pane-tab:hover { border-color: var(--accent); color: var(--accent); }
+.manager-pane-tab.active { background: var(--accent); border-color: var(--accent); color: white; }
+
 .date-nav { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.1rem; }
+.shabbat-date-label { font-size: 0.9rem; color: var(--text-muted); }
+.shabbat-source-badge {
+  font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.4rem;
+  border-radius: 10px; background: var(--accent-light); color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
 .date-label { font-size: 0.95rem; color: var(--text-muted); }
 .date-nav-btn {
   padding: 0.1rem 0.5rem; font-size: 1.2rem; font-weight: 700;
@@ -117,6 +138,7 @@ input, select { font: inherit; }
 
 /* ── Sections ───────────────────────────────────────────── */
 .checklist-section { margin-bottom: 1.5rem; }
+.checklist-item-row { transition: opacity 0.15s; }
 .section-header {
   font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--text-muted);
@@ -125,15 +147,37 @@ input, select { font: inherit; }
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.5rem;
 }
+/* Section checkbox (check-all) */
+.section-check-btn {
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; padding: 0 0.3rem; background: none; border: none; cursor: pointer;
+}
+.section-check-box {
+  display: block; width: 16px; height: 16px;
+  border: 2px solid var(--border); border-radius: 4px;
+  background: white; transition: border-color 0.1s;
+}
+.section-check-btn:hover .section-check-box { border-color: var(--accent); }
+
+/* Section "+ Add" button in header */
+.section-add-btn {
+  font-size: 0.72rem; font-weight: 500;
+  padding: 0.1rem 0.45rem; border-radius: 4px;
+  background: none; border: 1.5px dashed var(--border);
+  color: var(--text-muted); cursor: pointer; white-space: nowrap; flex-shrink: 0;
+}
+.section-add-btn:hover { border-color: var(--accent); color: var(--accent); }
+
 .section-move-btn {
   background: none; border: none; cursor: pointer; padding: 0 0.2rem;
   color: var(--text-muted); opacity: 0.4; font-size: 0.85rem; flex-shrink: 0; line-height: 1;
 }
 .section-move-btn:hover { opacity: 1; color: var(--text); }
-.section-label { flex: 1; cursor: pointer; }
+.section-label-group { flex: 1; display: flex; align-items: center; gap: 0.4rem; min-width: 0; }
+.section-label { cursor: pointer; }
 .section-label:hover { color: var(--text); }
 .section-label-input {
-  flex: 1; background: none; border: none; border-bottom: 1px solid var(--accent);
+  flex: 1; min-width: 0; background: none; border: none; border-bottom: 1px solid var(--accent);
   font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--text); outline: none; padding: 0;
 }
@@ -205,6 +249,21 @@ input, select { font: inherit; }
 }
 .item-body.checked { background: var(--accent-light); border-color: transparent; }
 .item-body.read-only { background: var(--spouse-bg); opacity: 0.7; }
+.item-body.recurrence-occasional,
+.item-body.recurrence-once {
+  background: var(--occasional-bg);
+  border-color: var(--occasional-border);
+}
+.item-body.recurrence-weekly {
+  background: var(--weekly-bg);
+  border-color: var(--weekly-border);
+}
+.item-body.recurrence-occasional.checked,
+.item-body.recurrence-once.checked,
+.item-body.recurrence-weekly.checked {
+  background: var(--accent-light);
+  border-color: transparent;
+}
 
 .item-text {
   flex: 1; font-size: 1.05rem; cursor: text;
@@ -319,11 +378,49 @@ input, select { font: inherit; }
   font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em;
   text-transform: uppercase; color: var(--text-muted);
   margin-bottom: 0.35rem;
+  display: flex; align-items: center; gap: 0.5rem;
 }
+.section-uncheck-all-btn {
+  font-size: 0.7rem; font-weight: 500; letter-spacing: 0;
+  text-transform: none; padding: 0.1rem 0.4rem;
+  border: 1px solid var(--border); border-radius: 4px;
+  background: white; color: var(--text-muted); cursor: pointer;
+  opacity: 0.6;
+}
+.section-uncheck-all-btn:hover { opacity: 1; background: var(--bg); color: var(--text); }
 .completed-item {
   width: 100%; margin-bottom: 0.3rem;
   cursor: pointer; /* tapping still unchecks */
 }
+.completed-quick-add {
+  margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;
+}
+
+/* ── Undo toast ─────────────────────────────────────────── */
+.undo-toast {
+  position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 0.75rem;
+  background: #1a1a1a; color: white;
+  padding: 0.65rem 1rem; border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  z-index: 200; white-space: nowrap;
+  animation: toast-in 0.2s ease;
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.undo-toast-label { font-size: 0.88rem; color: #ccc; max-width: 240px; overflow: hidden; text-overflow: ellipsis; }
+.undo-toast-btn {
+  font-size: 0.88rem; font-weight: 700; color: var(--accent-light);
+  background: none; border: none; cursor: pointer; padding: 0;
+}
+.undo-toast-btn:hover { color: white; }
+.undo-toast-dismiss {
+  font-size: 0.75rem; color: #666; background: none; border: none;
+  cursor: pointer; padding: 0; line-height: 1;
+}
+.undo-toast-dismiss:hover { color: #aaa; }
 
 /* ── Modals ─────────────────────────────────────────────── */
 .modal-overlay {
@@ -359,6 +456,48 @@ input, select { font: inherit; }
 }
 .close-btn:hover { background: var(--border); }
 
+/* ── Schedule pane ───────────────────────────────────────── */
+.schedule-pane { padding: 1rem 1.5rem; display: flex; flex-direction: column; gap: 1.75rem; }
+.schedule-block { display: flex; flex-direction: column; gap: 0.6rem; }
+.schedule-block-title { font-size: 1rem; font-weight: 600; }
+.schedule-hint { font-size: 0.85rem; color: var(--text-muted); }
+.section-tag-row {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.35rem 0; border-bottom: 1px solid var(--border);
+}
+.section-tag-label { min-width: 130px; font-size: 0.9rem; flex-shrink: 0; }
+.tag-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+.tag-chip {
+  display: inline-flex; align-items: center; gap: 0.2rem;
+  padding: 0.15rem 0.5rem; border-radius: 12px;
+  background: var(--accent-light); color: var(--accent);
+  font-size: 0.8rem; font-weight: 600;
+}
+.tag-chip-remove {
+  font-size: 0.75rem; color: var(--accent); opacity: 0.7; padding: 0 0.1rem;
+}
+.tag-chip-remove:hover { opacity: 1; }
+.tag-add-btn {
+  padding: 0.15rem 0.5rem; border-radius: 12px; font-size: 0.8rem;
+  border: 1.5px dashed var(--border); color: var(--text-muted);
+}
+.tag-add-btn:hover { border-color: var(--accent); color: var(--accent); }
+.tag-input {
+  width: 80px; padding: 0.15rem 0.4rem; font-size: 0.8rem;
+  border: 1.5px solid var(--accent); border-radius: 12px; outline: none;
+}
+.day-schedule-row {
+  display: flex; align-items: center; gap: 0.75rem; padding: 0.25rem 0;
+}
+.day-schedule-name { width: 80px; font-size: 0.9rem; color: var(--text-muted); flex-shrink: 0; }
+.day-tag-toggles { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.day-tag-btn {
+  padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem;
+  border: 1.5px solid var(--border); color: var(--text-muted); background: none;
+}
+.day-tag-btn:hover { border-color: var(--accent); color: var(--accent); }
+.day-tag-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
+
 /* ── Occasional picker ──────────────────────────────────── */
 .picker-sections { display: flex; flex-direction: column; gap: 1.25rem; }
 .picker-section h3 {
@@ -382,6 +521,7 @@ input, select { font: inherit; }
   padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;
 }
 .manager-form h3 { font-size: 1rem; font-weight: 600; }
+.edit-item-quick-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .form-input {
   width: 100%; padding: 0.75rem 1rem;
   border: 1.5px solid var(--border); border-radius: 8px;
@@ -471,6 +611,19 @@ input, select { font: inherit; }
 .btn-danger { color: var(--danger); border-color: #f5c6c2; }
 .btn-convert { color: var(--accent); border-color: #c2d4f5; }
 .drag-handle:active { cursor: grabbing; }
+.item-assign-btn {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 0.65rem;
+  background: var(--surface); border: 1.5px dashed var(--border);
+  border-radius: var(--radius); font-size: 0.8rem; flex-shrink: 0;
+  color: var(--text-muted); white-space: nowrap;
+}
+.item-assign-btn:hover { border-color: var(--accent); color: var(--accent); }
+.assign-section-select {
+  padding: 0.35rem 0.5rem; border: 1.5px solid var(--accent);
+  border-radius: var(--radius); font-size: 0.85rem; font-family: inherit;
+  background: white; color: var(--text); flex-shrink: 0; max-width: 160px;
+}
 .dragging-overlay {
   background: var(--surface); border: 1px solid var(--accent);
   border-radius: 8px; padding: 0.75rem 1rem;
