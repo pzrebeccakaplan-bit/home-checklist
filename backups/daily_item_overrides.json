@@ -334,5 +334,131 @@
     "active_on": "2026-08-02",
     "created_by": null,
     "created_at": "2026-08-02T05:39:35.848693+00:00"
+  },
+  {
+    "id": "eb7fa204-3000-42db-a7c4-73fbdc115eda",
+    "item_id": "f25b751f-1d4d-4818-b8af-73105640a718",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T15:52:13.530258+00:00"
+  },
+  {
+    "id": "9040d82b-d4a2-42c9-87be-4f445ee26fbf",
+    "item_id": "136f22e1-1ddc-48e3-9025-510c9a603433",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T15:52:32.460207+00:00"
+  },
+  {
+    "id": "ae37ee63-0637-4785-8e09-33132dd92ea9",
+    "item_id": "d6a5ddbc-92f8-4cbd-89c0-4601201bd83b",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T18:51:24.50099+00:00"
+  },
+  {
+    "id": "b8c173c0-1457-497e-9a7b-72a4e184f232",
+    "item_id": "6ce56932-4f62-4687-82ce-93f8ddfa3d5a",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T18:53:03.408138+00:00"
+  },
+  {
+    "id": "9731fce4-dd21-415c-a819-0c0c683a077d",
+    "item_id": "d4bbf9e7-8101-4f55-aeef-13e001d0768d",
+    "active_on": "2026-08-04",
+    "created_by": null,
+    "created_at": "2026-08-02T19:51:04.964634+00:00"
+  },
+  {
+    "id": "762a5d9d-7ed6-425b-8709-2620a8cd33fe",
+    "item_id": "eaaf4b75-2e60-46c8-b502-5cd1316da801",
+    "active_on": "2026-08-04",
+    "created_by": null,
+    "created_at": "2026-08-02T19:51:15.985506+00:00"
+  },
+  {
+    "id": "bd9c4b10-bdb4-4c03-9162-3dca4fdfdc6b",
+    "item_id": "844070f2-2f7e-47f6-9239-44b186ba0d65",
+    "active_on": "2026-08-04",
+    "created_by": null,
+    "created_at": "2026-08-02T19:51:23.353571+00:00"
+  },
+  {
+    "id": "a347f28b-c28c-47aa-a862-27c41ad660e3",
+    "item_id": "2c39a539-9659-4367-87e5-48155258b70a",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T19:54:59.12892+00:00"
+  },
+  {
+    "id": "840474bf-dde0-49d5-a876-848b9429d208",
+    "item_id": "675d6656-deb7-4ea9-8960-24100572cd2f",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T19:55:52.241359+00:00"
+  },
+  {
+    "id": "b57b8fd9-db71-4d0d-a2a5-001773628a81",
+    "item_id": "4aa398ac-eb25-4390-96f5-fe70f20970bc",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T20:03:33.054537+00:00"
+  },
+  {
+    "id": "6c94cc82-5c3c-4df3-a1df-7950414f4b48",
+    "item_id": "97d46a0d-69cb-4e38-97a2-38fb2515de6f",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T20:32:42.916058+00:00"
+  },
+  {
+    "id": "62c649ef-e22d-459e-bd8d-7039c332d659",
+    "item_id": "8413fd61-e884-41e2-91b6-94e5fee4e92c",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T20:33:56.231821+00:00"
+  },
+  {
+    "id": "9d2b40cc-f3ba-499b-b0a0-87868afba0da",
+    "item_id": "436756ed-6d8c-4e8b-8201-a1352ee8c6e1",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T20:34:55.607997+00:00"
+  },
+  {
+    "id": "529e3527-b9c0-4137-b504-3b2ce0e23307",
+    "item_id": "20297b96-4475-4d83-ba47-b167c66bbd4a",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T20:48:33.099597+00:00"
+  },
+  {
+    "id": "4728642c-858d-4473-9a4c-f8de153fe553",
+    "item_id": "50715d80-2463-4803-b41c-9de50ac7244d",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T20:51:58.107288+00:00"
+  },
+  {
+    "id": "9bc63b83-2cd9-4d11-a35d-d206b610770a",
+    "item_id": "3f5c4081-d8b7-466a-b048-dd8fabaa7a4c",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T21:10:35.608584+00:00"
+  },
+  {
+    "id": "bf5bc705-acdd-4a32-9215-76fe82cc81b3",
+    "item_id": "92b107be-9ae9-415f-a983-5a2cccaf256f",
+    "active_on": "2026-08-03",
+    "created_by": null,
+    "created_at": "2026-08-02T22:41:06.902239+00:00"
+  },
+  {
+    "id": "3f8ab9fd-7055-42d5-b453-9c0d4df5e4bc",
+    "item_id": "d6a5ddbc-92f8-4cbd-89c0-4601201bd83b",
+    "active_on": "2026-08-06",
+    "created_by": null,
+    "created_at": "2026-08-03T08:28:08.40491+00:00"
   }
 ]
