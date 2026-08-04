@@ -545,6 +545,17 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
+    "id": "828b2ddf-7697-442a-9567-8c6a5c0d27f6",
+    "text": "Pandoor",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-03T10:20:53.444129+00:00"
+  },
+  {
     "id": "6dfed573-e0b2-417d-9c15-04916bde9d4b",
     "text": "Message Dani",
     "section": "morning_shared",
@@ -582,6 +593,28 @@
     "created_at": "2026-08-02T19:51:22.972244+00:00"
   },
   {
+    "id": "860989e4-66f8-4863-a79b-87532a97fd75",
+    "text": "Machsan shelving",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-03T10:24:48.936501+00:00"
+  },
+  {
+    "id": "439b3955-67d8-47e9-9226-94158fdac72f",
+    "text": "Cook: cous cous (find recipe)",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-03T20:55:44.008532+00:00"
+  },
+  {
     "id": "4aa398ac-eb25-4390-96f5-fe70f20970bc",
     "text": "Find a quinoa recipe to try",
     "section": "evening_shared",
@@ -591,6 +624,17 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-02T20:03:32.661734+00:00"
+  },
+  {
+    "id": "2c35d554-5b21-4dc2-b8b7-68260ddf52ab",
+    "text": "Date Night: Mets vs Guardians",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-03T21:11:12.657923+00:00"
   },
   {
     "id": "305d4f5f-09b2-4b2a-bbcf-1b8ab3f0cb31",
@@ -1880,6 +1924,28 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "4f472009-41eb-4821-b5a2-2892f334afa0",
+    "text": "Broken ceiling fan light",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-03T10:21:16.556112+00:00"
+  },
+  {
+    "id": "1addc204-e430-43f3-ad2b-d8aac0b4f799",
+    "text": "Arrange handyman",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-08-03T10:24:59.25288+00:00"
+  },
+  {
     "id": "4fd8ccff-1fcb-41b3-a7f7-ff0507c396cd",
     "text": "Climbed the stairs at least once",
     "section": "evening_pz",
@@ -2232,6 +2298,43 @@
     "created_at": "2026-08-02T22:41:06.534322+00:00"
   },
   {
+    "id": "3cfc27b8-20f8-4c22-bb32-180736b4aaa4",
+    "text": "Schedule with Tomer electrician",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-03T10:22:34.258857+00:00"
+  },
+  {
+    "id": "f1235830-08df-4cf0-8d05-c3e1d151f533",
+    "text": "Bi weekly standup",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "days": [
+        0,
+        3
+      ],
+      "type": "weekly"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-03T10:28:00.890946+00:00"
+  },
+  {
+    "id": "6cd9853c-980a-4926-b4b9-c188016c1885",
+    "text": "Cook: carrots and zucchini",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-03T20:56:06.7915+00:00"
+  },
+  {
     "id": "3086dd33-09c8-4eb4-8f80-14993f6c309a",
     "text": "Wipes",
     "section": "morning_pz_dropoff",
@@ -2472,5 +2575,49 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-08-02T20:51:57.671051+00:00"
+  },
+  {
+    "id": "8f548529-a1ba-4973-be24-c003e66f7772",
+    "text": "Try swapping fan bulbs",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-03T10:13:16.673554+00:00"
+  },
+  {
+    "id": "e34bc7f0-cbee-4a8d-b2f4-67aaf30eee81",
+    "text": "Eliezer fixes",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-03T10:22:52.502721+00:00"
+  },
+  {
+    "id": "8ec5fcb2-f0a5-46b8-b2a6-57809a38457c",
+    "text": "Meat sauce",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-03T19:54:23.4399+00:00"
+  },
+  {
+    "id": "6df3ceaa-91d1-49b5-acd1-8c3cbfe67bab",
+    "text": "Try swapping fan bulbs",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-03T20:59:28.610664+00:00"
   }
 ]
