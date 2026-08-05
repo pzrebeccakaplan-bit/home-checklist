@@ -128,6 +128,8 @@ export function ChecklistSection({ section, label, items, completedItems, comple
   const [quickDate, setQuickDate] = useState(viewDate || '')
   const [saving, setSaving] = useState(false)
 
+  useEffect(() => { setQuickDate(viewDate || '') }, [viewDate])
+
   // Make the section itself droppable so items can be dragged onto empty sections
   const { setNodeRef } = useDroppable({ id: section, data: { type: 'section', sectionId: section } })
 
@@ -224,7 +226,7 @@ export function ChecklistSection({ section, label, items, completedItems, comple
         {onMoveDown && <button className="section-move-btn" onClick={onMoveDown} aria-label="Move section down">↓</button>}
         <span className="section-label-group">
           <span className="section-label" onClick={() => setEditingLabel(true)}>{label}</span>
-          <button className="section-add-btn" onClick={() => setShowQuickAdd(true)} title="Add item">+ Add</button>
+          <button className="section-add-btn" onClick={() => { setShowQuickAdd(true); setQuickDate(viewDate || '') }} title="Add item">+ Add</button>
         </span>
         <span className="section-header-actions">
           <button className="section-action-btn" onClick={handleConvertSectionToItem} title="Convert section back to item">↩ item</button>
@@ -257,7 +259,7 @@ export function ChecklistSection({ section, label, items, completedItems, comple
           ) : (
             <span className="section-label" onClick={() => setEditingLabel(true)} title="Click to rename">{label}</span>
           )}
-          {!editingLabel && <button className="section-add-btn" onClick={() => setShowQuickAdd(true)} title="Add item">+ Add</button>}
+          {!editingLabel && <button className="section-add-btn" onClick={() => { setShowQuickAdd(true); setQuickDate(viewDate || '') }} title="Add item">+ Add</button>}
         </span>
         <span className="section-header-actions">
           {items.length > 0 && (

@@ -20,8 +20,10 @@ export function useSchedule() {
   }
 
   async function updateDayTags(dow, tags) {
-    await supabase.from('day_schedule').upsert({ day_of_week: dow, tags }, { onConflict: 'day_of_week' })
-    fetchSchedule()
+    setSchedule(prev => ({ ...prev, [dow]: tags }))
+    const { error } = await supabase.from('day_schedule').upsert({ day_of_week: dow, tags }, { onConflict: 'day_of_week' })
+    if (error) { console.error('updateDayTags error:', error); fetchSchedule() }
+    else fetchSchedule()
   }
 
   return { schedule, loading, tagsForDay, updateDayTags, fetchSchedule }

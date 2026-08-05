@@ -8,6 +8,7 @@ import { TodayView } from './components/TodayView'
 import { OccasionalPicker } from './components/OccasionalPicker'
 import { ItemManager } from './components/ItemManager'
 
+
 function todayLocal() {
   const d = new Date()
   if (d.getHours() < 5) d.setDate(d.getDate() - 1)
@@ -37,11 +38,16 @@ export default function App() {
 
   const dow = dowFromDateStr(viewDate)
   const activeTags = tagsForDay(dow)
+  const dayHasSchedule = activeTags.length > 0
 
-  // A section is visible if it has no tags (always show) or shares at least one tag with today's active tags
+  // Only filter by tags if today has a schedule configured; otherwise show all sections
   const visibleSections = sections.filter(s =>
-    !s.tags || s.tags.length === 0 || s.tags.some(t => activeTags.includes(t))
+    !dayHasSchedule || !s.tags || s.tags.length === 0 || s.tags.some(t => activeTags.includes(t))
   )
+  const visibleSectionIds = new Set(visibleSections.map(s => s.id))
+  const visibleItems = dayHasSchedule
+    ? items.filter(i => !i.section || visibleSectionIds.has(i.section))
+    : items
 
   function handleEditItem(item) {
     setEditItem(item)
@@ -55,7 +61,7 @@ export default function App() {
     <>
       <TodayView
         sections={visibleSections}
-        items={items}
+        items={visibleItems}
         completions={completions}
         onToggle={toggleItem}
         onEdit={handleEditItem}

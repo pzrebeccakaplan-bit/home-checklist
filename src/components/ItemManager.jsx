@@ -9,30 +9,51 @@ function todayLocal() {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
-// ── Tag adder inline input ────────────────────────────────
-function TagAdder({ onAdd }) {
-  const [editing, setEditing] = useState(false)
-  const [value, setValue] = useState('')
-  if (!editing) return <button className="tag-add-btn" onClick={() => setEditing(true)}>+ tag</button>
+// ── Tag selector dropdown ─────────────────────────────────
+function TagSelector({ existingTags, currentTags, onAdd }) {
+  const [open, setOpen] = useState(false)
+  const [newTag, setNewTag] = useState('')
+  const inputRef = useRef(null)
+  const available = existingTags.filter(t => !currentTags.includes(t))
+
+  function select(tag) { onAdd(tag); setOpen(false) }
+
+  function submitNew() {
+    const t = newTag.trim()
+    if (t) { onAdd(t); setNewTag(''); setOpen(false) }
+  }
+
+  if (!open) return <button className="tag-add-btn" onClick={() => setOpen(true)}>+ tag</button>
+
   return (
-    <input
-      autoFocus
-      className="tag-input"
-      value={value}
-      placeholder="tag name…"
-      onChange={e => setValue(e.target.value.toLowerCase().replace(/[^a-z0-9]/g, ''))}
-      onKeyDown={e => {
-        if (e.key === 'Enter' && value.trim()) { onAdd(value.trim()); setValue(''); setEditing(false) }
-        if (e.key === 'Escape') { setValue(''); setEditing(false) }
-      }}
-      onBlur={() => { if (value.trim()) onAdd(value.trim()); setValue(''); setEditing(false) }}
-    />
+    <div className="tag-selector-popover">
+      {available.map(t => (
+        <button key={t} className="tag-selector-option" onMouseDown={() => select(t)}>{t}</button>
+      ))}
+      <div className="tag-selector-new">
+        <input
+          ref={inputRef}
+          autoFocus
+          className="tag-input"
+          value={newTag}
+          placeholder="new tag…"
+          onChange={e => setNewTag(e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, ''))}
+          onKeyDown={e => {
+            if (e.key === 'Enter') submitNew()
+            if (e.key === 'Escape') setOpen(false)
+          }}
+        />
+        <button className="tag-selector-add-btn" onMouseDown={submitNew}>Add</button>
+      </div>
+      <button className="tag-selector-cancel" onMouseDown={() => setOpen(false)}>Cancel</button>
+    </div>
   )
 }
 
 // ── Schedule pane ─────────────────────────────────────────
 function SchedulePane({ sections, schedule, onUpdateDayTags, onUpdateSectionTags }) {
   const allTags = [...new Set(sections.flatMap(s => s.tags || []))].sort()
+  const allTagsWithSchedule = [...new Set([...allTags, ...Object.values(schedule).flat()])].sort()
 
   function toggleSectionTag(sec, tag) {
     const current = sec.tags || []
@@ -61,10 +82,14 @@ function SchedulePane({ sections, schedule, onUpdateDayTags, onUpdateSectionTags
                   <button className="tag-chip-remove" onClick={() => toggleSectionTag(sec, tag)}>×</button>
                 </span>
               ))}
-              <TagAdder onAdd={tag => {
-                const current = sec.tags || []
-                if (!current.includes(tag)) onUpdateSectionTags(sec.id, [...current, tag])
-              }} />
+              <TagSelector
+                existingTags={allTagsWithSchedule}
+                currentTags={sec.tags || []}
+                onAdd={tag => {
+                  const current = sec.tags || []
+                  if (!current.includes(tag)) onUpdateSectionTags(sec.id, [...current, tag])
+                }}
+              />
             </div>
           </div>
         ))}
