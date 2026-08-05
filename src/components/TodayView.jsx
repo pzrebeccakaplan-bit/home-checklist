@@ -315,7 +315,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
               currentRole={currentRole}
               viewDate={viewDate}
               sectionSortOrder={sec.sort_order}
-              prevSectionSortOrder={idx > 0 ? sections[idx - 1].sort_order : null}
+              prevSectionSortOrder={idx > 0 ? localSections[idx - 1].sort_order : null}
               prevSectionId={idx > 0 ? localSections[idx - 1].id : null}
               nextSectionId={idx < localSections.length - 1 ? localSections[idx + 1].id : null}
               onMoveUp={idx > 0 ? () => moveSectionBy(sec.id, -1) : null}
