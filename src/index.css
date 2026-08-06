@@ -88,7 +88,8 @@ input, select { font: inherit; }
 .manager-pane-tab:hover { border-color: var(--accent); color: var(--accent); }
 .manager-pane-tab.active { background: var(--accent); border-color: var(--accent); color: white; }
 
-.date-nav { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.1rem; }
+.date-nav { display: flex; flex-direction: column; gap: 0.1rem; margin-top: 0.1rem; }
+.date-nav-arrows { display: flex; align-items: center; gap: 0.25rem; justify-content: center; }
 .shabbat-date-label { font-size: 0.9rem; color: var(--text-muted); }
 .shabbat-source-badge {
   font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.4rem;
@@ -126,6 +127,7 @@ input, select { font: inherit; }
   white-space: nowrap;
 }
 .header-btn.secondary { background: var(--border); color: var(--text); }
+.header-btn.undo-header-btn:disabled { opacity: 0.35; cursor: default; }
 .progress-badge {
   font-size: 0.9rem; font-weight: 600;
   background: var(--accent-light); color: var(--accent);
@@ -283,7 +285,7 @@ input, select { font: inherit; }
 }
 
 /* Skip (✕) and template (✎) action buttons */
-.item-skip-btn, .item-template-btn, .item-convert-btn {
+.item-skip-btn, .item-template-btn, .item-convert-btn, .item-delete-btn {
   display: flex; align-items: center; justify-content: center;
   padding: 0 0.65rem;
   background: var(--surface); border: 1px solid var(--border);
@@ -294,6 +296,7 @@ input, select { font: inherit; }
 .item-skip-btn:hover { opacity: 1; background: #fff0f0; border-color: #ffbbbb; color: #c0392b; }
 .item-template-btn:hover { opacity: 1; background: var(--bg); color: var(--text); }
 .item-convert-btn:hover { opacity: 1; background: #eef3ff; border-color: #c2d4f5; color: var(--accent); }
+.item-delete-btn:hover { opacity: 1; background: #fff0f0; border-color: #ffbbbb; color: #c0392b; }
 
 /* Drag overlay preview */
 .drag-preview-row {
@@ -486,6 +489,22 @@ input, select { font: inherit; }
   width: 80px; padding: 0.15rem 0.4rem; font-size: 0.8rem;
   border: 1.5px solid var(--accent); border-radius: 12px; outline: none;
 }
+.tag-selector-popover {
+  display: flex; flex-direction: column; gap: 0.2rem;
+  background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 0.4rem; min-width: 130px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  z-index: 100;
+}
+.tag-selector-option {
+  text-align: left; padding: 0.3rem 0.5rem; border-radius: 6px;
+  font-size: 0.85rem; color: var(--text);
+  background: none; border: none;
+}
+.tag-selector-option:hover { background: var(--accent-light); color: var(--accent); }
+.tag-selector-new { display: flex; gap: 0.3rem; align-items: center; margin-top: 0.2rem; border-top: 1px solid var(--border); padding-top: 0.3rem; }
+.tag-selector-new .tag-input { flex: 1; width: auto; border-radius: 6px; }
+.tag-selector-add-btn { padding: 0.2rem 0.5rem; font-size: 0.8rem; background: var(--accent); color: white; border: none; border-radius: 6px; }
+.tag-selector-cancel { font-size: 0.75rem; color: var(--text-muted); background: none; border: none; text-align: left; padding: 0.1rem 0.3rem; }
 .day-schedule-row {
   display: flex; align-items: center; gap: 0.75rem; padding: 0.25rem 0;
 }
@@ -579,6 +598,11 @@ input, select { font: inherit; }
   border: 1px solid var(--border);
 }
 .item-row.inactive { opacity: 0.55; }
+.item-row.item-row-selected { background: #eef3ff; border-color: #c2d4f5; }
+.item-select-checkbox { width: 1.1rem; height: 1.1rem; flex-shrink: 0; cursor: pointer; accent-color: var(--accent); }
+.bulk-action-bar { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0.75rem; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 0.25rem; }
+.bulk-select-all { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; cursor: pointer; }
+@media (prefers-color-scheme: dark) { .item-row.item-row-selected { background: #1e2a3a; border-color: #3a5a8a; } }
 .deactivated-section { margin-top: 0.5rem; }
 .item-section-group-header {
   font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
@@ -649,8 +673,9 @@ input, select { font: inherit; }
     width: 100%;
   }
   .app-title { font-size: 1.05rem; }
-  .date-nav { margin-top: 0; gap: 0.25rem; }
+  .date-nav { margin-top: 0; gap: 0.15rem; }
   .date-jump-input { font-size: 0.85rem; }
+  .date-label { font-size: 0.75rem; }
 
   .header-right {
     display: flex;
@@ -710,16 +735,9 @@ input, select { font: inherit; }
     gap: 0.4rem;
     width: 100%;
   }
-  .date-nav {
-    flex-wrap: wrap;
-    gap: 0.2rem;
-    margin-top: 0;
-  }
-  .date-jump-input {
-    order: -1;
-    width: 100%;
-    font-size: 0.78rem;
-  }
+  .date-nav { gap: 0.15rem; margin-top: 0; }
+  .date-jump-input { font-size: 0.78rem; }
+  .date-label { font-size: 0.72rem; }
   .date-nav-btn {
     padding: 0.1rem 0.45rem;
     font-size: 1rem;

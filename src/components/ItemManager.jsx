@@ -9,30 +9,51 @@ function todayLocal() {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
-// ── Tag adder inline input ────────────────────────────────
-function TagAdder({ onAdd }) {
-  const [editing, setEditing] = useState(false)
-  const [value, setValue] = useState('')
-  if (!editing) return <button className="tag-add-btn" onClick={() => setEditing(true)}>+ tag</button>
+// ── Tag selector dropdown ─────────────────────────────────
+function TagSelector({ existingTags, currentTags, onAdd }) {
+  const [open, setOpen] = useState(false)
+  const [newTag, setNewTag] = useState('')
+  const inputRef = useRef(null)
+  const available = existingTags.filter(t => !currentTags.includes(t))
+
+  function select(tag) { onAdd(tag); setOpen(false) }
+
+  function submitNew() {
+    const t = newTag.trim()
+    if (t) { onAdd(t); setNewTag(''); setOpen(false) }
+  }
+
+  if (!open) return <button className="tag-add-btn" onClick={() => setOpen(true)}>+ tag</button>
+
   return (
-    <input
-      autoFocus
-      className="tag-input"
-      value={value}
-      placeholder="tag name…"
-      onChange={e => setValue(e.target.value.toLowerCase().replace(/[^a-z0-9]/g, ''))}
-      onKeyDown={e => {
-        if (e.key === 'Enter' && value.trim()) { onAdd(value.trim()); setValue(''); setEditing(false) }
-        if (e.key === 'Escape') { setValue(''); setEditing(false) }
-      }}
-      onBlur={() => { if (value.trim()) onAdd(value.trim()); setValue(''); setEditing(false) }}
-    />
+    <div className="tag-selector-popover">
+      {available.map(t => (
+        <button key={t} className="tag-selector-option" onMouseDown={() => select(t)}>{t}</button>
+      ))}
+      <div className="tag-selector-new">
+        <input
+          ref={inputRef}
+          autoFocus
+          className="tag-input"
+          value={newTag}
+          placeholder="new tag…"
+          onChange={e => setNewTag(e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, ''))}
+          onKeyDown={e => {
+            if (e.key === 'Enter') submitNew()
+            if (e.key === 'Escape') setOpen(false)
+          }}
+        />
+        <button className="tag-selector-add-btn" onMouseDown={submitNew}>Add</button>
+      </div>
+      <button className="tag-selector-cancel" onMouseDown={() => setOpen(false)}>Cancel</button>
+    </div>
   )
 }
 
 // ── Schedule pane ─────────────────────────────────────────
 function SchedulePane({ sections, schedule, onUpdateDayTags, onUpdateSectionTags }) {
   const allTags = [...new Set(sections.flatMap(s => s.tags || []))].sort()
+  const allTagsWithSchedule = [...new Set([...allTags, ...Object.values(schedule).flat()])].sort()
 
   function toggleSectionTag(sec, tag) {
     const current = sec.tags || []
@@ -61,10 +82,14 @@ function SchedulePane({ sections, schedule, onUpdateDayTags, onUpdateSectionTags
                   <button className="tag-chip-remove" onClick={() => toggleSectionTag(sec, tag)}>×</button>
                 </span>
               ))}
-              <TagAdder onAdd={tag => {
-                const current = sec.tags || []
-                if (!current.includes(tag)) onUpdateSectionTags(sec.id, [...current, tag])
-              }} />
+              <TagSelector
+                existingTags={allTagsWithSchedule}
+                currentTags={sec.tags || []}
+                onAdd={tag => {
+                  const current = sec.tags || []
+                  if (!current.includes(tag)) onUpdateSectionTags(sec.id, [...current, tag])
+                }}
+              />
             </div>
           </div>
         ))}
@@ -102,9 +127,12 @@ function SchedulePane({ sections, schedule, onUpdateDayTags, onUpdateSectionTags
 }
 
 // ── Item row ──────────────────────────────────────────────
-function ItemRow({ item, sectionLabel, recurrenceMeta, onEdit, onToggleActive, onDelete, onConvertToSection }) {
+function ItemRow({ item, sectionLabel, recurrenceMeta, onEdit, onToggleActive, onDelete, onConvertToSection, selectMode, selected, onSelect }) {
   return (
-    <div className={`item-row ${!item.active ? 'inactive' : ''}`}>
+    <div className={`item-row ${!item.active ? 'inactive' : ''} ${selectMode && selected ? 'item-row-selected' : ''}`} onClick={selectMode ? () => onSelect(item.id) : undefined} style={selectMode ? { cursor: 'pointer' } : undefined}>
+      {selectMode && (
+        <input type="checkbox" className="item-select-checkbox" checked={selected} onChange={() => onSelect(item.id)} onClick={e => e.stopPropagation()} />
+      )}
       <div className="item-row-text">
         <span>{item.text}</span>
         <div className="item-meta-row">
@@ -112,12 +140,14 @@ function ItemRow({ item, sectionLabel, recurrenceMeta, onEdit, onToggleActive, o
           <span className="item-meta">{recurrenceMeta(item)}</span>
         </div>
       </div>
-      <div className="item-row-actions">
-        <button className="btn-small" onClick={() => onEdit(item)}>Edit</button>
-        <button className="btn-small" onClick={() => onToggleActive(item)}>{item.active ? 'Deactivate' : 'Reactivate'}</button>
-        <button className="btn-small btn-danger" onClick={() => onDelete(item)}>Delete</button>
-        <button className="btn-small btn-convert" onClick={() => onConvertToSection(item)} title="Convert to section">→ Section</button>
-      </div>
+      {!selectMode && (
+        <div className="item-row-actions">
+          <button className="btn-small" onClick={() => onEdit(item)}>Edit</button>
+          <button className="btn-small" onClick={() => onToggleActive(item)}>{item.active ? 'Deactivate' : 'Reactivate'}</button>
+          <button className="btn-small btn-danger" onClick={() => onDelete(item)}>Delete</button>
+          <button className="btn-small btn-convert" onClick={() => onConvertToSection(item)} title="Convert to section">→ Section</button>
+        </div>
+      )}
     </div>
   )
 }
@@ -137,6 +167,8 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
   const [filterSection, setFilterSection] = useState('all')
   const [filterRecurrence, setFilterRecurrence] = useState('all')
   const [search, setSearch] = useState('')
+  const [selectMode, setSelectMode] = useState(false)
+  const [selectedIds, setSelectedIds] = useState(new Set())
   const [newScheduleDate, setNewScheduleDate] = useState('')
   const modalRef = useRef(null)
 
@@ -218,6 +250,24 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     fetchItems(); onItemChanged?.()
   }
 
+  function toggleSelect(id) {
+    setSelectedIds(prev => { const n = new Set(prev); n.has(id) ? n.delete(id) : n.add(id); return n })
+  }
+
+  function toggleSelectAll() {
+    const allIds = filtered.map(i => i.id)
+    setSelectedIds(prev => prev.size === allIds.length ? new Set() : new Set(allIds))
+  }
+
+  async function deleteSelected() {
+    if (selectedIds.size === 0) return
+    if (!confirm(`Remove ${selectedIds.size} item${selectedIds.size > 1 ? 's' : ''} from all future days?`)) return
+    await supabase.from('checklist_items').update({ active: false }).in('id', [...selectedIds])
+    setSelectedIds(new Set())
+    setSelectMode(false)
+    fetchItems(); onItemChanged?.()
+  }
+
   async function deleteSection(sectionId) {
     const label = sectionLabel[sectionId] || sectionId
     if (!confirm(`Delete section "${label}"? All its items will be deactivated.`)) return
@@ -263,6 +313,10 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
       if (dates?.length) return dates.map(d => { const [y, m, dd] = d.split('-').map(Number); return new Date(y, m - 1, dd).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) }).join(', ')
       return 'Occasional (no upcoming dates)'
     }
+    if (rule.type === 'once') {
+      const [y, m, d] = rule.date.split('-').map(Number)
+      return `Once: ${new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`
+    }
     return rule.type
   }
 
@@ -275,7 +329,10 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     if (filterRecurrence === 'weekly') return type === 'weekly' && item.active
     if (filterRecurrence === 'occasional') return type === 'occasional' && item.active
     if (filterRecurrence === 'future-oneoffs') return type === 'occasional' && item.active && (futureOverridesByItem[item.id]?.length > 0)
-    return true
+    if (filterRecurrence === 'once') return type === 'once' && item.active
+    if (filterRecurrence === 'everything') return true
+    // default 'all': hide one-time items — they're not part of the recurring template
+    return type !== 'once'
   })
   const activeFiltered = filtered.filter(i => i.active)
   const inactiveFiltered = filtered.filter(i => !i.active)
@@ -372,9 +429,25 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
                 <option value="daily">Daily</option>
                 <option value="weekly">Specific days</option>
                 <option value="occasional">Occasional</option>
+                <option value="once">One-time items</option>
                 <option value="future-oneoffs">Upcoming one-offs</option>
               </select>
+              <button className={`btn-small ${selectMode ? 'btn-primary' : 'btn-secondary'}`} onClick={() => { setSelectMode(m => !m); setSelectedIds(new Set()) }}>
+                {selectMode ? 'Cancel' : 'Select'}
+              </button>
             </div>
+
+            {selectMode && (
+              <div className="bulk-action-bar">
+                <label className="bulk-select-all">
+                  <input type="checkbox" checked={selectedIds.size === filtered.length && filtered.length > 0} onChange={toggleSelectAll} />
+                  {selectedIds.size > 0 ? `${selectedIds.size} selected` : 'Select all'}
+                </label>
+                <button className="btn-small btn-danger" onClick={deleteSelected} disabled={selectedIds.size === 0}>
+                  Delete {selectedIds.size > 0 ? `(${selectedIds.size})` : ''}
+                </button>
+              </div>
+            )}
 
             {loading ? <p>Loading…</p> : (
               <>
@@ -390,7 +463,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
                       </div>
                       {secActive.length === 0
                         ? <p className="empty-state" style={{ padding: '0.4rem 0', fontSize: '0.85rem' }}>No active items</p>
-                        : <div className="item-list">{secActive.map(item => <ItemRow key={item.id} item={item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} />)}</div>
+                        : <div className="item-list">{secActive.map(item => <ItemRow key={item.id} item={item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} selectMode={selectMode} selected={selectedIds.has(item.id)} onSelect={toggleSelect} />)}</div>
                       }
                     </div>
                   )
@@ -398,7 +471,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
                 {inactiveFiltered.length > 0 && (
                   <div className="deactivated-section">
                     <div className="deactivated-header">Deactivated</div>
-                    <div className="item-list">{inactiveFiltered.map(item => <ItemRow key={item.id} item={item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} />)}</div>
+                    <div className="item-list">{inactiveFiltered.map(item => <ItemRow key={item.id} item={item} sectionLabel={sectionLabel} recurrenceMeta={recurrenceMeta} onEdit={startEdit} onToggleActive={toggleActive} onDelete={deleteItem} onConvertToSection={convertToSection} selectMode={selectMode} selected={selectedIds.has(item.id)} onSelect={toggleSelect} />)}</div>
                   </div>
                 )}
               </>

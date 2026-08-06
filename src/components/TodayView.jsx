@@ -51,7 +51,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   const todayStr = (() => { const d = new Date(); if (d.getHours() < 5) d.setDate(d.getDate() - 1); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}` })()
   const isToday = viewDate === todayStr
   const [y, m, d] = viewDate.split('-').map(Number)
-  const dateLabel = new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })
+  const dateLabel = new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })
   const [completedQuickAdd, setCompletedQuickAdd] = useState(null)
   const [completedQuickText, setCompletedQuickText] = useState('')
   const [completedQuickRec, setCompletedQuickRec] = useState('once')
@@ -62,26 +62,29 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   const [newSectionLabel, setNewSectionLabel] = useState('')
   const [addingSec, setAddingSec] = useState(false)
   const [undoAction, setUndoAction] = useState(null)
-  const undoTimer = useRef(null)
+  const undoRef = useRef(null)
+  const onToggleRef = useRef(onToggle)
+  const onSkipRef = useRef(onSkip)
+  useEffect(() => { onToggleRef.current = onToggle }, [onToggle])
+  useEffect(() => { onSkipRef.current = onSkip }, [onSkip])
 
   function pushUndo(label, fn) {
-    clearTimeout(undoTimer.current)
-    setUndoAction({ label, fn })
-    undoTimer.current = setTimeout(() => setUndoAction(null), 8000)
+    const action = { label, fn }
+    undoRef.current = action
+    setUndoAction(action)
   }
 
   function executeUndo() {
-    clearTimeout(undoTimer.current)
-    undoAction?.fn()
+    undoRef.current?.fn()
+    undoRef.current = null
     setUndoAction(null)
   }
 
   function handleToggle(item) {
-    const wasChecked = !!completions[item.id]
     onToggle(item)
     pushUndo(
-      wasChecked ? `Unchecked "${item.displayText ?? item.text}"` : `Checked "${item.displayText ?? item.text}"`,
-      () => onToggle(item)
+      `Toggle "${item.displayText ?? item.text}"`,
+      () => onToggleRef.current(item)
     )
   }
 
@@ -264,7 +267,6 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
         <div className="header-left">
           <h1 className="app-title">Home Checklist</h1>
           <div className="date-nav">
-            <button className="date-nav-btn" onClick={onPrevDay} aria-label="Previous day">‹</button>
             <input
               type="date"
               className="date-jump-input"
@@ -272,14 +274,19 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
               onChange={e => e.target.value && onJumpToDate(e.target.value)}
               aria-label="Jump to date"
             />
-            <button className="date-nav-btn" onClick={onNextDay} aria-label="Next day">›</button>
-            {!isToday && (
-              <button className="today-jump-btn" onClick={onGoToday}>Today</button>
-            )}
+            <span className="date-label">{dateLabel}</span>
+            <div className="date-nav-arrows">
+              <button className="date-nav-btn" onClick={onPrevDay} aria-label="Previous day">‹</button>
+              <button className="date-nav-btn" onClick={onNextDay} aria-label="Next day">›</button>
+              {!isToday && (
+                <button className="today-jump-btn" onClick={onGoToday}>Today</button>
+              )}
+            </div>
           </div>
         </div>
         <div className="header-right">
           <span className="progress-badge">{doneCount}/{totalItems}</span>
+          <button className="header-btn undo-header-btn" onClick={executeUndo} disabled={!undoAction} title={undoAction?.label}>↩ Undo</button>
           <button className="header-btn" onClick={onOpenPicker}>Occasional</button>
           <button className="header-btn" onClick={onOpenManager}>Template</button>
           <button className="header-btn secondary" onClick={onSignOut}>
@@ -455,13 +462,6 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
             ))}
           </div>
         )}
-      {undoAction && (
-        <div className="undo-toast">
-          <span className="undo-toast-label">{undoAction.label}</span>
-          <button className="undo-toast-btn" onClick={executeUndo}>Undo</button>
-          <button className="undo-toast-dismiss" onClick={() => { clearTimeout(undoTimer.current); setUndoAction(null) }}>✕</button>
-        </div>
-      )}
       </main>
     </div>
   )

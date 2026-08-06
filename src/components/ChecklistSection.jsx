@@ -4,7 +4,7 @@ import { SortableContext, verticalListSortingStrategy, useSortable } from '@dnd-
 import { CSS } from '@dnd-kit/utilities'
 import { supabase } from '../lib/supabase'
 
-function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onConvertToSection, onSaved, viewDate, readOnly }) {
+function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onDelete, onConvertToSection, onSaved, viewDate, readOnly }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
     id: item.id,
     data: { sectionId: item.section },
@@ -19,28 +19,22 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
   const inputRef = useRef(null)
 
   useEffect(() => {
-    if (item.displayText !== undefined) {
-      setOptimisticText(null)
-      setText(item.displayText)
-    } else if (!optimisticText) {
-      setText(item.text)
-    }
+    if (!optimisticText) setText(item.displayText ?? item.text)
   }, [item.displayText, item.text]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (editingText) inputRef.current?.select() }, [editingText])
 
   async function saveText() {
     setEditingText(false)
     const trimmed = text.trim()
-    if (!trimmed || trimmed === displayText) { setText(displayText); return }
+    if (!trimmed || trimmed === (item.displayText ?? item.text)) { setText(item.displayText ?? item.text); return }
     setOptimisticText(trimmed)
-    const { error } = await supabase.from('daily_item_text_overrides').upsert(
-      { item_id: item.id, override_on: viewDate, display_text: trimmed },
-      { onConflict: 'item_id,override_on' }
-    )
+    const { error } = await supabase.from('checklist_items').update({ text: trimmed }).eq('id', item.id)
     if (error) {
-      console.error('Text override save failed:', error)
+      console.error('Text save failed:', error)
       setOptimisticText(null)
       setText(item.displayText ?? item.text)
+    } else {
+      onSaved?.()
     }
   }
 
@@ -100,6 +94,14 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onC
             aria-label="Convert to section"
             title="Convert to section"
           >§</button>
+          {item.recurrence_rule?.type === 'once' && (
+            <button
+              className="item-delete-btn"
+              onClick={() => onDelete?.(item)}
+              aria-label="Delete this one-time item"
+              title="Delete permanently"
+            >🗑</button>
+          )}
         </>
       )}
     </div>
@@ -127,6 +129,8 @@ export function ChecklistSection({ section, label, items, completedItems, comple
   const [quickDays, setQuickDays] = useState([])
   const [quickDate, setQuickDate] = useState(viewDate || '')
   const [saving, setSaving] = useState(false)
+
+  useEffect(() => { setQuickDate(viewDate || '') }, [viewDate])
 
   // Make the section itself droppable so items can be dragged onto empty sections
   const { setNodeRef } = useDroppable({ id: section, data: { type: 'section', sectionId: section } })
@@ -179,16 +183,13 @@ export function ChecklistSection({ section, label, items, completedItems, comple
     const minOrder = items.length > 0 ? Math.min(...items.map(i => i.sort_order)) : 10
 
     if (quickRec === 'once') {
-      const { data: newItem } = await supabase.from('checklist_items').insert({
+      await supabase.from('checklist_items').insert({
         text: quickText.trim(),
         section,
-        recurrence_rule: { type: 'occasional' },
+        recurrence_rule: { type: 'once', date: quickDate },
         active: true,
         sort_order: minOrder - 5,
-      }).select().single()
-      if (newItem && quickDate) {
-        await supabase.from('daily_item_overrides').insert({ item_id: newItem.id, active_on: quickDate })
-      }
+      })
     } else {
       const rule = quickRec === 'weekly'
         ? { type: 'weekly', days: quickDays }
@@ -224,7 +225,7 @@ export function ChecklistSection({ section, label, items, completedItems, comple
         {onMoveDown && <button className="section-move-btn" onClick={onMoveDown} aria-label="Move section down">↓</button>}
         <span className="section-label-group">
           <span className="section-label" onClick={() => setEditingLabel(true)}>{label}</span>
-          <button className="section-add-btn" onClick={() => setShowQuickAdd(true)} title="Add item">+ Add</button>
+          <button className="section-add-btn" onClick={() => { setShowQuickAdd(true); setQuickDate(viewDate || '') }} title="Add item">+ Add</button>
         </span>
         <span className="section-header-actions">
           <button className="section-action-btn" onClick={handleConvertSectionToItem} title="Convert section back to item">↩ item</button>
@@ -257,7 +258,7 @@ export function ChecklistSection({ section, label, items, completedItems, comple
           ) : (
             <span className="section-label" onClick={() => setEditingLabel(true)} title="Click to rename">{label}</span>
           )}
-          {!editingLabel && <button className="section-add-btn" onClick={() => setShowQuickAdd(true)} title="Add item">+ Add</button>}
+          {!editingLabel && <button className="section-add-btn" onClick={() => { setShowQuickAdd(true); setQuickDate(viewDate || '') }} title="Add item">+ Add</button>}
         </span>
         <span className="section-header-actions">
           {items.length > 0 && (
@@ -277,6 +278,7 @@ export function ChecklistSection({ section, label, items, completedItems, comple
               onToggle={onToggle}
               onEdit={onEdit}
               onSkip={onSkip}
+              onDelete={onDelete}
               onConvertToSection={handleConvertToSection}
               onSaved={onItemAdded}
               viewDate={viewDate}

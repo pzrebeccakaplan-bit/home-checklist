@@ -29,7 +29,9 @@ export function useSections() {
   }
 
   async function updateSectionTags(sectionId, tags) {
-    await supabase.from('sections').update({ tags }).eq('id', sectionId)
+    const { error } = await supabase.from('sections').update({ tags }).eq('id', sectionId)
+    if (error) console.error('updateSectionTags error:', error)
+    else console.log('updateSectionTags ok, sectionId:', sectionId, 'tags:', tags)
     fetchSections()
   }
 
