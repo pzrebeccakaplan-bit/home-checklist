@@ -29,7 +29,7 @@ function dowFromDateStr(dateStr) {
 export default function App() {
   const { user, profile, loading: authLoading, signIn, signOut } = useAuth()
   const [viewDate, setViewDate] = useState(todayLocal)
-  const { items, completions, occasionalActive, loading: listLoading, toggleItem, toggleOccasional, skipItem, refetch } = useChecklist(user, viewDate)
+  const { items, completions, occasionalActive, loading: listLoading, toggleItem, toggleOccasional, skipItem, deleteItem, refetch } = useChecklist(user, viewDate)
   const { sections, loading: sectionsLoading, addSection, fetchSections, updateSectionTags } = useSections()
   const { schedule, loading: scheduleLoading, tagsForDay, updateDayTags, fetchSchedule } = useSchedule()
   const [showPicker, setShowPicker] = useState(false)
@@ -65,7 +65,7 @@ export default function App() {
         completions={completions}
         onToggle={toggleItem}
         onEdit={handleEditItem}
-        onDelete={refetch}
+        onDelete={item => deleteItem(item.id)}
         onSkip={skipItem}
         onItemAdded={refetch}
         currentRole={profile?.role}

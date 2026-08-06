@@ -58,6 +58,7 @@ export function useChecklist(user, viewDate) {
       if (rule.type === 'daily') return true
       if (rule.type === 'weekly') return rule.days.includes(dow)
       if (rule.type === 'occasional') return activeOccasional.has(item.id)
+      if (rule.type === 'once') return rule.date === viewDate
       return false
     }).map(item => ({
       ...item,
@@ -171,5 +172,10 @@ export function useChecklist(user, viewDate) {
     fetchData()
   }
 
-  return { items, completions, occasionalActive, loading, toggleItem, toggleOccasional, skipItem, refetch: fetchData }
+  async function deleteItem(itemId) {
+    setItems(prev => prev.filter(i => i.id !== itemId))
+    await supabase.from('checklist_items').update({ active: false }).eq('id', itemId)
+  }
+
+  return { items, completions, occasionalActive, loading, toggleItem, toggleOccasional, skipItem, deleteItem, refetch: fetchData }
 }
