@@ -598,5 +598,11 @@
     "item_id": "6df3ceaa-91d1-49b5-acd1-8c3cbfe67bab",
     "skip_on": "2026-08-04",
     "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "c7c75876-9058-4ab9-b2ba-fe04b8f9967d",
+    "item_id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
+    "skip_on": "2026-08-06",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
   }
 ]
