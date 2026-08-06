@@ -1,20 +1,23 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
 
+const DEV_MODE = import.meta.env.DEV
+const DEV_USER = { id: 'dev-user', email: 'dev@local' }
+
 export function useAuth() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(DEV_MODE ? DEV_USER : null)
   const [profile, setProfile] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(!DEV_MODE)
 
   useEffect(() => {
-    // Get the current session on mount
+    if (DEV_MODE) return
+
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null)
       if (session?.user) fetchProfile(session.user.id)
       else setLoading(false)
     })
 
-    // Listen for login/logout events
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null)
       if (session?.user) fetchProfile(session.user.id)
