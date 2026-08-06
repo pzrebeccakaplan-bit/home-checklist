@@ -77,17 +77,6 @@
     "created_at": "2026-08-01T19:38:08.021617+00:00"
   },
   {
-    "id": "fe801de3-18d9-426d-beb0-4328108483db",
-    "text": "Hand lotion",
-    "section": "evening_pz",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:46:15.605002+00:00"
-  },
-  {
     "id": "346da9d4-42f1-4623-9db3-012285f137cb",
     "text": "Inform staff of who is picking up Hadas",
     "section": "morning_shared",
@@ -593,17 +582,6 @@
     "created_at": "2026-08-02T19:51:22.972244+00:00"
   },
   {
-    "id": "860989e4-66f8-4863-a79b-87532a97fd75",
-    "text": "Machsan shelving",
-    "section": "ongoing_tracked_in_standup",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -30,
-    "created_at": "2026-08-03T10:24:48.936501+00:00"
-  },
-  {
     "id": "439b3955-67d8-47e9-9226-94158fdac72f",
     "text": "Cook: cous cous (find recipe)",
     "section": "hadas_food",
@@ -723,6 +701,28 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-08-04T20:26:54.551807+00:00"
+  },
+  {
+    "id": "a4f37726-a2c0-41c6-9cf2-0fbf162bb316",
+    "text": "Bergfeld gift",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-05T16:02:09.143104+00:00"
+  },
+  {
+    "id": "860989e4-66f8-4863-a79b-87532a97fd75",
+    "text": "Machsan shelving",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": -30,
+    "created_at": "2026-08-03T10:24:48.936501+00:00"
   },
   {
     "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
@@ -1121,17 +1121,6 @@
     "created_at": "2026-07-30T12:43:25.905651+00:00"
   },
   {
-    "id": "45c74ed4-f101-436d-b5ba-e66407cacb21",
-    "text": "Put away 3 things in bedroom",
-    "section": "evening_pz",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
-    "created_at": "2026-07-29T09:46:15.605002+00:00"
-  },
-  {
     "id": "ec214258-e3e8-4534-a2fe-13a31aa3d42d",
     "text": "Monitoring bands in bag",
     "section": "evening_rebecca",
@@ -1154,14 +1143,14 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "c69c9621-1125-41e1-9603-f6cdb3846773",
-    "text": "Take containers out of backpack",
+    "id": "7a0d73cf-7490-4458-b69a-2cec5b112700",
+    "text": "Set alarm",
     "section": "evening_pz",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 100,
+    "sort_order": 110,
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
@@ -1253,14 +1242,14 @@
     "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
-    "id": "360fd3c3-ac0f-449b-ae3c-70dcb845c1e0",
-    "text": "Drugs",
+    "id": "f56e3c77-824c-44e6-a704-6202d98f55db",
+    "text": "Check work calendar",
     "section": "evening_pz",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 10,
+    "sort_order": 60,
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
@@ -1286,6 +1275,17 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "360fd3c3-ac0f-449b-ae3c-70dcb845c1e0",
+    "text": "Drugs",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:46:15.605002+00:00"
+  },
+  {
     "id": "8133fde3-5d58-424f-940e-db83f0026759",
     "text": "empty dishwasher",
     "section": "morning_shared",
@@ -1297,14 +1297,25 @@
     "created_at": "2026-07-31T07:38:12.337884+00:00"
   },
   {
-    "id": "7a0d73cf-7490-4458-b69a-2cec5b112700",
-    "text": "Set alarm",
+    "id": "f8c07dd3-8be7-4cf2-9781-af49ffc0c953",
+    "text": "Charge shaver",
     "section": "evening_pz",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 90,
+    "sort_order": 140,
+    "created_at": "2026-07-29T09:46:15.605002+00:00"
+  },
+  {
+    "id": "c69c9621-1125-41e1-9603-f6cdb3846773",
+    "text": "Take containers out of backpack",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 120,
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
@@ -1315,7 +1326,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 50,
+    "sort_order": 70,
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
@@ -1326,29 +1337,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:46:15.605002+00:00"
-  },
-  {
-    "id": "f56e3c77-824c-44e6-a704-6202d98f55db",
-    "text": "Check work calendar",
-    "section": "evening_pz",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:46:15.605002+00:00"
-  },
-  {
-    "id": "f8c07dd3-8be7-4cf2-9781-af49ffc0c953",
-    "text": "Charge shaver",
-    "section": "evening_pz",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 120,
+    "sort_order": 80,
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
@@ -1359,7 +1348,18 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 110,
+    "sort_order": 130,
+    "created_at": "2026-07-29T09:46:15.605002+00:00"
+  },
+  {
+    "id": "45c74ed4-f101-436d-b5ba-e66407cacb21",
+    "text": "Put away 3 things in bedroom",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 90,
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
@@ -1503,17 +1503,6 @@
     },
     "active": true,
     "sort_order": 50,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "513ab462-d724-4513-822d-519baa14ac9c",
-    "text": "Lock door",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
     "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
@@ -2001,15 +1990,15 @@
     "created_at": "2026-08-03T10:24:59.25288+00:00"
   },
   {
-    "id": "4fd8ccff-1fcb-41b3-a7f7-ff0507c396cd",
-    "text": "Climbed the stairs at least once",
-    "section": "evening_pz",
+    "id": "513ab462-d724-4513-822d-519baa14ac9c",
+    "text": "Lock door",
+    "section": "evening_last_to_bed",
     "recurrence_rule": {
       "type": "daily"
     },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T17:43:43.807883+00:00"
+    "active": false,
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
     "id": "d10b53e2-9d95-4703-a1b5-fab25c174a2d",
@@ -2155,6 +2144,28 @@
     "created_at": "2026-08-04T20:10:46.032117+00:00"
   },
   {
+    "id": "fe801de3-18d9-426d-beb0-4328108483db",
+    "text": "Hand lotion",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:46:15.605002+00:00"
+  },
+  {
+    "id": "1d927863-d60f-46ed-af97-9839aa1de9eb",
+    "text": "Check date, Maariv",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:46:15.605002+00:00"
+  },
+  {
     "id": "278b139f-f9d0-40d7-97ce-b7a433370b47",
     "text": "Talk to Tomer",
     "section": "morning_shared",
@@ -2188,6 +2199,28 @@
     "created_at": "2026-07-31T07:45:20.426221+00:00"
   },
   {
+    "id": "9bfcc709-5ab5-4328-9b25-d09216c207a9",
+    "text": "Pasta for hadas",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-05T19:19:12.103189+00:00"
+  },
+  {
+    "id": "dce7b48d-ff90-4a47-b473-6d7b9626bc09",
+    "text": "Work out EMED",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-08-05T20:48:17.061689+00:00"
+  },
+  {
     "id": "0e129f7b-3674-427c-a22c-b4dad0453c6a",
     "text": "Chicken",
     "section": "hadas_food",
@@ -2208,17 +2241,6 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-01T19:38:35.839805+00:00"
-  },
-  {
-    "id": "1d927863-d60f-46ed-af97-9839aa1de9eb",
-    "text": "Check date, Maariv",
-    "section": "evening_pz",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
     "id": "dc4b1d17-b388-4fe0-ae75-a692d3bebc89",
@@ -2478,6 +2500,17 @@
     "created_at": "2026-08-04T20:28:38.05702+00:00"
   },
   {
+    "id": "1898f57e-b470-4fb0-9089-257bd6b54df2",
+    "text": "Empty office",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-05T16:53:32.004481+00:00"
+  },
+  {
     "id": "3086dd33-09c8-4eb4-8f80-14993f6c309a",
     "text": "Wipes",
     "section": "morning_pz_dropoff",
@@ -2566,6 +2599,17 @@
     "created_at": "2026-07-30T12:25:03.498543+00:00"
   },
   {
+    "id": "0351401e-53b6-446b-8765-6a72b3d9ebba",
+    "text": "rice cakes",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-07-31T08:05:29.451036+00:00"
+  },
+  {
     "id": "a86f4496-4eff-417f-b6ef-b1dc201d559c",
     "text": "Food shop for shabbat",
     "section": "evening_pz",
@@ -2573,8 +2617,52 @@
       "type": "occasional"
     },
     "active": true,
-    "sort_order": 5,
+    "sort_order": 30,
     "created_at": "2026-08-04T20:26:12.75506+00:00"
+  },
+  {
+    "id": "4fd8ccff-1fcb-41b3-a7f7-ff0507c396cd",
+    "text": "Climbed the stairs at least once",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T17:43:43.807883+00:00"
+  },
+  {
+    "id": "0a55dd9d-73d0-4286-8721-0b38609507bb",
+    "text": "Set alarm for hefsek/ bedika reminder",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
+    "id": "e9f54eb3-33bf-4092-b35b-5a31d507603b",
+    "text": "Shul membership",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-05T20:27:37.681477+00:00"
+  },
+  {
+    "id": "e3512b5a-f8ea-4bec-97b0-56b831001ba1",
+    "text": "Take out cash!!",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-05T21:07:26.853609+00:00"
   },
   {
     "id": "f7b6449b-aace-4a19-a5af-f11494de6380",
@@ -2588,26 +2676,15 @@
     "created_at": "2026-08-04T21:12:11.991249+00:00"
   },
   {
-    "id": "0351401e-53b6-446b-8765-6a72b3d9ebba",
-    "text": "rice cakes",
-    "section": "hadas_food",
+    "id": "3d6d471f-56d8-4712-82a9-34370f66cbd6",
+    "text": "Pick up ladder from Mayer",
+    "section": "morning_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
-    "sort_order": 5,
-    "created_at": "2026-07-31T08:05:29.451036+00:00"
-  },
-  {
-    "id": "0a55dd9d-73d0-4286-8721-0b38609507bb",
-    "text": "Set alarm for hefsek/ bedika reminder",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
     "sort_order": 10,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
+    "created_at": "2026-08-05T16:58:50.907397+00:00"
   },
   {
     "id": "3fbe923c-8610-4012-9744-e2dba0595032",
