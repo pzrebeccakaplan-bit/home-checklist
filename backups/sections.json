@@ -40,16 +40,6 @@
     ]
   },
   {
-    "id": "evening_first_to_bed",
-    "label": "Evening: First to Bed",
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
     "id": "morning_pz_dropoff",
     "label": "Morning: PZ – Before Dropoff",
     "sort_order": 40,
@@ -126,5 +116,105 @@
     "created_at": "2026-08-03T10:19:15.996034+00:00",
     "friday_only": false,
     "tags": []
+  },
+  {
+    "id": "shabbat_cooking",
+    "label": "Shabbat: Cooking",
+    "sort_order": 200,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat"
+    ]
+  },
+  {
+    "id": "shabbat_errands",
+    "label": "Shabbat: Errands",
+    "sort_order": 210,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat"
+    ]
+  },
+  {
+    "id": "shabbat_cleaning",
+    "label": "Shabbat: Cleaning",
+    "sort_order": 220,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat"
+    ]
+  },
+  {
+    "id": "shabbat_before",
+    "label": "Shabbat: Shortly Before",
+    "sort_order": 230,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat"
+    ]
+  },
+  {
+    "id": "shabbat_misc",
+    "label": "Shabbat: Miscellaneous",
+    "sort_order": 240,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat"
+    ]
+  },
+  {
+    "id": "shabbat_chag",
+    "label": "Shabbat: Chag",
+    "sort_order": 250,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat"
+    ]
+  },
+  {
+    "id": "shabbat_meals",
+    "label": "Shabbat: Meal Arrangements",
+    "sort_order": 270,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "motzei"
+    ]
+  },
+  {
+    "id": "shabbat_after",
+    "label": "Shabbat: After Shabbat",
+    "sort_order": 260,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "motzei"
+    ]
+  },
+  {
+    "id": "evening_first_to_bed",
+    "label": "Evening standup",
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "bi_weekly_standup",
+    "label": "Bi Weekly Standup",
+    "sort_order": 280,
+    "created_at": "2026-08-06T21:11:40.988907+00:00",
+    "friday_only": false,
+    "tags": [
+      "biweeklystandup"
+    ]
   }
 ]
