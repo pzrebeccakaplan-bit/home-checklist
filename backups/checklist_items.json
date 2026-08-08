@@ -45,6 +45,61 @@
     "created_at": "2026-08-06T22:05:59.833536+00:00"
   },
   {
+    "id": "a077c26b-6fcd-4505-98ce-f5bb5113cbfb",
+    "text": "Write down address- kiddush",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 290,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "d4e8add4-d2fd-491c-b3b4-507b4468c867",
+    "text": "Mamad - fan",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-07T10:17:14.506001+00:00"
+  },
+  {
+    "id": "1d142f72-1785-45bd-b094-a48eb0905d1d",
+    "text": "Bathroom - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -50,
+    "created_at": "2026-08-07T10:28:40.676107+00:00"
+  },
+  {
+    "id": "f0d60ac1-58f5-4615-87ee-eacb13e1d105",
+    "text": "Living room - fan",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -90,
+    "created_at": "2026-08-07T11:30:27.341591+00:00"
+  },
+  {
+    "id": "abcacf91-2b82-4f70-9c4e-8c738cafe37d",
+    "text": "Reset office",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-07T14:35:25.087208+00:00"
+  },
+  {
     "id": "346da9d4-42f1-4623-9db3-012285f137cb",
     "text": "Inform staff of who is picking up Hadas",
     "section": "morning_shared",
@@ -615,6 +670,18 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-08-07T05:33:16.503192+00:00"
+  },
+  {
+    "id": "5710c134-3913-4e4c-bdab-5b17c3c34df8",
+    "text": "Lamp oil",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-08-07T10:14:33.673091+00:00"
   },
   {
     "id": "6ad586d7-7e61-40fa-b6fc-1be4d9edeca7",
@@ -1323,6 +1390,73 @@
     "created_at": "2026-08-06T21:23:29.188742+00:00"
   },
   {
+    "id": "6f75dbe6-0bbe-45bd-b55e-03d943af11d0",
+    "text": "Pump for baby pool",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-07T08:10:58.165435+00:00"
+  },
+  {
+    "id": "eb4f9781-29d7-4a0d-a2b3-c989a17d08ac",
+    "text": "Kids room - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-07T10:14:40.973738+00:00"
+  },
+  {
+    "id": "4e9af963-adb2-4d7b-9aa2-74c01525835d",
+    "text": "Kids room - fan",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-07T10:14:54.768183+00:00"
+  },
+  {
+    "id": "b4af51cc-342d-4347-9e0b-d98f9f26ffdf",
+    "text": "Office - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-07T10:23:26.122573+00:00"
+  },
+  {
+    "id": "95d65e26-dc29-44a5-8386-06dfd7575363",
+    "text": "Master bath - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -55,
+    "created_at": "2026-08-07T10:29:08.224701+00:00"
+  },
+  {
+    "id": "67f02c76-31e9-4020-a58b-dfee9a318da9",
+    "text": "Master bedroom - fan",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -65,
+    "created_at": "2026-08-07T10:29:45.038455+00:00"
+  },
+  {
     "id": "78414119-f360-4e35-9a63-11df44768723",
     "text": "Air conditioner off",
     "section": "evening_last_to_bed",
@@ -1488,6 +1622,28 @@
     "created_at": "2026-07-29T09:47:02.393471+00:00"
   },
   {
+    "id": "22e6eab8-cf96-4382-9d7a-733d3c658c75",
+    "text": "Master bedroom - air conditioning",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -75,
+    "created_at": "2026-08-07T10:30:21.48325+00:00"
+  },
+  {
+    "id": "e193ef42-e36c-4ef9-b80b-efc4492b20b2",
+    "text": "Hallway - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -110,
+    "created_at": "2026-08-07T14:36:06.962136+00:00"
+  },
+  {
     "id": "429a66af-f584-4b75-8af3-1bf4800b6530",
     "text": "Turn on vacuum",
     "section": "evening_shared",
@@ -1508,6 +1664,28 @@
     "active": true,
     "sort_order": 100,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "279ab9c4-62c8-43a0-9137-89296247a7c7",
+    "text": "Balcony - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -100,
+    "created_at": "2026-08-07T11:30:55.361045+00:00"
+  },
+  {
+    "id": "42808810-b073-437f-b0eb-1c95e6df2ebc",
+    "text": "Balcony - fans",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -105,
+    "created_at": "2026-08-07T11:31:08.080218+00:00"
   },
   {
     "id": "3e2716bf-1599-49ab-ac7d-42a0af29ec67",
@@ -1978,17 +2156,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "3ea70ef1-1cf7-446c-8985-4cab0b85174c",
-    "text": "Dryer door",
-    "section": "shabbat_before",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 120,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "bb36d27c-799d-4ecd-bdf0-ff64e429485d",
     "text": "Stop timers",
     "section": "shabbat_before",
@@ -2034,15 +2201,15 @@
     "created_at": "2026-08-01T19:48:38.189193+00:00"
   },
   {
-    "id": "0af3123e-eb82-4476-8024-3294b0892a57",
-    "text": "Unplug microwave",
-    "section": "shabbat_before",
+    "id": "4297af73-3762-4504-93d0-af64794268ef",
+    "text": "Challah and pitot",
+    "section": "morning_shared",
     "recurrence_rule": {
-      "type": "daily"
+      "type": "once"
     },
     "active": true,
-    "sort_order": 150,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
+    "sort_order": -25,
+    "created_at": "2026-08-07T08:11:23.671258+00:00"
   },
   {
     "id": "c0fb87f6-1b46-4d5c-83a1-9485291507c6",
@@ -2122,15 +2289,59 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "df1734df-5620-493f-89d7-3af4b2d16e2e",
-    "text": "Take fan off carry stroller",
-    "section": "shabbat_misc",
+    "id": "b26d0226-148f-4ef1-a875-fb4a27e0ba00",
+    "text": "Kids room - blinds",
+    "section": "shabbat_room_prep",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 60,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
+    "sort_order": -5,
+    "created_at": "2026-08-07T10:15:05.300702+00:00"
+  },
+  {
+    "id": "e6cb07b1-5a76-47cd-821e-59f13aadb74d",
+    "text": "Kids room - air conditioning",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-07T10:15:18.647614+00:00"
+  },
+  {
+    "id": "30634e10-1bed-4d13-bfce-9de444bf3187",
+    "text": "Office - blinds",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-08-07T10:23:41.541094+00:00"
+  },
+  {
+    "id": "5a2445bb-f4cd-493d-a3c2-a70dc7527f20",
+    "text": "Master bedroom - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-08-07T10:29:28.937159+00:00"
+  },
+  {
+    "id": "a8d15b0d-3bf7-4d98-b4f5-0b5cba139677",
+    "text": "Master bedroom - blinds",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -70,
+    "created_at": "2026-08-07T10:30:00.010031+00:00"
   },
   {
     "id": "2f9d2cc1-5a49-46ab-be6d-45630483d2ba",
@@ -2144,6 +2355,50 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "0af3123e-eb82-4476-8024-3294b0892a57",
+    "text": "Unplug microwave",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 150,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "6c2b09a0-77eb-41ae-9906-026eccce40ed",
+    "text": "Fridge light",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 100,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "7a96f2c0-c320-4dc7-88c1-0f47a1e60d3f",
+    "text": "Air conditioning",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 90,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "3fdb6b11-a3ba-4436-adfc-7481bb9f11ec",
+    "text": "Lights",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 120,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
     "id": "3cfc27b8-20f8-4c22-bb32-180736b4aaa4",
     "text": "Schedule with Tomer electrician",
     "section": "ongoing_tracked_in_standup",
@@ -2153,6 +2408,50 @@
     "active": true,
     "sort_order": -20,
     "created_at": "2026-08-03T10:22:34.258857+00:00"
+  },
+  {
+    "id": "3ea70ef1-1cf7-446c-8985-4cab0b85174c",
+    "text": "Dryer door",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 120,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "df1734df-5620-493f-89d7-3af4b2d16e2e",
+    "text": "Take fan off carry stroller",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 60,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "75ccfe42-b925-4bf4-80df-04a974894240",
+    "text": "Reset kids’ room",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-07T14:34:27.742655+00:00"
+  },
+  {
+    "id": "03cddcb2-eb43-4ec0-8990-0ae9232a0306",
+    "text": "Empty washing machine",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-07T16:17:31.509068+00:00"
   },
   {
     "id": "6ae81368-6a78-45d3-9d41-adb2d951168b",
@@ -2177,28 +2476,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "7a96f2c0-c320-4dc7-88c1-0f47a1e60d3f",
-    "text": "Air conditioning",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "6c2b09a0-77eb-41ae-9906-026eccce40ed",
-    "text": "Fridge light",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 100,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "8f199e32-d5eb-4b4c-94b5-e58adddabb2d",
     "text": "Shabbat lamp",
     "section": "shabbat_misc",
@@ -2207,17 +2484,6 @@
     },
     "active": true,
     "sort_order": 110,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "3fdb6b11-a3ba-4436-adfc-7481bb9f11ec",
-    "text": "Lights",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 120,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -2395,6 +2661,18 @@
     "active": true,
     "sort_order": 100,
     "created_at": "2026-07-30T05:51:02.686703+00:00"
+  },
+  {
+    "id": "07b45d89-0b9f-46ec-a18d-638eafce42e9",
+    "text": "Challah + pitot + mint",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-08-07T10:33:14.26931+00:00"
   },
   {
     "id": "81b2d54b-c333-406a-833e-696431a5442f",
@@ -2637,6 +2915,40 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
+    "id": "1b9c8d01-3508-4deb-b3f7-e9c00966856e",
+    "text": "Ladder from winkler",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "date": "2026-08-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-07T08:11:52.240797+00:00"
+  },
+  {
+    "id": "0cb190ff-1ac7-4c75-9c40-db27e49fb6a3",
+    "text": "Mamad - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-07T10:16:27.965281+00:00"
+  },
+  {
+    "id": "e115426e-5984-4cb5-b5d6-e801c076812f",
+    "text": "Office - fan",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-08-07T10:23:55.771495+00:00"
+  },
+  {
     "id": "4f6afc61-4dc7-4602-90d4-664bbe4b0a61",
     "text": "Tidy tables",
     "section": "shabbat_cleaning",
@@ -2703,39 +3015,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "423ae3d9-3bf1-4ec4-88eb-6a2cacbae3c4",
-    "text": "Empty washing machine / close valve",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "c711ec97-af59-438a-a22a-ea453097f974",
-    "text": "Empty bedroom garbage",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "8b5a2236-b19d-43af-9897-26b5af3c831b",
-    "text": "Window, fan, light, A/C, Shabbat lamp — check each room:",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "582a103a-c78d-4062-9260-a869b9754054",
     "text": "Prepare food for the day",
     "section": "morning_rebecca",
@@ -2747,25 +3026,14 @@
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
-    "id": "4758eed2-5882-45b8-854d-9946e8c2dcef",
-    "text": "Living room",
+    "id": "8b5a2236-b19d-43af-9897-26b5af3c831b",
+    "text": "Window, fan, light, A/C, Shabbat lamp — check each room:",
     "section": "shabbat_cleaning",
     "recurrence_rule": {
       "type": "daily"
     },
-    "active": true,
-    "sort_order": 100,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "2f88fc05-3090-424a-9219-b70ff0ffa44b",
-    "text": "Master bedroom",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 110,
+    "active": false,
+    "sort_order": 90,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -2780,6 +3048,28 @@
     "created_at": "2026-08-02T07:12:20.51172+00:00"
   },
   {
+    "id": "c711ec97-af59-438a-a22a-ea453097f974",
+    "text": "Empty bedroom garbage",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 80,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "fd5b2c18-b22d-4ef4-852c-906aa1de2e0c",
+    "text": "Fan",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 50,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
     "id": "07a57461-86e4-4100-859e-7f376a7b0d73",
     "text": "Check tomorrow's weather forecast",
     "section": "evening_shared",
@@ -2791,14 +3081,25 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "2c51681c-e233-4bbc-9717-fc3ecb52cad9",
-    "text": "Master bathroom",
-    "section": "shabbat_cleaning",
+    "id": "eae1497b-d2fa-487f-a45b-830bc81bc4c0",
+    "text": "Reset mamad",
+    "section": "shabbat_after",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 120,
+    "sort_order": 0,
+    "created_at": "2026-08-07T14:34:44.126575+00:00"
+  },
+  {
+    "id": "340d0b8a-9fde-4913-9386-5fcef05d561b",
+    "text": "Mamad",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 160,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -2824,14 +3125,14 @@
     "created_at": "2026-08-03T10:22:52.502721+00:00"
   },
   {
-    "id": "5fcb7d0e-3cf2-4326-9840-fae33a5492bb",
-    "text": "Main bathroom",
+    "id": "9a916f7f-0905-409d-acbf-da96fc860309",
+    "text": "Hadas's room",
     "section": "shabbat_cleaning",
     "recurrence_rule": {
       "type": "daily"
     },
-    "active": true,
-    "sort_order": 130,
+    "active": false,
+    "sort_order": 150,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -2841,30 +3142,30 @@
     "recurrence_rule": {
       "type": "daily"
     },
-    "active": true,
+    "active": false,
     "sort_order": 140,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "9a916f7f-0905-409d-acbf-da96fc860309",
-    "text": "Hadas's room",
+    "id": "5fcb7d0e-3cf2-4326-9840-fae33a5492bb",
+    "text": "Main bathroom",
     "section": "shabbat_cleaning",
     "recurrence_rule": {
       "type": "daily"
     },
-    "active": true,
-    "sort_order": 150,
+    "active": false,
+    "sort_order": 130,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "340d0b8a-9fde-4913-9386-5fcef05d561b",
-    "text": "Mamad",
+    "id": "2c51681c-e233-4bbc-9717-fc3ecb52cad9",
+    "text": "Master bathroom",
     "section": "shabbat_cleaning",
     "recurrence_rule": {
       "type": "daily"
     },
-    "active": true,
-    "sort_order": 160,
+    "active": false,
+    "sort_order": 120,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -2909,17 +3210,6 @@
     },
     "active": true,
     "sort_order": 40,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "fd5b2c18-b22d-4ef4-852c-906aa1de2e0c",
-    "text": "Fan",
-    "section": "shabbat_before",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -2976,6 +3266,39 @@
     "active": false,
     "sort_order": -10,
     "created_at": "2026-08-02T20:34:55.218508+00:00"
+  },
+  {
+    "id": "2f88fc05-3090-424a-9219-b70ff0ffa44b",
+    "text": "Master bedroom",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 110,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "4758eed2-5882-45b8-854d-9946e8c2dcef",
+    "text": "Living room",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 100,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "423ae3d9-3bf1-4ec4-88eb-6a2cacbae3c4",
+    "text": "Empty washing machine",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 70,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "5bf7918c-6bd8-4968-87cd-d17e7b74031c",
@@ -3041,17 +3364,6 @@
     },
     "active": true,
     "sort_order": 280,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "a077c26b-6fcd-4505-98ce-f5bb5113cbfb",
-    "text": "Write down address",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 290,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -3283,17 +3595,6 @@
     },
     "active": true,
     "sort_order": 80,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "ee21f754-70ce-4735-a331-e6a605b4e8fa",
-    "text": "Fan off",
-    "section": "shabbat_after",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -3746,6 +4047,17 @@
     "active": false,
     "sort_order": 110,
     "created_at": "2026-07-29T20:21:04.705092+00:00"
+  },
+  {
+    "id": "ee21f754-70ce-4735-a331-e6a605b4e8fa",
+    "text": "Fan off",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 90,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "4a152a88-c47c-43ca-8a62-94a75c076409",
@@ -4374,5 +4686,83 @@
     "active": true,
     "sort_order": -20,
     "created_at": "2026-08-06T22:05:30.324771+00:00"
+  },
+  {
+    "id": "ebf019ac-08cc-4574-9283-b8ca0521745a",
+    "text": "Find babysitter for Monday evening",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-07T08:25:15.251972+00:00"
+  },
+  {
+    "id": "fb264253-bd29-45cb-8fad-28ee904623fd",
+    "text": "Mamad - air conditioning",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-07T10:17:00.802197+00:00"
+  },
+  {
+    "id": "48762b6b-41d5-4c01-b911-a121298d7b0c",
+    "text": "Office - air conditioning",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -45,
+    "created_at": "2026-08-07T10:24:12.30435+00:00"
+  },
+  {
+    "id": "1e233e44-db34-498e-9d30-7bb1c1e0b21e",
+    "text": "Living room - air conditioning",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -80,
+    "created_at": "2026-08-07T11:30:05.699405+00:00"
+  },
+  {
+    "id": "5b4b6aec-345e-493d-92a1-771603edd050",
+    "text": "Living room - lights",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -85,
+    "created_at": "2026-08-07T11:30:15.294406+00:00"
+  },
+  {
+    "id": "e8979eda-1687-4f45-a3d8-693cc47e2ad0",
+    "text": "Living room - Shabbat clock",
+    "section": "shabbat_room_prep",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -95,
+    "created_at": "2026-08-07T11:30:44.556375+00:00"
+  },
+  {
+    "id": "f91cb737-2b62-4cbe-a9f1-e74a9e8ba8f1",
+    "text": "Reset master bedroom and bathroom",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-07T14:35:08.496209+00:00"
   }
 ]
