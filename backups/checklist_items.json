@@ -11,17 +11,6 @@
     "created_at": "2026-08-06T20:28:02.872784+00:00"
   },
   {
-    "id": "76a9ff32-e722-4a16-817c-8dbbe207d208",
-    "text": "Put away 3 things in baby room",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:41:44.938265+00:00"
-  },
-  {
     "id": "ff4dc6f3-bf9b-4b5a-970c-37168a4eddf6",
     "text": "Food plan for next days",
     "section": "bi_weekly_standup",
@@ -111,6 +100,18 @@
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
+    "id": "412d612f-adc4-4392-a2ff-578af8341361",
+    "text": "Beets",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-08T19:28:21.884186+00:00"
+  },
+  {
     "id": "1cf2d9ed-7d89-489b-8c01-c7b7b38e3037",
     "text": "Remove dry laundry from clothesline",
     "section": "morning_shared",
@@ -144,6 +145,17 @@
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
+    "id": "e56b8b02-e995-47cc-aefd-c5d75edaf5f0",
+    "text": "Extra outfit to maon (for both kids for water stuff)",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:42:39.053932+00:00"
+  },
+  {
     "id": "a53a9a5a-c950-483d-ac3c-fce77bde105f",
     "text": "Turn off air conditioners in bedrooms",
     "section": "morning_shared",
@@ -153,17 +165,6 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-07-29T09:41:44.938265+00:00"
-  },
-  {
-    "id": "62e5fb5e-0be7-4a36-a828-0a9a59ccd6a1",
-    "text": "Water bottle (full)",
-    "section": "morning_pz_work",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 120,
-    "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
     "id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
@@ -177,25 +178,14 @@
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
-    "id": "71923441-1d17-4017-9c14-eb3cabe22320",
-    "text": "Headphones x2",
+    "id": "e498580e-e5fa-401a-b581-53d1483c8632",
+    "text": "Phone",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:42:39.053932+00:00"
-  },
-  {
-    "id": "1a97023c-81a9-4907-98f6-89a9628f6053",
-    "text": "Sunscreen",
-    "section": "morning_pz_work",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 130,
+    "sort_order": 60,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -208,6 +198,29 @@
     "active": true,
     "sort_order": 110,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
+  },
+  {
+    "id": "c6b16898-8ae9-475d-a78b-a86cf38cb13d",
+    "text": "2025 taxes",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-08-08T19:35:30.693611+00:00"
+  },
+  {
+    "id": "b1b8cc4e-4ec5-4555-9177-2fe3331452ea",
+    "text": "Home Management App",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -55,
+    "created_at": "2026-08-08T19:49:13.480533+00:00"
   },
   {
     "id": "c8187e15-5289-4aa6-ae4c-001b1b32d648",
@@ -246,14 +259,14 @@
     "created_at": "2026-07-29T09:42:38.655001+00:00"
   },
   {
-    "id": "a995a46b-72c3-4cdd-9a31-14e93453cc3f",
-    "text": "Sweatshirt",
+    "id": "a81acc9f-0075-49ec-9a5e-a87fda73255b",
+    "text": "Shaker bottle",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 150,
+    "sort_order": 20,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -290,6 +303,17 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
+    "id": "9b6d0835-d553-4bef-9851-5d2adc04dab2",
+    "text": "Plan tomorrow's food prep for Hadas",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
     "id": "7e82781b-2ead-4cf9-a2e0-e8540aab3d4f",
     "text": "Take Hadas's food",
     "section": "morning_pz_dropoff",
@@ -312,6 +336,17 @@
     "created_at": "2026-07-29T09:42:38.655001+00:00"
   },
   {
+    "id": "eb8a9332-1a14-4a0e-9554-8bea189f31c6",
+    "text": "Two day ahead sync on calendars, work hours and otherwise",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-06T21:19:13.026153+00:00"
+  },
+  {
     "id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
     "text": "Take vitamins",
     "section": "morning_rebecca",
@@ -323,15 +358,15 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
-    "id": "26e56c48-a7e2-43e3-9da9-9451f8cb247b",
-    "text": "Change of clothes",
-    "section": "morning_pz_work",
+    "id": "76a9ff32-e722-4a16-817c-8dbbe207d208",
+    "text": "Put away 3 things in baby room",
+    "section": "morning_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 100,
-    "created_at": "2026-07-29T09:42:39.053932+00:00"
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
     "id": "2ad0aeff-54db-43f9-891c-eab9ab08e2a7",
@@ -345,15 +380,15 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
-    "id": "e56b8b02-e995-47cc-aefd-c5d75edaf5f0",
-    "text": "Extra outfit to maon",
-    "section": "morning_pz_dropoff",
+    "id": "bf8df007-904f-4cd4-99a0-97dba1b84307",
+    "text": "Identify honeydew item(s) for tomorrow",
+    "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:42:39.053932+00:00"
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "e73f2d89-aec4-4774-96f7-67588a33c983",
@@ -400,25 +435,25 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
-    "id": "a6ca0023-a137-4bb1-b86e-94b0bc9d82b0",
-    "text": "Watch/tfilin",
+    "id": "fa309432-656b-4988-b00f-35350a84eb4a",
+    "text": "Badge",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 30,
+    "sort_order": 140,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
-    "id": "a81acc9f-0075-49ec-9a5e-a87fda73255b",
-    "text": "Shaker bottle",
+    "id": "415d1cbb-185b-4660-aaaf-b16a9fb6ba70",
+    "text": "Towel",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
+    "sort_order": 40,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -433,14 +468,14 @@
     "created_at": "2026-07-31T07:26:42.486356+00:00"
   },
   {
-    "id": "415d1cbb-185b-4660-aaaf-b16a9fb6ba70",
-    "text": "Towel",
+    "id": "71923441-1d17-4017-9c14-eb3cabe22320",
+    "text": "Headphones x2",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
+    "sort_order": 80,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -458,14 +493,25 @@
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
-    "id": "e498580e-e5fa-401a-b581-53d1483c8632",
-    "text": "Phone",
+    "id": "a995a46b-72c3-4cdd-9a31-14e93453cc3f",
+    "text": "Sweatshirt",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 60,
+    "sort_order": 150,
+    "created_at": "2026-07-29T09:42:39.053932+00:00"
+  },
+  {
+    "id": "7d732501-5825-4d95-87ee-0b8003356069",
+    "text": "Keys",
+    "section": "morning_pz_work",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 90,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -480,25 +526,14 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
-    "id": "fa309432-656b-4988-b00f-35350a84eb4a",
-    "text": "Badge",
+    "id": "a6ca0023-a137-4bb1-b86e-94b0bc9d82b0",
+    "text": "Watch/tfilin",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 140,
-    "created_at": "2026-07-29T09:42:39.053932+00:00"
-  },
-  {
-    "id": "7d732501-5825-4d95-87ee-0b8003356069",
-    "text": "Keys",
-    "section": "morning_pz_work",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
+    "sort_order": 30,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -637,17 +672,6 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-08-06T20:34:41.587033+00:00"
-  },
-  {
-    "id": "eb8a9332-1a14-4a0e-9554-8bea189f31c6",
-    "text": "Two day ahead sync on calendars, work hours and otherwise",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-08-06T21:19:13.026153+00:00"
   },
   {
     "id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
@@ -970,25 +994,25 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "4a756c28-7a73-49c1-a5bd-962d35fccc76",
-    "text": "Shabbat menu",
-    "section": "evening_first_to_bed",
+    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
+    "text": "Shower if showering",
+    "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 90,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
-    "id": "b3670ccf-2acd-49f5-85ff-75c817000d0a",
-    "text": "Jacket",
+    "id": "f2cdaf95-c806-401e-92b4-b8414844e6cf",
+    "text": "Umbrella",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 160,
+    "sort_order": 170,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -1003,14 +1027,14 @@
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
-    "id": "f2cdaf95-c806-401e-92b4-b8414844e6cf",
-    "text": "Umbrella",
+    "id": "b3670ccf-2acd-49f5-85ff-75c817000d0a",
+    "text": "Jacket",
     "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 180,
+    "sort_order": 160,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
@@ -1021,19 +1045,8 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 190,
+    "sort_order": 180,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
-  },
-  {
-    "id": "35e766d5-05fa-4812-b04d-24d71555a2dc",
-    "text": "Plan food for Hadas",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "12d7eeb7-b6e8-4df1-a425-b4a52c20bf1e",
@@ -1113,59 +1126,15 @@
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
-    "id": "bf8df007-904f-4cd4-99a0-97dba1b84307",
-    "text": "Identify honeydew item(s) for tomorrow",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
-  },
-  {
-    "id": "8ebb1be9-95b0-4e18-9917-f9dac61295bd",
-    "text": "Decide which vegetables to cut and when",
-    "section": "evening_first_to_bed",
+    "id": "b95abb43-4685-4b8c-9eb5-e9002434fc7c",
+    "text": "Get dressed",
+    "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
     "sort_order": 60,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
-  },
-  {
-    "id": "c8f926f7-7c01-4d53-9df9-41ea6bf6f8a2",
-    "text": "Remove cash from diaper bag",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
-  },
-  {
-    "id": "b771ab52-da64-41ff-819f-5597df1226c8",
-    "text": "Choose target date/time for Rebecca's next workout",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
-  },
-  {
-    "id": "9b6d0835-d553-4bef-9851-5d2adc04dab2",
-    "text": "Plan tomorrow's food prep for Hadas",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "f56e3c77-824c-44e6-a704-6202d98f55db",
@@ -1300,17 +1269,6 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "b95abb43-4685-4b8c-9eb5-e9002434fc7c",
-    "text": "Get dressed",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
     "id": "8fa8ad3d-7f15-4bdd-af1a-8268e57015df",
     "text": "Bathroom",
     "section": "morning_rebecca",
@@ -1330,17 +1288,6 @@
     },
     "active": true,
     "sort_order": 110,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
-    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
-    "text": "Shower if showering",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1367,15 +1314,15 @@
     "created_at": "2026-08-06T20:34:51.961658+00:00"
   },
   {
-    "id": "53033027-d439-433b-ae3e-88981e532c6a",
-    "text": "Discuss chore load",
+    "id": "35e766d5-05fa-4812-b04d-24d71555a2dc",
+    "text": "Plan food for Hadas",
     "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T10:33:08.141789+00:00"
+    "sort_order": 80,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "5d9688a9-5ada-432d-bb00-f1dbdc6cad70",
@@ -1688,6 +1635,18 @@
     "created_at": "2026-08-07T11:31:08.080218+00:00"
   },
   {
+    "id": "34854355-bb2e-4279-ad7f-2a7718a1ad11",
+    "text": "Chicken on the bone",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-08T19:31:43.908958+00:00"
+  },
+  {
     "id": "3e2716bf-1599-49ab-ac7d-42a0af29ec67",
     "text": "Food dates",
     "section": "evening_shared",
@@ -1732,6 +1691,18 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "5701ae76-afd8-439d-a6d2-c9c8026101ea",
+    "text": "Ksp order- oxo containers",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-08T19:36:29.408114+00:00"
+  },
+  {
     "id": "c63b6c1a-9982-4b26-8151-ae9257d5c57d",
     "text": "Extra outfit for Hadas",
     "section": "evening_shared",
@@ -1741,6 +1712,17 @@
     "active": true,
     "sort_order": 340,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "ec2c1212-313e-4b14-9ccb-90492384ce9f",
+    "text": "Wash non-dishwasher dishes",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-08T21:46:53.709481+00:00"
   },
   {
     "id": "65b87af5-c0b6-4566-83ed-cd16c38858b8",
@@ -1754,6 +1736,17 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "9d925280-ae9c-4a00-b156-3a72571a379e",
+    "text": "Move laundry",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "d48c779c-66fe-40ee-a07d-89d67dc446bc",
     "text": "Turn off air conditioners in bedroom",
     "section": "morning_pz_dropoff",
@@ -1763,6 +1756,28 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-07-29T19:30:25.13306+00:00"
+  },
+  {
+    "id": "53033027-d439-433b-ae3e-88981e532c6a",
+    "text": "Discuss chore load",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T10:33:08.141789+00:00"
+  },
+  {
+    "id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
+    "text": "Workout / vacuum a room / errand",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T10:24:20.413643+00:00"
   },
   {
     "id": "8becf06d-9811-44a7-92cc-3d981b5f4504",
@@ -1785,17 +1800,6 @@
     "active": true,
     "sort_order": 130,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
-  },
-  {
-    "id": "9d925280-ae9c-4a00-b156-3a72571a379e",
-    "text": "Move laundry",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "2d2c46eb-0c8f-4c7e-a00e-abfb9946348c",
@@ -1930,17 +1934,6 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
-    "text": "Workout / vacuum a room / errand",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
-    "created_at": "2026-07-29T10:24:20.413643+00:00"
-  },
-  {
     "id": "df016071-1bc4-4329-a8ad-712407d9f733",
     "text": "Hang shower mat",
     "section": "evening_shared",
@@ -2045,14 +2038,14 @@
     "created_at": "2026-08-03T10:28:00.890946+00:00"
   },
   {
-    "id": "8ac65d71-c907-4537-8ed4-85b95d02f43d",
-    "text": "Discuss freezer / menu for next 3 days / update shopping list",
+    "id": "b771ab52-da64-41ff-819f-5597df1226c8",
+    "text": "Choose target date/time for Rebecca's next workout",
     "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 70,
+    "sort_order": 50,
     "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
@@ -2454,6 +2447,41 @@
     "created_at": "2026-08-07T16:17:31.509068+00:00"
   },
   {
+    "id": "153b8e2b-116b-4354-adef-680dd1dbe131",
+    "text": "Rice",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-08T19:31:53.892015+00:00"
+  },
+  {
+    "id": "617ac4c6-9bcd-4bf8-b9b1-9bb57ba7993b",
+    "text": "Blue and White Financial To Do items",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -45,
+    "created_at": "2026-08-08T19:46:40.430895+00:00"
+  },
+  {
+    "id": "9376be14-d999-419f-ab35-7ca9ae2ecd25",
+    "text": "Diapers for Guy (today)",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-09T05:24:22.801295+00:00"
+  },
+  {
     "id": "6ae81368-6a78-45d3-9d41-adb2d951168b",
     "text": "Open wipes, diapers, formula; rip garbage bags, rip diaper garbage bags",
     "section": "shabbat_misc",
@@ -2606,6 +2634,28 @@
     "active": false,
     "sort_order": 5,
     "created_at": "2026-08-01T19:37:03.238169+00:00"
+  },
+  {
+    "id": "c8f926f7-7c01-4d53-9df9-41ea6bf6f8a2",
+    "text": "Remove cash from diaper bag",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
+    "id": "8ac65d71-c907-4537-8ed4-85b95d02f43d",
+    "text": "Discuss freezer / menu for next 3 days / update shopping list",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "7e41face-3e25-47b6-ac10-7f36f30bb137",
@@ -2785,7 +2835,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 10,
+    "sort_order": 20,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -3022,7 +3072,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 90,
+    "sort_order": 100,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -3035,17 +3085,6 @@
     "active": false,
     "sort_order": 90,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "140598a8-5bfa-4002-9cdf-8e5a630b427d",
-    "text": "Coffee equipment",
-    "section": "morning_pz_work",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-08-02T07:12:20.51172+00:00"
   },
   {
     "id": "c711ec97-af59-438a-a22a-ea453097f974",
@@ -3090,6 +3129,18 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-08-07T14:34:44.126575+00:00"
+  },
+  {
+    "id": "dc0c3295-9995-4cc3-a436-b936a34acd12",
+    "text": "Pasta for Hadas",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-08-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-08T19:27:35.985184+00:00"
   },
   {
     "id": "340d0b8a-9fde-4913-9386-5fcef05d561b",
@@ -3301,6 +3352,52 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
+    "id": "31d88f1d-e368-46a7-874f-9cc5c3ef639c",
+    "text": "Pasta",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-08T19:28:05.982396+00:00"
+  },
+  {
+    "id": "46e25ffa-ef02-4981-a7e7-057f626b5158",
+    "text": "Beets",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-08T19:31:58.728199+00:00"
+  },
+  {
+    "id": "2aaebbd7-1be6-42cb-925a-815851c6294d",
+    "text": "Apartment punch list items",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -50,
+    "created_at": "2026-08-08T19:47:05.17086+00:00"
+  },
+  {
+    "id": "140598a8-5bfa-4002-9cdf-8e5a630b427d",
+    "text": "Coffee equipment",
+    "section": "morning_pz_work",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-02T07:12:20.51172+00:00"
+  },
+  {
     "id": "5bf7918c-6bd8-4968-87cd-d17e7b74031c",
     "text": "Set hearing aid charger and timer",
     "section": "shabbat_misc",
@@ -3507,17 +3604,6 @@
     },
     "active": true,
     "sort_order": 40,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "a2c0b786-fc6e-4810-8e91-078e2fe00029",
-    "text": "Make tonight's checklist",
-    "section": "shabbat_after",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -4057,6 +4143,17 @@
     },
     "active": false,
     "sort_order": 90,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "a2c0b786-fc6e-4810-8e91-078e2fe00029",
+    "text": "Make tonight's checklist",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 10,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -4764,5 +4861,155 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-07T14:35:08.496209+00:00"
+  },
+  {
+    "id": "613ffbdb-36c9-4890-b932-47daf2f91c13",
+    "text": "Schnitzel",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-08T19:28:00.602489+00:00"
+  },
+  {
+    "id": "4a756c28-7a73-49c1-a5bd-962d35fccc76",
+    "text": "Shabbat menu",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
+    "id": "8ebb1be9-95b0-4e18-9917-f9dac61295bd",
+    "text": "Decide which vegetables to cut and when",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
+    "id": "41cdf367-fb97-47af-b867-7ad4da983a79",
+    "text": "Folding Desk",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-08-09T05:37:53.022385+00:00"
+  },
+  {
+    "id": "1a97023c-81a9-4907-98f6-89a9628f6053",
+    "text": "Sunscreen",
+    "section": "morning_pz_work",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 130,
+    "created_at": "2026-07-29T09:42:39.053932+00:00"
+  },
+  {
+    "id": "62e5fb5e-0be7-4a36-a828-0a9a59ccd6a1",
+    "text": "Water bottle (full)",
+    "section": "morning_pz_work",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:42:39.053932+00:00"
+  },
+  {
+    "id": "26e56c48-a7e2-43e3-9da9-9451f8cb247b",
+    "text": "Change of clothes",
+    "section": "morning_pz_work",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 120,
+    "created_at": "2026-07-29T09:42:39.053932+00:00"
+  },
+  {
+    "id": "1d79ee67-1065-4005-9667-545b458e6068",
+    "text": "Message tova about shabbat",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-08T19:34:44.895432+00:00"
+  },
+  {
+    "id": "101c7800-3646-49f2-8b3a-7d0d2360b868",
+    "text": "Overnight oats",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-08-09T06:15:20.593766+00:00"
+  },
+  {
+    "id": "7d74b273-d94c-4783-8667-9c6a6685b715",
+    "text": "Bring up table from machsan",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-08-09T06:08:41.644775+00:00"
+  },
+  {
+    "id": "e4a395f1-7387-490c-9989-cd61e3f00213",
+    "text": "Lunch",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-08-09T06:56:27.388774+00:00"
+  },
+  {
+    "id": "5c4ae507-fabc-484e-8ed6-967ab7ae5846",
+    "text": "Set up monitor/ desk setup",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-08-09T06:09:16.93218+00:00"
+  },
+  {
+    "id": "563ccbcb-b9d9-4aec-bf01-d74b66844664",
+    "text": "Nap",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-09T06:08:28.505461+00:00"
   }
 ]
