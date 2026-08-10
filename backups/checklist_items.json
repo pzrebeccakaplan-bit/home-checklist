@@ -11,6 +11,17 @@
     "created_at": "2026-08-06T20:28:02.872784+00:00"
   },
   {
+    "id": "bf8df007-904f-4cd4-99a0-97dba1b84307",
+    "text": "Identify honeydew item(s) for tomorrow",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
     "id": "ff4dc6f3-bf9b-4b5a-970c-37168a4eddf6",
     "text": "Food plan for next days",
     "section": "bi_weekly_standup",
@@ -167,6 +178,17 @@
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
+    "id": "eb8a9332-1a14-4a0e-9554-8bea189f31c6",
+    "text": "Two day ahead sync on calendars, work hours and otherwise",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-06T21:19:13.026153+00:00"
+  },
+  {
     "id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
     "text": "GF bread",
     "section": "hadas_food",
@@ -303,17 +325,6 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
-    "id": "9b6d0835-d553-4bef-9851-5d2adc04dab2",
-    "text": "Plan tomorrow's food prep for Hadas",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
-  },
-  {
     "id": "7e82781b-2ead-4cf9-a2e0-e8540aab3d4f",
     "text": "Take Hadas's food",
     "section": "morning_pz_dropoff",
@@ -334,17 +345,6 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-07-29T09:42:38.655001+00:00"
-  },
-  {
-    "id": "eb8a9332-1a14-4a0e-9554-8bea189f31c6",
-    "text": "Two day ahead sync on calendars, work hours and otherwise",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-06T21:19:13.026153+00:00"
   },
   {
     "id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
@@ -380,8 +380,8 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
-    "id": "bf8df007-904f-4cd4-99a0-97dba1b84307",
-    "text": "Identify honeydew item(s) for tomorrow",
+    "id": "9b6d0835-d553-4bef-9851-5d2adc04dab2",
+    "text": "Plan tomorrow's food prep for Hadas",
     "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "daily"
@@ -708,147 +708,15 @@
     "created_at": "2026-08-07T10:14:33.673091+00:00"
   },
   {
-    "id": "6ad586d7-7e61-40fa-b6fc-1be4d9edeca7",
-    "text": "Diapers Guy",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "e2314bf7-3ace-451e-a79c-3741414691b8",
-    "text": "Diapers Hadas",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "3f0901f5-3509-4269-a26c-0a0aa4c863fd",
-    "text": "Mat",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "eb0be917-81c5-49a8-adec-202741f3f2e2",
-    "text": "Bottles Guy",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "dff1484e-edbe-4a7a-84ea-62ed3285c84b",
-    "text": "Formula shots",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "278943d8-532b-4eda-a8b6-971830bf787f",
-    "text": "Water bottle Hadas",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "ee0fb329-b2c1-4267-b369-6788f49f2947",
-    "text": "Bib",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "348bb52d-e579-487c-a391-d55fcca07ff3",
-    "text": "Fruit pouch",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "605af319-c418-413d-ae3e-ba23507c5014",
-    "text": "Bamba",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "c8b39630-f880-4671-ab60-d596b83f5e4b",
-    "text": "Pacifiers Hadas",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 100,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "fec452c3-35b3-44fb-9545-34caebb98045",
-    "text": "Pacifiers Guy",
-    "section": "evening_diaper_bag",
+    "id": "3d0ab43b-7372-42c0-9c3e-2c0353627e80",
+    "text": "Fill Rebecca's and Hadas's water bottles",
+    "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
     "sort_order": 110,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "78f108e5-a318-4463-9319-b4afc8e6b5a0",
-    "text": "Cloths",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 120,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "7cd24acd-7773-46ec-98ed-7645cf374b99",
-    "text": "Wipes",
-    "section": "evening_diaper_bag",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 130,
-    "created_at": "2026-07-29T09:44:20.969311+00:00"
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "b446f520-705b-4514-aa84-e6f807b92979",
@@ -862,26 +730,15 @@
     "created_at": "2026-07-29T09:44:20.969311+00:00"
   },
   {
-    "id": "bfd50b75-e52d-4e27-ac36-9c5d9236b111",
-    "text": "Change of clothes Hadas",
+    "id": "6ad586d7-7e61-40fa-b6fc-1be4d9edeca7",
+    "text": "Diapers Guy",
     "section": "evening_diaper_bag",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 150,
+    "sort_order": 10,
     "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "3d0ab43b-7372-42c0-9c3e-2c0353627e80",
-    "text": "Fill Rebecca's and Hadas's water bottles",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 110,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "03c8bcdc-bcbc-4219-8a1c-c5f330d85261",
@@ -1049,6 +906,17 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
+    "id": "ee0fb329-b2c1-4267-b369-6788f49f2947",
+    "text": "Bib",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
     "id": "12d7eeb7-b6e8-4df1-a425-b4a52c20bf1e",
     "text": "Pick up package from Kaplan St.",
     "section": "morning_shared",
@@ -1137,6 +1005,50 @@
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
+    "id": "fec452c3-35b3-44fb-9545-34caebb98045",
+    "text": "Pacifiers Guy",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 120,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
+    "id": "78f108e5-a318-4463-9319-b4afc8e6b5a0",
+    "text": "Cloths",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 130,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
+    "id": "c8b39630-f880-4671-ab60-d596b83f5e4b",
+    "text": "Pacifiers Hadas",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 110,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
+    "id": "605af319-c418-413d-ae3e-ba23507c5014",
+    "text": "Bamba",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
     "id": "f56e3c77-824c-44e6-a704-6202d98f55db",
     "text": "Check work calendar",
     "section": "evening_pz",
@@ -1159,6 +1071,17 @@
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
+    "id": "eb0be917-81c5-49a8-adec-202741f3f2e2",
+    "text": "Bottles Guy",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
     "id": "360fd3c3-ac0f-449b-ae3c-70dcb845c1e0",
     "text": "Drugs",
     "section": "evening_pz",
@@ -1168,6 +1091,17 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-07-29T09:46:15.605002+00:00"
+  },
+  {
+    "id": "dff1484e-edbe-4a7a-84ea-62ed3285c84b",
+    "text": "Formula shots",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
   },
   {
     "id": "8133fde3-5d58-424f-940e-db83f0026759",
@@ -1269,6 +1203,28 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "e2314bf7-3ace-451e-a79c-3741414691b8",
+    "text": "Diapers Hadas",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
+    "id": "bfd50b75-e52d-4e27-ac36-9c5d9236b111",
+    "text": "Change of clothes Hadas",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 150,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
     "id": "8fa8ad3d-7f15-4bdd-af1a-8268e57015df",
     "text": "Bathroom",
     "section": "morning_rebecca",
@@ -1291,6 +1247,17 @@
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
+    "id": "278943d8-532b-4eda-a8b6-971830bf787f",
+    "text": "Water bottle Hadas",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
     "id": "5aac5a23-9084-43a8-86d0-9680c0a9d7f1",
     "text": "Water",
     "section": "morning_rebecca",
@@ -1300,6 +1267,39 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
+    "id": "348bb52d-e579-487c-a391-d55fcca07ff3",
+    "text": "Fruit pouch",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
+    "id": "7cd24acd-7773-46ec-98ed-7645cf374b99",
+    "text": "Wipes",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
+  },
+  {
+    "id": "3f0901f5-3509-4269-a26c-0a0aa4c863fd",
+    "text": "Mat",
+    "section": "evening_diaper_bag",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:44:20.969311+00:00"
   },
   {
     "id": "facc1703-884f-4e45-b173-51b1cdc5cf9b",
@@ -1312,17 +1312,6 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-06T20:34:51.961658+00:00"
-  },
-  {
-    "id": "35e766d5-05fa-4812-b04d-24d71555a2dc",
-    "text": "Plan food for Hadas",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "5d9688a9-5ada-432d-bb00-f1dbdc6cad70",
@@ -1758,15 +1747,15 @@
     "created_at": "2026-07-29T19:30:25.13306+00:00"
   },
   {
-    "id": "53033027-d439-433b-ae3e-88981e532c6a",
-    "text": "Discuss chore load",
+    "id": "35e766d5-05fa-4812-b04d-24d71555a2dc",
+    "text": "Plan food for Hadas",
     "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T10:33:08.141789+00:00"
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
@@ -1778,6 +1767,17 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-07-29T10:24:20.413643+00:00"
+  },
+  {
+    "id": "53033027-d439-433b-ae3e-88981e532c6a",
+    "text": "Discuss chore load",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T10:33:08.141789+00:00"
   },
   {
     "id": "8becf06d-9811-44a7-92cc-3d981b5f4504",
@@ -2036,17 +2036,6 @@
     "active": false,
     "sort_order": 5,
     "created_at": "2026-08-03T10:28:00.890946+00:00"
-  },
-  {
-    "id": "b771ab52-da64-41ff-819f-5597df1226c8",
-    "text": "Choose target date/time for Rebecca's next workout",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "6a8cf122-8e98-4d64-b643-878e8c14ebf9",
@@ -2482,6 +2471,17 @@
     "created_at": "2026-08-09T05:24:22.801295+00:00"
   },
   {
+    "id": "c8f926f7-7c01-4d53-9df9-41ea6bf6f8a2",
+    "text": "Remove cash from diaper bag",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
     "id": "6ae81368-6a78-45d3-9d41-adb2d951168b",
     "text": "Open wipes, diapers, formula; rip garbage bags, rip diaper garbage bags",
     "section": "shabbat_misc",
@@ -2636,19 +2636,8 @@
     "created_at": "2026-08-01T19:37:03.238169+00:00"
   },
   {
-    "id": "c8f926f7-7c01-4d53-9df9-41ea6bf6f8a2",
-    "text": "Remove cash from diaper bag",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
-  },
-  {
-    "id": "8ac65d71-c907-4537-8ed4-85b95d02f43d",
-    "text": "Discuss freezer / menu for next 3 days / update shopping list",
+    "id": "b771ab52-da64-41ff-819f-5597df1226c8",
+    "text": "Choose target date/time for Rebecca's next workout",
     "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "daily"
@@ -2678,6 +2667,17 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "8ac65d71-c907-4537-8ed4-85b95d02f43d",
+    "text": "Discuss freezer / menu for next 3 days / update shopping list",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
     "id": "3086dd33-09c8-4eb4-8f80-14993f6c309a",
@@ -4882,18 +4882,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 100,
-    "created_at": "2026-07-29T09:44:20.607171+00:00"
-  },
-  {
-    "id": "8ebb1be9-95b0-4e18-9917-f9dac61295bd",
-    "text": "Decide which vegetables to cut and when",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
+    "sort_order": 80,
     "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
@@ -5011,5 +5000,219 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-08-09T06:08:28.505461+00:00"
+  },
+  {
+    "id": "b49d3eb9-3cb1-4d9b-afe9-7b7d37decf21",
+    "text": "Pick up package",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 45,
+    "created_at": "2026-08-09T10:21:40.330897+00:00"
+  },
+  {
+    "id": "8ebb1be9-95b0-4e18-9917-f9dac61295bd",
+    "text": "Decide which vegetables to cut and when",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
+    "id": "18797e8f-4459-421b-8193-fa160eba520b",
+    "text": "Pick up package",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 85,
+    "created_at": "2026-08-09T16:30:46.678334+00:00"
+  },
+  {
+    "id": "bf734f3c-091e-464e-b16f-8fadbf0ed4d8",
+    "text": "Turn off outdoor fans",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-09T16:50:05.97413+00:00"
+  },
+  {
+    "id": "b7ef9d04-c266-418f-9338-67ee67488a41",
+    "text": "Make ptitim for Hadas",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-09T17:28:34.255706+00:00"
+  },
+  {
+    "id": "9175343f-a557-486d-921d-5f7564c04228",
+    "text": "Kzizot",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-09T17:29:34.005016+00:00"
+  },
+  {
+    "id": "f4c61588-2114-4c24-ada2-a1f0467b50f9",
+    "text": "Ptitim",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-08-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-09T17:29:45.159089+00:00"
+  },
+  {
+    "id": "bff47a69-a0c9-4ba4-8000-3362a247735c",
+    "text": "Make tofu",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-09T17:30:39.838535+00:00"
+  },
+  {
+    "id": "eeec760b-c699-4b96-b49d-4a7c5bea4920",
+    "text": "Pick up R's package",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-09T21:15:19.41166+00:00"
+  },
+  {
+    "id": "158c766c-9680-4f6a-b165-14306b43e953",
+    "text": "Pick up PZ's package",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-09T21:15:31.125425+00:00"
+  },
+  {
+    "id": "b3b47a96-2f09-450b-8c57-1989132c5d8c",
+    "text": "Buy diapers",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-09T21:17:50.812358+00:00"
+  },
+  {
+    "id": "34c43dc9-605f-404d-ba50-7b237aa4222d",
+    "text": "Buy fruits and vegetables",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-09T21:18:34.391287+00:00"
+  },
+  {
+    "id": "abc70e86-4d75-4b51-a528-690a515c8459",
+    "text": "IBKR investments",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-08-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-09T21:21:02.480162+00:00"
+  },
+  {
+    "id": "6943e9b0-ca21-4a6d-b766-b13f7e439915",
+    "text": "Tomer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-09T21:21:19.808385+00:00"
+  },
+  {
+    "id": "b6c93d09-4c41-4eca-8073-04b1b688207b",
+    "text": "Mirpeset furniture delivery",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-09T21:21:30.921526+00:00"
+  },
+  {
+    "id": "87379fd3-e35b-4adc-a0d1-63362e1d1ab7",
+    "text": "Handyman",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-09T21:21:38.652273+00:00"
+  },
+  {
+    "id": "e9d46f65-f242-4e87-9702-201fdd87820e",
+    "text": "Pandoor",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-09T21:21:53.578293+00:00"
+  },
+  {
+    "id": "f0f734ad-ea98-425d-97f0-a0736fd96753",
+    "text": "Rebecca doctor",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-10",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-09T21:23:33.247283+00:00"
   }
 ]
