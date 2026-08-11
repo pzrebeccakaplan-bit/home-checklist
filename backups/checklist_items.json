@@ -5084,18 +5084,6 @@
     "created_at": "2026-08-09T17:29:45.159089+00:00"
   },
   {
-    "id": "bff47a69-a0c9-4ba4-8000-3362a247735c",
-    "text": "Make tofu",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-10",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-08-09T17:30:39.838535+00:00"
-  },
-  {
     "id": "eeec760b-c699-4b96-b49d-4a7c5bea4920",
     "text": "Pick up R's package",
     "section": "morning_shared",
@@ -5118,18 +5106,6 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-08-09T21:15:31.125425+00:00"
-  },
-  {
-    "id": "b3b47a96-2f09-450b-8c57-1989132c5d8c",
-    "text": "Buy diapers",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-10",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-08-09T21:17:50.812358+00:00"
   },
   {
     "id": "34c43dc9-605f-404d-ba50-7b237aa4222d",
@@ -5214,5 +5190,75 @@
     "active": true,
     "sort_order": -30,
     "created_at": "2026-08-09T21:23:33.247283+00:00"
+  },
+  {
+    "id": "e48830c9-ef41-40b6-9e2f-3d42354270f9",
+    "text": "Message Talia about island lights and piece for fan",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-10T18:09:23.468546+00:00"
+  },
+  {
+    "id": "b3b47a96-2f09-450b-8c57-1989132c5d8c",
+    "text": "Buy diapers",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-09T21:17:50.812358+00:00"
+  },
+  {
+    "id": "bff47a69-a0c9-4ba4-8000-3362a247735c",
+    "text": "Make tofu",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-09T17:30:39.838535+00:00"
+  },
+  {
+    "id": "78c75bd1-57b2-41ec-b985-c3c0d280f1d6",
+    "text": "Buy Diapers",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-10T19:42:34.272278+00:00"
+  },
+  {
+    "id": "41c0a85d-3361-4f49-9e03-2abfd703f26a",
+    "text": "Buy sink drain",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-10T20:01:49.608341+00:00"
+  },
+  {
+    "id": "8d725fd8-906d-4415-a2e1-4df49481cf26",
+    "text": "Ikea",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-11T05:14:03.556477+00:00"
   }
 ]
