@@ -5120,18 +5120,6 @@
     "created_at": "2026-08-09T21:18:34.391287+00:00"
   },
   {
-    "id": "abc70e86-4d75-4b51-a528-690a515c8459",
-    "text": "IBKR investments",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "date": "2026-08-11",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -25,
-    "created_at": "2026-08-09T21:21:02.480162+00:00"
-  },
-  {
     "id": "6943e9b0-ca21-4a6d-b766-b13f7e439915",
     "text": "Tomer",
     "section": "morning_shared",
@@ -5215,17 +5203,6 @@
     "created_at": "2026-08-09T21:17:50.812358+00:00"
   },
   {
-    "id": "bff47a69-a0c9-4ba4-8000-3362a247735c",
-    "text": "Make tofu",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-08-09T17:30:39.838535+00:00"
-  },
-  {
     "id": "78c75bd1-57b2-41ec-b985-c3c0d280f1d6",
     "text": "Buy Diapers",
     "section": "morning_shared",
@@ -5260,5 +5237,96 @@
     "active": true,
     "sort_order": 15,
     "created_at": "2026-08-11T05:14:03.556477+00:00"
+  },
+  {
+    "id": "8d4d1414-6483-4d0e-bb09-10d95a003a9f",
+    "text": "Plan solids for Guy",
+    "section": "bi_weekly_standup",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-11T13:40:58.699778+00:00"
+  },
+  {
+    "id": "82d39311-0306-49b4-9238-b72bc3dfd4ee",
+    "text": "Diapers Guy",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-08-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-11T14:39:47.242987+00:00"
+  },
+  {
+    "id": "7cc1f251-7de3-4181-98e4-22da6989b7dc",
+    "text": "Plan solids for Guy",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-11T13:40:19.055096+00:00"
+  },
+  {
+    "id": "06c09efd-c375-4f5b-a993-201ea3fb2bc8",
+    "text": "Make plans for Friday",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-11T11:40:14.54237+00:00"
+  },
+  {
+    "id": "bff47a69-a0c9-4ba4-8000-3362a247735c",
+    "text": "Make tofu",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-09T17:30:39.838535+00:00"
+  },
+  {
+    "id": "abc70e86-4d75-4b51-a528-690a515c8459",
+    "text": "IBKR investments",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-09T21:21:02.480162+00:00"
+  },
+  {
+    "id": "9c7d1df0-2d17-4842-b50e-ec8a275ab1e1",
+    "text": "Kitchen repairs",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-12T07:35:29.233169+00:00"
+  },
+  {
+    "id": "35c6d86e-3b6a-44d1-beeb-493fe49b3df6",
+    "text": "Pick up mattress from Kellman",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-12T07:35:59.017703+00:00"
   }
 ]
