@@ -325,6 +325,17 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
+    "id": "828b2ddf-7697-442a-9567-8c6a5c0d27f6",
+    "text": "Pandoor",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 5,
+    "created_at": "2026-08-03T10:20:53.444129+00:00"
+  },
+  {
     "id": "7e82781b-2ead-4cf9-a2e0-e8540aab3d4f",
     "text": "Take Hadas's food",
     "section": "morning_pz_dropoff",
@@ -535,17 +546,6 @@
     "active": true,
     "sort_order": 30,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
-  },
-  {
-    "id": "828b2ddf-7697-442a-9567-8c6a5c0d27f6",
-    "text": "Pandoor",
-    "section": "ongoing_tracked_in_standup",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-03T10:20:53.444129+00:00"
   },
   {
     "id": "6dfed573-e0b2-417d-9c15-04916bde9d4b",
@@ -5328,5 +5328,29 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-08-12T07:35:59.017703+00:00"
+  },
+  {
+    "id": "c1f1b8ff-d7e3-44af-a428-df47bd602765",
+    "text": "Change sheets",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-12T20:04:48.021639+00:00"
+  },
+  {
+    "id": "12bda367-447a-4504-bd90-91f0f379b8fc",
+    "text": "Ask kellman about shabbat lunch",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-12T20:30:41.423015+00:00"
   }
 ]
