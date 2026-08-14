@@ -45,17 +45,6 @@
     "created_at": "2026-08-06T22:05:59.833536+00:00"
   },
   {
-    "id": "a077c26b-6fcd-4505-98ce-f5bb5113cbfb",
-    "text": "Write down address- kiddush",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 290,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "d4e8add4-d2fd-491c-b3b4-507b4468c867",
     "text": "Mamad - fan",
     "section": "shabbat_room_prep",
@@ -123,15 +112,15 @@
     "created_at": "2026-08-08T19:28:21.884186+00:00"
   },
   {
-    "id": "1cf2d9ed-7d89-489b-8c01-c7b7b38e3037",
-    "text": "Remove dry laundry from clothesline",
-    "section": "morning_shared",
+    "id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
+    "text": "Take vitamins",
+    "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:41:44.938265+00:00"
+    "sort_order": 40,
+    "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
     "id": "5da92fa1-bcbc-4792-bbd2-c656247c4e3c",
@@ -358,25 +347,14 @@
     "created_at": "2026-07-29T09:42:38.655001+00:00"
   },
   {
-    "id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
-    "text": "Take vitamins",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-07-02T12:42:11.614803+00:00"
-  },
-  {
-    "id": "76a9ff32-e722-4a16-817c-8dbbe207d208",
-    "text": "Put away 3 things in baby room",
+    "id": "1cf2d9ed-7d89-489b-8c01-c7b7b38e3037",
+    "text": "Remove dry laundry from clothesline",
     "section": "morning_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
+    "sort_order": 10,
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
@@ -548,6 +526,28 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
+    "id": "a077c26b-6fcd-4505-98ce-f5bb5113cbfb",
+    "text": "Write down address",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 290,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "76a9ff32-e722-4a16-817c-8dbbe207d208",
+    "text": "Put away 3 things in baby room",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:41:44.938265+00:00"
+  },
+  {
     "id": "6dfed573-e0b2-417d-9c15-04916bde9d4b",
     "text": "Message Dani",
     "section": "morning_shared",
@@ -651,17 +651,6 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
-    "text": "Put Caya away",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
     "id": "b0efbcd0-c9f4-4a3d-a200-272ce8f83825",
     "text": "Deliver/return stuff to people",
     "section": "morning_shared",
@@ -672,17 +661,6 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-08-06T20:34:41.587033+00:00"
-  },
-  {
-    "id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
-    "text": "Breakfast",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "cf5f9d03-a6ea-4323-a047-bed4dc5124f5",
@@ -851,14 +829,14 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
-    "text": "Shower if showering",
+    "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
+    "text": "Put Caya away",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 50,
+    "sort_order": 10,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -994,14 +972,14 @@
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
-    "id": "b95abb43-4685-4b8c-9eb5-e9002434fc7c",
-    "text": "Get dressed",
+    "id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
+    "text": "Breakfast",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 60,
+    "sort_order": 30,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1236,14 +1214,14 @@
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
-    "id": "fdeec61f-5a6a-4ca3-98f7-123b520b7c0e",
-    "text": "Take out garbage",
+    "id": "b95abb43-4685-4b8c-9eb5-e9002434fc7c",
+    "text": "Get dressed",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 110,
+    "sort_order": 90,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1256,17 +1234,6 @@
     "active": true,
     "sort_order": 60,
     "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "5aac5a23-9084-43a8-86d0-9680c0a9d7f1",
-    "text": "Water",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "348bb52d-e579-487c-a391-d55fcca07ff3",
@@ -1302,6 +1269,39 @@
     "created_at": "2026-07-29T09:44:20.969311+00:00"
   },
   {
+    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
+    "text": "Shower if showering",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
+    "id": "5aac5a23-9084-43a8-86d0-9680c0a9d7f1",
+    "text": "Water",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
+    "id": "fdeec61f-5a6a-4ca3-98f7-123b520b7c0e",
+    "text": "Take out garbage",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 120,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "facc1703-884f-4e45-b173-51b1cdc5cf9b",
     "text": "Try swapping fan bulb",
     "section": "morning_shared",
@@ -1312,6 +1312,17 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-06T20:34:51.961658+00:00"
+  },
+  {
+    "id": "9d925280-ae9c-4a00-b156-3a72571a379e",
+    "text": "Move laundry",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 110,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "5d9688a9-5ada-432d-bb00-f1dbdc6cad70",
@@ -1725,17 +1736,6 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "9d925280-ae9c-4a00-b156-3a72571a379e",
-    "text": "Move laundry",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 100,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
     "id": "d48c779c-66fe-40ee-a07d-89d67dc446bc",
     "text": "Turn off air conditioners in bedroom",
     "section": "morning_pz_dropoff",
@@ -1758,17 +1758,6 @@
     "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
-    "id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
-    "text": "Workout / vacuum a room / errand",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T10:24:20.413643+00:00"
-  },
-  {
     "id": "53033027-d439-433b-ae3e-88981e532c6a",
     "text": "Discuss chore load",
     "section": "evening_first_to_bed",
@@ -1778,6 +1767,17 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-07-29T10:33:08.141789+00:00"
+  },
+  {
+    "id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
+    "text": "Workout / vacuum a room / errand",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-07-29T10:24:20.413643+00:00"
   },
   {
     "id": "8becf06d-9811-44a7-92cc-3d981b5f4504",
@@ -2038,6 +2038,17 @@
     "created_at": "2026-08-03T10:28:00.890946+00:00"
   },
   {
+    "id": "75d7a632-2e62-4055-b32b-18eecd63f08e",
+    "text": "Brush teeth",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "6a8cf122-8e98-4d64-b643-878e8c14ebf9",
     "text": "test dishwasher",
     "section": "morning_rebecca",
@@ -2247,17 +2258,6 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "75d7a632-2e62-4055-b32b-18eecd63f08e",
-    "text": "Brush teeth",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "a3f82149-4493-456b-8815-f7a2c12fea90",
@@ -3065,17 +3065,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "582a103a-c78d-4062-9260-a869b9754054",
-    "text": "Prepare food for the day",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 100,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
     "id": "8b5a2236-b19d-43af-9897-26b5af3c831b",
     "text": "Window, fan, light, A/C, Shabbat lamp — check each room:",
     "section": "shabbat_cleaning",
@@ -3385,6 +3374,17 @@
     "active": true,
     "sort_order": -50,
     "created_at": "2026-08-08T19:47:05.17086+00:00"
+  },
+  {
+    "id": "582a103a-c78d-4062-9260-a869b9754054",
+    "text": "Prepare food for the day",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "140598a8-5bfa-4002-9cdf-8e5a630b427d",
@@ -4930,6 +4930,18 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
+    "id": "432bde8e-a14f-49eb-aa10-f9079270bf4b",
+    "text": "Update Tamar's google doc",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "date": "2026-08-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-13T10:34:58.182547+00:00"
+  },
+  {
     "id": "1d79ee67-1065-4005-9667-545b458e6068",
     "text": "Message tova about shabbat",
     "section": "morning_shared",
@@ -5012,6 +5024,30 @@
     "active": true,
     "sort_order": 45,
     "created_at": "2026-08-09T10:21:40.330897+00:00"
+  },
+  {
+    "id": "84d32abd-fe99-4a26-9d61-8be18fc3cf9a",
+    "text": "Satay chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-13T20:45:25.326743+00:00"
+  },
+  {
+    "id": "497330c1-0260-447b-9962-11064d582fd4",
+    "text": "Kale salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-13T20:45:34.592039+00:00"
   },
   {
     "id": "8ebb1be9-95b0-4e18-9917-f9dac61295bd",
@@ -5239,6 +5275,18 @@
     "created_at": "2026-08-11T05:14:03.556477+00:00"
   },
   {
+    "id": "560e758b-06bb-43c9-86f8-16f4a27fe3c7",
+    "text": "Kids to PZ's parents",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-14T07:34:49.07745+00:00"
+  },
+  {
     "id": "8d4d1414-6483-4d0e-bb09-10d95a003a9f",
     "text": "Plan solids for Guy",
     "section": "bi_weekly_standup",
@@ -5260,6 +5308,30 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-08-11T14:39:47.242987+00:00"
+  },
+  {
+    "id": "90a0b24d-b090-4c44-bb0e-25b686fc3c75",
+    "text": "Food shopping",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-14T07:34:55.924857+00:00"
+  },
+  {
+    "id": "eae0932b-cf58-4b7a-9ec4-b30a8e831593",
+    "text": "Clothing for Hadas",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-14T07:35:21.440784+00:00"
   },
   {
     "id": "7cc1f251-7de3-4181-98e4-22da6989b7dc",
@@ -5352,5 +5424,29 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-08-12T20:30:41.423015+00:00"
+  },
+  {
+    "id": "f7dcd96a-dc64-4ce4-9898-d8448db6157e",
+    "text": "Update number of occupants in home",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-08-13T23:21:22.276641+00:00"
+  },
+  {
+    "id": "f9338eef-1b07-427a-bd46-d07a18db3d2d",
+    "text": "Antibiotics",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-08-14T07:37:41.921843+00:00"
   }
 ]
