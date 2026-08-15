@@ -119,7 +119,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
+    "sort_order": 60,
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
@@ -663,6 +663,17 @@
     "created_at": "2026-08-06T20:34:41.587033+00:00"
   },
   {
+    "id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
+    "text": "Breakfast",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "cf5f9d03-a6ea-4323-a047-bed4dc5124f5",
     "text": "Move stroller downstairs",
     "section": "shabbat_before",
@@ -829,14 +840,14 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
-    "text": "Put Caya away",
+    "id": "fdeec61f-5a6a-4ca3-98f7-123b520b7c0e",
+    "text": "Take out garbage",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 10,
+    "sort_order": 130,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -970,17 +981,6 @@
     "active": false,
     "sort_order": 110,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
-  },
-  {
-    "id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
-    "text": "Breakfast",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "fec452c3-35b3-44fb-9545-34caebb98045",
@@ -1214,14 +1214,14 @@
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
-    "id": "b95abb43-4685-4b8c-9eb5-e9002434fc7c",
-    "text": "Get dressed",
+    "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
+    "text": "Put Caya away",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 90,
+    "sort_order": 10,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1269,17 +1269,6 @@
     "created_at": "2026-07-29T09:44:20.969311+00:00"
   },
   {
-    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
-    "text": "Shower if showering",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
     "id": "5aac5a23-9084-43a8-86d0-9680c0a9d7f1",
     "text": "Water",
     "section": "morning_rebecca",
@@ -1287,18 +1276,29 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 60,
+    "sort_order": 50,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
-    "id": "fdeec61f-5a6a-4ca3-98f7-123b520b7c0e",
-    "text": "Take out garbage",
+    "id": "b95abb43-4685-4b8c-9eb5-e9002434fc7c",
+    "text": "Get dressed",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 120,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
+    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
+    "text": "Shower if showering",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 90,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1321,7 +1321,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 110,
+    "sort_order": 120,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1776,7 +1776,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 70,
+    "sort_order": 80,
     "created_at": "2026-07-29T10:24:20.413643+00:00"
   },
   {
@@ -2920,28 +2920,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "5277111a-f827-4636-a0ba-e5ea746154ce",
-    "text": "Defrost pitot",
-    "section": "shabbat_cooking",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "18891d82-e53c-466f-90bd-9988d3a8e8e2",
-    "text": "Challah",
-    "section": "shabbat_errands",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "e622fd95-6d5b-455e-9362-a13755a556b9",
     "text": "Beets",
     "section": "shabbat_cooking",
@@ -2952,17 +2930,6 @@
     "active": true,
     "sort_order": -35,
     "created_at": "2026-08-06T21:29:25.855559+00:00"
-  },
-  {
-    "id": "01558cef-21cc-4fb8-80ad-6cb990d5f4a7",
-    "text": "Take stroller out of car",
-    "section": "shabbat_errands",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "1b9c8d01-3508-4deb-b3f7-e9c00966856e",
@@ -3376,15 +3343,15 @@
     "created_at": "2026-08-08T19:47:05.17086+00:00"
   },
   {
-    "id": "582a103a-c78d-4062-9260-a869b9754054",
-    "text": "Prepare food for the day",
-    "section": "morning_rebecca",
+    "id": "01558cef-21cc-4fb8-80ad-6cb990d5f4a7",
+    "text": "Take stroller out of car",
+    "section": "shabbat_errands",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 100,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
+    "sort_order": 40,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "140598a8-5bfa-4002-9cdf-8e5a630b427d",
@@ -3396,6 +3363,39 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-08-02T07:12:20.51172+00:00"
+  },
+  {
+    "id": "5277111a-f827-4636-a0ba-e5ea746154ce",
+    "text": "Defrost pitot",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "18891d82-e53c-466f-90bd-9988d3a8e8e2",
+    "text": "Challah",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "582a103a-c78d-4062-9260-a869b9754054",
+    "text": "Prepare food for the day",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 110,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "5bf7918c-6bd8-4968-87cd-d17e7b74031c",
@@ -5026,30 +5026,6 @@
     "created_at": "2026-08-09T10:21:40.330897+00:00"
   },
   {
-    "id": "84d32abd-fe99-4a26-9d61-8be18fc3cf9a",
-    "text": "Satay chicken",
-    "section": "shabbat_cooking",
-    "recurrence_rule": {
-      "date": "2026-08-14",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-13T20:45:25.326743+00:00"
-  },
-  {
-    "id": "497330c1-0260-447b-9962-11064d582fd4",
-    "text": "Kale salad",
-    "section": "shabbat_cooking",
-    "recurrence_rule": {
-      "date": "2026-08-14",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-08-13T20:45:34.592039+00:00"
-  },
-  {
     "id": "8ebb1be9-95b0-4e18-9917-f9dac61295bd",
     "text": "Decide which vegetables to cut and when",
     "section": "evening_first_to_bed",
@@ -5318,20 +5294,8 @@
       "type": "once"
     },
     "active": true,
-    "sort_order": 0,
+    "sort_order": 10,
     "created_at": "2026-08-14T07:34:55.924857+00:00"
-  },
-  {
-    "id": "eae0932b-cf58-4b7a-9ec4-b30a8e831593",
-    "text": "Clothing for Hadas",
-    "section": "shabbat_errands",
-    "recurrence_rule": {
-      "date": "2026-08-14",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-08-14T07:35:21.440784+00:00"
   },
   {
     "id": "7cc1f251-7de3-4181-98e4-22da6989b7dc",
@@ -5426,16 +5390,76 @@
     "created_at": "2026-08-12T20:30:41.423015+00:00"
   },
   {
-    "id": "f7dcd96a-dc64-4ce4-9898-d8448db6157e",
-    "text": "Update number of occupants in home",
-    "section": "morning_shared",
+    "id": "84d32abd-fe99-4a26-9d61-8be18fc3cf9a",
+    "text": "Satay chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-13T20:45:25.326743+00:00"
+  },
+  {
+    "id": "37aebcd4-a3d0-4d01-bc8b-571842ef6138",
+    "text": "Chicken on the bone",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-14T07:39:49.032148+00:00"
+  },
+  {
+    "id": "3b3c1719-8c9d-4b64-b460-185f42eea92e",
+    "text": "Massage kale",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-14T07:39:56.946293+00:00"
+  },
+  {
+    "id": "679e0aad-9a25-4709-a4f1-57466286509f",
+    "text": "Juice lemons",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-14T07:40:27.504505+00:00"
+  },
+  {
+    "id": "eae0932b-cf58-4b7a-9ec4-b30a8e831593",
+    "text": "Clothing for Hadas",
+    "section": "shabbat_errands",
     "recurrence_rule": {
       "date": "2026-08-14",
       "type": "once"
     },
     "active": true,
     "sort_order": 30,
-    "created_at": "2026-08-13T23:21:22.276641+00:00"
+    "created_at": "2026-08-14T07:35:21.440784+00:00"
+  },
+  {
+    "id": "497330c1-0260-447b-9962-11064d582fd4",
+    "text": "Kale salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-13T20:45:34.592039+00:00"
   },
   {
     "id": "f9338eef-1b07-427a-bd46-d07a18db3d2d",
@@ -5446,7 +5470,54 @@
       "type": "once"
     },
     "active": true,
-    "sort_order": 50,
+    "sort_order": 70,
     "created_at": "2026-08-14T07:37:41.921843+00:00"
+  },
+  {
+    "id": "e6cb8948-3974-4b10-bb51-cfaceca95e35",
+    "text": "Message Liora",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-08-14T07:38:31.902895+00:00"
+  },
+  {
+    "id": "916bed55-6cea-43e9-9595-2ba46ce4ee15",
+    "text": "Rice noodles",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-14T07:41:38.785133+00:00"
+  },
+  {
+    "id": "b64e382e-c091-47b6-9fae-943867cb392b",
+    "text": "Satay sauce",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-14T07:41:46.289817+00:00"
+  },
+  {
+    "id": "f7dcd96a-dc64-4ce4-9898-d8448db6157e",
+    "text": "Update number of occupants in home",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-08-13T23:21:22.276641+00:00"
   }
 ]
