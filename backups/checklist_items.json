@@ -123,6 +123,17 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
+    "id": "5da92fa1-bcbc-4792-bbd2-c656247c4e3c",
+    "text": "diapers to daycare",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 50,
+    "created_at": "2026-07-07T06:58:35.166576+00:00"
+  },
+  {
     "id": "e56b8b02-e995-47cc-aefd-c5d75edaf5f0",
     "text": "Extra outfit to maon (for both kids for water stuff)",
     "section": "morning_pz_dropoff",
@@ -132,17 +143,6 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
-  },
-  {
-    "id": "5da92fa1-bcbc-4792-bbd2-c656247c4e3c",
-    "text": "diapers to daycare",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-07-07T06:58:35.166576+00:00"
   },
   {
     "id": "eb8a9332-1a14-4a0e-9554-8bea189f31c6",
@@ -1404,61 +1404,6 @@
     "created_at": "2026-08-07T10:29:45.038455+00:00"
   },
   {
-    "id": "78414119-f360-4e35-9a63-11df44768723",
-    "text": "Air conditioner off",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "e3112aa4-b88a-43b7-b912-6a9e4aede633",
-    "text": "Lights off",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "93849082-9d4d-4afd-93e9-c6cd77eb9b3c",
-    "text": "Food away",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "1a9fce13-d21b-4f1e-a235-7a37ac71e407",
-    "text": "Turn on baby monitor",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "8fd3dc15-898a-4989-8c6b-de07eb746c22",
-    "text": "Empty microwave",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
     "id": "e8f36788-f01b-429c-98eb-9b0d48dfc762",
     "text": "Underwear",
     "section": "evening_pz_tomorrow",
@@ -1736,6 +1681,17 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "4f472009-41eb-4821-b5a2-2892f334afa0",
+    "text": "Broken ceiling fan light",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": -15,
+    "created_at": "2026-08-03T10:21:16.556112+00:00"
+  },
+  {
     "id": "d48c779c-66fe-40ee-a07d-89d67dc446bc",
     "text": "Turn off air conditioners in bedroom",
     "section": "morning_pz_dropoff",
@@ -1758,6 +1714,17 @@
     "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
+    "id": "1a9fce13-d21b-4f1e-a235-7a37ac71e407",
+    "text": "Turn on baby monitor",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
+  },
+  {
     "id": "53033027-d439-433b-ae3e-88981e532c6a",
     "text": "Discuss chore load",
     "section": "evening_first_to_bed",
@@ -1778,6 +1745,28 @@
     "active": true,
     "sort_order": 80,
     "created_at": "2026-07-29T10:24:20.413643+00:00"
+  },
+  {
+    "id": "8fd3dc15-898a-4989-8c6b-de07eb746c22",
+    "text": "Empty microwave",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
+  },
+  {
+    "id": "e3112aa4-b88a-43b7-b912-6a9e4aede633",
+    "text": "Lights off",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
     "id": "8becf06d-9811-44a7-92cc-3d981b5f4504",
@@ -1855,17 +1844,6 @@
     "active": true,
     "sort_order": 80,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
-  },
-  {
-    "id": "4f472009-41eb-4821-b5a2-2892f334afa0",
-    "text": "Broken ceiling fan light",
-    "section": "ongoing_tracked_in_standup",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -15,
-    "created_at": "2026-08-03T10:21:16.556112+00:00"
   },
   {
     "id": "1addc204-e430-43f3-ad2b-d8aac0b4f799",
@@ -5321,17 +5299,6 @@
     "created_at": "2026-08-11T11:40:14.54237+00:00"
   },
   {
-    "id": "bff47a69-a0c9-4ba4-8000-3362a247735c",
-    "text": "Make tofu",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-08-09T17:30:39.838535+00:00"
-  },
-  {
     "id": "abc70e86-4d75-4b51-a528-690a515c8459",
     "text": "IBKR investments",
     "section": "evening_shared",
@@ -5636,18 +5603,6 @@
     "created_at": "2026-08-15T21:58:46.112188+00:00"
   },
   {
-    "id": "26cf7ed3-19dd-4b24-bf72-663df3822c5e",
-    "text": "Clean bathtub with Hadas",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-16",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-08-15T22:08:39.41018+00:00"
-  },
-  {
     "id": "b9c3c001-34f3-4f2c-bdb4-09b874564a95",
     "text": "Make two referral appointments for Hadas",
     "section": "morning_shared",
@@ -5658,5 +5613,121 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-16T04:44:56.702047+00:00"
+  },
+  {
+    "id": "bff47a69-a0c9-4ba4-8000-3362a247735c",
+    "text": "Make tofu",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 15,
+    "created_at": "2026-08-09T17:30:39.838535+00:00"
+  },
+  {
+    "id": "26cf7ed3-19dd-4b24-bf72-663df3822c5e",
+    "text": "Clean bathtub",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-15T22:08:39.41018+00:00"
+  },
+  {
+    "id": "41e1a0db-ce9f-4a11-805f-a3f9076551e2",
+    "text": "Keilim mikva",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-16T19:38:19.181998+00:00"
+  },
+  {
+    "id": "f9577e1b-006a-4556-89e9-e377640e3649",
+    "text": "Food prep: roast vegetables, chopping salad,",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-16T19:42:26.326482+00:00"
+  },
+  {
+    "id": "2523f0d5-346a-447b-9347-1fc67d1ee3e8",
+    "text": "Message עץ של יאשה- desk",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-16T19:46:22.771834+00:00"
+  },
+  {
+    "id": "0edf2cff-ab40-49d9-8161-94749fecd1ce",
+    "text": "Home app",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-16T19:47:17.598978+00:00"
+  },
+  {
+    "id": "1d3c21e6-c172-4581-820e-f221ec2b3346",
+    "text": "Message eliezer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-16T19:47:41.780423+00:00"
+  },
+  {
+    "id": "5f0eef15-ef55-4e45-8848-b2b1147e27bd",
+    "text": "Pick up Guy's meds",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-16T20:39:08.496412+00:00"
+  },
+  {
+    "id": "78414119-f360-4e35-9a63-11df44768723",
+    "text": "Air conditioner off",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
+  },
+  {
+    "id": "93849082-9d4d-4afd-93e9-c6cd77eb9b3c",
+    "text": "Food away",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
   }
 ]
