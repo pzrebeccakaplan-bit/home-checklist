@@ -10,16 +10,6 @@
     ]
   },
   {
-    "id": "morning_shared",
-    "label": "Morning: Shared",
-    "sort_order": 20,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
-    "friday_only": false,
-    "tags": [
-      "morning"
-    ]
-  },
-  {
     "id": "shabbat_errands",
     "label": "Shabbat: Errands",
     "sort_order": 70,
@@ -50,34 +40,33 @@
     ]
   },
   {
-    "id": "morning_pz_dropoff",
-    "label": "Morning: PZ – Before Dropoff",
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:37:42.606711+00:00",
+    "id": "hadas_food",
+    "label": "Hadas food",
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:53:50.059716+00:00",
     "friday_only": false,
     "tags": [
       "morning"
     ]
   },
   {
-    "id": "morning_rebecca",
-    "label": "Morning: Rebecca",
-    "sort_order": 50,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
-    "friday_only": false,
-    "tags": [
-      "morning"
-    ]
-  },
-  {
-    "id": "evening_diaper_bag",
-    "label": "Restock Diaper Bag",
-    "sort_order": 80,
+    "id": "evening_first_to_bed",
+    "label": "Evening standup",
+    "sort_order": 60,
     "created_at": "2026-07-29T09:41:27.835071+00:00",
     "friday_only": false,
     "tags": [
-      "evening",
-      "shabbat"
+      "evening"
+    ]
+  },
+  {
+    "id": "evening_last_to_bed",
+    "label": "Evening: Last to Bed",
+    "sort_order": 110,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
     ]
   },
   {
@@ -91,29 +80,29 @@
     ]
   },
   {
-    "id": "hadas_food",
-    "label": "Hadas food",
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:53:50.059716+00:00",
+    "id": "morning_pz_work",
+    "label": "Morning: PZ – Before Work",
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
     "friday_only": false,
     "tags": [
       "morning"
     ]
   },
   {
-    "id": "evening_rebecca",
-    "label": "Evening: Rebecca",
-    "sort_order": 110,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
+    "id": "morning_pz_dropoff",
+    "label": "Morning: PZ – Before Dropoff",
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:37:42.606711+00:00",
     "friday_only": false,
     "tags": [
-      "evening"
+      "morning"
     ]
   },
   {
     "id": "evening_pz",
     "label": "Evening: PZ",
-    "sort_order": 100,
+    "sort_order": 90,
     "created_at": "2026-07-07T06:31:24.255005+00:00",
     "friday_only": false,
     "tags": [
@@ -131,10 +120,20 @@
     ]
   },
   {
-    "id": "evening_first_to_bed",
-    "label": "Evening standup",
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "id": "morning_shared",
+    "label": "Morning: Shared",
+    "sort_order": 20,
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
+    "friday_only": false,
+    "tags": [
+      "morning"
+    ]
+  },
+  {
+    "id": "evening_shared",
+    "label": "Evening: Shared",
+    "sort_order": 80,
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
     "friday_only": false,
     "tags": [
       "evening"
@@ -151,9 +150,19 @@
     ]
   },
   {
-    "id": "evening_shared",
-    "label": "Evening: Shared",
-    "sort_order": 90,
+    "id": "evening_pz_tomorrow",
+    "label": "Evening: PZ – Tomorrow Prep",
+    "sort_order": 120,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "evening_rebecca",
+    "label": "Evening: Rebecca",
+    "sort_order": 100,
     "created_at": "2026-07-07T06:31:24.255005+00:00",
     "friday_only": false,
     "tags": [
@@ -161,13 +170,24 @@
     ]
   },
   {
-    "id": "morning_pz_work",
-    "label": "Morning: PZ – Before Work",
+    "id": "morning_rebecca",
+    "label": "Morning: Rebecca",
     "sort_order": 40,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
     "friday_only": false,
     "tags": [
       "morning"
+    ]
+  },
+  {
+    "id": "evening_diaper_bag",
+    "label": "Restock Diaper Bag",
+    "sort_order": 70,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening",
+      "shabbat"
     ]
   },
   {
@@ -208,26 +228,6 @@
     "friday_only": false,
     "tags": [
       "motzei"
-    ]
-  },
-  {
-    "id": "evening_last_to_bed",
-    "label": "Evening: Last to Bed",
-    "sort_order": 120,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
-    "id": "evening_pz_tomorrow",
-    "label": "Evening: PZ – Tomorrow Prep",
-    "sort_order": 130,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
     ]
   }
 ]
