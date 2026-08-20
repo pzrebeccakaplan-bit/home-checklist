@@ -5754,18 +5754,6 @@
     "created_at": "2026-08-17T18:31:30.085775+00:00"
   },
   {
-    "id": "2be60347-f194-4b96-a3ea-fe0c91e88839",
-    "text": "Cancel neurologist appointment",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-19",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 25,
-    "created_at": "2026-08-18T19:23:56.102606+00:00"
-  },
-  {
     "id": "c1d5c4e3-93a8-4d45-85c3-71196aa70fa8",
     "text": "Chickpea stew",
     "section": "shabbat_cooking",
@@ -5908,5 +5896,52 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-08-18T21:19:53.040827+00:00"
+  },
+  {
+    "id": "2be60347-f194-4b96-a3ea-fe0c91e88839",
+    "text": "Cancel neurologist appointment",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-08-18T19:23:56.102606+00:00"
+  },
+  {
+    "id": "1ec6fc5a-9a59-4571-9fb6-b31504dab83c",
+    "text": "Food shopping",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-08-19",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-08-19T12:43:48.313017+00:00"
+  },
+  {
+    "id": "13d214e8-236d-4f07-8c52-629a50ca1f26",
+    "text": "Keilim mikva",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-20",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-19T20:05:33.919966+00:00"
+  },
+  {
+    "id": "a5e75778-fd64-4886-9047-34411c2225d5",
+    "text": "Find babysitter",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-20",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-19T20:50:48.84345+00:00"
   }
 ]

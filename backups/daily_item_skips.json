@@ -1090,5 +1090,23 @@
     "item_id": "03b6137e-8481-43b7-b518-78f128381d08",
     "skip_on": "2026-08-18",
     "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "b3eed650-1abf-4a00-a928-6f265c118baf",
+    "item_id": "5e576901-3e94-4513-92c4-14016535ea89",
+    "skip_on": "2026-08-21",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "9c44fb5e-b862-40cf-a422-53c88ce7235b",
+    "item_id": "a83b543d-6bee-4ed9-9ab0-e5e74d8d8d19",
+    "skip_on": "2026-08-21",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "fa4fa8c8-0182-4002-8810-5e4d73303ae6",
+    "item_id": "d0a71c92-64ff-4e26-b3ac-cdc6f948a641",
+    "skip_on": "2026-08-19",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
   }
 ]
