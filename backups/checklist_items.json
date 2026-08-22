@@ -245,6 +245,17 @@
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
+    "id": "c8187e15-5289-4aa6-ae4c-001b1b32d648",
+    "text": "Unplug vacuum cleaner",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": 90,
+    "created_at": "2026-07-29T09:41:44.938265+00:00"
+  },
+  {
     "id": "f78ee6a8-653c-4ac6-a44d-6f13e463972e",
     "text": "Hadas's water bottle",
     "section": "morning_pz_dropoff",
@@ -344,17 +355,6 @@
     },
     "active": true,
     "sort_order": 30,
-    "created_at": "2026-07-29T09:41:44.938265+00:00"
-  },
-  {
-    "id": "c8187e15-5289-4aa6-ae4c-001b1b32d648",
-    "text": "Unplug vacuum cleaner",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
@@ -6103,5 +6103,64 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-08-21T06:50:56.471038+00:00"
+  },
+  {
+    "id": "812889d6-2580-457c-b157-6668968527b7",
+    "text": "Message Smadi",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-21T08:03:05.539583+00:00"
+  },
+  {
+    "id": "686edbbf-75ff-435e-a8a8-4118be105467",
+    "text": "Chop and wash lettuce",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-21T08:07:04.875782+00:00"
+  },
+  {
+    "id": "b813c749-680c-4a1b-ac33-4e8d782f84dd",
+    "text": "Roast garlic",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-08-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-21T08:07:37.699367+00:00"
+  },
+  {
+    "id": "3658139c-cfc5-43f1-abf0-ef42d1ea0c6b",
+    "text": "Move desk",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "date": "2026-08-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-21T08:14:34.898272+00:00"
+  },
+  {
+    "id": "a37b715d-bf95-4253-bab0-e96e0846d7f4",
+    "text": "Release fridge vacuum",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-21T15:20:19.28144+00:00"
   }
 ]
