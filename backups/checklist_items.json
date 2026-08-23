@@ -1404,116 +1404,6 @@
     "created_at": "2026-08-07T10:29:45.038455+00:00"
   },
   {
-    "id": "e8f36788-f01b-429c-98eb-9b0d48dfc762",
-    "text": "Underwear",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "5073a7bc-486d-439b-af3c-ba9beb6a1123",
-    "text": "Socks",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "5518db69-3ff8-4b2e-ac47-3a4710c0a8d7",
-    "text": "Shirt",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "45ae09d1-c296-423a-b2cf-eb71642f1eae",
-    "text": "Dry fit shirt/sweatshirt",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "d9980375-d8e6-4130-91e1-7fa970e073da",
-    "text": "Backpack",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "82ff155d-eef1-443f-8239-8633adeea5b0",
-    "text": "Wallet",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "d4b73328-b1c1-482f-a032-4b6256efce4c",
-    "text": "Pants",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "ac031e28-6036-4737-b0cb-2c1d6f362c99",
-    "text": "Watch",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "e657bffe-4618-4b3a-a4f3-8e5d9a7c01bd",
-    "text": "Sneakers",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "cff5cf4f-cf00-4d0e-b243-f0c056899353",
-    "text": "Deodorant",
-    "section": "evening_pz_tomorrow",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 100,
-    "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
     "id": "22e6eab8-cf96-4382-9d7a-733d3c658c75",
     "text": "Master bedroom - air conditioning",
     "section": "shabbat_room_prep",
@@ -1601,6 +1491,17 @@
     "active": true,
     "sort_order": 190,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "cff5cf4f-cf00-4d0e-b243-f0c056899353",
+    "text": "Deodorant",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
   },
   {
     "id": "1addc204-e430-43f3-ad2b-d8aac0b4f799",
@@ -1758,6 +1659,17 @@
     "created_at": "2026-08-01T19:19:02.124308+00:00"
   },
   {
+    "id": "5073a7bc-486d-439b-af3c-ba9beb6a1123",
+    "text": "Socks",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
     "id": "9a236c7e-8873-41a5-b9d3-79907fbfb97a",
     "text": "Air conditioning timer",
     "section": "evening_shared",
@@ -1857,6 +1769,17 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "45ae09d1-c296-423a-b2cf-eb71642f1eae",
+    "text": "Dry fit shirt/sweatshirt",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
     "id": "c63b6c1a-9982-4b26-8151-ae9257d5c57d",
     "text": "Extra outfit for Hadas",
     "section": "evening_shared",
@@ -1954,6 +1877,83 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-08-01T18:39:24.521034+00:00"
+  },
+  {
+    "id": "e8f36788-f01b-429c-98eb-9b0d48dfc762",
+    "text": "Underwear",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
+    "id": "e657bffe-4618-4b3a-a4f3-8e5d9a7c01bd",
+    "text": "Sneakers",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
+    "id": "d9980375-d8e6-4130-91e1-7fa970e073da",
+    "text": "Backpack",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
+    "id": "ac031e28-6036-4737-b0cb-2c1d6f362c99",
+    "text": "Watch",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
+    "id": "5518db69-3ff8-4b2e-ac47-3a4710c0a8d7",
+    "text": "Shirt",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
+    "id": "d4b73328-b1c1-482f-a032-4b6256efce4c",
+    "text": "Pants",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
+  },
+  {
+    "id": "82ff155d-eef1-443f-8239-8633adeea5b0",
+    "text": "Wallet",
+    "section": "evening_pz_tomorrow",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-07-29T09:47:02.393471+00:00"
   },
   {
     "id": "0136bc44-8676-460a-83fb-fe5eb789287e",
@@ -5938,18 +5938,6 @@
     "created_at": "2026-08-20T17:52:34.190037+00:00"
   },
   {
-    "id": "fb1f8f13-0fed-4d10-9ee7-4142c03b8fa5",
-    "text": "IBKR investments",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "date": "2026-08-22",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -25,
-    "created_at": "2026-08-20T17:57:44.052741+00:00"
-  },
-  {
     "id": "5dc679da-b959-4640-952f-591802e6799e",
     "text": "Plan meal for Bergfeld",
     "section": "evening_first_to_bed",
@@ -6162,5 +6150,88 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-21T15:20:19.28144+00:00"
+  },
+  {
+    "id": "7480beaf-c98d-4108-a19e-ff2f6f351258",
+    "text": "Dev database stuff",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-08-22",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-22T20:05:52.027718+00:00"
+  },
+  {
+    "id": "fb1f8f13-0fed-4d10-9ee7-4142c03b8fa5",
+    "text": "IBKR investments",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-08-22",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -25,
+    "created_at": "2026-08-20T17:57:44.052741+00:00"
+  },
+  {
+    "id": "7087156e-2521-45df-8e70-4836c36926c3",
+    "text": "Message Dani",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-22T21:24:24.023454+00:00"
+  },
+  {
+    "id": "02acff59-11c7-495f-9b3a-90f00b559cd7",
+    "text": "Message Mayer + Eugenie about Shabbat",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-22T21:26:04.467294+00:00"
+  },
+  {
+    "id": "b821111a-11ac-4e94-a0a0-96c1151ef04b",
+    "text": "Confirm Shabbat with Kravitz",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-22T21:26:21.980405+00:00"
+  },
+  {
+    "id": "4e6b18dc-73b1-42b8-a3b7-ae40996a5312",
+    "text": "Keilim Mikva",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-22T21:44:11.149229+00:00"
+  },
+  {
+    "id": "2d8b0b7c-2775-4ff6-832a-06caece5cad5",
+    "text": "Prep ORS powder",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-23T06:32:45.495393+00:00"
   }
 ]
