@@ -6212,18 +6212,6 @@
     "created_at": "2026-08-22T21:26:21.980405+00:00"
   },
   {
-    "id": "4e6b18dc-73b1-42b8-a3b7-ae40996a5312",
-    "text": "Keilim Mikva",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-23",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-08-22T21:44:11.149229+00:00"
-  },
-  {
     "id": "2d8b0b7c-2775-4ff6-832a-06caece5cad5",
     "text": "Prep ORS powder",
     "section": "evening_pz",
@@ -6233,5 +6221,76 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-08-23T06:32:45.495393+00:00"
+  },
+  {
+    "id": "4e6b18dc-73b1-42b8-a3b7-ae40996a5312",
+    "text": "Keilim Mikva",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-22T21:44:11.149229+00:00"
+  },
+  {
+    "id": "c6cc71b4-190a-4cd6-9a91-7a774921409d",
+    "text": "Talk to Dani",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-24",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-23T21:29:00.039341+00:00"
+  },
+  {
+    "id": "784aefc5-b719-4c88-bee1-0b8089ebc3a4",
+    "text": "Ask how we pay for delivery + install of furniture",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-24",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-23T21:32:19.917261+00:00"
+  },
+  {
+    "id": "fc30573e-a0b2-43c3-a0cc-27c8f62a8944",
+    "text": "Food shopping",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-24",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-23T21:33:25.48717+00:00"
+  },
+  {
+    "id": "967f576f-b232-4b15-a272-0e1f0780f2f8",
+    "text": "Corn bread",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-24",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-23T21:40:31.082689+00:00"
+  },
+  {
+    "id": "ea184771-5cc3-4d3a-b6aa-ab5586d60da3",
+    "text": "Roast broccoli",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-24",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-23T21:40:42.072311+00:00"
   }
 ]
