@@ -6292,5 +6292,88 @@
     "active": true,
     "sort_order": -25,
     "created_at": "2026-08-23T21:40:42.072311+00:00"
+  },
+  {
+    "id": "e7ba4b65-6928-4ead-9349-520999d85128",
+    "text": "Message gastro (Guy gluten)",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-08-24T18:26:57.009281+00:00"
+  },
+  {
+    "id": "97e6e33c-5fbc-402a-8e08-ef405357fc74",
+    "text": "Talk to Smadi",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-24T18:27:43.963889+00:00"
+  },
+  {
+    "id": "b7c7f3df-489e-472a-b02b-5df85cf47a30",
+    "text": "Find new handyman",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-24T18:28:12.261767+00:00"
+  },
+  {
+    "id": "b58e6609-a860-4611-b4c5-bb908f02a1ee",
+    "text": "Mesa",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-25",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": 10,
+    "created_at": "2026-08-24T18:30:14.122481+00:00"
+  },
+  {
+    "id": "5bd432df-cb0e-449a-90b0-59564d74bb43",
+    "text": "Message Dr hulkower",
+    "section": "morning_pz_work",
+    "recurrence_rule": {
+      "date": "2026-08-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-24T18:30:51.350838+00:00"
+  },
+  {
+    "id": "d5c7e241-fc45-4f30-bee1-93e45a4a3326",
+    "text": "Toilet",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-24T22:02:31.542241+00:00"
+  },
+  {
+    "id": "9508e6c4-79c7-4e51-a042-9d2389a234b2",
+    "text": "Get more diapers from machsan?",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-08-25T05:32:52.720657+00:00"
   }
 ]
