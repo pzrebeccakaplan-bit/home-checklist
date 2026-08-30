@@ -1186,5 +1186,17 @@
     "item_id": "2e832bc0-4d31-4103-a700-8d5f5ed8bc10",
     "skip_on": "2026-08-28",
     "created_by": null
+  },
+  {
+    "id": "1d55fc30-f689-4aec-82c8-cfcbda9fe7c7",
+    "item_id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
+    "skip_on": "2026-08-29",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "28fef0a1-2e0b-462e-85b6-8d716000d555",
+    "item_id": "c0461238-43f4-4ff8-ba35-92773dd08217",
+    "skip_on": "2026-08-29",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
   }
 ]

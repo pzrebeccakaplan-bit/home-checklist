@@ -281,17 +281,6 @@
     "created_at": "2026-07-29T09:42:38.655001+00:00"
   },
   {
-    "id": "48a15321-db08-4870-b4cc-3e1a86382782",
-    "text": "Lock front door",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 190,
-    "created_at": "2026-07-02T12:42:11.614803+00:00"
-  },
-  {
     "id": "6d5676c5-8770-4e70-9479-dc1c1298aeb5",
     "text": "Charge phone before leaving",
     "section": "morning_rebecca",
@@ -561,6 +550,17 @@
     "active": true,
     "sort_order": 60,
     "created_at": "2026-07-29T09:41:44.938265+00:00"
+  },
+  {
+    "id": "48a15321-db08-4870-b4cc-3e1a86382782",
+    "text": "Lock front door",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
     "id": "346da9d4-42f1-4623-9db3-012285f137cb",
@@ -1582,17 +1582,6 @@
     "created_at": "2026-07-29T09:44:20.607171+00:00"
   },
   {
-    "id": "1a9fce13-d21b-4f1e-a235-7a37ac71e407",
-    "text": "Turn on baby monitor",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
     "id": "53033027-d439-433b-ae3e-88981e532c6a",
     "text": "Discuss chore load",
     "section": "evening_first_to_bed",
@@ -1615,25 +1604,14 @@
     "created_at": "2026-07-29T10:24:20.413643+00:00"
   },
   {
-    "id": "8fd3dc15-898a-4989-8c6b-de07eb746c22",
-    "text": "Empty microwave",
+    "id": "1a9fce13-d21b-4f1e-a235-7a37ac71e407",
+    "text": "Turn on baby monitor",
     "section": "evening_last_to_bed",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "e3112aa4-b88a-43b7-b912-6a9e4aede633",
-    "text": "Lights off",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
+    "sort_order": 30,
     "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
@@ -1747,6 +1725,17 @@
     "created_at": "2026-07-31T07:40:20.714467+00:00"
   },
   {
+    "id": "8fd3dc15-898a-4989-8c6b-de07eb746c22",
+    "text": "Empty microwave",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
+  },
+  {
     "id": "ec2c1212-313e-4b14-9ccb-90492384ce9f",
     "text": "Wash non-dishwasher dishes",
     "section": "evening_shared",
@@ -1800,6 +1789,17 @@
     "active": true,
     "sort_order": 90,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "e3112aa4-b88a-43b7-b912-6a9e4aede633",
+    "text": "Lights off",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
     "id": "513ab462-d724-4513-822d-519baa14ac9c",
@@ -5721,28 +5721,6 @@
     "created_at": "2026-08-16T20:39:08.496412+00:00"
   },
   {
-    "id": "78414119-f360-4e35-9a63-11df44768723",
-    "text": "Air conditioner off",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "93849082-9d4d-4afd-93e9-c6cd77eb9b3c",
-    "text": "Food away",
-    "section": "evening_last_to_bed",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
     "id": "03b6137e-8481-43b7-b518-78f128381d08",
     "text": "Cancel neurologist appointment",
     "section": "morning_shared",
@@ -5879,6 +5857,17 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-08-20T12:48:24.500705+00:00"
+  },
+  {
+    "id": "78414119-f360-4e35-9a63-11df44768723",
+    "text": "Air conditioner off",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
     "id": "2be60347-f194-4b96-a3ea-fe0c91e88839",
@@ -6320,6 +6309,17 @@
     "created_at": "2026-08-24T22:02:31.542241+00:00"
   },
   {
+    "id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
+    "text": "2025 taxes",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-26T19:40:53.64577+00:00"
+  },
+  {
     "id": "5bd432df-cb0e-449a-90b0-59564d74bb43",
     "text": "Message Dr hulkower",
     "section": "morning_pz_work",
@@ -6484,6 +6484,17 @@
     "created_at": "2026-08-25T20:07:57.702783+00:00"
   },
   {
+    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
+    "text": "\"I have celiac\" graphic for Hadas",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-25T19:19:15.224128+00:00"
+  },
+  {
     "id": "512ac2a9-f4d6-41bf-b3cf-1279c02bb68c",
     "text": "Guy Dr Schwartz 7:00",
     "section": "morning_shared",
@@ -6494,6 +6505,29 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-08-26T19:25:00.517597+00:00"
+  },
+  {
+    "id": "885d678a-0a29-4dd1-bc7a-52bb7133200d",
+    "text": "Change sheets",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-30",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-29T22:40:08.351272+00:00"
+  },
+  {
+    "id": "93849082-9d4d-4afd-93e9-c6cd77eb9b3c",
+    "text": "Food away",
+    "section": "evening_last_to_bed",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
     "id": "0f7b4d15-25d8-4ca9-9d9d-02bb0fce6248",
@@ -6529,17 +6563,6 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-08-26T19:44:34.864715+00:00"
-  },
-  {
-    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
-    "text": "\"I have celiac\" graphic for Hadas",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-25T19:19:15.224128+00:00"
   },
   {
     "id": "831941ac-94d5-4cee-b87c-44e16fb166bd",
@@ -6587,17 +6610,6 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-08-27T20:33:15.044352+00:00"
-  },
-  {
-    "id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
-    "text": "2025 taxes",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-26T19:40:53.64577+00:00"
   },
   {
     "id": "08972b0e-3480-4df0-9cee-efa309e2071c",
@@ -6752,5 +6764,27 @@
     "active": true,
     "sort_order": -40,
     "created_at": "2026-08-28T12:45:17.406102+00:00"
+  },
+  {
+    "id": "eb187426-fdfd-41bd-b6bb-4d3732eb23ea",
+    "text": "Wash oven trays",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-30T08:52:26.700556+00:00"
+  },
+  {
+    "id": "3ee88ec3-a5b1-40d3-bf2d-953d69a8b4d7",
+    "text": "Clean oven trays",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-30T08:52:50.170014+00:00"
   }
 ]

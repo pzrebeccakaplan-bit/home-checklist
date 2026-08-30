@@ -1069,5 +1069,19 @@
     "active_on": "2026-08-29",
     "created_by": null,
     "created_at": "2026-08-27T20:33:58.615204+00:00"
+  },
+  {
+    "id": "b3aeabc1-6cbf-44fd-93c7-36c6cb90ff1f",
+    "item_id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
+    "active_on": "2026-08-31",
+    "created_by": null,
+    "created_at": "2026-08-29T20:18:58.450852+00:00"
+  },
+  {
+    "id": "12750381-185f-4557-ae56-db66f87273cb",
+    "item_id": "c0461238-43f4-4ff8-ba35-92773dd08217",
+    "active_on": "2026-08-30",
+    "created_by": null,
+    "created_at": "2026-08-29T20:24:58.656194+00:00"
   }
 ]
