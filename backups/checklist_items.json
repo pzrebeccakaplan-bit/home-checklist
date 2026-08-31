@@ -6484,17 +6484,6 @@
     "created_at": "2026-08-25T20:07:57.702783+00:00"
   },
   {
-    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
-    "text": "\"I have celiac\" graphic for Hadas",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-25T19:19:15.224128+00:00"
-  },
-  {
     "id": "512ac2a9-f4d6-41bf-b3cf-1279c02bb68c",
     "text": "Guy Dr Schwartz 7:00",
     "section": "morning_shared",
@@ -6505,18 +6494,6 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-08-26T19:25:00.517597+00:00"
-  },
-  {
-    "id": "885d678a-0a29-4dd1-bc7a-52bb7133200d",
-    "text": "Change sheets",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-30",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-29T22:40:08.351272+00:00"
   },
   {
     "id": "93849082-9d4d-4afd-93e9-c6cd77eb9b3c",
@@ -6563,6 +6540,18 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-08-26T19:44:34.864715+00:00"
+  },
+  {
+    "id": "145c651d-8462-438b-bf57-67f3e18ab98b",
+    "text": "Roll up rug",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-30T21:35:29.634558+00:00"
   },
   {
     "id": "831941ac-94d5-4cee-b87c-44e16fb166bd",
@@ -6612,40 +6601,16 @@
     "created_at": "2026-08-27T20:33:15.044352+00:00"
   },
   {
-    "id": "08972b0e-3480-4df0-9cee-efa309e2071c",
-    "text": "Deliver meal to bergfeld",
+    "id": "bcfd8a92-01e6-40fd-b09e-37604b888f61",
+    "text": "Move tv unit",
     "section": "morning_shared",
     "recurrence_rule": {
       "date": "2026-08-31",
       "type": "once"
     },
     "active": true,
-    "sort_order": 25,
-    "created_at": "2026-08-27T20:34:42.705069+00:00"
-  },
-  {
-    "id": "2e0828c3-16bf-4f40-89bf-8c03073798e5",
-    "text": "Rice for bergfeld",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-31",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-08-27T20:34:54.242269+00:00"
-  },
-  {
-    "id": "4fa56dd6-f57d-4098-a660-f7ab811956ef",
-    "text": "Salad for Bergfeld",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-08-31",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-08-27T20:35:11.229726+00:00"
+    "sort_order": -5,
+    "created_at": "2026-08-30T21:35:41.362127+00:00"
   },
   {
     "id": "52875bf0-52b6-402e-b9f9-eff4f8ecd3c5",
@@ -6786,5 +6751,183 @@
     "active": true,
     "sort_order": -15,
     "created_at": "2026-08-30T08:52:50.170014+00:00"
+  },
+  {
+    "id": "4fa56dd6-f57d-4098-a660-f7ab811956ef",
+    "text": "Salad for Bergfeld",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": 15,
+    "created_at": "2026-08-27T20:35:11.229726+00:00"
+  },
+  {
+    "id": "2e0828c3-16bf-4f40-89bf-8c03073798e5",
+    "text": "Rice for bergfeld",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": 20,
+    "created_at": "2026-08-27T20:34:54.242269+00:00"
+  },
+  {
+    "id": "08972b0e-3480-4df0-9cee-efa309e2071c",
+    "text": "Deliver meal to bergfeld",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": 25,
+    "created_at": "2026-08-27T20:34:42.705069+00:00"
+  },
+  {
+    "id": "b91be57d-af29-469f-b109-0e8eee76ca51",
+    "text": "Move tv",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-08-30T21:34:43.530706+00:00"
+  },
+  {
+    "id": "584d8a58-918a-45ee-8fa2-6a0e7504a3dd",
+    "text": "Empty tv unit",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-30T21:34:51.965093+00:00"
+  },
+  {
+    "id": "56795bff-8d22-4b40-8406-521261abb3e0",
+    "text": "Bring up tv mount",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-30T21:35:02.767583+00:00"
+  },
+  {
+    "id": "5a90b3f4-f09a-4720-910b-7f421a0dfe0e",
+    "text": "Separate handles per room",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-30T21:35:11.775807+00:00"
+  },
+  {
+    "id": "bbe7b831-6537-42b6-be2f-d053aa5f46aa",
+    "text": "Move living room furniture",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-30T21:35:22.059018+00:00"
+  },
+  {
+    "id": "babf6720-8181-4d42-b458-2551316a45ed",
+    "text": "Move vacuum base",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-30T21:36:26.498101+00:00"
+  },
+  {
+    "id": "885d678a-0a29-4dd1-bc7a-52bb7133200d",
+    "text": "Change sheets",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-29T22:40:08.351272+00:00"
+  },
+  {
+    "id": "1657940b-f24f-4fff-a283-b80832c30849",
+    "text": "Laundry away",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-30T21:39:36.162281+00:00"
+  },
+  {
+    "id": "eaa11562-032a-4e1c-b4dd-b16775945381",
+    "text": "Pack maon bags",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-30T21:39:41.774207+00:00"
+  },
+  {
+    "id": "a8a8a4e7-79dc-480c-bb36-9245722d5141",
+    "text": "Disassemble sconce light",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-30T21:39:52.836624+00:00"
+  },
+  {
+    "id": "d8983e48-53d0-4db7-88eb-df1414a85567",
+    "text": "Message eliezer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-30T21:48:11.788373+00:00"
+  },
+  {
+    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
+    "text": "\"I have celiac\" graphic for Hadas print",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-25T19:19:15.224128+00:00"
   }
 ]
