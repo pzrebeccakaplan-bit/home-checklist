@@ -6309,17 +6309,6 @@
     "created_at": "2026-08-24T22:02:31.542241+00:00"
   },
   {
-    "id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
-    "text": "2025 taxes",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-26T19:40:53.64577+00:00"
-  },
-  {
     "id": "5bd432df-cb0e-449a-90b0-59564d74bb43",
     "text": "Message Dr hulkower",
     "section": "morning_pz_work",
@@ -6482,6 +6471,18 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-25T20:07:57.702783+00:00"
+  },
+  {
+    "id": "dbd923b7-34c7-4d24-ba5a-b40779327f03",
+    "text": "IBKR upload TZs",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-31T15:53:52.235649+00:00"
   },
   {
     "id": "512ac2a9-f4d6-41bf-b3cf-1279c02bb68c",
@@ -6647,18 +6648,6 @@
     "active": true,
     "sort_order": 15,
     "created_at": "2026-08-27T22:08:53.776695+00:00"
-  },
-  {
-    "id": "3d5591af-92de-404a-9c50-a02a6db0eca7",
-    "text": "PZ Call EMED",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "date": "2026-08-31",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-27T22:09:41.040644+00:00"
   },
   {
     "id": "ce5492c0-60c4-4c31-9a07-94736f729a65",
@@ -6861,15 +6850,15 @@
     "created_at": "2026-08-30T21:36:26.498101+00:00"
   },
   {
-    "id": "885d678a-0a29-4dd1-bc7a-52bb7133200d",
-    "text": "Change sheets",
-    "section": "evening_shared",
+    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
+    "text": "\"I have celiac\" graphic for Hadas print",
+    "section": "morning_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
     "sort_order": 10,
-    "created_at": "2026-08-29T22:40:08.351272+00:00"
+    "created_at": "2026-08-25T19:19:15.224128+00:00"
   },
   {
     "id": "1657940b-f24f-4fff-a283-b80832c30849",
@@ -6908,26 +6897,225 @@
     "created_at": "2026-08-30T21:39:52.836624+00:00"
   },
   {
-    "id": "d8983e48-53d0-4db7-88eb-df1414a85567",
-    "text": "Message eliezer",
-    "section": "morning_shared",
+    "id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
+    "text": "2025 taxes",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-26T19:40:53.64577+00:00"
+  },
+  {
+    "id": "3601db8a-1ab2-41d2-8d7f-d73090eb2339",
+    "text": "Payment",
+    "section": "evening_rebecca",
     "recurrence_rule": {
       "date": "2026-08-31",
       "type": "once"
     },
     "active": true,
-    "sort_order": -30,
-    "created_at": "2026-08-30T21:48:11.788373+00:00"
+    "sort_order": 0,
+    "created_at": "2026-08-31T18:50:58.353852+00:00"
   },
   {
-    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
-    "text": "\"I have celiac\" graphic for Hadas print",
+    "id": "2ca0e378-ecb0-497a-b5f8-071a58b023ea",
+    "text": "Checks for maon",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-08-31T19:30:55.546745+00:00"
+  },
+  {
+    "id": "3d5591af-92de-404a-9c50-a02a6db0eca7",
+    "text": "PZ Call EMED",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-27T22:09:41.040644+00:00"
+  },
+  {
+    "id": "885d678a-0a29-4dd1-bc7a-52bb7133200d",
+    "text": "Change sheets",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
     "sort_order": 10,
-    "created_at": "2026-08-25T19:19:15.224128+00:00"
+    "created_at": "2026-08-29T22:40:08.351272+00:00"
+  },
+  {
+    "id": "d8983e48-53d0-4db7-88eb-df1414a85567",
+    "text": "Message eliezer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-30T21:48:11.788373+00:00"
+  },
+  {
+    "id": "38acb8cd-5871-49fd-a1e5-1027663b2869",
+    "text": "Load car",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-08-31",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-08-31T19:42:50.360571+00:00"
+  },
+  {
+    "id": "5ee29ff0-969c-4d7a-820d-fc47576688b6",
+    "text": "Things to pack in the morning",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -40,
+    "created_at": "2026-08-31T20:08:38.275387+00:00"
+  },
+  {
+    "id": "156ae2a3-4a82-41e4-8418-6850761e4101",
+    "text": "Hadas blanket",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-08-31T20:10:24.351717+00:00"
+  },
+  {
+    "id": "ff23fe1d-abdb-4c15-9bad-11783e801974",
+    "text": "Hadas turtle",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-08-31T20:10:30.573385+00:00"
+  },
+  {
+    "id": "bf57899f-6846-49ec-86f1-ba5605cd1692",
+    "text": "Formula canister",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-08-31T20:11:24.667265+00:00"
+  },
+  {
+    "id": "0200d578-59c7-4536-bdfb-bb2af8f6d6a6",
+    "text": "Pack laundry hanging (bathing suits)",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-08-31T19:43:15.401947+00:00"
+  },
+  {
+    "id": "d8410c50-7ad6-43e4-b95d-65c3977ef2f8",
+    "text": "Hadas pacifiers",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-31T20:09:52.01685+00:00"
+  },
+  {
+    "id": "ac1bf5b8-444e-4d88-9ae5-ca50b5e96df1",
+    "text": "Hanging laundry",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-08-31T20:13:17.840782+00:00"
+  },
+  {
+    "id": "7a31019d-6c7e-4392-9af0-23e96a1ca03e",
+    "text": "Toiletries",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-08-31T20:13:31.800533+00:00"
+  },
+  {
+    "id": "57e5b016-fe52-481b-8d1b-085ca8beb289",
+    "text": "Phone chargers",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-08-31T20:14:34.473874+00:00"
+  },
+  {
+    "id": "aa5c8382-74e3-4133-b105-a3961ed8ca3b",
+    "text": "Talit and tefillin",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-08-31T20:19:25.234125+00:00"
+  },
+  {
+    "id": "d33b1884-807e-4f30-a480-0912c8d49b09",
+    "text": "Guy wipes",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-01T08:23:58.519378+00:00"
+  },
+  {
+    "id": "eb10a8b9-9f7a-4ba3-947a-e989e405c148",
+    "text": "Tuition checks",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-01T08:24:11.33472+00:00"
   }
 ]
