@@ -7117,5 +7117,293 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-09-01T08:24:11.33472+00:00"
+  },
+  {
+    "id": "f6ce8047-28c2-4c7c-b08c-d8ca4a02beeb",
+    "text": "Pick up celiac poster from Kellman",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-01T19:52:13.301993+00:00"
+  },
+  {
+    "id": "92780efe-9475-4ca3-a527-bbc3afc3277e",
+    "text": "IBKR upload TZs",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-01T19:53:04.256099+00:00"
+  },
+  {
+    "id": "a66f1f2f-d15e-4337-be8d-0a7391c049b7",
+    "text": "Call EMED",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-09-01T19:54:09.949392+00:00"
+  },
+  {
+    "id": "ac2b42bf-0fde-4ffa-9a3f-252e1ddf0afd",
+    "text": "Change sheets",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-01T19:55:43.770049+00:00"
+  },
+  {
+    "id": "c588d558-be89-4368-a1c6-47fcc1657de8",
+    "text": "Chickpea stew",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-01T20:02:49.924773+00:00"
+  },
+  {
+    "id": "b95a995e-c116-4b71-b826-67be965ff1e3",
+    "text": "Chicken soup",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-01T20:03:00.419571+00:00"
+  },
+  {
+    "id": "85fde080-4b9a-495b-bc70-b57b7af082df",
+    "text": "Whole chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-01T20:03:32.945546+00:00"
+  },
+  {
+    "id": "0e03f682-2f34-4aad-9ee3-e1a0dc747b0e",
+    "text": "Rice with mushroom and onion",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-09-01T20:03:46.587651+00:00"
+  },
+  {
+    "id": "96005995-cc79-4aa8-b36b-9275359f8c2e",
+    "text": "Corn bread",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-09-01T20:04:38.758071+00:00"
+  },
+  {
+    "id": "d2970702-4d3a-4c89-8e48-e8e4b3d00267",
+    "text": "Hummus basar",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-09-01T20:05:06.278954+00:00"
+  },
+  {
+    "id": "ce0fbe31-32a2-4d9e-8500-3eab1701273c",
+    "text": "Chickpea salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-01T20:05:30.808125+00:00"
+  },
+  {
+    "id": "e1791b44-cf03-49cc-ad01-1aeed44ec2d7",
+    "text": "Pan seared chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-09-01T20:05:39.085344+00:00"
+  },
+  {
+    "id": "cbd32b35-e125-49eb-9ed0-c9cfa493973d",
+    "text": "Green beans",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-09-01T20:06:43.175446+00:00"
+  },
+  {
+    "id": "0373e7a3-b23e-496b-a659-de3ca3305cbb",
+    "text": "Broccoli",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-09-01T20:06:50.587721+00:00"
+  },
+  {
+    "id": "451d7505-e772-45f0-9787-312788741035",
+    "text": "Quinoa",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -45,
+    "created_at": "2026-09-01T20:07:03.840158+00:00"
+  },
+  {
+    "id": "e473c905-2d88-45c1-bdc6-4171a46549e7",
+    "text": "Roasted veggies",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -50,
+    "created_at": "2026-09-01T20:07:11.207911+00:00"
+  },
+  {
+    "id": "3f535e32-c892-4c7e-9fc9-4045c496d26a",
+    "text": "Salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -55,
+    "created_at": "2026-09-01T20:08:29.745988+00:00"
+  },
+  {
+    "id": "d840198e-2e9d-44f5-b640-3f6882520dfe",
+    "text": "Salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-09-01T20:08:35.84086+00:00"
+  },
+  {
+    "id": "f52c3283-7ca3-4699-9049-a122e92f44a6",
+    "text": "Map out Shabbat menu on fridge",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-01T20:19:45.10337+00:00"
+  },
+  {
+    "id": "11762d87-8c36-4519-8a74-63867f0cc42a",
+    "text": "Update shopping list for Shabbat",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-01T20:20:02.17865+00:00"
+  },
+  {
+    "id": "835ed712-ea9f-4bf1-b1be-a8ffd327e170",
+    "text": "Chicken",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-01T20:21:20.059738+00:00"
+  },
+  {
+    "id": "11286d3e-c7fe-4bd7-96bc-cdf28401d056",
+    "text": "Green beans",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-01T20:24:26.022652+00:00"
+  },
+  {
+    "id": "44b78273-a9a0-4d13-8d4c-b4c5f4962cab",
+    "text": "Rice cakes",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-01T20:24:32.375458+00:00"
+  },
+  {
+    "id": "85d6f742-1eb7-4941-bffc-8adbb2b7a066",
+    "text": "Meeting with Tamar",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-02T05:36:21.888975+00:00"
   }
 ]

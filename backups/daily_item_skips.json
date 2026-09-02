@@ -1204,5 +1204,17 @@
     "item_id": "1cf2d9ed-7d89-489b-8c01-c7b7b38e3037",
     "skip_on": "2026-08-31",
     "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "c4a74dc7-18b3-4e0c-b7fb-2a14b3afa1c0",
+    "item_id": "c588d558-be89-4368-a1c6-47fcc1657de8",
+    "skip_on": "2026-09-04",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "099515da-9aa5-4920-9ca0-1257c9e1dfa9",
+    "item_id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
+    "skip_on": "2026-09-02",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
   }
 ]
