@@ -1125,5 +1125,26 @@
     "active_on": "2026-09-01",
     "created_by": null,
     "created_at": "2026-08-31T20:10:02.34539+00:00"
+  },
+  {
+    "id": "e615497a-c4a6-47cc-ab05-6a912a5edb8f",
+    "item_id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
+    "active_on": "2026-09-07",
+    "created_by": null,
+    "created_at": "2026-09-02T22:36:54.061776+00:00"
+  },
+  {
+    "id": "b61999dd-cdb6-414a-a157-80628bcc9fdb",
+    "item_id": "a66f1f2f-d15e-4337-be8d-0a7391c049b7",
+    "active_on": "2026-09-03",
+    "created_by": null,
+    "created_at": "2026-09-02T22:56:02.819807+00:00"
+  },
+  {
+    "id": "56415bc2-3370-477e-a775-b46fece0ff6d",
+    "item_id": "92780efe-9475-4ca3-a527-bbc3afc3277e",
+    "active_on": "2026-09-03",
+    "created_by": null,
+    "created_at": "2026-09-02T22:56:21.666173+00:00"
   }
 ]

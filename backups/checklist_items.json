@@ -7131,30 +7131,6 @@
     "created_at": "2026-09-01T19:52:13.301993+00:00"
   },
   {
-    "id": "92780efe-9475-4ca3-a527-bbc3afc3277e",
-    "text": "IBKR upload TZs",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "date": "2026-09-02",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-09-01T19:53:04.256099+00:00"
-  },
-  {
-    "id": "a66f1f2f-d15e-4337-be8d-0a7391c049b7",
-    "text": "Call EMED",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "date": "2026-09-02",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -10,
-    "created_at": "2026-09-01T19:54:09.949392+00:00"
-  },
-  {
     "id": "ac2b42bf-0fde-4ffa-9a3f-252e1ddf0afd",
     "text": "Change sheets",
     "section": "morning_rebecca",
@@ -7405,5 +7381,99 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-09-02T05:36:21.888975+00:00"
+  },
+  {
+    "id": "3ef1132d-f8d4-4f47-8955-d45d9a53d177",
+    "text": "Message Ilan: specs for oven trays + venting",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-03",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-02T17:49:10.338233+00:00"
+  },
+  {
+    "id": "5f1cad70-1cb7-4955-a738-a3d343cedb0b",
+    "text": "Call EMED",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-03",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-02T22:44:06.378725+00:00"
+  },
+  {
+    "id": "31ed839c-f837-41f9-bceb-6deb76aabf17",
+    "text": "IBKR upload TZ",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-03",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-02T22:44:19.824608+00:00"
+  },
+  {
+    "id": "0b82f20d-cb8b-4857-8505-2456565a2fa2",
+    "text": "Make pasta",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-03",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-02T22:50:45.689602+00:00"
+  },
+  {
+    "id": "e37e8303-640f-4f79-8d6c-04eee2925dee",
+    "text": "Pasta",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-03",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-02T22:50:50.113161+00:00"
+  },
+  {
+    "id": "8bdd7017-e209-48ba-9887-9f86f2f4d9bb",
+    "text": "Schnitzel",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-03",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-02T22:50:57.939956+00:00"
+  },
+  {
+    "id": "a66f1f2f-d15e-4337-be8d-0a7391c049b7",
+    "text": "Call EMED",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-09-01T19:54:09.949392+00:00"
+  },
+  {
+    "id": "92780efe-9475-4ca3-a527-bbc3afc3277e",
+    "text": "IBKR upload TZs",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-01T19:53:04.256099+00:00"
   }
 ]
