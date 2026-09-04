@@ -6989,6 +6989,18 @@
     "created_at": "2026-08-31T20:08:38.275387+00:00"
   },
   {
+    "id": "1edfa10c-7a9e-4660-b24f-49a1f5c28452",
+    "text": "Compile list of snacks for hadas",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "date": "2026-09-05",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-03T20:24:35.294994+00:00"
+  },
+  {
     "id": "156ae2a3-4a82-41e4-8418-6850761e4101",
     "text": "Hadas blanket",
     "section": "things_to_pack_in_the_morning",
@@ -7475,5 +7487,123 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-09-01T19:53:04.256099+00:00"
+  },
+  {
+    "id": "e64d2d64-2a6c-428b-b8a6-b299015d674b",
+    "text": "Look for size X tips for guy",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-03T20:14:35.0621+00:00"
+  },
+  {
+    "id": "947ac52a-0e41-475a-8dc8-fddea9a437d2",
+    "text": "Sterilize X tips",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-03T20:14:43.181391+00:00"
+  },
+  {
+    "id": "1d26ef89-219c-40e2-bf47-94beca616ea1",
+    "text": "Mezuzah for mirpeset",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-09-03T20:16:36.73642+00:00"
+  },
+  {
+    "id": "00cc4a7b-7da7-48ab-a7bd-c991388493c5",
+    "text": "IBKR upload TZ",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-09-03T22:24:43.077306+00:00"
+  },
+  {
+    "id": "fd25bc29-588f-4a68-ab63-3dd118dd4566",
+    "text": "Juice lemons",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -55,
+    "created_at": "2026-09-04T07:04:24.687631+00:00"
+  },
+  {
+    "id": "58294f51-5f5c-4197-a8da-2b4e5df5ea37",
+    "text": "Hard boiled eggs",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-09-04T07:06:17.265211+00:00"
+  },
+  {
+    "id": "f55313c6-ea90-4d9f-b433-0348ef4abf46",
+    "text": "Wash and chop mint",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -65,
+    "created_at": "2026-09-04T07:06:48.324837+00:00"
+  },
+  {
+    "id": "97da7a23-520e-4ad1-9eaa-aa88b7557fe3",
+    "text": "White rice",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -70,
+    "created_at": "2026-09-04T07:07:02.671461+00:00"
+  },
+  {
+    "id": "a6b65df4-95a6-43a1-bab3-913a23135114",
+    "text": "Configure dishwasher + switch to timer",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-04T07:27:29.136672+00:00"
+  },
+  {
+    "id": "d5977273-9341-4811-9ee6-248b9e54746a",
+    "text": "Switch dishwasher off shabbat mode",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-09-04T07:28:21.756121+00:00"
   }
 ]
