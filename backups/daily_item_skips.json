@@ -1270,5 +1270,35 @@
     "item_id": "ce0fbe31-32a2-4d9e-8500-3eab1701273c",
     "skip_on": "2026-09-04",
     "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "acec1012-b269-4c6c-9fd5-ae04de498288",
+    "item_id": "a02ee7c8-90d3-4a90-88d6-6bcc3f51a35b",
+    "skip_on": "2026-09-04",
+    "created_by": null
+  },
+  {
+    "id": "30498ab8-51a2-4101-9b34-dc14bc2624c8",
+    "item_id": "fdfbd48e-cf9f-4eef-8410-13da5afd7ddc",
+    "skip_on": "2026-09-04",
+    "created_by": null
+  },
+  {
+    "id": "3a48eee3-4193-4d69-bb1c-53ed339317e3",
+    "item_id": "2e832bc0-4d31-4103-a700-8d5f5ed8bc10",
+    "skip_on": "2026-09-04",
+    "created_by": null
+  },
+  {
+    "id": "6a30a992-2f19-4282-bd8a-dae7dbf279c0",
+    "item_id": "1ef95d94-ec8d-49db-8859-392d77f0f769",
+    "skip_on": "2026-09-04",
+    "created_by": null
+  },
+  {
+    "id": "e335cc4b-57fe-461f-b79d-13b898e10a84",
+    "item_id": "76a9ff32-e722-4a16-817c-8dbbe207d208",
+    "skip_on": "2026-09-04",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
   }
 ]
