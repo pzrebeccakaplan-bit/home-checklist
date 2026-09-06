@@ -3695,17 +3695,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "1533396b-e2aa-43d0-a8ee-b91c2bd769d7",
-    "text": "Discuss Dani schedule",
-    "section": "shabbat_after",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 130,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "cb26318a-0503-4013-a90d-9926a849c364",
     "text": "Add challah to shopping list",
     "section": "shabbat_after",
@@ -4132,6 +4121,17 @@
     },
     "active": false,
     "sort_order": 10,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "1533396b-e2aa-43d0-a8ee-b91c2bd769d7",
+    "text": "Discuss babysitter schedule",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 130,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -7605,5 +7605,102 @@
     "active": true,
     "sort_order": -20,
     "created_at": "2026-09-04T07:28:21.756121+00:00"
+  },
+  {
+    "id": "50a75d6b-cb7b-4e61-a0f3-6dc8ea9c9307",
+    "text": "Pasta for hadas",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-05T20:25:14.468721+00:00"
+  },
+  {
+    "id": "18c03d60-48a3-41f2-ac9f-0c6b93f49102",
+    "text": "Pasta",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-05T20:25:22.2203+00:00"
+  },
+  {
+    "id": "6f158ee0-112d-4c07-8573-2a2bfa502e43",
+    "text": "Prep pasta stuff",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "days": [
+        6,
+        3
+      ],
+      "type": "weekly"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-09-05T20:32:15.00364+00:00"
+  },
+  {
+    "id": "4b469612-080e-42c3-b1a0-68caa34109a2",
+    "text": "IBKR upload",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-05T17:09:13.613176+00:00"
+  },
+  {
+    "id": "0401f503-128c-4c17-8830-61143835771a",
+    "text": "2025 taxes",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-05T20:34:11.542325+00:00"
+  },
+  {
+    "id": "601d9108-c969-47d6-b121-1e34f471bae3",
+    "text": "Message rachel",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-09-05T21:01:30.348792+00:00"
+  },
+  {
+    "id": "7551f440-b4bb-4586-9114-e7f366823df2",
+    "text": "Fill water bottle",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-05T21:37:07.274845+00:00"
+  },
+  {
+    "id": "6e937bf1-59ce-42cf-8a3c-c4b62c252c2c",
+    "text": "Similac",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-06T06:12:54.404241+00:00"
   }
 ]
