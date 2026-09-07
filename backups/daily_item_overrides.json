@@ -1153,5 +1153,33 @@
     "active_on": "2026-09-06",
     "created_by": null,
     "created_at": "2026-09-05T20:33:50.81853+00:00"
+  },
+  {
+    "id": "219a9ce2-ac74-4023-ac0f-d4fcf5bba707",
+    "item_id": "e34bc7f0-cbee-4a8d-b2f4-67aaf30eee81",
+    "active_on": "2026-09-06",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520",
+    "created_at": "2026-09-06T19:26:24.286595+00:00"
+  },
+  {
+    "id": "ae7a322e-8c79-44aa-a118-a7b33aebfdb1",
+    "item_id": "2f4d512a-ba8d-4495-93d5-b93a15bcb496",
+    "active_on": "2026-09-06",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520",
+    "created_at": "2026-09-06T19:26:52.787932+00:00"
+  },
+  {
+    "id": "05636db6-9ce6-4ab4-b874-956c54a0ae89",
+    "item_id": "e34bc7f0-cbee-4a8d-b2f4-67aaf30eee81",
+    "active_on": "2026-09-07",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520",
+    "created_at": "2026-09-06T22:13:24.412294+00:00"
+  },
+  {
+    "id": "7ac37f63-270e-47f8-91e6-d909f29ff706",
+    "item_id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
+    "active_on": "2026-09-08",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520",
+    "created_at": "2026-09-07T05:07:04.854079+00:00"
   }
 ]

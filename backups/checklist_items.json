@@ -167,17 +167,6 @@
     "created_at": "2026-08-06T21:19:13.026153+00:00"
   },
   {
-    "id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
-    "text": "GF bread",
-    "section": "hadas_food",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:41:44.938265+00:00"
-  },
-  {
     "id": "e498580e-e5fa-401a-b581-53d1483c8632",
     "text": "Phone",
     "section": "morning_pz_work",
@@ -279,6 +268,17 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-07-29T09:42:38.655001+00:00"
+  },
+  {
+    "id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
+    "text": "GF bread",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
     "id": "6d5676c5-8770-4e70-9479-dc1c1298aeb5",
@@ -7702,5 +7702,100 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-09-06T06:12:54.404241+00:00"
+  },
+  {
+    "id": "b761bc20-b05f-4bf7-b1a9-7ffeebf6a7f2",
+    "text": "Plan weekly family time evening (default is Sunday)",
+    "section": "bi_weekly_standup",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-09-06T14:19:45.086612+00:00"
+  },
+  {
+    "id": "71f3755b-5dd0-46d4-a9b5-659895c44d58",
+    "text": "Receipts",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-06T17:43:14.483024+00:00"
+  },
+  {
+    "id": "19236275-f9cb-4572-8eeb-0e7f14242ebf",
+    "text": "Chicken",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-06T18:26:07.345328+00:00"
+  },
+  {
+    "id": "f01ece7b-1a52-4bf1-8fe0-65d66948bcc9",
+    "text": "Add Hadas menu to app",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-06T18:26:42.031398+00:00"
+  },
+  {
+    "id": "0241c58c-a8a2-4e2d-9f36-7d184d4398c4",
+    "text": "Talk to Rivka about snacks",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-06T20:26:03.120124+00:00"
+  },
+  {
+    "id": "d2974f23-b24a-4f91-8332-866a8d1542ce",
+    "text": "Message Eliezer",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-09-06T22:15:24.170987+00:00"
+  },
+  {
+    "id": "d524be1b-3ba2-4ee0-82d6-05202b106f2d",
+    "text": "Prescription",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-07T07:18:25.673146+00:00"
+  },
+  {
+    "id": "42dc5c3c-e345-4ef4-bf15-a8ee223319f5",
+    "text": "Pharmacy",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-09-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-07T07:18:33.0444+00:00"
   }
 ]
