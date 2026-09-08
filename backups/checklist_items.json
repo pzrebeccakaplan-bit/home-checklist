@@ -7797,5 +7797,98 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-09-07T07:18:33.0444+00:00"
+  },
+  {
+    "id": "720e5f02-9e7c-4960-9ebe-e429143f84ef",
+    "text": "Pasta",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "days": [
+        0,
+        4
+      ],
+      "type": "weekly"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-09-07T20:52:48.163902+00:00"
+  },
+  {
+    "id": "822bf338-fcac-43e4-ad16-2df0d00013e9",
+    "text": "Prep pasta stuff to make for hadas",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "days": [
+        6,
+        3
+      ],
+      "type": "weekly"
+    },
+    "active": false,
+    "sort_order": -40,
+    "created_at": "2026-09-07T20:53:20.76939+00:00"
+  },
+  {
+    "id": "d01a5c0d-39be-48aa-983c-64c123d13471",
+    "text": "Chicken/ Kzizot/ alternative",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "days": [
+        1,
+        3
+      ],
+      "type": "weekly"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-07T20:54:51.976842+00:00"
+  },
+  {
+    "id": "7cd0fd2d-9d47-4b68-8fcc-65cad2420a38",
+    "text": "Food shopping list",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-07T21:06:05.830799+00:00"
+  },
+  {
+    "id": "19c41b2a-f9d1-46b7-896e-8c63ea7fe50d",
+    "text": "Message Mandel about RH",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-07T21:08:16.560684+00:00"
+  },
+  {
+    "id": "b04971d8-4ed2-40fe-b502-caa8b8c7fd89",
+    "text": "Toilets",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-09-07T21:09:03.709863+00:00"
+  },
+  {
+    "id": "e0c785a8-f22c-4c66-9310-d2244341fdc2",
+    "text": "Message Galitzer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-09-07T21:09:11.1055+00:00"
   }
 ]
