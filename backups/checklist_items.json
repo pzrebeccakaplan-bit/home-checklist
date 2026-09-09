@@ -7868,27 +7868,61 @@
     "created_at": "2026-09-07T21:08:16.560684+00:00"
   },
   {
+    "id": "e0c785a8-f22c-4c66-9310-d2244341fdc2",
+    "text": "Message Galitzer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-09-07T21:09:11.1055+00:00"
+  },
+  {
     "id": "b04971d8-4ed2-40fe-b502-caa8b8c7fd89",
     "text": "Toilets",
     "section": "morning_shared",
     "recurrence_rule": {
-      "date": "2026-09-08",
-      "type": "once"
+      "type": "occasional"
     },
     "active": true,
     "sort_order": 15,
     "created_at": "2026-09-07T21:09:03.709863+00:00"
   },
   {
-    "id": "e0c785a8-f22c-4c66-9310-d2244341fdc2",
-    "text": "Message Galitzer",
+    "id": "0a09c446-b108-400a-a6d9-3d6b6d916880",
+    "text": "Cooking",
     "section": "morning_shared",
     "recurrence_rule": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "type": "once"
     },
     "active": true,
-    "sort_order": 10,
-    "created_at": "2026-09-07T21:09:11.1055+00:00"
+    "sort_order": 5,
+    "created_at": "2026-09-08T20:31:15.505122+00:00"
+  },
+  {
+    "id": "d35d40ae-9a08-431c-b625-d858d6a39444",
+    "text": "Clean out mamad",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-08T20:31:23.78992+00:00"
+  },
+  {
+    "id": "af2168f2-6742-49e4-ab9e-2d2bf9f96d54",
+    "text": "Plan kiddush",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-08T20:31:44.107614+00:00"
   }
 ]
