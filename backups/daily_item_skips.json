@@ -1324,5 +1324,11 @@
     "item_id": "f8c07dd3-8be7-4cf2-9781-af49ffc0c953",
     "skip_on": "2026-09-08",
     "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "3bb98550-2ab7-4584-a7bd-338dddf8413b",
+    "item_id": "e0c785a8-f22c-4c66-9310-d2244341fdc2",
+    "skip_on": "2026-09-09",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
   }
 ]
