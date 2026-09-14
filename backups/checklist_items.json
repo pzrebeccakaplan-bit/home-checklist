@@ -8057,6 +8057,30 @@
     "created_at": "2026-09-11T09:57:20.547692+00:00"
   },
   {
+    "id": "afbc1431-365c-48d7-ba12-1e522c60363a",
+    "text": "Send out kiddush invite",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-09-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-13T20:04:40.872891+00:00"
+  },
+  {
+    "id": "3f447f6b-4d21-45a4-8788-7b3258e3176e",
+    "text": "Pull out clothing for Guy",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-13T20:05:17.714197+00:00"
+  },
+  {
     "id": "0be6430c-7307-4e2a-9a0c-ff20f054d57a",
     "text": "Tahini dressing",
     "section": "shabbat_cooking",
@@ -8139,5 +8163,41 @@
     "active": true,
     "sort_order": 90,
     "created_at": "2026-09-10T19:59:43.720518+00:00"
+  },
+  {
+    "id": "2b975950-e10b-4a2a-b2c0-eae04f5cda86",
+    "text": "Payment for blinds",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-13T20:09:08.081397+00:00"
+  },
+  {
+    "id": "22af4428-3cf9-44a8-a6b7-ada77ebbd65a",
+    "text": "Message eliezer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-13T20:11:28.689154+00:00"
+  },
+  {
+    "id": "3fef3aae-1508-443b-9b5f-5311cbac58b8",
+    "text": "Pick up floor tile mat",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-09-14",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-09-14T10:30:47.234419+00:00"
   }
 ]
