@@ -7951,6 +7951,18 @@
     "created_at": "2026-08-01T18:39:24.521034+00:00"
   },
   {
+    "id": "11f265fc-82b9-4a5d-8cef-d91e454985e9",
+    "text": "Return pacifiers",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-15",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-14T20:40:09.574739+00:00"
+  },
+  {
     "id": "2adf204a-8a07-47cc-b875-76d6a8a1a10e",
     "text": "Roasted squash",
     "section": "shabbat_cooking",
@@ -7961,6 +7973,17 @@
     "active": true,
     "sort_order": 30,
     "created_at": "2026-09-10T19:58:25.175905+00:00"
+  },
+  {
+    "id": "e0c785a8-f22c-4c66-9310-d2244341fdc2",
+    "text": "Message Galitzer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-09-07T21:09:11.1055+00:00"
   },
   {
     "id": "5bb1b9a8-76e9-457c-9396-1edc40ce34f8",
@@ -7987,15 +8010,27 @@
     "created_at": "2026-09-09T18:59:00.646855+00:00"
   },
   {
-    "id": "e0c785a8-f22c-4c66-9310-d2244341fdc2",
-    "text": "Message Galitzer",
-    "section": "morning_shared",
+    "id": "25b1271a-5d9e-4c22-b9aa-a5fdfe315177",
+    "text": "Meal for Bergfeld",
+    "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
-    "sort_order": 10,
-    "created_at": "2026-09-07T21:09:11.1055+00:00"
+    "sort_order": -5,
+    "created_at": "2026-09-14T21:01:09.156283+00:00"
+  },
+  {
+    "id": "3d29f855-5ea2-49b7-9fa3-42ee6612efad",
+    "text": "Get package from superpharm",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "date": "2026-09-15",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-09-15T08:03:09.747331+00:00"
   },
   {
     "id": "7551f440-b4bb-4586-9114-e7f366823df2",
@@ -8079,6 +8114,18 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-09-13T20:05:17.714197+00:00"
+  },
+  {
+    "id": "1a905e2e-5ada-41c8-ac3d-2f398bad47cd",
+    "text": "Figure out re what vered asked",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "date": "2026-09-15",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-09-15T09:41:23.768727+00:00"
   },
   {
     "id": "0be6430c-7307-4e2a-9a0c-ff20f054d57a",
