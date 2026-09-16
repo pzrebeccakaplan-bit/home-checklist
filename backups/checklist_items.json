@@ -7,7 +7,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
+    "sort_order": 10,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -314,17 +314,6 @@
     "created_at": "2026-08-03T10:20:53.444129+00:00"
   },
   {
-    "id": "7e82781b-2ead-4cf9-a2e0-e8540aab3d4f",
-    "text": "Take Hadas's food",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-07-29T09:42:38.655001+00:00"
-  },
-  {
     "id": "82b38adf-d813-4a6b-93a0-0e847f2a3651",
     "text": "Shacharit",
     "section": "morning_pz_dropoff",
@@ -411,6 +400,17 @@
     "active": true,
     "sort_order": 50,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
+  },
+  {
+    "id": "7e82781b-2ead-4cf9-a2e0-e8540aab3d4f",
+    "text": "Take Hadas's food and other things",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:42:38.655001+00:00"
   },
   {
     "id": "fa309432-656b-4988-b00f-35350a84eb4a",
@@ -698,13 +698,13 @@
   },
   {
     "id": "3d0ab43b-7372-42c0-9c3e-2c0353627e80",
-    "text": "Fill Rebecca's and Hadas's water bottles",
+    "text": "Fill Hadas's water bottles",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 80,
+    "sort_order": 50,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1534,7 +1534,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 70,
+    "sort_order": 40,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1626,14 +1626,14 @@
     "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
-    "id": "8d0d9e4c-7b54-45cf-b903-827d6645aada",
-    "text": "Start dishwasher load if warranted",
+    "id": "c63b6c1a-9982-4b26-8151-ae9257d5c57d",
+    "text": "Extra outfit for Hadas",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 110,
+    "sort_order": 20,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1645,6 +1645,17 @@
     },
     "active": true,
     "sort_order": 30,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "8d0d9e4c-7b54-45cf-b903-827d6645aada",
+    "text": "Start dishwasher load if warranted",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1734,17 +1745,6 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "c63b6c1a-9982-4b26-8151-ae9257d5c57d",
-    "text": "Extra outfit for Hadas",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 260,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "c0e37f4f-8c10-45e4-aa27-c26515095c02",
@@ -2577,7 +2577,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 130,
+    "sort_order": 70,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -3317,7 +3317,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
+    "sort_order": 30,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -6287,6 +6287,17 @@
     "created_at": "2026-08-24T22:02:31.542241+00:00"
   },
   {
+    "id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
+    "text": "2025 taxes/ Galitzer",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-08-26T19:40:53.64577+00:00"
+  },
+  {
     "id": "5bd432df-cb0e-449a-90b0-59564d74bb43",
     "text": "Message Dr hulkower",
     "section": "morning_pz_work",
@@ -6873,17 +6884,6 @@
     "active": true,
     "sort_order": -25,
     "created_at": "2026-08-30T21:39:52.836624+00:00"
-  },
-  {
-    "id": "aea5e1dd-c413-4e7b-a7e5-d6539c3174be",
-    "text": "2025 taxes",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-26T19:40:53.64577+00:00"
   },
   {
     "id": "3601db8a-1ab2-41d2-8d7f-d73090eb2339",
@@ -7940,17 +7940,6 @@
     "created_at": "2026-09-10T19:57:16.804553+00:00"
   },
   {
-    "id": "429a66af-f584-4b75-8af3-1bf4800b6530",
-    "text": "Turn on vacuum",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 120,
-    "created_at": "2026-08-01T18:39:24.521034+00:00"
-  },
-  {
     "id": "11f265fc-82b9-4a5d-8cef-d91e454985e9",
     "text": "Return pacifiers",
     "section": "morning_shared",
@@ -8008,6 +7997,18 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-09-09T18:59:00.646855+00:00"
+  },
+  {
+    "id": "a3658316-4418-4b1a-b74b-b927049c19ae",
+    "text": "Buy fruit for Thursday",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-15T16:59:38.388529+00:00"
   },
   {
     "id": "25b1271a-5d9e-4c22-b9aa-a5fdfe315177",
@@ -8212,6 +8213,18 @@
     "created_at": "2026-09-10T19:59:43.720518+00:00"
   },
   {
+    "id": "fa564fb8-544f-4b6a-880a-b496b220e11a",
+    "text": "Bread loaf",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-09-15T16:56:30.1197+00:00"
+  },
+  {
     "id": "2b975950-e10b-4a2a-b2c0-eae04f5cda86",
     "text": "Payment for blinds",
     "section": "morning_shared",
@@ -8246,5 +8259,100 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-09-14T10:30:47.234419+00:00"
+  },
+  {
+    "id": "e9bae6f3-c301-4758-8e29-7291f61565fd",
+    "text": "Message Vered about challah for Thursday Shabbat stuff",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-15T18:22:46.822669+00:00"
+  },
+  {
+    "id": "cbf6f91f-c0c0-44f0-a7fd-0b59113cf816",
+    "text": "Food drop off for Bergfeld",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-15T18:28:31.964861+00:00"
+  },
+  {
+    "id": "d5c8db9d-862e-4156-b144-9d17b9ddc5b9",
+    "text": "Arrange urn pickup with Winkler",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-15T18:28:47.506585+00:00"
+  },
+  {
+    "id": "cde21a74-8583-4ccb-bab7-ce358e85111c",
+    "text": "Tofu",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-18",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 105,
+    "created_at": "2026-09-15T18:32:14.929396+00:00"
+  },
+  {
+    "id": "8840e71e-3196-40ba-9cc1-039e8452a79e",
+    "text": "Stir fry",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-09-18",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-09-15T18:32:20.853774+00:00"
+  },
+  {
+    "id": "429a66af-f584-4b75-8af3-1bf4800b6530",
+    "text": "Turn on vacuum",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-08-01T18:39:24.521034+00:00"
+  },
+  {
+    "id": "33e02afb-51b7-41eb-ad07-044ee97b4c5f",
+    "text": "Similac",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-16T05:07:18.429715+00:00"
+  },
+  {
+    "id": "97d551ee-14b5-4dbe-99d0-14ac3f7c7078",
+    "text": "Diapers Guy",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-09-16T05:07:28.69612+00:00"
   }
 ]
