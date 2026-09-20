@@ -40,16 +40,6 @@
     ]
   },
   {
-    "id": "shabbat_cooking",
-    "label": "Shabbat: Cooking",
-    "sort_order": 60,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat"
-    ]
-  },
-  {
     "id": "evening_pz",
     "label": "Evening: PZ",
     "sort_order": 90,
@@ -57,36 +47,6 @@
     "friday_only": false,
     "tags": [
       "evening"
-    ]
-  },
-  {
-    "id": "shabbat_errands",
-    "label": "Shabbat: Errands",
-    "sort_order": 70,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat"
-    ]
-  },
-  {
-    "id": "shabbat_room_prep",
-    "label": "Shabbat room prep",
-    "sort_order": 130,
-    "created_at": "2026-08-07T10:13:06.747385+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat"
-    ]
-  },
-  {
-    "id": "shabbat_cleaning",
-    "label": "Shabbat: Cleaning",
-    "sort_order": 90,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat"
     ]
   },
   {
@@ -118,33 +78,58 @@
     ]
   },
   {
+    "id": "shabbat_cooking",
+    "label": "Shabbat: Cooking",
+    "sort_order": 60,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
+    "id": "shabbat_errands",
+    "label": "Shabbat: Errands",
+    "sort_order": 70,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
+    "id": "shabbat_cleaning",
+    "label": "Shabbat: Cleaning",
+    "sort_order": 90,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
     "id": "shabbat_chag",
     "label": "Shabbat: Chag",
     "sort_order": 120,
     "created_at": "2026-08-06T10:39:47.133827+00:00",
     "friday_only": false,
     "tags": [
-      "shabbat"
+      "shabbat",
+      "chag"
     ]
   },
   {
-    "id": "shabbat_misc",
-    "label": "Shabbat: Miscellaneous",
-    "sort_order": 110,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "id": "shabbat_room_prep",
+    "label": "Shabbat room prep",
+    "sort_order": 130,
+    "created_at": "2026-08-07T10:13:06.747385+00:00",
     "friday_only": false,
     "tags": [
-      "shabbat"
-    ]
-  },
-  {
-    "id": "shabbat_meals",
-    "label": "Shabbat: Meal Arrangements",
-    "sort_order": 90,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "motzei"
+      "shabbat",
+      "chag"
     ]
   },
   {
@@ -154,13 +139,36 @@
     "created_at": "2026-08-06T10:39:47.133827+00:00",
     "friday_only": false,
     "tags": [
-      "shabbat"
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
+    "id": "shabbat_misc",
+    "label": "Shabbat: Miscellaneous",
+    "sort_order": 110,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
     ]
   },
   {
     "id": "shabbat_after",
     "label": "Shabbat: After Shabbat",
     "sort_order": 10,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "motzei",
+      "motzeichag"
+    ]
+  },
+  {
+    "id": "shabbat_meals",
+    "label": "Shabbat: Meal Arrangements",
+    "sort_order": 90,
     "created_at": "2026-08-06T10:39:47.133827+00:00",
     "friday_only": false,
     "tags": [
