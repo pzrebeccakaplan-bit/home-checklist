@@ -8876,5 +8876,29 @@
     "active": true,
     "sort_order": 65,
     "created_at": "2026-09-17T14:09:41.511594+00:00"
+  },
+  {
+    "id": "a968e650-35f7-42f3-8e28-3d78e84339d4",
+    "text": "Work on app",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-22T20:38:40.366465+00:00"
+  },
+  {
+    "id": "f9344fee-a0b7-4455-a2ef-06b05fb9e36d",
+    "text": "Call savta",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-22T21:03:01.224993+00:00"
   }
 ]
