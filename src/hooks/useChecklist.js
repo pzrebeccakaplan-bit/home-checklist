@@ -80,6 +80,23 @@ export function useChecklist(user, viewDate) {
     fetchData()
   }, [fetchData])
 
+  // Refetch when the tab becomes visible again (handles sync gaps across devices)
+  useEffect(() => {
+    function handleVisibility() {
+      if (document.visibilityState === 'visible') fetchData()
+    }
+    document.addEventListener('visibilitychange', handleVisibility)
+    return () => document.removeEventListener('visibilitychange', handleVisibility)
+  }, [fetchData])
+
+  // Periodic refetch every 60s as a fallback for dropped realtime connections
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (document.visibilityState === 'visible') fetchData()
+    }, 60000)
+    return () => clearInterval(interval)
+  }, [fetchData])
+
   const fetchCompletions = useCallback(async () => {
     if (!user || !viewDate) return
     const [{ data: dayCompletions }, { data: allProfiles }] = await Promise.all([
@@ -146,9 +163,10 @@ export function useChecklist(user, viewDate) {
     } else {
       const optimistic = { item_id: item.id, completed_by: user.id, completed_on: viewDate, profile: profilesById[user.id] }
       setCompletions(prev => ({ ...prev, [item.id]: optimistic }))
+      const completedBy = user.id === 'dev-user' ? null : user.id
       const { data, error } = await supabase.from('checklist_completions').insert({
         item_id: item.id,
-        completed_by: user.id,
+        ...(completedBy ? { completed_by: completedBy } : {}),
         completed_on: viewDate,
       }).select().single()
       if (error) { localToggleIds.current.delete(item.id); fetchData() }
@@ -162,13 +180,15 @@ export function useChecklist(user, viewDate) {
       await supabase.from('daily_item_overrides').delete().eq('item_id', itemId).eq('active_on', viewDate)
     } else {
       setOccasionalActive(prev => new Set([...prev, itemId]))
-      await supabase.from('daily_item_overrides').insert({ item_id: itemId, active_on: viewDate, created_by: user.id })
+      const createdBy = user.id === 'dev-user' ? null : user.id
+      await supabase.from('daily_item_overrides').insert({ item_id: itemId, active_on: viewDate, ...(createdBy ? { created_by: createdBy } : {}) })
     }
     fetchData()
   }
 
   async function skipItem(itemId) {
-    await supabase.from('daily_item_skips').insert({ item_id: itemId, skip_on: viewDate, created_by: user.id })
+    const createdBy = user.id === 'dev-user' ? null : user.id
+    await supabase.from('daily_item_skips').insert({ item_id: itemId, skip_on: viewDate, ...(createdBy ? { created_by: createdBy } : {}) })
     fetchData()
   }
 
