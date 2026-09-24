@@ -1,5 +1,5 @@
-// Copies checklist_items and sections from prod to dev.
-// Skips completions, overrides, and profiles (those are user/date-specific).
+// Copies sections, checklist_items, and day_schedule from prod to dev.
+// Skips completions, overrides, and profiles (user/date-specific).
 // Run with: node scripts/copy-prod-to-dev.mjs
 
 import { createClient } from '@supabase/supabase-js'
@@ -19,7 +19,6 @@ async function copyTable(tableName, orderBy = 'sort_order') {
   if (error) { console.error(`  Error reading from prod:`, error.message); return }
   if (!data.length) { console.log(`  No rows found.`); return }
 
-  // Clear existing dev data first
   const { error: delError } = await dev.from(tableName).delete().neq('id', '00000000-0000-0000-0000-000000000000')
   if (delError) console.warn(`  Warning clearing dev ${tableName}:`, delError.message)
 
@@ -28,11 +27,22 @@ async function copyTable(tableName, orderBy = 'sort_order') {
   else console.log(`  Copied ${data.length} rows.`)
 }
 
+async function copyDaySchedule() {
+  console.log(`\nCopying day_schedule...`)
+  const { data, error } = await prod.from('day_schedule').select('*').order('day_of_week')
+  if (error) { console.error(`  Error reading from prod:`, error.message); return }
+  if (!data.length) { console.log(`  No rows found.`); return }
+
+  const { error: upsertError } = await dev.from('day_schedule').upsert(data, { onConflict: 'day_of_week' })
+  if (upsertError) console.error(`  Error upserting into dev:`, upsertError.message)
+  else console.log(`  Copied ${data.length} rows.`)
+}
+
 async function main() {
   console.log('Copying prod → dev...')
   await copyTable('sections', 'sort_order')
   await copyTable('checklist_items', 'sort_order')
-  await copyTable('day_schedule', 'day_of_week')
+  await copyDaySchedule()
   console.log('\nDone.')
 }
 
