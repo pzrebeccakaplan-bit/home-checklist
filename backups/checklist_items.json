@@ -8309,6 +8309,18 @@
     "created_at": "2026-09-15T18:28:31.964861+00:00"
   },
   {
+    "id": "92d07707-b87c-451d-82c8-2f188ea440bd",
+    "text": "Hadas diapers",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-24",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-09-23T17:31:00.141099+00:00"
+  },
+  {
     "id": "33e02afb-51b7-41eb-ad07-044ee97b4c5f",
     "text": "Similac",
     "section": "hadas_food",
@@ -8747,6 +8759,17 @@
     "created_at": "2026-09-20T09:43:40.54118+00:00"
   },
   {
+    "id": "f9344fee-a0b7-4455-a2ef-06b05fb9e36d",
+    "text": "Call savta",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-22T21:03:01.224993+00:00"
+  },
+  {
     "id": "8d593fbc-541c-4317-901b-9a57f3da51d2",
     "text": "Message Menachem Lazar",
     "section": "morning_shared",
@@ -8878,27 +8901,50 @@
     "created_at": "2026-09-17T14:09:41.511594+00:00"
   },
   {
+    "id": "ca8cb63b-0ee1-4558-8a56-982624952a84",
+    "text": "Draft schedule for next week",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "date": "2026-09-23",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-23T11:25:56.963319+00:00"
+  },
+  {
     "id": "a968e650-35f7-42f3-8e28-3d78e84339d4",
     "text": "Work on app",
     "section": "morning_shared",
     "recurrence_rule": {
-      "date": "2026-09-23",
-      "type": "once"
+      "type": "occasional"
     },
     "active": true,
     "sort_order": 25,
     "created_at": "2026-09-22T20:38:40.366465+00:00"
   },
   {
-    "id": "f9344fee-a0b7-4455-a2ef-06b05fb9e36d",
-    "text": "Call savta",
+    "id": "29dd9cf3-30a7-4a3f-8644-1aef31a3003f",
+    "text": "Clear and move gray shelving unit",
     "section": "morning_shared",
     "recurrence_rule": {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "type": "once"
     },
     "active": true,
-    "sort_order": 20,
-    "created_at": "2026-09-22T21:03:01.224993+00:00"
+    "sort_order": 15,
+    "created_at": "2026-09-23T21:37:49.343779+00:00"
+  },
+  {
+    "id": "15f47b05-4492-4dc6-b3ae-405589d3a5b5",
+    "text": "Return urn to winkler",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-09-24",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-09-23T21:42:54.349816+00:00"
   }
 ]

@@ -120,6 +120,17 @@
     ]
   },
   {
+    "id": "ongoing_tracked_in_standup",
+    "label": "Ongoing/tracked in standup",
+    "sort_order": 140,
+    "created_at": "2026-08-03T10:19:15.996034+00:00",
+    "friday_only": false,
+    "tags": [
+      "biweeklystandup",
+      "evening"
+    ]
+  },
+  {
     "id": "shabbat_cooking",
     "label": "Shabbat: Cooking",
     "sort_order": 60,
@@ -211,16 +222,6 @@
     "label": "Bi Weekly Standup",
     "sort_order": 70,
     "created_at": "2026-08-06T21:11:40.988907+00:00",
-    "friday_only": false,
-    "tags": [
-      "biweeklystandup"
-    ]
-  },
-  {
-    "id": "ongoing_tracked_in_standup",
-    "label": "Ongoing/tracked in standup",
-    "sort_order": 140,
-    "created_at": "2026-08-03T10:19:15.996034+00:00",
     "friday_only": false,
     "tags": [
       "biweeklystandup"
