@@ -52,6 +52,9 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   const isToday = viewDate === todayStr
   const [y, m, d] = viewDate.split('-').map(Number)
   const dateLabel = new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })
+  const [showSearch, setShowSearch] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [collapsedCompleted, setCollapsedCompleted] = useState(new Set())
   const [completedQuickAdd, setCompletedQuickAdd] = useState(null)
   const [completedQuickText, setCompletedQuickText] = useState('')
   const [completedQuickRec, setCompletedQuickRec] = useState('once')
@@ -67,6 +70,18 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   const onSkipRef = useRef(onSkip)
   useEffect(() => { onToggleRef.current = onToggle }, [onToggle])
   useEffect(() => { onSkipRef.current = onSkip }, [onSkip])
+
+  // Arrow keys to navigate days (skip when typing in an input)
+  useEffect(() => {
+    function handleKey(e) {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return
+      if (e.key === 'ArrowLeft') onPrevDay()
+      if (e.key === 'ArrowRight') onNextDay()
+    }
+    window.addEventListener('keydown', handleKey)
+    return () => window.removeEventListener('keydown', handleKey)
+  }, [onPrevDay, onNextDay])
+
 
   function pushUndo(label, fn) {
     const action = { label, fn }
@@ -126,6 +141,12 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 5 } })
   )
 
+  // Search filter
+  const searchLower = searchQuery.trim().toLowerCase()
+  const filteredItems = searchLower
+    ? localItems.filter(i => (i.displayText ?? i.text).toLowerCase().includes(searchLower))
+    : localItems
+
   // Split into unchecked (localItems) and checked (items) by section
   const bySection = {}
   const completedBySection = {}
@@ -133,7 +154,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     bySection[sec.id] = []
     completedBySection[sec.id] = []
   }
-  for (const item of localItems) {
+  for (const item of filteredItems) {
     if (!bySection[item.section]) continue
     if (completions[item.id]) completedBySection[item.section].push(item)
     else bySection[item.section].push(item)
@@ -146,6 +167,19 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
   const totalItems = visibleItems.length + orphanedItems.length + orphanedCompleted.length
   const doneCount = visibleItems.filter(i => completions[i.id]).length + orphanedCompleted.length
   const completedSections = localSections.filter(s => completedBySection[s.id]?.length > 0)
+
+  // Collapse any completed section that isn't already tracked (new completions default to collapsed)
+  const completedSectionKey = completedSections.map(s => s.id).join(',')
+  useEffect(() => {
+    setCollapsedCompleted(prev => {
+      const next = new Set(prev)
+      for (const sec of completedSections) {
+        if (!next.has(sec.id)) next.add(sec.id)
+      }
+      return next
+    })
+  }, [completedSectionKey]) // eslint-disable-line react-hooks/exhaustive-deps
+
   const activeItem = activeId ? localItems.find(i => i.id === activeId) : null
 
   async function handleDragEnd({ active, over }) {
@@ -230,18 +264,15 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     const rule = completedQuickRec === 'weekly'
       ? { type: 'weekly', days: completedQuickDays }
       : completedQuickRec === 'once'
-        ? { type: 'occasional' }
+        ? { type: 'once', date: completedQuickDate }
         : { type: completedQuickRec }
-    const { data: newItem } = await supabase.from('checklist_items').insert({
+    await supabase.from('checklist_items').insert({
       text: completedQuickText.trim(),
       section: sectionId,
       recurrence_rule: rule,
       active: true,
       sort_order: minOrder - 5,
-    }).select().single()
-    if (completedQuickRec === 'once' && newItem) {
-      await supabase.from('daily_item_overrides').insert({ item_id: newItem.id, active_on: completedQuickDate })
-    }
+    })
     setCompletedQuickText('')
     setCompletedQuickRec('once')
     setCompletedQuickDays([])
@@ -287,6 +318,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
         <div className="header-right">
           <span className="progress-badge">{doneCount}/{totalItems}</span>
           <button className="header-btn undo-header-btn" onClick={executeUndo} disabled={!undoAction} title={undoAction?.label}>↩ Undo</button>
+          <button className={`header-btn ${showSearch ? 'active' : ''}`} onClick={() => { setShowSearch(s => !s); setSearchQuery('') }} title="Search items">🔍</button>
           <button className="header-btn" onClick={onOpenPicker}>Occasional</button>
           <button className="header-btn" onClick={onOpenManager}>Template</button>
           <button className="header-btn secondary" onClick={onSignOut}>
@@ -294,6 +326,20 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
           </button>
         </div>
       </header>
+
+      {showSearch && (
+        <div className="search-bar">
+          <input
+            autoFocus
+            className="search-input"
+            placeholder="Search items…"
+            value={searchQuery}
+            onChange={e => setSearchQuery(e.target.value)}
+            onKeyDown={e => e.key === 'Escape' && (setShowSearch(false), setSearchQuery(''))}
+          />
+          {searchQuery && <button className="search-clear-btn" onClick={() => setSearchQuery('')}>✕</button>}
+        </div>
+      )}
 
       <main className="sections-container">
         <DndContext
@@ -386,17 +432,38 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
         {/* Completed items at bottom */}
         {completedSections.length > 0 && (
           <div className="completed-area">
-            <div className="completed-area-header">Completed</div>
-            {completedSections.map(sec => (
+            <div className="completed-area-header">
+              Completed ({doneCount})
+              <button className="completed-toggle-all-btn" onClick={() => {
+                const allIds = completedSections.map(s => s.id)
+                const allCollapsed = allIds.every(id => collapsedCompleted.has(id))
+                setCollapsedCompleted(allCollapsed ? new Set() : new Set(allIds))
+              }}>
+                {completedSections.every(s => collapsedCompleted.has(s.id)) ? 'expand all' : 'collapse all'}
+              </button>
+            </div>
+            {completedSections.map(sec => {
+              const isCollapsed = collapsedCompleted.has(sec.id)
+              function toggleCollapse() {
+                setCollapsedCompleted(prev => {
+                  const next = new Set(prev)
+                  isCollapsed ? next.delete(sec.id) : next.add(sec.id)
+                  return next
+                })
+              }
+              return (
               <div key={sec.id} className="completed-section">
-                <div className="completed-section-label">
-                  {sec.label}
-                  <button className="section-uncheck-all-btn" onClick={() => Promise.all(completedBySection[sec.id].map(item => handleToggle(item)))} title="Uncheck all">↺ uncheck all</button>
+                <div className="completed-section-label" onClick={toggleCollapse} style={{ cursor: 'pointer' }}>
+                  <span className="completed-section-collapse-icon">{isCollapsed ? '▶' : '▼'}</span>
+                  {sec.label} <span className="completed-section-count">({completedBySection[sec.id].length})</span>
+                  {!isCollapsed && <>
+                  <button className="section-uncheck-all-btn" onClick={e => { e.stopPropagation(); Promise.all(completedBySection[sec.id].map(item => handleToggle(item))) }} title="Uncheck all">↺ uncheck all</button>
                   {completedQuickAdd !== sec.id && (
-                    <button className="section-add-btn" onClick={() => { setCompletedQuickAdd(sec.id); setCompletedQuickText('') }}>+ Add</button>
+                    <button className="section-add-btn" onClick={e => { e.stopPropagation(); setCompletedQuickAdd(sec.id); setCompletedQuickText('') }}>+ Add</button>
                   )}
+                  </>}
                 </div>
-                {completedBySection[sec.id].map(item => {
+                {!isCollapsed && completedBySection[sec.id].map(item => {
                   const completion = completions[item.id]
                   const checkedBy = completion?.profile?.display_name
                   return (
@@ -411,7 +478,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
                     </button>
                   )
                 })}
-                {completedQuickAdd === sec.id && (
+                {!isCollapsed && completedQuickAdd === sec.id && (
                   <form className="completed-quick-add" onSubmit={e => submitCompletedQuickAdd(sec.id, e)}>
                     <input
                       autoFocus
@@ -459,7 +526,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
                   </form>
                 )}
               </div>
-            ))}
+            )})}
           </div>
         )}
       </main>

@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { supabase } from '../lib/supabase'
 
-export function OccasionalPicker({ sections, occasionalActive, onToggle, onClose, viewDate }) {
+export function OccasionalPicker({ sections, occasionalActive, onToggle, onClose, viewDate, onEdit }) {
   const SECTION_LABELS = Object.fromEntries(sections.map(s => [s.id, s.label]))
   const [allOccasional, setAllOccasional] = useState([])
   const [loading, setLoading] = useState(true)
+  const editRef = useRef(null)
 
-  useEffect(() => {
+  function fetchItems() {
     supabase
       .from('checklist_items')
       .select('*')
@@ -18,7 +19,15 @@ export function OccasionalPicker({ sections, occasionalActive, onToggle, onClose
         setAllOccasional(data || [])
         setLoading(false)
       })
-  }, [])
+  }
+
+  useEffect(() => { fetchItems() }, [])
+
+  async function deleteItem(item) {
+    if (!confirm(`Remove "${item.text}" from the Occasionals list?`)) return
+    await supabase.from('checklist_items').update({ active: false }).eq('id', item.id)
+    fetchItems()
+  }
 
   // Group by section
   const bySection = {}
@@ -55,14 +64,14 @@ export function OccasionalPicker({ sections, occasionalActive, onToggle, onClose
                 {items.map(item => {
                   const isActive = occasionalActive.has(item.id)
                   return (
-                    <button
-                      key={item.id}
-                      className={`picker-item ${isActive ? 'active' : ''}`}
-                      onClick={() => onToggle(item.id)}
-                    >
-                      <span className="check-box">{isActive ? '✓' : ''}</span>
-                      {item.text}
-                    </button>
+                    <div key={item.id} className={`picker-item ${isActive ? 'active' : ''}`}>
+                      <button className="picker-item-toggle" onClick={() => onToggle(item.id)}>
+                        <span className="check-box">{isActive ? '✓' : ''}</span>
+                      </button>
+                      <span className="picker-item-text" onClick={() => onToggle(item.id)}>{item.text}</span>
+                      <button className="picker-item-edit-btn" onClick={e => { e.stopPropagation(); onEdit?.(item) }} title="Edit in template">✎</button>
+                      <button className="picker-item-delete-btn" onClick={e => { e.stopPropagation(); deleteItem(item) }} title="Remove from Occasionals">🗑</button>
+                    </div>
                   )
                 })}
               </div>

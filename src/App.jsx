@@ -88,6 +88,7 @@ export default function App() {
           onToggle={toggleOccasional}
           onClose={() => setShowPicker(false)}
           viewDate={viewDate}
+          onEdit={item => { setShowPicker(false); setEditItem(item); setShowManager(true) }}
         />
       )}
       {showManager && (

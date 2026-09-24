@@ -375,7 +375,16 @@ input, select { font: inherit; }
   font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--text-muted);
   margin-bottom: 1rem;
+  display: flex; align-items: center; justify-content: space-between;
 }
+.completed-toggle-all-btn {
+  font-size: 0.7rem; font-weight: 500; text-transform: none; letter-spacing: 0;
+  padding: 0.1rem 0.5rem; border: 1px solid var(--border); border-radius: 4px;
+  background: transparent; color: var(--text-muted); cursor: pointer;
+}
+.completed-toggle-all-btn:hover { color: var(--text); }
+.completed-section-collapse-icon { font-size: 0.6rem; opacity: 0.6; }
+.completed-section-count { opacity: 0.6; font-weight: 400; }
 .completed-section { margin-bottom: 1.25rem; }
 .completed-section-label {
   font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em;
@@ -517,6 +526,23 @@ input, select { font: inherit; }
 .day-tag-btn:hover { border-color: var(--accent); color: var(--accent); }
 .day-tag-btn.active { background: var(--accent); border-color: var(--accent); color: white; }
 
+/* ── Search bar ─────────────────────────────────────────── */
+.search-bar {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.5rem 1rem; background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.search-input {
+  flex: 1; padding: 0.4rem 0.75rem; border: 1px solid var(--border);
+  border-radius: var(--radius); background: var(--bg); color: var(--text);
+  font-size: 0.95rem;
+}
+.search-clear-btn {
+  background: none; border: none; color: var(--text-muted);
+  cursor: pointer; font-size: 0.9rem; padding: 0.25rem;
+}
+.header-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
 /* ── Occasional picker ──────────────────────────────────── */
 .picker-sections { display: flex; flex-direction: column; gap: 1.25rem; }
 .picker-section h3 {
@@ -533,6 +559,15 @@ input, select { font: inherit; }
   margin-bottom: 0.3rem;
 }
 .picker-item.active { background: var(--accent-light); border-color: var(--accent); }
+.picker-item-toggle { background: none; border: none; cursor: pointer; padding: 0; flex-shrink: 0; }
+.picker-item-text { flex: 1; font-size: 1rem; cursor: pointer; }
+.picker-item-edit-input { flex: 1; font-size: 1rem; padding: 0.1rem 0.3rem; border: 1px solid var(--accent); border-radius: 4px; background: var(--bg); color: var(--text); }
+.picker-item-edit-btn { background: none; border: none; cursor: pointer; color: var(--text-muted); opacity: 0; font-size: 0.9rem; padding: 0.1rem 0.3rem; flex-shrink: 0; }
+.picker-item:hover .picker-item-edit-btn { opacity: 0.6; }
+.picker-item-edit-btn:hover { opacity: 1 !important; color: var(--text); }
+.picker-item-delete-btn { background: none; border: none; cursor: pointer; color: var(--text-muted); opacity: 0; font-size: 0.9rem; padding: 0.1rem 0.3rem; flex-shrink: 0; }
+.picker-item:hover .picker-item-delete-btn { opacity: 0.6; }
+.picker-item-delete-btn:hover { opacity: 1 !important; color: #c0392b; }
 
 /* ── Item manager form ──────────────────────────────────── */
 .manager-form {

@@ -94,14 +94,6 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onD
             aria-label="Convert to section"
             title="Convert to section"
           >§</button>
-          {item.recurrence_rule?.type === 'once' && (
-            <button
-              className="item-delete-btn"
-              onClick={() => onDelete?.(item)}
-              aria-label="Delete this one-time item"
-              title="Delete permanently"
-            >🗑</button>
-          )}
         </>
       )}
     </div>
