@@ -2493,17 +2493,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "e7017665-b6bf-44ef-9880-a4397573213c",
-    "text": "Bathe Hadas",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 170,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "7463a98f-31b2-4a91-b75a-642271a7e5e9",
     "text": "Mincha",
     "section": "shabbat_misc",
@@ -2579,6 +2568,17 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
+    "id": "e7017665-b6bf-44ef-9880-a4397573213c",
+    "text": "Bathe Hadas and/or Guy",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 170,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "fe801de3-18d9-426d-beb0-4328108483db",
@@ -3143,17 +3143,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "424e06eb-78e4-4c83-9481-843e1be25b49",
-    "text": "Sterilize and fill bottles",
-    "section": "shabbat_before",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "14960e66-5b9c-4d94-90fe-3d4d64c374ec",
     "text": "Message Tamar about bed delivery",
     "section": "morning_shared",
@@ -3286,6 +3275,17 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-08-02T07:12:20.51172+00:00"
+  },
+  {
+    "id": "424e06eb-78e4-4c83-9481-843e1be25b49",
+    "text": "Wash bottles",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "18891d82-e53c-466f-90bd-9988d3a8e8e2",
@@ -8938,13 +8938,120 @@
   {
     "id": "15f47b05-4492-4dc6-b3ae-405589d3a5b5",
     "text": "Return urn to winkler",
-    "section": "evening_shared",
+    "section": "morning_shared",
     "recurrence_rule": {
-      "date": "2026-09-24",
-      "type": "once"
+      "type": "occasional"
     },
     "active": true,
     "sort_order": 0,
     "created_at": "2026-09-23T21:42:54.349816+00:00"
+  },
+  {
+    "id": "9dd348de-bb90-4e2e-ae7c-1f050a28425f",
+    "text": "Pack",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-09-25T05:55:19.351274+00:00"
+  },
+  {
+    "id": "7dbfe019-e346-4287-be7f-eb767da3e282",
+    "text": "At Destination",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -20,
+    "created_at": "2026-09-25T06:07:02.207217+00:00"
+  },
+  {
+    "id": "ee085b9b-b78c-423c-8ae9-996b30e27177",
+    "text": "Daily + weekly tallies",
+    "section": "shabbat_before",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-09-25T06:10:51.371909+00:00"
+  },
+  {
+    "id": "7d03049c-3aa5-4013-aabc-feb3559711f5",
+    "text": "Restock backpack",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-09-25T06:11:21.948292+00:00"
+  },
+  {
+    "id": "7b612369-df19-4e2b-b9d4-43b173e15c8d",
+    "text": "Empty microwave",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-25T06:11:49.134969+00:00"
+  },
+  {
+    "id": "3e3dde22-d96a-41a2-acf9-c9853db591cf",
+    "text": "Turn on hearing aids",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-09-25T06:12:03.980617+00:00"
+  },
+  {
+    "id": "a8648bb2-0d48-49ca-9715-47d0b469eab3",
+    "text": "Wash bottles",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-09-25T06:12:26.207962+00:00"
+  },
+  {
+    "id": "7c82b041-108a-4a39-a78e-947bd9bea885",
+    "text": "Talk to family",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-09-25T06:12:41.271852+00:00"
+  },
+  {
+    "id": "c38412b2-8071-4a30-a5fe-aea715bbdfd1",
+    "text": "Clear electronics",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "date": "2026-09-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -45,
+    "created_at": "2026-09-25T06:14:17.224462+00:00"
   }
 ]
