@@ -9053,5 +9053,77 @@
     "active": true,
     "sort_order": -45,
     "created_at": "2026-09-25T06:14:17.224462+00:00"
+  },
+  {
+    "id": "7d583b2b-fd8b-4883-afc1-8d675fdb2a99",
+    "text": "Guy bottles",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-27",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-09-26T20:38:16.44994+00:00"
+  },
+  {
+    "id": "cb28e4e1-91ab-4c95-a89d-93299c6233d5",
+    "text": "Diaper mat (filled to 180)",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-27",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-09-26T20:38:25.545985+00:00"
+  },
+  {
+    "id": "9890b2c2-0cbf-48cf-a230-5ccfa9d856a2",
+    "text": "Pacifiers for Hadas",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-27",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-09-26T20:39:28.49812+00:00"
+  },
+  {
+    "id": "52364860-117a-4aae-89a4-2784b75791d3",
+    "text": "Pacifiers for Guy",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-09-27",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-09-26T20:39:39.629797+00:00"
+  },
+  {
+    "id": "11451bda-a062-4a8b-9db3-eb855104d733",
+    "text": "Message Rachel",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-27",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-26T20:41:29.658724+00:00"
+  },
+  {
+    "id": "52a7697e-83fe-4275-a0e1-7d1fbc7a3095",
+    "text": "Steel Wood payment",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-09-27",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-09-26T21:37:17.237476+00:00"
   }
 ]
