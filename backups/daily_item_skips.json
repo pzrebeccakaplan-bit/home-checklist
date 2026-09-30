@@ -3106,5 +3106,293 @@
     "item_id": "720e5f02-9e7c-4960-9ebe-e429143f84ef",
     "skip_on": "2026-09-27",
     "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "340a1b27-1c2b-4937-8162-ed93eb6ed225",
+    "item_id": "58c55f5b-0a55-4b3f-babc-901a867a4516",
+    "skip_on": "2026-09-29",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "eb871537-dfdc-49a9-a750-6c99dc62b7a2",
+    "item_id": "346da9d4-42f1-4623-9db3-012285f137cb",
+    "skip_on": "2026-09-29",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "a58f3725-ce4c-453e-a14a-69fb1bb426dd",
+    "item_id": "1cf2d9ed-7d89-489b-8c01-c7b7b38e3037",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "61144d98-26bb-4fd8-996f-0ce5ec6bd225",
+    "item_id": "a69c53f1-7030-4df0-a2e7-15ccdb8a58c0",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "84fba97e-65bc-4553-b19e-62404a13fe79",
+    "item_id": "a53a9a5a-c950-483d-ac3c-fce77bde105f",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "f4197176-9b67-4477-ae72-048a51bf547f",
+    "item_id": "76a9ff32-e722-4a16-817c-8dbbe207d208",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "611be872-a5f8-4ec6-8c31-74ac1a3b1690",
+    "item_id": "eb784b2a-cd37-468c-9a4f-8484459f610b",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "7e5cf876-e544-4e4f-83e7-70dee603e302",
+    "item_id": "2ad0aeff-54db-43f9-891c-eab9ab08e2a7",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "51be4b2e-584d-4fc7-a762-33d7eb4e4fc1",
+    "item_id": "82b38adf-d813-4a6b-93a0-0e847f2a3651",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "f036cd5f-7332-436c-ad12-37dd5440569c",
+    "item_id": "7e82781b-2ead-4cf9-a2e0-e8540aab3d4f",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "dcaba7d0-3a1e-4576-adbf-da7a2fa349b8",
+    "item_id": "e56b8b02-e995-47cc-aefd-c5d75edaf5f0",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "1410d422-475c-44fd-9eec-ee32ea17e77f",
+    "item_id": "b24bbd74-7e41-4880-b887-85a70c59ab64",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "16d668ca-0b57-4dee-851f-61ccce4de581",
+    "item_id": "5949ce4e-3dd4-4bef-b6ec-ffef77976a4e",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "d4ee0be4-5cee-4275-8b01-5b6152d3d015",
+    "item_id": "f7a2713f-953f-454b-9d42-417a687627f3",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "5b76afd8-6673-4725-932f-f27b0b174f8f",
+    "item_id": "a6ca0023-a137-4bb1-b86e-94b0bc9d82b0",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "183fde36-02cd-40df-9bcf-7234dc81ba1d",
+    "item_id": "71923441-1d17-4017-9c14-eb3cabe22320",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "43bc3e8e-3fff-464b-a82b-d6b146a0e445",
+    "item_id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "1f5c6f2c-3926-48ea-818d-30a88f535338",
+    "item_id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "c309ac3b-c342-469d-8b8c-810713ec669f",
+    "item_id": "0a55dd9d-73d0-4286-8721-0b38609507bb",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "5a1413f8-ef44-4597-ac3a-3f57074694be",
+    "item_id": "9836da55-9b5f-403d-8b19-814b2facf88c",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "c3c7f048-811f-485a-b4d3-811e37acffe2",
+    "item_id": "e73f2d89-aec4-4774-96f7-67588a33c983",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "200b7c70-f973-404a-8006-00d236b75db5",
+    "item_id": "a81acc9f-0075-49ec-9a5e-a87fda73255b",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "d15df147-db24-4661-9a35-0a9b13010174",
+    "item_id": "62e5fb5e-0be7-4a36-a828-0a9a59ccd6a1",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "b6d72be5-cc81-4701-99da-057b1daeda1a",
+    "item_id": "eedadb2f-8c51-4c3b-83e1-e4794a0786fe",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "0e588489-1bc9-49df-be50-cd064d75c793",
+    "item_id": "415d1cbb-185b-4660-aaaf-b16a9fb6ba70",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "7afe0457-1085-4dd4-bc92-423b907f5486",
+    "item_id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "2085820d-82ef-46e7-b48a-6cddfeac8b8e",
+    "item_id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "9f8ebee7-193b-4fea-acf6-da9cfc18ae8b",
+    "item_id": "fdeec61f-5a6a-4ca3-98f7-123b520b7c0e",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "0620d8ad-d9ab-4e1e-b6bc-3994381649f5",
+    "item_id": "d48c779c-66fe-40ee-a07d-89d67dc446bc",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "d38db290-9e81-48cc-b6bb-00e315a7cb4f",
+    "item_id": "f2cdaf95-c806-401e-92b4-b8414844e6cf",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "f428c77c-ef54-4fc1-9f57-d38196dbbf29",
+    "item_id": "26e56c48-a7e2-43e3-9da9-9451f8cb247b",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "d49c5d3b-4972-45e1-8d2b-d3b7a07410d7",
+    "item_id": "a995a46b-72c3-4cdd-9a31-14e93453cc3f",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "1229083e-befa-48f1-84d3-1dd34ce83e00",
+    "item_id": "582a103a-c78d-4062-9260-a869b9754054",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "29ee3bb5-07f2-4ec6-8d01-568e13aed9da",
+    "item_id": "75d7a632-2e62-4055-b32b-18eecd63f08e",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "ebf43ba3-f60b-4496-b2a2-b387feeae120",
+    "item_id": "9d925280-ae9c-4a00-b156-3a72571a379e",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "62856630-a726-4562-8b36-359819cfae2e",
+    "item_id": "e498580e-e5fa-401a-b581-53d1483c8632",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "d71ed4d7-707f-4171-8e7a-5390bca2ae27",
+    "item_id": "1a97023c-81a9-4907-98f6-89a9628f6053",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "c179c126-0d71-4266-8baf-90b990939556",
+    "item_id": "b3670ccf-2acd-49f5-85ff-75c817000d0a",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "14a5fcbb-3515-40f5-8543-9b91c1ac29cd",
+    "item_id": "140598a8-5bfa-4002-9cdf-8e5a630b427d",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "9eff245f-ac18-4dbd-8606-243a22129aca",
+    "item_id": "b95abb43-4685-4b8c-9eb5-e9002434fc7c",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "70214c3b-051b-4126-919d-36d17cb7b9cd",
+    "item_id": "5aac5a23-9084-43a8-86d0-9680c0a9d7f1",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "af8a64f3-9e10-47b8-8c04-e239747ae5a4",
+    "item_id": "456e148e-e276-46f0-95ad-8b1e6750f485",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "07cfb468-108b-4a26-b071-5c91c555414b",
+    "item_id": "fa309432-656b-4988-b00f-35350a84eb4a",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "13487604-7e1d-4739-bd95-0c014aadab21",
+    "item_id": "7d732501-5825-4d95-87ee-0b8003356069",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "56107edd-397f-49dd-9d64-7e4b2dd54259",
+    "item_id": "8fa8ad3d-7f15-4bdd-af1a-8268e57015df",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "8ea89e1a-8b72-4038-a346-c2df10c8433f",
+    "item_id": "b9698632-0247-4245-ae71-dfe9e54abd76",
+    "skip_on": "2026-09-29",
+    "created_by": null
+  },
+  {
+    "id": "67160cea-610c-48bc-9937-d93a672da2f8",
+    "item_id": "d01a5c0d-39be-48aa-983c-64c123d13471",
+    "skip_on": "2026-09-30",
+    "created_by": null
+  },
+  {
+    "id": "c2f73eaa-0a80-46ad-9c4c-e2e660b5ea19",
+    "item_id": "58c55f5b-0a55-4b3f-babc-901a867a4516",
+    "skip_on": "2026-09-30",
+    "created_by": null
   }
 ]

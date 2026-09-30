@@ -614,7 +614,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 30,
+    "sort_order": 40,
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
@@ -728,28 +728,6 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "cc1fdaa4-3eba-4415-90ba-4094ae777c61",
-    "text": "Put away 3 things in bedroom",
-    "section": "evening_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:46:15.987663+00:00"
-  },
-  {
-    "id": "033ce046-b7d2-4fce-bacb-f48f70b461da",
-    "text": "Take containers out of backpack",
-    "section": "evening_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
     "id": "c9e1c70e-8737-4b43-b15c-3126317f0f35",
@@ -873,14 +851,14 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "212911c4-903b-4326-8c56-0fbece8b49c8",
-    "text": "Lay out clothes",
+    "id": "cc1fdaa4-3eba-4415-90ba-4094ae777c61",
+    "text": "Put away 3 things in bedroom",
     "section": "evening_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 30,
+    "sort_order": 50,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
@@ -1060,14 +1038,25 @@
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
-    "id": "bac056c8-c4ea-4eb6-8f67-91a0b0d949f8",
-    "text": "Laundry sweep",
+    "id": "033ce046-b7d2-4fce-bacb-f48f70b461da",
+    "text": "Take containers out of backpack",
     "section": "evening_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 50,
+    "sort_order": 70,
+    "created_at": "2026-07-29T09:46:15.987663+00:00"
+  },
+  {
+    "id": "212911c4-903b-4326-8c56-0fbece8b49c8",
+    "text": "Lay out clothes",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
@@ -1236,6 +1225,17 @@
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
+    "id": "43baebef-a479-48b2-9076-d8f3f58aba49",
+    "text": "Put away 5 things in living room",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:46:15.987663+00:00"
+  },
+  {
     "id": "360fd3c3-ac0f-449b-ae3c-70dcb845c1e0",
     "text": "Drugs",
     "section": "evening_pz",
@@ -1258,25 +1258,14 @@
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
-    "id": "43baebef-a479-48b2-9076-d8f3f58aba49",
-    "text": "Put away 5 things in living room",
+    "id": "bac056c8-c4ea-4eb6-8f67-91a0b0d949f8",
+    "text": "Laundry sweep",
     "section": "evening_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:46:15.987663+00:00"
-  },
-  {
-    "id": "03c8bcdc-bcbc-4219-8a1c-c5f330d85261",
-    "text": "Moisturize belly",
-    "section": "evening_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
+    "sort_order": 30,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
@@ -1300,6 +1289,17 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
+    "id": "03c8bcdc-bcbc-4219-8a1c-c5f330d85261",
+    "text": "Moisturize belly",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
     "id": "facc1703-884f-4e45-b173-51b1cdc5cf9b",
@@ -1426,15 +1426,15 @@
     "created_at": "2026-08-07T14:36:06.962136+00:00"
   },
   {
-    "id": "ec2c1212-313e-4b14-9ccb-90492384ce9f",
-    "text": "Wash non-dishwasher dishes",
+    "id": "3e2716bf-1599-49ab-ac7d-42a0af29ec67",
+    "text": "Food dates",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 90,
-    "created_at": "2026-08-08T21:46:53.709481+00:00"
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "c2c09e54-9213-4dde-a50e-68d4c68d6898",
@@ -1602,6 +1602,17 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "ec2c1212-313e-4b14-9ccb-90492384ce9f",
+    "text": "Wash non-dishwasher dishes",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-08T21:46:53.709481+00:00"
   },
   {
     "id": "1a9fce13-d21b-4f1e-a235-7a37ac71e407",
@@ -1901,17 +1912,6 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "3e2716bf-1599-49ab-ac7d-42a0af29ec67",
-    "text": "Food dates",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
-  },
-  {
     "id": "41478da1-3bb6-4722-bf39-feaff61a4718",
     "text": "Ensure no medications within reach of Hadas",
     "section": "evening_shared",
@@ -1990,7 +1990,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
+    "sort_order": 60,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -3328,7 +3328,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 100,
+    "sort_order": 30,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -8041,7 +8041,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
+    "sort_order": 10,
     "created_at": "2026-09-05T21:37:07.274845+00:00"
   },
   {
@@ -8496,17 +8496,6 @@
     "active": true,
     "sort_order": 80,
     "created_at": "2026-09-17T04:56:46.079191+00:00"
-  },
-  {
-    "id": "429a66af-f584-4b75-8af3-1bf4800b6530",
-    "text": "Turn on vacuum",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-01T18:39:24.521034+00:00"
   },
   {
     "id": "58c55f5b-0a55-4b3f-babc-901a867a4516",
@@ -9125,5 +9114,16 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-09-26T21:37:17.237476+00:00"
+  },
+  {
+    "id": "429a66af-f584-4b75-8af3-1bf4800b6530",
+    "text": "Turn on vacuum",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-08-01T18:39:24.521034+00:00"
   }
 ]
