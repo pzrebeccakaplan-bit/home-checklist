@@ -123,6 +123,17 @@
     "created_at": "2026-07-07T06:58:35.166576+00:00"
   },
   {
+    "id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
+    "text": "GF bread",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:41:44.938265+00:00"
+  },
+  {
     "id": "e56b8b02-e995-47cc-aefd-c5d75edaf5f0",
     "text": "Extra outfit to maon (for both kids for water stuff)",
     "section": "morning_pz_dropoff",
@@ -273,15 +284,15 @@
     "created_at": "2026-07-29T09:42:38.655001+00:00"
   },
   {
-    "id": "0ce98f1b-a3d2-4947-aea5-ad045f9a40e9",
-    "text": "GF bread",
-    "section": "hadas_food",
+    "id": "4aa398ac-eb25-4390-96f5-fe70f20970bc",
+    "text": "Find a quinoa recipe to try",
+    "section": "evening_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:41:44.938265+00:00"
+    "active": false,
+    "sort_order": -5,
+    "created_at": "2026-08-02T20:03:32.661734+00:00"
   },
   {
     "id": "6d5676c5-8770-4e70-9479-dc1c1298aeb5",
@@ -583,17 +594,6 @@
     "active": false,
     "sort_order": 5,
     "created_at": "2026-08-06T20:28:02.872784+00:00"
-  },
-  {
-    "id": "4aa398ac-eb25-4390-96f5-fe70f20970bc",
-    "text": "Find a quinoa recipe to try",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-08-02T20:03:32.661734+00:00"
   },
   {
     "id": "765d6f4c-4bf7-459e-9c67-0fd12b35b3e1",
@@ -5250,7 +5250,7 @@
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
+    "active": false,
     "sort_order": 5,
     "created_at": "2026-08-11T11:40:14.54237+00:00"
   },
@@ -5883,17 +5883,6 @@
     "created_at": "2026-08-20T17:52:34.190037+00:00"
   },
   {
-    "id": "5dc679da-b959-4640-952f-591802e6799e",
-    "text": "Plan meal for Bergfeld",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-20T17:59:26.974083+00:00"
-  },
-  {
     "id": "5b9dbb0b-6d15-4e3c-a9f6-35355384428b",
     "text": "Pay Elle",
     "section": "morning_shared",
@@ -6239,6 +6228,17 @@
     "created_at": "2026-08-23T21:40:42.072311+00:00"
   },
   {
+    "id": "5dc679da-b959-4640-952f-591802e6799e",
+    "text": "Plan meal for Bergfeld",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 5,
+    "created_at": "2026-08-20T17:59:26.974083+00:00"
+  },
+  {
     "id": "e7ba4b65-6928-4ead-9349-520999d85128",
     "text": "Message gastro (Guy gluten)",
     "section": "morning_shared",
@@ -6296,17 +6296,6 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-08-26T19:40:53.64577+00:00"
-  },
-  {
-    "id": "5bd432df-cb0e-449a-90b0-59564d74bb43",
-    "text": "Message Dr hulkower",
-    "section": "morning_pz_work",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-24T18:30:51.350838+00:00"
   },
   {
     "id": "9508e6c4-79c7-4e51-a042-9d2389a234b2",
@@ -6428,17 +6417,6 @@
     "created_at": "2026-08-25T19:10:44.000951+00:00"
   },
   {
-    "id": "26cf7ed3-19dd-4b24-bf72-663df3822c5e",
-    "text": "Clean bathtub",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-08-15T22:08:39.41018+00:00"
-  },
-  {
     "id": "f7dcd96a-dc64-4ce4-9898-d8448db6157e",
     "text": "Update number of occupants in home",
     "section": "evening_shared",
@@ -6556,15 +6534,15 @@
     "created_at": "2026-08-27T20:27:40.096196+00:00"
   },
   {
-    "id": "b7c7f3df-489e-472a-b02b-5df85cf47a30",
-    "text": "Find new handyman",
-    "section": "morning_shared",
+    "id": "5bd432df-cb0e-449a-90b0-59564d74bb43",
+    "text": "Message Dr hulkower",
+    "section": "morning_pz_work",
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-08-24T18:28:12.261767+00:00"
+    "active": false,
+    "sort_order": 5,
+    "created_at": "2026-08-24T18:30:51.350838+00:00"
   },
   {
     "id": "6ea577c2-a8e5-4ba1-90fb-7c8dfd66da81",
@@ -6839,17 +6817,6 @@
     "created_at": "2026-08-30T21:36:26.498101+00:00"
   },
   {
-    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
-    "text": "\"I have celiac\" graphic for Hadas print",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-25T19:19:15.224128+00:00"
-  },
-  {
     "id": "1657940b-f24f-4fff-a283-b80832c30849",
     "text": "Laundry away",
     "section": "morning_shared",
@@ -6884,6 +6851,17 @@
     "active": true,
     "sort_order": -25,
     "created_at": "2026-08-30T21:39:52.836624+00:00"
+  },
+  {
+    "id": "26cf7ed3-19dd-4b24-bf72-663df3822c5e",
+    "text": "Clean bathtub",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 0,
+    "created_at": "2026-08-15T22:08:39.41018+00:00"
   },
   {
     "id": "3601db8a-1ab2-41d2-8d7f-d73090eb2339",
@@ -6932,15 +6910,15 @@
     "created_at": "2026-08-29T22:40:08.351272+00:00"
   },
   {
-    "id": "d8983e48-53d0-4db7-88eb-df1414a85567",
-    "text": "Message eliezer",
+    "id": "b7c7f3df-489e-472a-b02b-5df85cf47a30",
+    "text": "Find new handyman",
     "section": "morning_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
-    "sort_order": -30,
-    "created_at": "2026-08-30T21:48:11.788373+00:00"
+    "active": false,
+    "sort_order": 15,
+    "created_at": "2026-08-24T18:28:12.261767+00:00"
   },
   {
     "id": "38acb8cd-5871-49fd-a1e5-1027663b2869",
@@ -6979,110 +6957,15 @@
     "created_at": "2026-09-03T20:24:35.294994+00:00"
   },
   {
-    "id": "156ae2a3-4a82-41e4-8418-6850761e4101",
-    "text": "Hadas blanket",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "date": "2026-09-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-08-31T20:10:24.351717+00:00"
-  },
-  {
-    "id": "ff23fe1d-abdb-4c15-9bad-11783e801974",
-    "text": "Hadas turtle",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "date": "2026-09-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-08-31T20:10:30.573385+00:00"
-  },
-  {
-    "id": "bf57899f-6846-49ec-86f1-ba5605cd1692",
-    "text": "Formula canister",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "date": "2026-09-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -10,
-    "created_at": "2026-08-31T20:11:24.667265+00:00"
-  },
-  {
-    "id": "0200d578-59c7-4536-bdfb-bb2af8f6d6a6",
-    "text": "Pack laundry hanging (bathing suits)",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -35,
-    "created_at": "2026-08-31T19:43:15.401947+00:00"
-  },
-  {
-    "id": "d8410c50-7ad6-43e4-b95d-65c3977ef2f8",
-    "text": "Hadas pacifiers",
-    "section": "things_to_pack_in_the_morning",
+    "id": "92780efe-9475-4ca3-a527-bbc3afc3277e",
+    "text": "IBKR upload TZs",
+    "section": "morning_pz_dropoff",
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-31T20:09:52.01685+00:00"
-  },
-  {
-    "id": "ac1bf5b8-444e-4d88-9ae5-ca50b5e96df1",
-    "text": "Hanging laundry",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "date": "2026-09-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -15,
-    "created_at": "2026-08-31T20:13:17.840782+00:00"
-  },
-  {
-    "id": "7a31019d-6c7e-4392-9af0-23e96a1ca03e",
-    "text": "Toiletries",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "date": "2026-09-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -20,
-    "created_at": "2026-08-31T20:13:31.800533+00:00"
-  },
-  {
-    "id": "57e5b016-fe52-481b-8d1b-085ca8beb289",
-    "text": "Phone chargers",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "date": "2026-09-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -25,
-    "created_at": "2026-08-31T20:14:34.473874+00:00"
-  },
-  {
-    "id": "aa5c8382-74e3-4133-b105-a3961ed8ca3b",
-    "text": "Talit and tefillin",
-    "section": "things_to_pack_in_the_morning",
-    "recurrence_rule": {
-      "date": "2026-09-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -30,
-    "created_at": "2026-08-31T20:19:25.234125+00:00"
+    "active": false,
+    "sort_order": -5,
+    "created_at": "2026-09-01T19:53:04.256099+00:00"
   },
   {
     "id": "d33b1884-807e-4f30-a480-0912c8d49b09",
@@ -7445,28 +7328,6 @@
     "created_at": "2026-09-02T22:50:57.939956+00:00"
   },
   {
-    "id": "a66f1f2f-d15e-4337-be8d-0a7391c049b7",
-    "text": "Call EMED",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -10,
-    "created_at": "2026-09-01T19:54:09.949392+00:00"
-  },
-  {
-    "id": "92780efe-9475-4ca3-a527-bbc3afc3277e",
-    "text": "IBKR upload TZs",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-09-01T19:53:04.256099+00:00"
-  },
-  {
     "id": "e64d2d64-2a6c-428b-b8a6-b299015d674b",
     "text": "Look for size X tips for guy",
     "section": "morning_shared",
@@ -7624,15 +7485,38 @@
     "created_at": "2026-09-05T20:32:15.00364+00:00"
   },
   {
-    "id": "4b469612-080e-42c3-b1a0-68caa34109a2",
-    "text": "IBKR upload",
-    "section": "evening_shared",
+    "id": "d8983e48-53d0-4db7-88eb-df1414a85567",
+    "text": "Message eliezer",
+    "section": "morning_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
-    "sort_order": -25,
-    "created_at": "2026-09-05T17:09:13.613176+00:00"
+    "sort_order": -30,
+    "created_at": "2026-08-30T21:48:11.788373+00:00"
+  },
+  {
+    "id": "156ae2a3-4a82-41e4-8418-6850761e4101",
+    "text": "Hadas blanket",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": 0,
+    "created_at": "2026-08-31T20:10:24.351717+00:00"
+  },
+  {
+    "id": "a66f1f2f-d15e-4337-be8d-0a7391c049b7",
+    "text": "Call EMED",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-09-01T19:54:09.949392+00:00"
   },
   {
     "id": "0401f503-128c-4c17-8830-61143835771a",
@@ -7847,15 +7731,15 @@
     "created_at": "2026-09-10T19:59:03.761157+00:00"
   },
   {
-    "id": "b04971d8-4ed2-40fe-b502-caa8b8c7fd89",
-    "text": "Toilets",
-    "section": "morning_shared",
+    "id": "25b1271a-5d9e-4c22-b9aa-a5fdfe315177",
+    "text": "Meal for Bergfeld",
+    "section": "evening_first_to_bed",
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-09-07T21:09:03.709863+00:00"
+    "active": false,
+    "sort_order": -5,
+    "created_at": "2026-09-14T21:01:09.156283+00:00"
   },
   {
     "id": "0a09c446-b108-400a-a6d9-3d6b6d916880",
@@ -7906,15 +7790,15 @@
     "created_at": "2026-09-09T18:38:00.679322+00:00"
   },
   {
-    "id": "d35d40ae-9a08-431c-b625-d858d6a39444",
-    "text": "Clean out mamad",
-    "section": "morning_shared",
+    "id": "4b469612-080e-42c3-b1a0-68caa34109a2",
+    "text": "IBKR upload",
+    "section": "evening_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-09-08T20:31:23.78992+00:00"
+    "active": false,
+    "sort_order": -25,
+    "created_at": "2026-09-05T17:09:13.613176+00:00"
   },
   {
     "id": "a58d3545-5760-48b0-99b7-b9b3ae4ddf15",
@@ -7938,6 +7822,17 @@
     "active": true,
     "sort_order": 15,
     "created_at": "2026-09-10T19:57:16.804553+00:00"
+  },
+  {
+    "id": "b04971d8-4ed2-40fe-b502-caa8b8c7fd89",
+    "text": "Toilets",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 15,
+    "created_at": "2026-09-07T21:09:03.709863+00:00"
   },
   {
     "id": "11f265fc-82b9-4a5d-8cef-d91e454985e9",
@@ -8009,17 +7904,6 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-09-15T16:59:38.388529+00:00"
-  },
-  {
-    "id": "25b1271a-5d9e-4c22-b9aa-a5fdfe315177",
-    "text": "Meal for Bergfeld",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-09-14T21:01:09.156283+00:00"
   },
   {
     "id": "3d29f855-5ea2-49b7-9fa3-42ee6612efad",
@@ -8309,6 +8193,17 @@
     "created_at": "2026-09-15T18:28:31.964861+00:00"
   },
   {
+    "id": "d35d40ae-9a08-431c-b625-d858d6a39444",
+    "text": "Clean out mamad",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 0,
+    "created_at": "2026-09-08T20:31:23.78992+00:00"
+  },
+  {
     "id": "92d07707-b87c-451d-82c8-2f188ea440bd",
     "text": "Hadas diapers",
     "section": "hadas_food",
@@ -8416,17 +8311,6 @@
     "created_at": "2026-09-17T17:50:36.251418+00:00"
   },
   {
-    "id": "36c8228f-4cf1-4cf7-bf5a-b4aab07d2556",
-    "text": "Peach bars",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-09-17T05:02:38.359111+00:00"
-  },
-  {
     "id": "eae9e88b-20b5-4c76-936c-d0ebf855dcb0",
     "text": "Make rice",
     "section": "morning_shared",
@@ -8463,17 +8347,6 @@
     "created_at": "2026-09-17T04:59:14.85539+00:00"
   },
   {
-    "id": "6cb2be30-a3bf-42d6-855e-e0182822b5e4",
-    "text": "Table away in office",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 55,
-    "created_at": "2026-09-17T14:13:09.053423+00:00"
-  },
-  {
     "id": "0abb53da-ea5e-45b2-ad40-c8101217766f",
     "text": "Put away laundry",
     "section": "morning_shared",
@@ -8496,6 +8369,17 @@
     "active": true,
     "sort_order": 80,
     "created_at": "2026-09-17T04:56:46.079191+00:00"
+  },
+  {
+    "id": "6cb2be30-a3bf-42d6-855e-e0182822b5e4",
+    "text": "Table away in office",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 55,
+    "created_at": "2026-09-17T14:13:09.053423+00:00"
   },
   {
     "id": "58c55f5b-0a55-4b3f-babc-901a867a4516",
@@ -8748,17 +8632,6 @@
     "created_at": "2026-09-20T09:43:40.54118+00:00"
   },
   {
-    "id": "f9344fee-a0b7-4455-a2ef-06b05fb9e36d",
-    "text": "Call savta",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-09-22T21:03:01.224993+00:00"
-  },
-  {
     "id": "8d593fbc-541c-4317-901b-9a57f3da51d2",
     "text": "Message Menachem Lazar",
     "section": "morning_shared",
@@ -8925,15 +8798,15 @@
     "created_at": "2026-09-23T21:37:49.343779+00:00"
   },
   {
-    "id": "15f47b05-4492-4dc6-b3ae-405589d3a5b5",
-    "text": "Return urn to winkler",
+    "id": "36c8228f-4cf1-4cf7-bf5a-b4aab07d2556",
+    "text": "Peach bars",
     "section": "morning_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-09-23T21:42:54.349816+00:00"
+    "active": false,
+    "sort_order": 80,
+    "created_at": "2026-09-17T05:02:38.359111+00:00"
   },
   {
     "id": "9dd348de-bb90-4e2e-ae7c-1f050a28425f",
@@ -9125,5 +8998,166 @@
     "active": true,
     "sort_order": 50,
     "created_at": "2026-08-01T18:39:24.521034+00:00"
+  },
+  {
+    "id": "f643d73b-6fac-4e30-b25f-d0dcb28a5eb0",
+    "text": "Message Tamar about art piece",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-30T17:53:12.867674+00:00"
+  },
+  {
+    "id": "a2a02c30-b207-4da7-94f9-9d2944569912",
+    "text": "Schedule with Tomer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -45,
+    "created_at": "2026-09-30T17:54:27.9411+00:00"
+  },
+  {
+    "id": "15f47b05-4492-4dc6-b3ae-405589d3a5b5",
+    "text": "Return urn to winkler",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 0,
+    "created_at": "2026-09-23T21:42:54.349816+00:00"
+  },
+  {
+    "id": "c0461238-43f4-4ff8-ba35-92773dd08217",
+    "text": "\"I have celiac\" graphic for Hadas print",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 10,
+    "created_at": "2026-08-25T19:19:15.224128+00:00"
+  },
+  {
+    "id": "f9344fee-a0b7-4455-a2ef-06b05fb9e36d",
+    "text": "Call savta",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 20,
+    "created_at": "2026-09-22T21:03:01.224993+00:00"
+  },
+  {
+    "id": "ff23fe1d-abdb-4c15-9bad-11783e801974",
+    "text": "Hadas turtle",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -5,
+    "created_at": "2026-08-31T20:10:30.573385+00:00"
+  },
+  {
+    "id": "bf57899f-6846-49ec-86f1-ba5605cd1692",
+    "text": "Formula canister",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -10,
+    "created_at": "2026-08-31T20:11:24.667265+00:00"
+  },
+  {
+    "id": "0200d578-59c7-4536-bdfb-bb2af8f6d6a6",
+    "text": "Pack laundry hanging (bathing suits)",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -35,
+    "created_at": "2026-08-31T19:43:15.401947+00:00"
+  },
+  {
+    "id": "d8410c50-7ad6-43e4-b95d-65c3977ef2f8",
+    "text": "Hadas pacifiers",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 5,
+    "created_at": "2026-08-31T20:09:52.01685+00:00"
+  },
+  {
+    "id": "ac1bf5b8-444e-4d88-9ae5-ca50b5e96df1",
+    "text": "Hanging laundry",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -15,
+    "created_at": "2026-08-31T20:13:17.840782+00:00"
+  },
+  {
+    "id": "7a31019d-6c7e-4392-9af0-23e96a1ca03e",
+    "text": "Toiletries",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -20,
+    "created_at": "2026-08-31T20:13:31.800533+00:00"
+  },
+  {
+    "id": "57e5b016-fe52-481b-8d1b-085ca8beb289",
+    "text": "Phone chargers",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -25,
+    "created_at": "2026-08-31T20:14:34.473874+00:00"
+  },
+  {
+    "id": "aa5c8382-74e3-4133-b105-a3961ed8ca3b",
+    "text": "Talit and tefillin",
+    "section": "things_to_pack_in_the_morning",
+    "recurrence_rule": {
+      "date": "2026-09-01",
+      "type": "once"
+    },
+    "active": false,
+    "sort_order": -30,
+    "created_at": "2026-08-31T20:19:25.234125+00:00"
+  },
+  {
+    "id": "d91ac5ff-743a-46bc-b9d8-8cc10b07215c",
+    "text": "Message Yoni Hyman- refinance",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -50,
+    "created_at": "2026-09-30T18:02:17.087619+00:00"
   }
 ]
