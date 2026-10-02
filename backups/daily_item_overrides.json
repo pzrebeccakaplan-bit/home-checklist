@@ -1335,5 +1335,12 @@
     "active_on": "2026-10-05",
     "created_by": null,
     "created_at": "2026-09-30T19:14:05.067532+00:00"
+  },
+  {
+    "id": "2c91c48d-211e-4936-ac58-1072b4448e38",
+    "item_id": "f643d73b-6fac-4e30-b25f-d0dcb28a5eb0",
+    "active_on": "2026-10-04",
+    "created_by": null,
+    "created_at": "2026-10-01T20:46:12.848727+00:00"
   }
 ]

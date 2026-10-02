@@ -9000,18 +9000,6 @@
     "created_at": "2026-08-01T18:39:24.521034+00:00"
   },
   {
-    "id": "f643d73b-6fac-4e30-b25f-d0dcb28a5eb0",
-    "text": "Message Tamar about art piece",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-10-01",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 25,
-    "created_at": "2026-09-30T17:53:12.867674+00:00"
-  },
-  {
     "id": "a2a02c30-b207-4da7-94f9-9d2944569912",
     "text": "Schedule with Tomer",
     "section": "morning_shared",
@@ -9159,5 +9147,148 @@
     "active": true,
     "sort_order": -50,
     "created_at": "2026-09-30T18:02:17.087619+00:00"
+  },
+  {
+    "id": "f643d73b-6fac-4e30-b25f-d0dcb28a5eb0",
+    "text": "Message Tamar about art piece",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-09-30T17:53:12.867674+00:00"
+  },
+  {
+    "id": "48342809-6ee2-43b4-800c-ffa71286d9cd",
+    "text": "Change sheets",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-10-01T20:47:32.694748+00:00"
+  },
+  {
+    "id": "57891643-35c7-4f2c-a2f4-db8af38b38f8",
+    "text": "Ask Rachel if she prefers 16:30 or 17:00 + confirm days",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-01T20:58:41.886493+00:00"
+  },
+  {
+    "id": "518eedcc-c0ba-4060-aa8a-f73027d9af59",
+    "text": "Find babysitter for Monday night",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-01T21:22:17.059256+00:00"
+  },
+  {
+    "id": "f63a8009-061c-41b1-a965-92266d81d6fc",
+    "text": "Chicken soup",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 105,
+    "created_at": "2026-10-02T08:01:58.280523+00:00"
+  },
+  {
+    "id": "0a99bea6-649a-4849-ab02-4444d4f8f3d5",
+    "text": "Whole chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-10-02T08:02:10.089828+00:00"
+  },
+  {
+    "id": "a23c70db-4ed9-4f89-8b6b-d464d70971e0",
+    "text": "Broccoli",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 95,
+    "created_at": "2026-10-02T08:02:47.26794+00:00"
+  },
+  {
+    "id": "1455ba4f-b3e1-468f-8cf7-b8ada7baf244",
+    "text": "Cauliflower rice",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-10-02T08:03:01.057741+00:00"
+  },
+  {
+    "id": "72ac084c-419e-4226-8c38-1027f8d0e617",
+    "text": "Chop mint",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 85,
+    "created_at": "2026-10-02T08:03:13.20469+00:00"
+  },
+  {
+    "id": "2604e5a8-10c6-4fde-9b83-5fb8ca7b6888",
+    "text": "Pomegranate",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-10-02T08:03:52.533362+00:00"
+  },
+  {
+    "id": "af067402-95e6-40f5-b3a1-a1ed2df97b73",
+    "text": "Lemonade",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 75,
+    "created_at": "2026-10-02T08:04:16.853863+00:00"
+  },
+  {
+    "id": "a5e94383-1cc5-4bea-af47-063aee1f601a",
+    "text": "Peach bars",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-10-02T08:04:43.304006+00:00"
   }
 ]
