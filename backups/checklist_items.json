@@ -9184,18 +9184,6 @@
     "created_at": "2026-10-01T20:58:41.886493+00:00"
   },
   {
-    "id": "518eedcc-c0ba-4060-aa8a-f73027d9af59",
-    "text": "Find babysitter for Monday night",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-10-02",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-10-01T21:22:17.059256+00:00"
-  },
-  {
     "id": "f63a8009-061c-41b1-a965-92266d81d6fc",
     "text": "Chicken soup",
     "section": "shabbat_cooking",
@@ -9290,5 +9278,16 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-10-02T08:04:43.304006+00:00"
+  },
+  {
+    "id": "518eedcc-c0ba-4060-aa8a-f73027d9af59",
+    "text": "Find babysitter for Monday night",
+    "section": "shabbat_after",
+    "recurrence_rule": {
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-01T21:22:17.059256+00:00"
   }
 ]
