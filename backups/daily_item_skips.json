@@ -3394,5 +3394,17 @@
     "item_id": "58c55f5b-0a55-4b3f-babc-901a867a4516",
     "skip_on": "2026-09-30",
     "created_by": null
+  },
+  {
+    "id": "3491c515-e711-4289-b282-0d775d442f66",
+    "item_id": "e56b8b02-e995-47cc-aefd-c5d75edaf5f0",
+    "skip_on": "2026-10-05",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
+  },
+  {
+    "id": "a4027644-3954-443a-b0c1-792872ff1aca",
+    "item_id": "e73f2d89-aec4-4774-96f7-67588a33c983",
+    "skip_on": "2026-10-05",
+    "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520"
   }
 ]

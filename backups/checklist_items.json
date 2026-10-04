@@ -9289,5 +9289,121 @@
     "active": true,
     "sort_order": 15,
     "created_at": "2026-10-01T21:22:17.059256+00:00"
+  },
+  {
+    "id": "7c227f74-35f2-4c04-9eac-623f0b34aed6",
+    "text": "Message Eckstein tomorrow about Shabbat",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -55,
+    "created_at": "2026-10-03T20:56:08.079981+00:00"
+  },
+  {
+    "id": "ee25cba5-7d88-4089-afed-500366eaa509",
+    "text": "Tofes 17 pulmonologist",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-10-03T20:56:18.180042+00:00"
+  },
+  {
+    "id": "0f735e0e-1dbd-4791-beff-6d5b346cee2d",
+    "text": "Talk to Rachel about schedule this week",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -65,
+    "created_at": "2026-10-03T20:57:05.451704+00:00"
+  },
+  {
+    "id": "fb0b0214-448a-4703-a3ba-2d2da7903600",
+    "text": "Find a babysitter for Monday",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -70,
+    "created_at": "2026-10-03T20:57:15.358365+00:00"
+  },
+  {
+    "id": "e6cf8298-656d-4ce0-a325-8b5340860d38",
+    "text": "Wipes",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-10-05",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -30,
+    "created_at": "2026-10-04T04:57:12.778319+00:00"
+  },
+  {
+    "id": "bd9700fb-ed96-4ead-8f35-f0640240f8c2",
+    "text": "Tell Adelin that Guy can eat normally now",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-10-05",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -35,
+    "created_at": "2026-10-04T08:38:34.734941+00:00"
+  },
+  {
+    "id": "6c907b60-0da8-4c29-980e-59b08b12d205",
+    "text": "Extra outfit Guy",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -40,
+    "created_at": "2026-10-04T08:39:09.5836+00:00"
+  },
+  {
+    "id": "744708a9-ee39-4196-8f31-ab10f4bb8b78",
+    "text": "Extra outfit Hadas",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -45,
+    "created_at": "2026-10-04T08:39:30.834255+00:00"
+  },
+  {
+    "id": "2e743945-6c92-4602-95b6-d8b990eac9a3",
+    "text": "Inform staff of whom is picking up Hadas",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -50,
+    "created_at": "2026-10-04T08:40:18.560108+00:00"
+  },
+  {
+    "id": "22cda861-f72d-47cc-802a-06832ffcf4dc",
+    "text": "Tell Hadas and Guy if someone else is picking them up",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -55,
+    "created_at": "2026-10-04T08:40:45.040076+00:00"
   }
 ]
