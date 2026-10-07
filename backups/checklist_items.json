@@ -167,15 +167,15 @@
     "created_at": "2026-08-06T21:19:13.026153+00:00"
   },
   {
-    "id": "c97ed913-e122-4ad2-8f23-21142cc51d71",
-    "text": "Food away",
+    "id": "88fe88db-4aba-404c-8b00-1993a70693ea",
+    "text": "Wipe down kitchen counter",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 160,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
+    "sort_order": 60,
+    "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
     "id": "e498580e-e5fa-401a-b581-53d1483c8632",
@@ -354,6 +354,17 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
+    "id": "c97ed913-e122-4ad2-8f23-21142cc51d71",
+    "text": "Food away",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
     "id": "9b6d0835-d553-4bef-9851-5d2adc04dab2",
     "text": "Plan tomorrow's food prep for Hadas",
     "section": "evening_first_to_bed",
@@ -506,17 +517,6 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-07-29T09:41:44.938265+00:00"
-  },
-  {
-    "id": "88fe88db-4aba-404c-8b00-1993a70693ea",
-    "text": "Wipe down kitchen counter",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 140,
-    "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
     "id": "48a15321-db08-4870-b4cc-3e1a86382782",
@@ -728,6 +728,17 @@
     "active": true,
     "sort_order": 100,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
+  },
+  {
+    "id": "3d0ab43b-7372-42c0-9c3e-2c0353627e80",
+    "text": "Fill Hadas's water bottles",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "2c8e6d80-2137-4603-bc5a-463f64d97a3b",
@@ -959,17 +970,6 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-07-29T09:44:20.969311+00:00"
-  },
-  {
-    "id": "3d0ab43b-7372-42c0-9c3e-2c0353627e80",
-    "text": "Fill Hadas's water bottles",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 210,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "dff1484e-edbe-4a7a-84ea-62ed3285c84b",
@@ -1426,14 +1426,14 @@
     "created_at": "2026-08-07T14:36:06.962136+00:00"
   },
   {
-    "id": "8d0d9e4c-7b54-45cf-b903-827d6645aada",
-    "text": "Start dishwasher load if warranted",
+    "id": "67367c56-d3b5-427b-82a5-2bd46e6a3505",
+    "text": "Oven off",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 230,
+    "sort_order": 50,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1582,14 +1582,14 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "3e245513-2b11-48cf-a1b2-5f467879c781",
-    "text": "Fold 10 items of laundry",
+    "id": "d10b53e2-9d95-4703-a1b5-fab25c174a2d",
+    "text": "Wash inhaler mask",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 40,
+    "sort_order": 100,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1613,6 +1613,17 @@
     "active": true,
     "sort_order": 30,
     "created_at": "2026-07-29T09:47:01.984279+00:00"
+  },
+  {
+    "id": "3e245513-2b11-48cf-a1b2-5f467879c781",
+    "text": "Fold 10 items of laundry",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "3e2716bf-1599-49ab-ac7d-42a0af29ec67",
@@ -1659,14 +1670,14 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "67367c56-d3b5-427b-82a5-2bd46e6a3505",
-    "text": "Oven off",
+    "id": "8d0d9e4c-7b54-45cf-b903-827d6645aada",
+    "text": "Start dishwasher load if warranted",
     "section": "evening_shared",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 220,
+    "sort_order": 60,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1734,17 +1745,6 @@
     "active": true,
     "sort_order": 40,
     "created_at": "2026-07-29T09:47:01.984279+00:00"
-  },
-  {
-    "id": "d10b53e2-9d95-4703-a1b5-fab25c174a2d",
-    "text": "Wash inhaler mask",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 250,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "45ae09d1-c296-423a-b2cf-eb71642f1eae",
@@ -2581,17 +2581,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "7e41face-3e25-47b6-ac10-7f36f30bb137",
-    "text": "Schedule a wash / empty washing machine",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 220,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
-  },
-  {
     "id": "2f9d2cc1-5a49-46ab-be6d-45630483d2ba",
     "text": "Update calendar and honeydew list from group",
     "section": "evening_shared",
@@ -2609,9 +2598,20 @@
     "recurrence_rule": {
       "type": "daily"
     },
-    "active": true,
+    "active": false,
     "sort_order": 120,
     "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
+    "id": "7e41face-3e25-47b6-ac10-7f36f30bb137",
+    "text": "Schedule a wash / empty washing machine",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "b771ab52-da64-41ff-819f-5597df1226c8",
@@ -9001,18 +9001,6 @@
     "created_at": "2026-10-04T17:11:46.640648+00:00"
   },
   {
-    "id": "23267e8b-bb5b-4695-805a-d6f33305995a",
-    "text": "PZ Call EMED",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "date": "2026-10-06",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-10-05T21:03:12.828591+00:00"
-  },
-  {
     "id": "a2a02c30-b207-4da7-94f9-9d2944569912",
     "text": "Schedule with Tomer",
     "section": "morning_shared",
@@ -9491,17 +9479,6 @@
     "created_at": "2026-10-04T18:55:47.128936+00:00"
   },
   {
-    "id": "429a66af-f584-4b75-8af3-1bf4800b6530",
-    "text": "Turn on vacuum",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 190,
-    "created_at": "2026-08-01T18:39:24.521034+00:00"
-  },
-  {
     "id": "d6555ff6-833a-4d80-b95f-9b59aa527ee3",
     "text": "Remind staff that Hadas is coming late tomorrow",
     "section": "hadas_food",
@@ -9538,18 +9515,6 @@
     "created_at": "2026-10-05T20:34:35.386518+00:00"
   },
   {
-    "id": "49424739-75a5-4808-b89a-c77f91e4b5bf",
-    "text": "Message Karolina about mailbox",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-10-06",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-05T20:34:49.259728+00:00"
-  },
-  {
     "id": "03ff9f45-866b-44f0-a1ae-9110394a9286",
     "text": "Respond to Galitzer",
     "section": "evening_shared",
@@ -9573,16 +9538,26 @@
     "created_at": "2026-10-05T20:38:18.149243+00:00"
   },
   {
-    "id": "a22c129d-36eb-4fdf-972d-b6b6c77831bf",
-    "text": "Bring up dishwasher salt",
+    "id": "429a66af-f584-4b75-8af3-1bf4800b6530",
+    "text": "Turn on vacuum",
     "section": "evening_shared",
     "recurrence_rule": {
-      "date": "2026-10-06",
-      "type": "once"
+      "type": "daily"
     },
     "active": true,
-    "sort_order": 25,
-    "created_at": "2026-10-05T21:26:00.776161+00:00"
+    "sort_order": 10,
+    "created_at": "2026-08-01T18:39:24.521034+00:00"
+  },
+  {
+    "id": "23267e8b-bb5b-4695-805a-d6f33305995a",
+    "text": "PZ Call EMED",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-05T21:03:12.828591+00:00"
   },
   {
     "id": "66b63a0e-84f7-4a71-ac79-5f266c5f3bf2",
@@ -9595,18 +9570,6 @@
     "active": true,
     "sort_order": 15,
     "created_at": "2026-10-05T21:32:29.853256+00:00"
-  },
-  {
-    "id": "93529b84-02b0-42ec-9d27-a88b74743471",
-    "text": "Forms for Galitzer",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "date": "2026-10-06",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
     "id": "cca71a57-5141-4ef6-98df-d93a35972fff",
@@ -9630,5 +9593,181 @@
     "active": true,
     "sort_order": -65,
     "created_at": "2026-10-06T12:44:53.540996+00:00"
+  },
+  {
+    "id": "49424739-75a5-4808-b89a-c77f91e4b5bf",
+    "text": "Message Karolina about mailbox",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-05T20:34:49.259728+00:00"
+  },
+  {
+    "id": "93529b84-02b0-42ec-9d27-a88b74743471",
+    "text": "Forms for Galitzer",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-05T21:26:42.676371+00:00"
+  },
+  {
+    "id": "10526ba4-f8bd-4b12-a0b6-bf924a812715",
+    "text": "Smart Home list",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-10-06T20:26:50.722162+00:00"
+  },
+  {
+    "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
+    "text": "Hadas evening checklist",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -70,
+    "created_at": "2026-10-06T20:29:15.508163+00:00"
+  },
+  {
+    "id": "8e4c5e2b-fd17-4be1-b270-4345793d8a8b",
+    "text": "Message Eliezer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-06T20:30:07.018704+00:00"
+  },
+  {
+    "id": "0e65fb27-03b6-4a55-af0b-12dd393f8183",
+    "text": "Chicken soup + veggies",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 105,
+    "created_at": "2026-10-06T20:34:44.210582+00:00"
+  },
+  {
+    "id": "e51861ba-1ca4-47bf-a2e9-445b340b014f",
+    "text": "Whole chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-10-06T20:34:55.630878+00:00"
+  },
+  {
+    "id": "a9b408e0-12f7-4cdd-b2d5-cb843d85bd8c",
+    "text": "Rice with mushrooms and onion",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 95,
+    "created_at": "2026-10-06T20:35:07.334869+00:00"
+  },
+  {
+    "id": "50017677-f5eb-4e17-a6c1-ceb077891b89",
+    "text": "Corn bread",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-10-06T20:35:14.84223+00:00"
+  },
+  {
+    "id": "5d91e997-4f16-4271-b1f6-14d0eda75ab7",
+    "text": "Hard boiled eggs",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 85,
+    "created_at": "2026-10-06T20:35:23.855573+00:00"
+  },
+  {
+    "id": "ab764eb2-8902-4b2b-97ce-8d181cac2c34",
+    "text": "Salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-10-06T20:35:51.049395+00:00"
+  },
+  {
+    "id": "f22d2911-db4b-49af-ae50-0d1bd9747fcc",
+    "text": "Chickpea salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 75,
+    "created_at": "2026-10-06T20:36:06.989564+00:00"
+  },
+  {
+    "id": "0b22583a-a596-423c-bf65-9c72f0ee2556",
+    "text": "Pan seared chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-10-06T20:36:14.757657+00:00"
+  },
+  {
+    "id": "18a76b84-215c-4f5e-aec8-c0d5b2d3f2c1",
+    "text": "Message tova about menu",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-07",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-06T20:37:54.272596+00:00"
+  },
+  {
+    "id": "a22c129d-36eb-4fdf-972d-b6b6c77831bf",
+    "text": "Bring up dishwasher salt",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-10-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-05T21:26:00.776161+00:00"
   }
 ]
