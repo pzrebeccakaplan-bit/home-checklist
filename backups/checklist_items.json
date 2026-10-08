@@ -9769,5 +9769,52 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-10-05T21:26:00.776161+00:00"
+  },
+  {
+    "id": "9fd10f1d-325a-465c-8915-4caf6b058f79",
+    "text": "List for Tomer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-10-07T19:23:10.786018+00:00"
+  },
+  {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-10-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
+    "id": "a7dc4b5c-12e0-430a-aed3-cc621e8854ac",
+    "text": "Pulmonologist appointment",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:44:37.622769+00:00"
+  },
+  {
+    "id": "9c42adea-6b9e-47e0-8361-91dc9745b306",
+    "text": "Take out tulipa",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-07T19:49:01.612985+00:00"
   }
 ]
