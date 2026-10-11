@@ -9629,17 +9629,6 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
-    "id": "10526ba4-f8bd-4b12-a0b6-bf924a812715",
-    "text": "Smart Home list",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -25,
-    "created_at": "2026-10-06T20:26:50.722162+00:00"
-  },
-  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10089,5 +10078,28 @@
     "active": true,
     "sort_order": -60,
     "created_at": "2026-10-08T18:23:41.700227+00:00"
+  },
+  {
+    "id": "10526ba4-f8bd-4b12-a0b6-bf924a812715",
+    "text": "Smart Home list",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -25,
+    "created_at": "2026-10-06T20:26:50.722162+00:00"
+  },
+  {
+    "id": "cec4ff6f-215f-4a40-b6be-1c185a8b299a",
+    "text": "Hadas water bottle",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-10-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -65,
+    "created_at": "2026-10-11T04:06:02.628794+00:00"
   }
 ]
