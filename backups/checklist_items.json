@@ -2017,17 +2017,6 @@
     "created_at": "2026-08-06T21:24:34.517636+00:00"
   },
   {
-    "id": "dce7b48d-ff90-4a47-b473-6d7b9626bc09",
-    "text": "Work out EMED",
-    "section": "ongoing_tracked_in_standup",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -40,
-    "created_at": "2026-08-05T20:48:17.061689+00:00"
-  },
-  {
     "id": "ba046e91-7bfe-431d-8420-fa46161091e4",
     "text": "Prep water for formula",
     "section": "shabbat_before",
@@ -2579,6 +2568,17 @@
     "active": true,
     "sort_order": 170,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "dce7b48d-ff90-4a47-b473-6d7b9626bc09",
+    "text": "Work out EMED",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": -40,
+    "created_at": "2026-08-05T20:48:17.061689+00:00"
   },
   {
     "id": "2f9d2cc1-5a49-46ab-be6d-45630483d2ba",
@@ -6309,6 +6309,17 @@
     "created_at": "2026-08-25T20:08:33.014387+00:00"
   },
   {
+    "id": "3d5591af-92de-404a-9c50-a02a6db0eca7",
+    "text": "PZ Call EMED",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 5,
+    "created_at": "2026-08-27T22:09:41.040644+00:00"
+  },
+  {
     "id": "0059bbbe-d5a8-485f-9ac3-3ca60223c47c",
     "text": "Broccoli",
     "section": "shabbat_cooking",
@@ -6886,17 +6897,6 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-08-31T19:30:55.546745+00:00"
-  },
-  {
-    "id": "3d5591af-92de-404a-9c50-a02a6db0eca7",
-    "text": "PZ Call EMED",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-08-27T22:09:41.040644+00:00"
   },
   {
     "id": "885d678a-0a29-4dd1-bc7a-52bb7133200d",
@@ -7514,7 +7514,7 @@
     "recurrence_rule": {
       "type": "occasional"
     },
-    "active": true,
+    "active": false,
     "sort_order": 20,
     "created_at": "2026-09-01T19:54:09.949392+00:00"
   },
@@ -9479,6 +9479,17 @@
     "created_at": "2026-10-04T18:55:47.128936+00:00"
   },
   {
+    "id": "23267e8b-bb5b-4695-805a-d6f33305995a",
+    "text": "PZ Call EMED",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 5,
+    "created_at": "2026-10-05T21:03:12.828591+00:00"
+  },
+  {
     "id": "d6555ff6-833a-4d80-b95f-9b59aa527ee3",
     "text": "Remind staff that Hadas is coming late tomorrow",
     "section": "hadas_food",
@@ -9549,17 +9560,6 @@
     "created_at": "2026-08-01T18:39:24.521034+00:00"
   },
   {
-    "id": "23267e8b-bb5b-4695-805a-d6f33305995a",
-    "text": "PZ Call EMED",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-10-05T21:03:12.828591+00:00"
-  },
-  {
     "id": "66b63a0e-84f7-4a71-ac79-5f266c5f3bf2",
     "text": "Buy chicken",
     "section": "morning_shared",
@@ -9627,6 +9627,29 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-10-05T21:26:42.676371+00:00"
+  },
+  {
+    "id": "1fc4a234-3c1c-4323-80be-04c9caf667c4",
+    "text": "Smart home list",
+    "section": "evening_first_to_bed",
+    "recurrence_rule": {
+      "date": "2026-10-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-11T19:46:06.124163+00:00"
+  },
+  {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
   },
   {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
@@ -9700,6 +9723,17 @@
     "created_at": "2026-10-06T20:37:54.272596+00:00"
   },
   {
+    "id": "1a61bfaa-d08d-42a6-ac2c-0ae3bfca5fa0",
+    "text": "Pick up print out from Kellman",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-08T21:48:43.180447+00:00"
+  },
+  {
     "id": "a22c129d-36eb-4fdf-972d-b6b6c77831bf",
     "text": "Bring up dishwasher salt",
     "section": "evening_shared",
@@ -9769,6 +9803,18 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-10-08T17:29:17.472527+00:00"
+  },
+  {
+    "id": "ef80c914-33bf-4742-b486-94b8a914362b",
+    "text": "Call BTL about debt",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-11T20:19:53.221337+00:00"
   },
   {
     "id": "9c91949c-e2b2-4836-a20d-91a64bd78620",
@@ -9987,6 +10033,18 @@
     "created_at": "2026-10-09T07:20:44.987394+00:00"
   },
   {
+    "id": "26bbe969-c748-4858-b9a5-b4bec990b35a",
+    "text": "Bring up umbrella from machsan",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-10-11",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-11T20:23:55.021112+00:00"
+  },
+  {
     "id": "8dede0ad-21c8-4a0d-947a-95c907a0fea3",
     "text": "Rice",
     "section": "shabbat_cooking",
@@ -10047,26 +10105,28 @@
     "created_at": "2026-10-06T20:34:55.630878+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
-  },
-  {
-    "id": "1a61bfaa-d08d-42a6-ac2c-0ae3bfca5fa0",
-    "text": "Pick up print out from Kellman",
+    "id": "4c9c3923-7d1a-4502-86c5-484a90b04a0b",
+    "text": "Message Yoni hyman",
     "section": "morning_shared",
     "recurrence_rule": {
-      "type": "occasional"
+      "date": "2026-10-12",
+      "type": "once"
     },
     "active": true,
-    "sort_order": 15,
-    "created_at": "2026-10-08T21:48:43.180447+00:00"
+    "sort_order": 0,
+    "created_at": "2026-10-11T21:12:28.714197+00:00"
+  },
+  {
+    "id": "024fcb94-62b2-43b9-97e5-1d2bf7f11dd6",
+    "text": "Message Eliezer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-10-11T21:12:35.587601+00:00"
   },
   {
     "id": "1a57c3d8-4c74-438b-b329-9d38cee3f20c",
@@ -10101,5 +10161,52 @@
     "active": true,
     "sort_order": -65,
     "created_at": "2026-10-11T04:06:02.628794+00:00"
+  },
+  {
+    "id": "020295b1-0080-49cf-b9f1-048a3a100068",
+    "text": "Guy formula",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-10-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-10-11T13:16:49.596298+00:00"
+  },
+  {
+    "id": "f9104282-f850-419e-af3d-256267f0a172",
+    "text": "Record cycle stuff",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-10-11T16:27:25.90759+00:00"
+  },
+  {
+    "id": "8efc6aba-bfd0-401e-b850-23d704e029c4",
+    "text": "Review list + send to tomer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-11T21:12:18.021334+00:00"
+  },
+  {
+    "id": "c3da6e4e-7e77-4eff-a104-c0d6645295d0",
+    "text": "Food shopping",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-10-12T04:35:02.873202+00:00"
   }
 ]
