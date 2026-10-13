@@ -332,6 +332,17 @@
     "created_at": "2026-07-29T09:41:44.938265+00:00"
   },
   {
+    "id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
+    "text": "Take vitamins",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-07-02T12:42:11.614803+00:00"
+  },
+  {
     "id": "1cf2d9ed-7d89-489b-8c01-c7b7b38e3037",
     "text": "Remove dry laundry from clothesline",
     "section": "morning_shared",
@@ -530,17 +541,6 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
-    "id": "fa89c15b-d113-4f5b-b651-c8eb9909fcd4",
-    "text": "Take vitamins",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-02T12:42:11.614803+00:00"
-  },
-  {
     "id": "d11caefa-02e9-49ca-a591-bb37febe49e5",
     "text": "Return stuff to KSP",
     "section": "morning_shared",
@@ -663,14 +663,14 @@
     "created_at": "2026-08-06T20:34:41.587033+00:00"
   },
   {
-    "id": "5aac5a23-9084-43a8-86d0-9680c0a9d7f1",
-    "text": "Water",
+    "id": "fdeec61f-5a6a-4ca3-98f7-123b520b7c0e",
+    "text": "Take out garbage",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 30,
+    "sort_order": 120,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -695,6 +695,17 @@
     "active": true,
     "sort_order": -35,
     "created_at": "2026-08-07T10:14:33.673091+00:00"
+  },
+  {
+    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
+    "text": "Shower if showering",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "b446f520-705b-4514-aa84-e6f807b92979",
@@ -972,6 +983,17 @@
     "created_at": "2026-07-29T09:44:20.969311+00:00"
   },
   {
+    "id": "5aac5a23-9084-43a8-86d0-9680c0a9d7f1",
+    "text": "Water",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "dff1484e-edbe-4a7a-84ea-62ed3285c84b",
     "text": "Formula shots",
     "section": "evening_diaper_bag",
@@ -1071,14 +1093,14 @@
     "created_at": "2026-07-30T12:43:25.905651+00:00"
   },
   {
-    "id": "b9698632-0247-4245-ae71-dfe9e54abd76",
-    "text": "Shower if showering",
+    "id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
+    "text": "Breakfast",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 50,
+    "sort_order": 30,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1104,19 +1126,19 @@
     "created_at": "2026-07-29T09:44:20.969311+00:00"
   },
   {
-    "id": "8fa8ad3d-7f15-4bdd-af1a-8268e57015df",
-    "text": "Bathroom",
+    "id": "9836da55-9b5f-403d-8b19-814b2facf88c",
+    "text": "Pack work bag",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 10,
+    "sort_order": 110,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
-    "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
-    "text": "Put Caya away",
+    "id": "8fa8ad3d-7f15-4bdd-af1a-8268e57015df",
+    "text": "Bathroom",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
@@ -1188,18 +1210,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
-    "id": "fdeec61f-5a6a-4ca3-98f7-123b520b7c0e",
-    "text": "Take out garbage",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
+    "sort_order": 100,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -1236,6 +1247,17 @@
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
+    "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
+    "text": "Put Caya away",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "c47ec9b8-dd54-48c5-b47c-aa8cae15c837",
     "text": "Laundry sweep",
     "section": "evening_pz",
@@ -1256,28 +1278,6 @@
     "active": true,
     "sort_order": 30,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
-  },
-  {
-    "id": "9836da55-9b5f-403d-8b19-814b2facf88c",
-    "text": "Pack work bag",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 70,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
-    "id": "85081920-0bb2-4fff-9dcf-702f5720af3f",
-    "text": "Breakfast",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "f56e3c77-824c-44e6-a704-6202d98f55db",
@@ -1312,17 +1312,6 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-06T20:34:51.961658+00:00"
-  },
-  {
-    "id": "9d925280-ae9c-4a00-b156-3a72571a379e",
-    "text": "Move laundry",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 90,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "5d9688a9-5ada-432d-bb00-f1dbdc6cad70",
@@ -1681,17 +1670,6 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
-    "text": "Workout / vacuum a room / errand",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
-    "created_at": "2026-07-29T10:24:20.413643+00:00"
-  },
-  {
     "id": "fa8bec80-0945-42c0-8463-8c7852dc867a",
     "text": "Screenshot info re Maccabi appointments",
     "section": "evening_shared",
@@ -1747,6 +1725,17 @@
     "created_at": "2026-07-29T09:47:01.984279+00:00"
   },
   {
+    "id": "9d925280-ae9c-4a00-b156-3a72571a379e",
+    "text": "Move laundry",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 140,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "45ae09d1-c296-423a-b2cf-eb71642f1eae",
     "text": "Dry fit shirt/sweatshirt",
     "section": "evening_pz_tomorrow",
@@ -1778,6 +1767,17 @@
     "active": true,
     "sort_order": 260,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
+    "id": "137fc4dc-3bae-4146-b012-9ca7ed99724d",
+    "text": "Workout / vacuum a room / errand",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-07-29T10:24:20.413643+00:00"
   },
   {
     "id": "e3112aa4-b88a-43b7-b912-6a9e4aede633",
@@ -2271,17 +2271,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "75d7a632-2e62-4055-b32b-18eecd63f08e",
-    "text": "Brush teeth",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
     "id": "6c2b09a0-77eb-41ae-9906-026eccce40ed",
     "text": "Fridge light",
     "section": "shabbat_misc",
@@ -2614,6 +2603,17 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
+    "id": "75d7a632-2e62-4055-b32b-18eecd63f08e",
+    "text": "Brush teeth",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
     "id": "b771ab52-da64-41ff-819f-5597df1226c8",
     "text": "Choose target date/time for Rebecca's next workout",
     "section": "evening_first_to_bed",
@@ -2773,14 +2773,14 @@
     "created_at": "2026-08-06T21:28:22.669554+00:00"
   },
   {
-    "id": "0a55dd9d-73d0-4286-8721-0b38609507bb",
-    "text": "Set alarm for hefsek/ bedika reminder",
+    "id": "582a103a-c78d-4062-9260-a869b9754054",
+    "text": "Prepare food for the day",
     "section": "morning_rebecca",
     "recurrence_rule": {
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
+    "sort_order": 130,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
@@ -3299,17 +3299,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "582a103a-c78d-4062-9260-a869b9754054",
-    "text": "Prepare food for the day",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:42:56.718148+00:00"
-  },
-  {
     "id": "8d542519-d8d8-47b6-a2f4-cf3be5515ec0",
     "text": "Empty sponge holders",
     "section": "evening_shared",
@@ -3352,6 +3341,17 @@
     "active": true,
     "sort_order": 90,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "0a55dd9d-73d0-4286-8721-0b38609507bb",
+    "text": "Set alarm for hefsek/ bedika reminder",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-07-29T09:42:56.718148+00:00"
   },
   {
     "id": "5bf7918c-6bd8-4968-87cd-d17e7b74031c",
@@ -9633,23 +9633,11 @@
     "text": "Smart home list",
     "section": "evening_first_to_bed",
     "recurrence_rule": {
-      "date": "2026-10-12",
-      "type": "once"
+      "type": "occasional"
     },
     "active": true,
     "sort_order": 5,
     "created_at": "2026-10-11T19:46:06.124163+00:00"
-  },
-  {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
   },
   {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
@@ -10186,18 +10174,6 @@
     "created_at": "2026-10-11T16:27:25.90759+00:00"
   },
   {
-    "id": "8efc6aba-bfd0-401e-b850-23d704e029c4",
-    "text": "Review list + send to tomer",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-10-12",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-10-11T21:12:18.021334+00:00"
-  },
-  {
     "id": "c3da6e4e-7e77-4eff-a104-c0d6645295d0",
     "text": "Food shopping",
     "section": "morning_shared",
@@ -10208,5 +10184,97 @@
     "active": true,
     "sort_order": -10,
     "created_at": "2026-10-12T04:35:02.873202+00:00"
+  },
+  {
+    "id": "bb1835b2-fdcf-4563-b930-1fde1971a5ce",
+    "text": "Dishwasher filter + clean cycle",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-10-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-12T18:34:09.059025+00:00"
+  },
+  {
+    "id": "6700245c-eb19-4e3d-a5fe-9d04657222a9",
+    "text": "Lemon cookies",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 75,
+    "created_at": "2026-10-12T18:56:36.488842+00:00"
+  },
+  {
+    "id": "1c474383-804f-4822-9047-fb4303b80136",
+    "text": "Pichana",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-10-12T18:56:50.899233+00:00"
+  },
+  {
+    "id": "4664e7b7-bc56-467d-91b5-3fe7e52804e2",
+    "text": "Chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 65,
+    "created_at": "2026-10-12T18:56:57.479585+00:00"
+  },
+  {
+    "id": "8efc6aba-bfd0-401e-b850-23d704e029c4",
+    "text": "Review list + send to tomer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-11T21:12:18.021334+00:00"
+  },
+  {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
+    "id": "cf308c50-68db-4f81-a214-8489f992cbba",
+    "text": "Debt to Bituah leumi",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -75,
+    "created_at": "2026-10-12T19:03:30.422201+00:00"
+  },
+  {
+    "id": "a03ae288-7816-4d2b-b786-2421788e7b19",
+    "text": "Take out garbage",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -45,
+    "created_at": "2026-10-12T20:32:56.891301+00:00"
   }
 ]
