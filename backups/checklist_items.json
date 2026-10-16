@@ -3339,7 +3339,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 90,
+    "sort_order": 100,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -9629,6 +9629,17 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10187,18 +10198,6 @@
     "created_at": "2026-10-12T18:34:09.059025+00:00"
   },
   {
-    "id": "6700245c-eb19-4e3d-a5fe-9d04657222a9",
-    "text": "Lemon cookies",
-    "section": "shabbat_cooking",
-    "recurrence_rule": {
-      "date": "2026-10-16",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 75,
-    "created_at": "2026-10-12T18:56:36.488842+00:00"
-  },
-  {
     "id": "1c474383-804f-4822-9047-fb4303b80136",
     "text": "Pichana",
     "section": "shabbat_cooking",
@@ -10209,18 +10208,6 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-10-12T18:56:50.899233+00:00"
-  },
-  {
-    "id": "4664e7b7-bc56-467d-91b5-3fe7e52804e2",
-    "text": "Chicken",
-    "section": "shabbat_cooking",
-    "recurrence_rule": {
-      "date": "2026-10-16",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 65,
-    "created_at": "2026-10-12T18:56:57.479585+00:00"
   },
   {
     "id": "8efc6aba-bfd0-401e-b850-23d704e029c4",
@@ -10245,15 +10232,16 @@
     "created_at": "2026-10-11T19:46:06.124163+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
+    "id": "4664e7b7-bc56-467d-91b5-3fe7e52804e2",
+    "text": "Chicken",
+    "section": "shabbat_cooking",
     "recurrence_rule": {
-      "type": "occasional"
+      "date": "2026-10-16",
+      "type": "once"
     },
     "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
+    "sort_order": 60,
+    "created_at": "2026-10-12T18:56:57.479585+00:00"
   },
   {
     "id": "cf308c50-68db-4f81-a214-8489f992cbba",
@@ -10349,17 +10337,6 @@
     "created_at": "2026-10-13T20:42:50.459449+00:00"
   },
   {
-    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
-    "text": "PZ 101",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-13T20:31:57.500693+00:00"
-  },
-  {
     "id": "1630abe4-d944-4798-9074-83d15352006c",
     "text": "Rebecca Team Night Menu Plan",
     "section": "morning_shared",
@@ -10394,5 +10371,268 @@
     "active": true,
     "sort_order": -20,
     "created_at": "2026-10-14T20:31:22.693532+00:00"
+  },
+  {
+    "id": "78db6d87-5025-40f4-ae35-f665d16dbf8e",
+    "text": "Pick up arnona bills",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-10-15T21:21:34.079312+00:00"
+  },
+  {
+    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "text": "PZ 101",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-13T20:31:57.500693+00:00"
+  },
+  {
+    "id": "17de01f9-79eb-4f77-b7bd-283cf339cb39",
+    "text": "PZ haircut",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-15T21:24:52.124926+00:00"
+  },
+  {
+    "id": "9697bd1b-cefc-4691-a640-ab45542d8445",
+    "text": "Pick up arnona bills",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-15T21:25:00.260165+00:00"
+  },
+  {
+    "id": "4b8022fc-89bd-471b-b988-5c936f9c6f91",
+    "text": "Rebar",
+    "section": "shabbat_errands",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-15T21:25:06.523823+00:00"
+  },
+  {
+    "id": "5d326d2e-03da-4421-a769-a298afa30c1e",
+    "text": "Quinoa",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-10-15T21:26:42.787096+00:00"
+  },
+  {
+    "id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
+    "text": "IBKR investments",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-10-15T21:27:54.258948+00:00"
+  },
+  {
+    "id": "e2f98891-08a2-49dd-a399-6dfaffc0d226",
+    "text": "Pick up island chairs",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-10-15",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-15T21:38:10.081805+00:00"
+  },
+  {
+    "id": "96bcfa6b-fae5-42e1-ae0f-be87323370eb",
+    "text": "Discuss preferred closet solution",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-10-15T21:43:41.629327+00:00"
+  },
+  {
+    "id": "478629e8-1c93-4c4d-b748-3c8fbf65af86",
+    "text": "Look for magnet adhesives",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-10-15T21:54:41.007739+00:00"
+  },
+  {
+    "id": "97dfd5d7-f3f9-42f4-9b88-f20c6c3ce69e",
+    "text": "Bring up machsan boxes",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-10-15T21:55:03.315021+00:00"
+  },
+  {
+    "id": "ed6a5bff-c27a-497a-b54b-e70bc911eefa",
+    "text": "Message Ilan about dishwashers",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-18",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-10-16T06:06:52.82623+00:00"
+  },
+  {
+    "id": "6c790a1a-1d30-4bd4-a817-dcea2073ec72",
+    "text": ".message Hila about closet doors",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-18",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-16T06:16:26.631847+00:00"
+  },
+  {
+    "id": "47e4c462-5485-4bd5-839c-924ca3ed1750",
+    "text": "Chickpea stew",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-15T21:26:14.284518+00:00"
+  },
+  {
+    "id": "3c043287-a568-48b0-9263-ab78aaae4807",
+    "text": "Chop parsley",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-16T09:43:33.469899+00:00"
+  },
+  {
+    "id": "38adf512-f72d-4caa-b797-660772a6c5cb",
+    "text": "Chop parsley",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-16T08:30:34.369776+00:00"
+  },
+  {
+    "id": "f0dd6f7d-92eb-4322-b468-0dbe5aaaa159",
+    "text": "Chop mint",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-10-16T08:30:25.452936+00:00"
+  },
+  {
+    "id": "000412c7-f36e-4514-94d8-410fa26ad25f",
+    "text": "Salty cheese salad",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-10-15T21:26:05.798298+00:00"
+  },
+  {
+    "id": "b5bd73b4-e7b8-4794-88c4-26e9ab0fc8bb",
+    "text": "Salad dressing",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-10-16T08:30:45.797802+00:00"
+  },
+  {
+    "id": "d21baefe-3192-4d66-844a-b4664244be9c",
+    "text": "Lemonade?",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-10-16T08:31:23.845291+00:00"
+  },
+  {
+    "id": "6700245c-eb19-4e3d-a5fe-9d04657222a9",
+    "text": "Lemon cookies",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-10-12T18:56:36.488842+00:00"
+  },
+  {
+    "id": "f13334a8-40b2-402f-994d-1235a1e463fb",
+    "text": "Quiche",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-16",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 90,
+    "created_at": "2026-10-16T07:31:28.652384+00:00"
   }
 ]
