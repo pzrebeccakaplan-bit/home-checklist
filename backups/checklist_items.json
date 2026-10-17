@@ -2832,6 +2832,17 @@
     "created_at": "2026-08-06T21:29:16.861934+00:00"
   },
   {
+    "id": "08b30181-5a8b-4e7d-9e3d-fe4101cb5eda",
+    "text": "Put away laundry",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
     "id": "e622fd95-6d5b-455e-9362-a13755a556b9",
     "text": "Beets",
     "section": "shabbat_cooking",
@@ -2876,72 +2887,6 @@
     "active": true,
     "sort_order": -40,
     "created_at": "2026-08-07T10:23:55.771495+00:00"
-  },
-  {
-    "id": "4f6afc61-4dc7-4602-90d4-664bbe4b0a61",
-    "text": "Tidy tables",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 10,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "1bd430b3-7732-4a57-8def-1fdd1e42fc40",
-    "text": "Clean floors",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "4c8b5364-c5ad-46a4-9838-d720c636be6f",
-    "text": "Tidy kitchen",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "76e9225c-89f7-4cdd-991a-c81f4414aaea",
-    "text": "Clean kitchen counters",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "08b30181-5a8b-4e7d-9e3d-fe4101cb5eda",
-    "text": "Put away laundry",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "28818c1d-8798-47f5-b838-12d4cacdbcf4",
-    "text": "Vacuum cooking areas",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 60,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "a83b543d-6bee-4ed9-9ab0-e5e74d8d8d19",
@@ -3352,6 +3297,17 @@
     "active": true,
     "sort_order": 50,
     "created_at": "2026-07-29T09:42:56.718148+00:00"
+  },
+  {
+    "id": "4f6afc61-4dc7-4602-90d4-664bbe4b0a61",
+    "text": "Tidy tables",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "5bf7918c-6bd8-4968-87cd-d17e7b74031c",
@@ -10634,5 +10590,49 @@
     "active": true,
     "sort_order": 90,
     "created_at": "2026-10-16T07:31:28.652384+00:00"
+  },
+  {
+    "id": "1bd430b3-7732-4a57-8def-1fdd1e42fc40",
+    "text": "Clean floors",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "76e9225c-89f7-4cdd-991a-c81f4414aaea",
+    "text": "Clean kitchen counters",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "28818c1d-8798-47f5-b838-12d4cacdbcf4",
+    "text": "Vacuum cooking areas",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "4c8b5364-c5ad-46a4-9838-d720c636be6f",
+    "text": "Tidy kitchen",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   }
 ]
