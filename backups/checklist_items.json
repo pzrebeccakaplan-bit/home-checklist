@@ -9585,17 +9585,6 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
-  },
-  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10200,6 +10189,17 @@
     "created_at": "2026-10-12T18:56:57.479585+00:00"
   },
   {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
     "id": "cf308c50-68db-4f81-a214-8489f992cbba",
     "text": "Debt to Bituah leumi",
     "section": "ongoing_tracked_in_standup",
@@ -10293,6 +10293,18 @@
     "created_at": "2026-10-13T20:42:50.459449+00:00"
   },
   {
+    "id": "6c790a1a-1d30-4bd4-a817-dcea2073ec72",
+    "text": "Message Hila about closet doors",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-18",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-16T06:16:26.631847+00:00"
+  },
+  {
     "id": "1630abe4-d944-4798-9074-83d15352006c",
     "text": "Rebecca Team Night Menu Plan",
     "section": "morning_shared",
@@ -10341,17 +10353,6 @@
     "created_at": "2026-10-15T21:21:34.079312+00:00"
   },
   {
-    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
-    "text": "PZ 101",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-13T20:31:57.500693+00:00"
-  },
-  {
     "id": "17de01f9-79eb-4f77-b7bd-283cf339cb39",
     "text": "PZ haircut",
     "section": "shabbat_errands",
@@ -10398,18 +10399,6 @@
     "active": true,
     "sort_order": 50,
     "created_at": "2026-10-15T21:26:42.787096+00:00"
-  },
-  {
-    "id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
-    "text": "IBKR investments",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-10-16",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-10-15T21:27:54.258948+00:00"
   },
   {
     "id": "e2f98891-08a2-49dd-a399-6dfaffc0d226",
@@ -10470,18 +10459,6 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-10-16T06:06:52.82623+00:00"
-  },
-  {
-    "id": "6c790a1a-1d30-4bd4-a817-dcea2073ec72",
-    "text": ".message Hila about closet doors",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-10-18",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-16T06:16:26.631847+00:00"
   },
   {
     "id": "47e4c462-5485-4bd5-839c-924ca3ed1750",
@@ -10634,5 +10611,51 @@
     "active": true,
     "sort_order": 30,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "12db685d-a46a-45e5-996b-d13165d51e6f",
+    "text": "Make chicken",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "date": "2026-10-17",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-17T16:47:54.422027+00:00"
+  },
+  {
+    "id": "903d2066-3864-45df-bef5-935eb6909189",
+    "text": "Message Beko about the stove",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-18",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-17T16:54:06.564876+00:00"
+  },
+  {
+    "id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
+    "text": "IBKR investments",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-10-15T21:27:54.258948+00:00"
+  },
+  {
+    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "text": "PZ 101",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-13T20:31:57.500693+00:00"
   }
 ]
