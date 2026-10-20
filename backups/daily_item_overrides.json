@@ -1498,20 +1498,6 @@
     "created_at": "2026-10-17T16:55:34.790351+00:00"
   },
   {
-    "id": "44ab849a-7b50-4079-a562-c5c42c37c974",
-    "item_id": "65e81038-ef61-48f2-a762-ecd43c174e01",
-    "active_on": "2026-10-19",
-    "created_by": null,
-    "created_at": "2026-10-18T21:10:51.615776+00:00"
-  },
-  {
-    "id": "c3e6ac6a-76c1-4e11-a1f0-678837799c99",
-    "item_id": "ed6a5bff-c27a-497a-b54b-e70bc911eefa",
-    "active_on": "2026-10-19",
-    "created_by": null,
-    "created_at": "2026-10-18T21:12:18.778474+00:00"
-  },
-  {
     "id": "a0327e21-104a-4171-b072-e49863e7a60d",
     "item_id": "6c790a1a-1d30-4bd4-a817-dcea2073ec72",
     "active_on": "2026-10-19",
@@ -1519,24 +1505,45 @@
     "created_at": "2026-10-18T21:12:33.481514+00:00"
   },
   {
-    "id": "4ec3e835-4f70-4f67-a934-a6f786354f99",
-    "item_id": "903d2066-3864-45df-bef5-935eb6909189",
-    "active_on": "2026-10-19",
-    "created_by": null,
-    "created_at": "2026-10-18T21:12:46.680211+00:00"
-  },
-  {
-    "id": "a86fa315-5b2b-440d-bb1c-d3db964df1e2",
-    "item_id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
-    "active_on": "2026-10-19",
-    "created_by": null,
-    "created_at": "2026-10-18T21:12:55.711732+00:00"
-  },
-  {
-    "id": "d6ee7df1-b745-4d1b-bf3a-3499229cd135",
+    "id": "fc5a39a2-ad9e-45e8-a8c7-308179491bf3",
     "item_id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "active_on": "2026-10-19",
+    "active_on": "2026-10-20",
     "created_by": null,
-    "created_at": "2026-10-18T21:13:21.655786+00:00"
+    "created_at": "2026-10-19T19:42:35.423304+00:00"
+  },
+  {
+    "id": "aee93b6d-0c13-4dec-a661-812e800fa124",
+    "item_id": "01cfa51b-3547-45a5-a884-85f402f977c8",
+    "active_on": "2026-10-20",
+    "created_by": null,
+    "created_at": "2026-10-19T19:43:01.213722+00:00"
+  },
+  {
+    "id": "c527bb24-2a22-4b64-b2ea-7e31cf0feee8",
+    "item_id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
+    "active_on": "2026-10-20",
+    "created_by": null,
+    "created_at": "2026-10-19T19:43:15.308156+00:00"
+  },
+  {
+    "id": "95d674a1-d629-4ca7-afd5-27f28185a03d",
+    "item_id": "903d2066-3864-45df-bef5-935eb6909189",
+    "active_on": "2026-10-20",
+    "created_by": null,
+    "created_at": "2026-10-19T19:43:32.827743+00:00"
+  },
+  {
+    "id": "5ffa2e2f-e112-4225-b992-787bc6ae2f44",
+    "item_id": "ed6a5bff-c27a-497a-b54b-e70bc911eefa",
+    "active_on": "2026-10-20",
+    "created_by": null,
+    "created_at": "2026-10-19T19:43:49.887028+00:00"
+  },
+  {
+    "id": "c956bb0d-525d-401b-9150-bde58cce1314",
+    "item_id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "active_on": "2026-10-20",
+    "created_by": null,
+    "created_at": "2026-10-19T19:44:01.633903+00:00"
   }
 ]
