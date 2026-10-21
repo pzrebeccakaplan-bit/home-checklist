@@ -9585,6 +9585,17 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10189,17 +10200,6 @@
     "created_at": "2026-10-12T18:56:57.479585+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
-  },
-  {
     "id": "a6b7bbf4-0a81-421a-a2e7-d5b8521dae69",
     "text": "Doctor’s appointment",
     "section": "morning_shared",
@@ -10258,18 +10258,6 @@
     "active": true,
     "sort_order": -65,
     "created_at": "2026-10-14T16:08:23.106779+00:00"
-  },
-  {
-    "id": "c49339e5-09c5-4af9-a25a-44884990fc7d",
-    "text": "Retrieve towel from mikva",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "date": "2026-10-20",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-10-20T07:07:36.674209+00:00"
   },
   {
     "id": "1a40eee0-39ee-46fe-910a-9539b8993fcb",
@@ -10341,6 +10329,30 @@
     "active": true,
     "sort_order": 0,
     "created_at": "2026-10-15T21:21:34.079312+00:00"
+  },
+  {
+    "id": "6488e61e-2bb8-4370-94ce-b55e1b092692",
+    "text": "Bread for Hadas",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-10-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-10-20T14:05:38.710154+00:00"
+  },
+  {
+    "id": "a7b916c8-6835-4137-a5cb-3097539f6a4e",
+    "text": "Gf petit buerre for hadas",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-10-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -65,
+    "created_at": "2026-10-20T14:05:57.725506+00:00"
   },
   {
     "id": "17de01f9-79eb-4f77-b7bd-283cf339cb39",
@@ -10439,6 +10451,28 @@
     "created_at": "2026-10-15T21:55:03.315021+00:00"
   },
   {
+    "id": "903d2066-3864-45df-bef5-935eb6909189",
+    "text": "Message Beko about the stove",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-17T16:54:06.564876+00:00"
+  },
+  {
+    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "text": "PZ 101",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-13T20:31:57.500693+00:00"
+  },
+  {
     "id": "6c790a1a-1d30-4bd4-a817-dcea2073ec72",
     "text": "Message Hila about closet doors",
     "section": "morning_shared",
@@ -10448,6 +10482,18 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-10-16T06:16:26.631847+00:00"
+  },
+  {
+    "id": "afa3f3cd-6731-44ac-b35a-37d22d599db9",
+    "text": "Flu shot",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-10-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-20T19:47:03.24979+00:00"
   },
   {
     "id": "47e4c462-5485-4bd5-839c-924ca3ed1750",
@@ -10534,6 +10580,17 @@
     "created_at": "2026-10-16T08:31:23.845291+00:00"
   },
   {
+    "id": "c49339e5-09c5-4af9-a25a-44884990fc7d",
+    "text": "Retrieve towel from mikva",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-20T07:07:36.674209+00:00"
+  },
+  {
     "id": "6700245c-eb19-4e3d-a5fe-9d04657222a9",
     "text": "Lemon cookies",
     "section": "shabbat_cooking",
@@ -10614,6 +10671,18 @@
     "created_at": "2026-10-17T16:47:54.422027+00:00"
   },
   {
+    "id": "7878ead3-5fe5-4a98-a967-f803f5e25515",
+    "text": "Menu plan + food shopping for team night",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-20T20:00:23.522636+00:00"
+  },
+  {
     "id": "cf308c50-68db-4f81-a214-8489f992cbba",
     "text": "Debt to Bituah leumi",
     "section": "ongoing_tracked_in_standup",
@@ -10647,28 +10716,6 @@
     "created_at": "2026-10-18T21:24:59.16411+00:00"
   },
   {
-    "id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
-    "text": "IBKR investments",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-10-15T21:27:54.258948+00:00"
-  },
-  {
-    "id": "903d2066-3864-45df-bef5-935eb6909189",
-    "text": "Message Beko about the stove",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 15,
-    "created_at": "2026-10-17T16:54:06.564876+00:00"
-  },
-  {
     "id": "ed6a5bff-c27a-497a-b54b-e70bc911eefa",
     "text": "Message Ilan about dishwashers",
     "section": "morning_shared",
@@ -10680,14 +10727,26 @@
     "created_at": "2026-10-16T06:06:52.82623+00:00"
   },
   {
-    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
-    "text": "PZ 101",
+    "id": "fa3ade24-3527-4ea4-bfca-9db9b20c7736",
+    "text": "Go for a run",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-10-21",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-20T20:01:13.195993+00:00"
+  },
+  {
+    "id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
+    "text": "IBKR investments",
     "section": "morning_shared",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-13T20:31:57.500693+00:00"
+    "sort_order": -5,
+    "created_at": "2026-10-15T21:27:54.258948+00:00"
   }
 ]
