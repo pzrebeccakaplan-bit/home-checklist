@@ -1552,5 +1552,26 @@
     "active_on": "2026-10-22",
     "created_by": null,
     "created_at": "2026-10-21T18:47:17.272652+00:00"
+  },
+  {
+    "id": "b3c18d31-d402-42fd-8cbf-b68ccafbbb64",
+    "item_id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "active_on": "2026-10-25",
+    "created_by": null,
+    "created_at": "2026-10-22T21:46:28.195861+00:00"
+  },
+  {
+    "id": "94858a24-91f3-4207-ae4f-9a48565c11bf",
+    "item_id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "active_on": "2026-10-25",
+    "created_by": null,
+    "created_at": "2026-10-22T21:46:44.258518+00:00"
+  },
+  {
+    "id": "b36d656b-8e59-4526-a5ae-29092ec8a7d0",
+    "item_id": "903d2066-3864-45df-bef5-935eb6909189",
+    "active_on": "2026-10-25",
+    "created_by": null,
+    "created_at": "2026-10-22T21:46:55.679212+00:00"
   }
 ]
