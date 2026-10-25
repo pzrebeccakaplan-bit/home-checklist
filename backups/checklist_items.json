@@ -10696,6 +10696,18 @@
     "created_at": "2026-10-18T21:24:59.16411+00:00"
   },
   {
+    "id": "f15d4a34-8189-4c62-9255-c1866bedb9c7",
+    "text": "Frozen grapes for beach",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-24T19:39:08.926367+00:00"
+  },
+  {
     "id": "ed6a5bff-c27a-497a-b54b-e70bc911eefa",
     "text": "Message Ilan about dishwashers",
     "section": "morning_shared",
@@ -10750,6 +10762,18 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-10-20T20:00:23.522636+00:00"
+  },
+  {
+    "id": "acf92e3b-9047-407a-96da-ef010f166c17",
+    "text": "Buy more grapes + wings",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-24T20:16:59.348274+00:00"
   },
   {
     "id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
