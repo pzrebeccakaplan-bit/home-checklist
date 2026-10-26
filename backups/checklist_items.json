@@ -9574,17 +9574,6 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
-  },
-  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10189,6 +10178,17 @@
     "created_at": "2026-10-12T18:56:57.479585+00:00"
   },
   {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
     "id": "a6b7bbf4-0a81-421a-a2e7-d5b8521dae69",
     "text": "Doctor’s appointment",
     "section": "morning_shared",
@@ -10776,6 +10776,18 @@
     "created_at": "2026-10-24T20:16:59.348274+00:00"
   },
   {
+    "id": "280f4912-e93b-460a-ac23-d410bdd988d6",
+    "text": "Order balance bike",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-25",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-10-25T15:38:33.360326+00:00"
+  },
+  {
     "id": "42b0a61c-7b01-4346-a9ca-cc623f3db157",
     "text": "IBKR investments",
     "section": "morning_shared",
@@ -10810,6 +10822,18 @@
     "created_at": "2026-10-22T21:41:53.040098+00:00"
   },
   {
+    "id": "3f63d35a-1086-458d-a592-36f553ce4be4",
+    "text": "Chicken wings",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-26",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-10-25T20:20:19.797196+00:00"
+  },
+  {
     "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
     "text": "PZ 101",
     "section": "morning_shared",
@@ -10819,5 +10843,17 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-10-13T20:31:57.500693+00:00"
+  },
+  {
+    "id": "e3a80ec5-db75-4d97-b78c-1f9c09f81bd0",
+    "text": "Message Eliezer",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-10-26",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-25T20:30:07.168139+00:00"
   }
 ]
