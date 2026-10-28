@@ -10788,6 +10788,18 @@
     "created_at": "2026-10-25T15:38:33.360326+00:00"
   },
   {
+    "id": "da1edff2-b6e2-4c9b-8cd9-3b6a3fdfc32d",
+    "text": "Talk to Sarah Leah about food for friday",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-28",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-10-27T18:49:18.831036+00:00"
+  },
+  {
     "id": "c49339e5-09c5-4af9-a25a-44884990fc7d",
     "text": "Set alarm to Retrieve towel from mikva",
     "section": "morning_rebecca",
@@ -10866,5 +10878,65 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-10-13T20:31:57.500693+00:00"
+  },
+  {
+    "id": "28f98ae0-09ec-4137-bd44-a94e28670c2d",
+    "text": "Meatballs + sauce",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-28",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-10-27T18:50:16.345908+00:00"
+  },
+  {
+    "id": "c328adea-4bae-4fcd-8861-98ecbaad5788",
+    "text": "Ksp pickup (set alarm)",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "date": "2026-10-29",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-27T18:51:06.112052+00:00"
+  },
+  {
+    "id": "3add68ee-e4fc-4b68-bbba-7677f05860fe",
+    "text": "Notes for dermatologist appt",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "date": "2026-10-27",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -15,
+    "created_at": "2026-10-27T18:53:19.695271+00:00"
+  },
+  {
+    "id": "6a92d421-f411-4312-8ad8-43a3f7170128",
+    "text": "Shopping list for shabbat",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-28",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-27T18:55:38.161361+00:00"
+  },
+  {
+    "id": "214b7b37-d3be-44a2-afe8-8e737a623ef6",
+    "text": "Food shopping for team night",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-10-29",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-10-27T18:56:27.477134+00:00"
   }
 ]
