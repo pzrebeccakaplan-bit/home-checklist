@@ -9574,17 +9574,6 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
-  },
-  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10187,6 +10176,17 @@
     "active": true,
     "sort_order": 60,
     "created_at": "2026-10-12T18:56:57.479585+00:00"
+  },
+  {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
   },
   {
     "id": "a6b7bbf4-0a81-421a-a2e7-d5b8521dae69",
@@ -10869,19 +10869,8 @@
     "created_at": "2026-10-25T20:30:07.168139+00:00"
   },
   {
-    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
-    "text": "PZ 101",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-13T20:31:57.500693+00:00"
-  },
-  {
     "id": "28f98ae0-09ec-4137-bd44-a94e28670c2d",
-    "text": "Meatballs + sauce",
+    "text": "Meatballs",
     "section": "morning_shared",
     "recurrence_rule": {
       "date": "2026-10-28",
@@ -10938,5 +10927,54 @@
     "active": true,
     "sort_order": -10,
     "created_at": "2026-10-27T18:56:27.477134+00:00"
+  },
+  {
+    "id": "48f51dd7-b370-4c48-bca5-f3d01701502b",
+    "text": "Schnitzelonim",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-10-29",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-10-28T18:18:47.625681+00:00"
+  },
+  {
+    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "text": "PZ 101",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-13T20:31:57.500693+00:00"
+  },
+  {
+    "id": "b960a8af-189e-4152-a107-2ca604c51075",
+    "text": "GF roll and fruit",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "days": [
+        4
+      ],
+      "type": "weekly"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-10-29T06:09:06.649962+00:00"
+  },
+  {
+    "id": "de116b0e-1f28-41e0-acf3-9290461b3532",
+    "text": "Netflix book",
+    "section": "morning_pz_work",
+    "recurrence_rule": {
+      "date": "2026-11-01",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-10-29T11:07:29.132356+00:00"
   }
 ]
