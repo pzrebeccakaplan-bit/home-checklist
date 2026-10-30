@@ -1,9 +1,185 @@
 [
   {
+    "id": "evening_rebecca",
+    "label": "Evening: Rebecca",
+    "sort_order": 100,
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "shabbat_after",
+    "label": "Shabbat: After Shabbat",
+    "sort_order": 20,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "motzei",
+      "motzeichag"
+    ]
+  },
+  {
+    "id": "evening_pz",
+    "label": "Evening: PZ",
+    "sort_order": 90,
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "evening_last_to_bed",
+    "label": "Evening: Last to Bed",
+    "sort_order": 110,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "evening_first_to_bed",
+    "label": "Evening standup",
+    "sort_order": 60,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "evening_shared",
+    "label": "Evening: Shared",
+    "sort_order": 70,
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "evening_pz_tomorrow",
+    "label": "Evening: PZ – Tomorrow Prep",
+    "sort_order": 120,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "shabbat_misc",
+    "label": "Shabbat: Miscellaneous",
+    "sort_order": 110,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
+    "id": "shabbat_errands",
+    "label": "Shabbat: Errands",
+    "sort_order": 60,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
+    "id": "evening_diaper_bag",
+    "label": "Restock Diaper Bag",
+    "sort_order": 80,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "evening",
+      "shabbat"
+    ]
+  },
+  {
+    "id": "morning_pz_work",
+    "label": "Morning: PZ – Before Work",
+    "sort_order": 40,
+    "created_at": "2026-07-29T09:41:27.835071+00:00",
+    "friday_only": false,
+    "tags": [
+      "morning"
+    ]
+  },
+  {
+    "id": "morning_shared",
+    "label": "Morning: Shared",
+    "sort_order": 20,
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
+    "friday_only": false,
+    "tags": [
+      "morning"
+    ]
+  },
+  {
+    "id": "hadas_food",
+    "label": "Bring to daycare",
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:53:50.059716+00:00",
+    "friday_only": false,
+    "tags": [
+      "morning"
+    ]
+  },
+  {
+    "id": "shabbat_meals",
+    "label": "Shabbat: Meal Arrangements",
+    "sort_order": 90,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "motzei"
+    ]
+  },
+  {
+    "id": "shabbat_cooking",
+    "label": "Shabbat: Cooking",
+    "sort_order": 50,
+    "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
+    "id": "morning_rebecca",
+    "label": "Morning: Rebecca",
+    "sort_order": 70,
+    "created_at": "2026-07-07T06:31:24.255005+00:00",
+    "friday_only": false,
+    "tags": [
+      "morning"
+    ]
+  },
+  {
     "id": "shabbat_before",
     "label": "Shabbat: Shortly Before",
-    "sort_order": 80,
+    "sort_order": 90,
     "created_at": "2026-08-06T10:39:47.133827+00:00",
+    "friday_only": false,
+    "tags": [
+      "shabbat",
+      "chag"
+    ]
+  },
+  {
+    "id": "shabbat_room_prep",
+    "label": "Shabbat room prep",
+    "sort_order": 130,
+    "created_at": "2026-08-07T10:13:06.747385+00:00",
     "friday_only": false,
     "tags": [
       "shabbat",
@@ -32,185 +208,9 @@
     ]
   },
   {
-    "id": "evening_rebecca",
-    "label": "Evening: Rebecca",
-    "sort_order": 100,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
-    "id": "morning_rebecca",
-    "label": "Morning: Rebecca",
-    "sort_order": 50,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
-    "friday_only": false,
-    "tags": [
-      "morning"
-    ]
-  },
-  {
-    "id": "shabbat_after",
-    "label": "Shabbat: After Shabbat",
-    "sort_order": 20,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "motzei",
-      "motzeichag"
-    ]
-  },
-  {
-    "id": "evening_diaper_bag",
-    "label": "Restock Diaper Bag",
-    "sort_order": 80,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening",
-      "shabbat"
-    ]
-  },
-  {
-    "id": "hadas_food",
-    "label": "Bring to daycare",
-    "sort_order": 10,
-    "created_at": "2026-07-29T09:53:50.059716+00:00",
-    "friday_only": false,
-    "tags": [
-      "morning"
-    ]
-  },
-  {
-    "id": "morning_pz_work",
-    "label": "Morning: PZ – Before Work",
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "morning"
-    ]
-  },
-  {
     "id": "shabbat_cleaning",
     "label": "Shabbat: Cleaning",
-    "sort_order": 90,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat",
-      "chag"
-    ]
-  },
-  {
-    "id": "evening_pz",
-    "label": "Evening: PZ",
-    "sort_order": 90,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
-    "id": "shabbat_room_prep",
-    "label": "Shabbat room prep",
-    "sort_order": 130,
-    "created_at": "2026-08-07T10:13:06.747385+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat",
-      "chag"
-    ]
-  },
-  {
-    "id": "evening_last_to_bed",
-    "label": "Evening: Last to Bed",
-    "sort_order": 110,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
-    "id": "evening_first_to_bed",
-    "label": "Evening standup",
-    "sort_order": 60,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
-    "id": "shabbat_cooking",
-    "label": "Shabbat: Cooking",
-    "sort_order": 50,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat",
-      "chag"
-    ]
-  },
-  {
-    "id": "evening_shared",
-    "label": "Evening: Shared",
-    "sort_order": 70,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
-    "id": "evening_pz_tomorrow",
-    "label": "Evening: PZ – Tomorrow Prep",
-    "sort_order": 120,
-    "created_at": "2026-07-29T09:41:27.835071+00:00",
-    "friday_only": false,
-    "tags": [
-      "evening"
-    ]
-  },
-  {
-    "id": "morning_shared",
-    "label": "Morning: Shared",
-    "sort_order": 20,
-    "created_at": "2026-07-07T06:31:24.255005+00:00",
-    "friday_only": false,
-    "tags": [
-      "morning"
-    ]
-  },
-  {
-    "id": "shabbat_meals",
-    "label": "Shabbat: Meal Arrangements",
-    "sort_order": 90,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "motzei"
-    ]
-  },
-  {
-    "id": "shabbat_misc",
-    "label": "Shabbat: Miscellaneous",
     "sort_order": 100,
-    "created_at": "2026-08-06T10:39:47.133827+00:00",
-    "friday_only": false,
-    "tags": [
-      "shabbat",
-      "chag"
-    ]
-  },
-  {
-    "id": "shabbat_errands",
-    "label": "Shabbat: Errands",
-    "sort_order": 70,
     "created_at": "2026-08-06T10:39:47.133827+00:00",
     "friday_only": false,
     "tags": [

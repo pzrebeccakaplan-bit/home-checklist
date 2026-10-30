@@ -1601,5 +1601,33 @@
     "active_on": "2026-10-29",
     "created_by": "d366123a-a2d5-43d0-8382-cf5ec5a07520",
     "created_at": "2026-10-28T23:11:35.488067+00:00"
+  },
+  {
+    "id": "efcd2bb1-fa90-4930-a666-4fc0ddd07aab",
+    "item_id": "214b7b37-d3be-44a2-afe8-8e737a623ef6",
+    "active_on": "2026-11-01",
+    "created_by": null,
+    "created_at": "2026-10-29T21:51:46.651581+00:00"
+  },
+  {
+    "id": "77860c1f-b5b6-4409-a74a-f15d513e8a65",
+    "item_id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "active_on": "2026-11-01",
+    "created_by": null,
+    "created_at": "2026-10-29T22:17:52.329235+00:00"
+  },
+  {
+    "id": "8656aadd-0978-4deb-aa8d-3df068bb0913",
+    "item_id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "active_on": "2026-11-01",
+    "created_by": null,
+    "created_at": "2026-10-29T22:18:13.643433+00:00"
+  },
+  {
+    "id": "750ace99-028a-46bd-94a9-5ccfedf4019a",
+    "item_id": "10526ba4-f8bd-4b12-a0b6-bf924a812715",
+    "active_on": "2026-10-31",
+    "created_by": null,
+    "created_at": "2026-10-29T22:23:18.75637+00:00"
   }
 ]

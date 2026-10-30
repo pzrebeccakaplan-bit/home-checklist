@@ -409,6 +409,17 @@
     "created_at": "2026-07-29T09:42:39.053932+00:00"
   },
   {
+    "id": "a077c26b-6fcd-4505-98ce-f5bb5113cbfb",
+    "text": "Write down address",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
     "id": "fa309432-656b-4988-b00f-35350a84eb4a",
     "text": "Badge",
     "section": "morning_pz_work",
@@ -506,17 +517,6 @@
     "active": true,
     "sort_order": 30,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
-  },
-  {
-    "id": "a077c26b-6fcd-4505-98ce-f5bb5113cbfb",
-    "text": "Write down address",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 290,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "a53a9a5a-c950-483d-ac3c-fce77bde105f",
@@ -2139,39 +2139,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "ae051cbf-f7b5-4bd2-87cf-8683c54697d4",
-    "text": "Prep ORS",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "82f5a259-6dae-4bf3-a59b-a4a328295819",
-    "text": "Prep ORS dry portions",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 30,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "1ad93829-fbe3-459b-945c-f57c5af79ba8",
-    "text": "Confirm meal times",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "6ae81368-6a78-45d3-9d41-adb2d951168b",
     "text": "Open wipes, diapers, formula; rip garbage bags, rip diaper garbage bags",
     "section": "shabbat_misc",
@@ -2405,72 +2372,6 @@
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
-    "id": "8f199e32-d5eb-4b4c-94b5-e58adddabb2d",
-    "text": "Shabbat lamp",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 110,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "833a5688-915c-4464-b2de-8b464b647351",
-    "text": "Aluminum foil",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 130,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "fb764313-a880-429e-934e-73a9374f0078",
-    "text": "Paper towels",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 140,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "504a290d-14aa-4dde-b289-66b0990e8988",
-    "text": "Tissues in bathroom",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 150,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "b21c5513-b3bc-4515-b30e-5c4abaf23238",
-    "text": "Shower",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 160,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "7463a98f-31b2-4a91-b75a-642271a7e5e9",
-    "text": "Mincha",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 180,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "decb3608-91e2-4b52-92ad-190c50107455",
     "text": "PZ shave",
     "section": "shabbat_misc",
@@ -2490,17 +2391,6 @@
     },
     "active": true,
     "sort_order": 200,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "d974fefc-3d59-40f5-8679-5f19f850c7e5",
-    "text": "Write down Shabbat times",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 210,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -2623,6 +2513,105 @@
     "active": true,
     "sort_order": 90,
     "created_at": "2026-07-29T09:44:20.607171+00:00"
+  },
+  {
+    "id": "b21c5513-b3bc-4515-b30e-5c4abaf23238",
+    "text": "Shower",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 150,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "d974fefc-3d59-40f5-8679-5f19f850c7e5",
+    "text": "Write down Shabbat times",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "7463a98f-31b2-4a91-b75a-642271a7e5e9",
+    "text": "Mincha",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 160,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "82f5a259-6dae-4bf3-a59b-a4a328295819",
+    "text": "Prep ORS dry portions",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 130,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "ae051cbf-f7b5-4bd2-87cf-8683c54697d4",
+    "text": "Prep ORS",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 120,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "504a290d-14aa-4dde-b289-66b0990e8988",
+    "text": "Tissues in bathroom",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "1ad93829-fbe3-459b-945c-f57c5af79ba8",
+    "text": "Confirm meal times",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "833a5688-915c-4464-b2de-8b464b647351",
+    "text": "Aluminum foil",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "fb764313-a880-429e-934e-73a9374f0078",
+    "text": "Paper towels",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "3086dd33-09c8-4eb4-8f80-14993f6c309a",
@@ -3299,17 +3288,6 @@
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
-    "id": "5bf7918c-6bd8-4968-87cd-d17e7b74031c",
-    "text": "Set hearing aid charger and timer",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 230,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "9b5e6ee1-06b4-47bf-a387-55e1c7b5b4b1",
     "text": "Turn off boiler",
     "section": "shabbat_misc",
@@ -3395,72 +3373,6 @@
     },
     "active": true,
     "sort_order": 320,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "4da3bc61-5ccd-4ba0-9ab4-635bd0365a10",
-    "text": "Open containers that can't be opened on Shabbat",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 330,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "7a6c1f0c-83b3-4533-95c2-5c9f55939e51",
-    "text": "Turn on baby monitor",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 340,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "721f7aef-05d5-401b-a35b-5c4557cfb258",
-    "text": "Separate keys",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 350,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "be97b6e8-f03b-4389-9206-090100909625",
-    "text": "Defrost food for motzash",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 360,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "41787676-90cc-4736-bbec-751d026618c7",
-    "text": "Grind coffee",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 370,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "66e33732-47eb-424e-a066-12031317098f",
-    "text": "Vitamin D on formula",
-    "section": "shabbat_misc",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 380,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -4055,6 +3967,61 @@
     },
     "active": true,
     "sort_order": 130,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "7a6c1f0c-83b3-4533-95c2-5c9f55939e51",
+    "text": "Turn on baby monitor",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 180,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "721f7aef-05d5-401b-a35b-5c4557cfb258",
+    "text": "Separate keys",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 100,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "66e33732-47eb-424e-a066-12031317098f",
+    "text": "Vitamin D on formula",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 110,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "41787676-90cc-4736-bbec-751d026618c7",
+    "text": "Grind coffee",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 190,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "be97b6e8-f03b-4389-9206-090100909625",
+    "text": "Defrost food for motzash",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 140,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -5488,7 +5455,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": -5,
+    "sort_order": 90,
     "created_at": "2026-08-15T21:58:14.660065+00:00"
   },
   {
@@ -9574,6 +9541,17 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10062,17 +10040,6 @@
     "created_at": "2026-10-08T18:23:41.700227+00:00"
   },
   {
-    "id": "10526ba4-f8bd-4b12-a0b6-bf924a812715",
-    "text": "Smart Home list",
-    "section": "evening_first_to_bed",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -25,
-    "created_at": "2026-10-06T20:26:50.722162+00:00"
-  },
-  {
     "id": "cec4ff6f-215f-4a40-b6be-1c185a8b299a",
     "text": "Hadas water bottle",
     "section": "hadas_food",
@@ -10178,15 +10145,15 @@
     "created_at": "2026-10-12T18:56:57.479585+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
+    "id": "10526ba4-f8bd-4b12-a0b6-bf924a812715",
+    "text": "Smart Home list",
+    "section": "shabbat_after",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
+    "sort_order": -25,
+    "created_at": "2026-10-06T20:26:50.722162+00:00"
   },
   {
     "id": "a6b7bbf4-0a81-421a-a2e7-d5b8521dae69",
@@ -10917,18 +10884,6 @@
     "created_at": "2026-10-27T18:55:38.161361+00:00"
   },
   {
-    "id": "214b7b37-d3be-44a2-afe8-8e737a623ef6",
-    "text": "Food shopping for team night",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-10-29",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -10,
-    "created_at": "2026-10-27T18:56:27.477134+00:00"
-  },
-  {
     "id": "48f51dd7-b370-4c48-bca5-f3d01701502b",
     "text": "Schnitzelonim",
     "section": "hadas_food",
@@ -10939,17 +10894,6 @@
     "active": true,
     "sort_order": -60,
     "created_at": "2026-10-28T18:18:47.625681+00:00"
-  },
-  {
-    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
-    "text": "PZ 101",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-13T20:31:57.500693+00:00"
   },
   {
     "id": "b960a8af-189e-4152-a107-2ca604c51075",
@@ -10976,5 +10920,84 @@
     "active": true,
     "sort_order": 5,
     "created_at": "2026-10-29T11:07:29.132356+00:00"
+  },
+  {
+    "id": "214b7b37-d3be-44a2-afe8-8e737a623ef6",
+    "text": "Food shopping for team night",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-10-27T18:56:27.477134+00:00"
+  },
+  {
+    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "text": "PZ 101",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-13T20:31:57.500693+00:00"
+  },
+  {
+    "id": "c439b0a2-3f34-40f7-84b1-b2edb5b6a03f",
+    "text": "Rice",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-30",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 75,
+    "created_at": "2026-10-30T11:25:21.068262+00:00"
+  },
+  {
+    "id": "9c690ba2-a670-4ef4-979d-ba1707dd3bc9",
+    "text": "Cook chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-10-30",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-10-30T11:25:28.360568+00:00"
+  },
+  {
+    "id": "4da3bc61-5ccd-4ba0-9ab4-635bd0365a10",
+    "text": "Open containers that can't be opened on Shabbat",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 40,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "5bf7918c-6bd8-4968-87cd-d17e7b74031c",
+    "text": "Set hearing aid charger and timer",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 80,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "8f199e32-d5eb-4b4c-94b5-e58adddabb2d",
+    "text": "Shabbat lamp",
+    "section": "shabbat_misc",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 170,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   }
 ]
