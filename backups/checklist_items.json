@@ -9541,17 +9541,6 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
-  },
-  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10154,6 +10143,17 @@
     "active": true,
     "sort_order": 60,
     "created_at": "2026-10-12T18:56:57.479585+00:00"
+  },
+  {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
   },
   {
     "id": "a6b7bbf4-0a81-421a-a2e7-d5b8521dae69",
@@ -10933,17 +10933,6 @@
     "created_at": "2026-10-27T18:56:27.477134+00:00"
   },
   {
-    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
-    "text": "PZ 101",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-13T20:31:57.500693+00:00"
-  },
-  {
     "id": "c439b0a2-3f34-40f7-84b1-b2edb5b6a03f",
     "text": "Rice",
     "section": "shabbat_cooking",
@@ -10999,5 +10988,52 @@
     "active": true,
     "sort_order": 170,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "a5b19f2d-984e-4e1f-9186-b17084750b7b",
+    "text": "Wipes for Guy",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-11-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-11-01T13:43:03.439255+00:00"
+  },
+  {
+    "id": "39d3a905-6288-490f-b82c-4ca6d089b5b2",
+    "text": "GF bread",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-11-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -65,
+    "created_at": "2026-11-01T14:54:34.015134+00:00"
+  },
+  {
+    "id": "e27a7921-fc8c-4d5a-a7d6-49f11a0a1d14",
+    "text": "Max's birthday",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-02",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-11-01T20:53:54.991248+00:00"
+  },
+  {
+    "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
+    "text": "PZ 101",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-13T20:31:57.500693+00:00"
   }
 ]
