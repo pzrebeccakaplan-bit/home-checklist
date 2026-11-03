@@ -9541,6 +9541,17 @@
     "created_at": "2026-10-05T21:26:42.676371+00:00"
   },
   {
+    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
+    "text": "Make lab appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-10-07T19:38:14.690549+00:00"
+  },
+  {
     "id": "540ce9f2-9023-49ee-bfc7-f2c1d3fc95a5",
     "text": "Hadas evening checklist",
     "section": "ongoing_tracked_in_standup",
@@ -10143,17 +10154,6 @@
     "active": true,
     "sort_order": 60,
     "created_at": "2026-10-12T18:56:57.479585+00:00"
-  },
-  {
-    "id": "4c760d2c-56b2-447f-ae4e-2464a57005ca",
-    "text": "Make lab appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-10-07T19:38:14.690549+00:00"
   },
   {
     "id": "a6b7bbf4-0a81-421a-a2e7-d5b8521dae69",
