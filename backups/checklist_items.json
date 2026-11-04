@@ -11035,5 +11035,28 @@
     "active": true,
     "sort_order": 20,
     "created_at": "2026-10-13T20:31:57.500693+00:00"
+  },
+  {
+    "id": "a80dd4dd-6773-45db-b739-064aa7b23f37",
+    "text": "Message Alex about smart home",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-04",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-11-03T21:38:49.077452+00:00"
+  },
+  {
+    "id": "613af653-653e-4628-9e9f-ed99a102b416",
+    "text": "Brachot",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-11-04T06:45:24.008311+00:00"
   }
 ]
