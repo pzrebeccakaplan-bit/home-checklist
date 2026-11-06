@@ -10896,6 +10896,29 @@
     "created_at": "2026-10-28T18:18:47.625681+00:00"
   },
   {
+    "id": "98f550a6-e8a2-41fd-b1da-b8d0f98efd9f",
+    "text": "Pick up painting",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-11-05T21:50:30.969565+00:00"
+  },
+  {
+    "id": "ab87106c-cae4-4642-9e70-6d122d60f2f9",
+    "text": "Message Alex",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-11-04T21:06:56.296733+00:00"
+  },
+  {
     "id": "b960a8af-189e-4152-a107-2ca604c51075",
     "text": "GF roll and fruit",
     "section": "hadas_food",
@@ -10933,6 +10956,17 @@
     "created_at": "2026-10-27T18:56:27.477134+00:00"
   },
   {
+    "id": "00935322-e168-42dc-9974-b7659368e1ef",
+    "text": "Email about arnona address change/switch to email",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-11-04T21:09:42.105355+00:00"
+  },
+  {
     "id": "c439b0a2-3f34-40f7-84b1-b2edb5b6a03f",
     "text": "Rice",
     "section": "shabbat_cooking",
@@ -10955,6 +10989,112 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-10-30T11:25:28.360568+00:00"
+  },
+  {
+    "id": "7897d245-f18e-47da-8162-463092940c4e",
+    "text": "Make appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-11-04T21:07:18.117792+00:00"
+  },
+  {
+    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
+    "text": "Bill Jonathan",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-11-04T21:24:24.122579+00:00"
+  },
+  {
+    "id": "5730d9f7-469e-450d-ac95-2d571f203c9a",
+    "text": "Hot sauce",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-11-06T06:29:06.068207+00:00"
+  },
+  {
+    "id": "c0fccdf9-165e-4ffa-8e3b-448ebb4b33cb",
+    "text": "Pepper grinder",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-11-06T06:29:14.529032+00:00"
+  },
+  {
+    "id": "20c97de5-6302-4af7-8056-8330fd8229cb",
+    "text": "Painting",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-11-06T06:29:24.008599+00:00"
+  },
+  {
+    "id": "b24273f1-35f8-4082-bc21-3ea5137f8ed7",
+    "text": "Lamp oil",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-11-06T06:29:29.59206+00:00"
+  },
+  {
+    "id": "3e77680d-8ef9-44d0-b927-335280ab3f6c",
+    "text": "Switch game",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-11-06T06:30:00.884301+00:00"
+  },
+  {
+    "id": "363b1137-76d4-4f8c-90de-b8533bad926c",
+    "text": "Tovel grinder",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-06",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-11-06T06:30:08.781449+00:00"
+  },
+  {
+    "id": "87864c2c-063c-4bcf-ab9e-67860a7981dc",
+    "text": "Hadas bread",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-11-08",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -60,
+    "created_at": "2026-11-06T09:54:54.559717+00:00"
   },
   {
     "id": "4da3bc61-5ccd-4ba0-9ab4-635bd0365a10",
@@ -11072,42 +11212,6 @@
     "created_at": "2026-11-04T21:02:44.840255+00:00"
   },
   {
-    "id": "ab87106c-cae4-4642-9e70-6d122d60f2f9",
-    "text": "Message Alex",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-11-05",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 25,
-    "created_at": "2026-11-04T21:06:56.296733+00:00"
-  },
-  {
-    "id": "7897d245-f18e-47da-8162-463092940c4e",
-    "text": "Make appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "date": "2026-11-05",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-11-04T21:07:18.117792+00:00"
-  },
-  {
-    "id": "00935322-e168-42dc-9974-b7659368e1ef",
-    "text": "Email about arnona address change/switch to email",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "date": "2026-11-05",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -10,
-    "created_at": "2026-11-04T21:09:42.105355+00:00"
-  },
-  {
     "id": "33a75b52-f51e-44b2-8ddf-4ede31fbde3c",
     "text": "ORS powder",
     "section": "morning_pz_work",
@@ -11131,15 +11235,15 @@
     "created_at": "2026-11-04T21:21:24.302521+00:00"
   },
   {
-    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
-    "text": "Bill Jonathan",
-    "section": "morning_rebecca",
+    "id": "85ee512c-587a-4ad0-bf76-6a95f6b86f18",
+    "text": "Buy hummus",
+    "section": "morning_shared",
     "recurrence_rule": {
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "type": "once"
     },
     "active": true,
-    "sort_order": 0,
-    "created_at": "2026-11-04T21:24:24.122579+00:00"
+    "sort_order": 25,
+    "created_at": "2026-11-05T21:04:18.234662+00:00"
   }
 ]
