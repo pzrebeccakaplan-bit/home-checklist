@@ -10908,6 +10908,18 @@
     "created_at": "2026-11-05T21:50:30.969565+00:00"
   },
   {
+    "id": "2a51ed7d-af9c-4962-9353-4c518a9e128f",
+    "text": "Message Tamar about painting",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-11-08T20:58:36.763219+00:00"
+  },
+  {
     "id": "b960a8af-189e-4152-a107-2ca604c51075",
     "text": "GF roll and fruit",
     "section": "hadas_food",
@@ -10945,6 +10957,18 @@
     "created_at": "2026-10-27T18:56:27.477134+00:00"
   },
   {
+    "id": "519813a5-6aef-4210-b85c-068f591a02e4",
+    "text": "Order tv mount",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-11-08T20:58:53.047363+00:00"
+  },
+  {
     "id": "c439b0a2-3f34-40f7-84b1-b2edb5b6a03f",
     "text": "Rice",
     "section": "shabbat_cooking",
@@ -10969,15 +10993,26 @@
     "created_at": "2026-10-30T11:25:28.360568+00:00"
   },
   {
-    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
-    "text": "Bill Jonathan",
-    "section": "morning_rebecca",
+    "id": "00935322-e168-42dc-9974-b7659368e1ef",
+    "text": "Email about arnona address change/switch to email",
+    "section": "morning_pz_dropoff",
     "recurrence_rule": {
       "type": "occasional"
     },
     "active": true,
-    "sort_order": 0,
-    "created_at": "2026-11-04T21:24:24.122579+00:00"
+    "sort_order": -10,
+    "created_at": "2026-11-04T21:09:42.105355+00:00"
+  },
+  {
+    "id": "7897d245-f18e-47da-8162-463092940c4e",
+    "text": "Make appointments",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-11-04T21:07:18.117792+00:00"
   },
   {
     "id": "c0fccdf9-165e-4ffa-8e3b-448ebb4b33cb",
@@ -11074,28 +11109,6 @@
     "created_at": "2026-11-04T21:06:56.296733+00:00"
   },
   {
-    "id": "7897d245-f18e-47da-8162-463092940c4e",
-    "text": "Make appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-11-04T21:07:18.117792+00:00"
-  },
-  {
-    "id": "00935322-e168-42dc-9974-b7659368e1ef",
-    "text": "Email about arnona address change/switch to email",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -10,
-    "created_at": "2026-11-04T21:09:42.105355+00:00"
-  },
-  {
     "id": "854cfffd-6c0f-458c-95f3-f26b712e9803",
     "text": "Message Tali",
     "section": "morning_shared",
@@ -11106,18 +11119,6 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-11-07T19:38:51.385473+00:00"
-  },
-  {
-    "id": "b4f3e8b1-7c9a-481f-8723-6d5464a5be3b",
-    "text": "Vaad payment",
-    "section": "morning_shared",
-    "recurrence_rule": {
-      "date": "2026-11-08",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": 5,
-    "created_at": "2026-11-07T19:46:00.327103+00:00"
   },
   {
     "id": "396d3fd6-8d5b-4b4e-b65c-b467b5c65e9c",
@@ -11156,6 +11157,30 @@
     "active": true,
     "sort_order": -60,
     "created_at": "2026-11-08T08:05:13.203029+00:00"
+  },
+  {
+    "id": "9ea531c3-3fe1-4075-bb0a-119389464e59",
+    "text": "Pick up KSP order",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-11-08T20:43:40.020005+00:00"
+  },
+  {
+    "id": "fec8498e-c6aa-4788-8c5d-c5f89d5d4a78",
+    "text": "Empty window side dishwasher and run cleaning cycle",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-11-08T20:45:00.565131+00:00"
   },
   {
     "id": "4da3bc61-5ccd-4ba0-9ab4-635bd0365a10",
@@ -11225,6 +11250,18 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-11-01T20:53:54.991248+00:00"
+  },
+  {
+    "id": "e3c673be-8572-406a-b939-c5ca684902eb",
+    "text": "Formula for guy",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -65,
+    "created_at": "2026-11-08T20:46:04.987575+00:00"
   },
   {
     "id": "65e81038-ef61-48f2-a762-ecd43c174e01",
@@ -11306,5 +11343,63 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-11-05T21:04:18.234662+00:00"
+  },
+  {
+    "id": "fbc93372-62e3-4072-b1b5-0c0bf6d9a901",
+    "text": "Winter outfits",
+    "section": "hadas_food",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": -70,
+    "created_at": "2026-11-08T20:47:16.101963+00:00"
+  },
+  {
+    "id": "3e12b1d4-0373-4cb5-b9e0-b455dbc8cf4c",
+    "text": "Ksp pickup",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-11-08T20:49:29.464155+00:00"
+  },
+  {
+    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
+    "text": "Bill Jonathan",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-11-04T21:24:24.122579+00:00"
+  },
+  {
+    "id": "b4f3e8b1-7c9a-481f-8723-6d5464a5be3b",
+    "text": "Vaad payment",
+    "section": "ongoing_tracked_in_standup",
+    "recurrence_rule": {
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 5,
+    "created_at": "2026-11-07T19:46:00.327103+00:00"
+  },
+  {
+    "id": "33b1f278-5c00-4454-85af-58d8df014b24",
+    "text": "Message Eliezer",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-09",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-11-08T20:58:24.214536+00:00"
   }
 ]
