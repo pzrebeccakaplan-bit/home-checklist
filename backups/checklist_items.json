@@ -10993,28 +10993,6 @@
     "created_at": "2026-10-30T11:25:28.360568+00:00"
   },
   {
-    "id": "00935322-e168-42dc-9974-b7659368e1ef",
-    "text": "Email about arnona address change/switch to email",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -10,
-    "created_at": "2026-11-04T21:09:42.105355+00:00"
-  },
-  {
-    "id": "7897d245-f18e-47da-8162-463092940c4e",
-    "text": "Make appointments",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-11-04T21:07:18.117792+00:00"
-  },
-  {
     "id": "c0fccdf9-165e-4ffa-8e3b-448ebb4b33cb",
     "text": "Pepper grinder",
     "section": "morning_shared",
@@ -11369,17 +11347,6 @@
     "created_at": "2026-11-08T20:49:29.464155+00:00"
   },
   {
-    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
-    "text": "Bill Jonathan",
-    "section": "morning_rebecca",
-    "recurrence_rule": {
-      "type": "occasional"
-    },
-    "active": true,
-    "sort_order": 0,
-    "created_at": "2026-11-04T21:24:24.122579+00:00"
-  },
-  {
     "id": "b4f3e8b1-7c9a-481f-8723-6d5464a5be3b",
     "text": "Vaad payment",
     "section": "ongoing_tracked_in_standup",
@@ -11391,15 +11358,69 @@
     "created_at": "2026-11-07T19:46:00.327103+00:00"
   },
   {
+    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
+    "text": "Bill Jonathan",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": 0,
+    "created_at": "2026-11-04T21:24:24.122579+00:00"
+  },
+  {
     "id": "33b1f278-5c00-4454-85af-58d8df014b24",
     "text": "Message Eliezer",
     "section": "morning_shared",
     "recurrence_rule": {
-      "date": "2026-11-09",
-      "type": "once"
+      "type": "occasional"
     },
     "active": true,
     "sort_order": 15,
     "created_at": "2026-11-08T20:58:24.214536+00:00"
+  },
+  {
+    "id": "00935322-e168-42dc-9974-b7659368e1ef",
+    "text": "Email about arnona address change/switch to email",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-11-04T21:09:42.105355+00:00"
+  },
+  {
+    "id": "7897d245-f18e-47da-8162-463092940c4e",
+    "text": "Download pdf of labs",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-11-04T21:07:18.117792+00:00"
+  },
+  {
+    "id": "a5b3c7c2-99e2-4a94-8b7b-5abf2a95d096",
+    "text": "10 min home app/ prof dev",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -5,
+    "created_at": "2026-11-10T10:57:05.244324+00:00"
+  },
+  {
+    "id": "af9b4803-3108-4682-9c1d-f8fa93ad2a9f",
+    "text": "10 min home app/ prof dev",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": -20,
+    "created_at": "2026-11-10T10:57:27.32112+00:00"
   }
 ]
