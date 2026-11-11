@@ -10993,6 +10993,30 @@
     "created_at": "2026-10-30T11:25:28.360568+00:00"
   },
   {
+    "id": "310f50ae-e700-430d-9667-62450c01789e",
+    "text": "Shoulder roast or chicken",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-11-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 75,
+    "created_at": "2026-11-10T19:18:59.216981+00:00"
+  },
+  {
+    "id": "839050dd-90e3-40a1-a6a5-da3d7ec1d80f",
+    "text": "Broccoli, roasted",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-11-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 70,
+    "created_at": "2026-11-10T19:19:32.298887+00:00"
+  },
+  {
     "id": "c0fccdf9-165e-4ffa-8e3b-448ebb4b33cb",
     "text": "Pepper grinder",
     "section": "morning_shared",
@@ -11085,6 +11109,30 @@
     "active": true,
     "sort_order": 25,
     "created_at": "2026-11-04T21:06:56.296733+00:00"
+  },
+  {
+    "id": "bb9748e8-d003-4ca1-aabf-8fe5e0521ee0",
+    "text": "Spiced quinoa",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-11-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 65,
+    "created_at": "2026-11-10T19:20:44.440346+00:00"
+  },
+  {
+    "id": "57a942ed-e731-43a9-a3e1-a3ff2cb0828e",
+    "text": "Chicken soup",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-11-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 60,
+    "created_at": "2026-11-10T19:21:56.212713+00:00"
   },
   {
     "id": "854cfffd-6c0f-458c-95f3-f26b712e9803",
@@ -11347,6 +11395,18 @@
     "created_at": "2026-11-08T20:49:29.464155+00:00"
   },
   {
+    "id": "03be8f33-7e65-4d91-9c50-6605bd1508be",
+    "text": "Meatballs",
+    "section": "shabbat_cooking",
+    "recurrence_rule": {
+      "date": "2026-11-13",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 55,
+    "created_at": "2026-11-10T19:25:33.240457+00:00"
+  },
+  {
     "id": "b4f3e8b1-7c9a-481f-8723-6d5464a5be3b",
     "text": "Vaad payment",
     "section": "ongoing_tracked_in_standup",
@@ -11358,15 +11418,16 @@
     "created_at": "2026-11-07T19:46:00.327103+00:00"
   },
   {
-    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
-    "text": "Bill Jonathan",
-    "section": "morning_rebecca",
+    "id": "90f71636-797d-4c27-880c-3cd116d40088",
+    "text": "Dinner reimbursement",
+    "section": "evening_rebecca",
     "recurrence_rule": {
-      "type": "occasional"
+      "date": "2026-11-10",
+      "type": "once"
     },
     "active": true,
-    "sort_order": 0,
-    "created_at": "2026-11-04T21:24:24.122579+00:00"
+    "sort_order": -25,
+    "created_at": "2026-11-10T19:34:39.070428+00:00"
   },
   {
     "id": "33b1f278-5c00-4454-85af-58d8df014b24",
@@ -11380,15 +11441,16 @@
     "created_at": "2026-11-08T20:58:24.214536+00:00"
   },
   {
-    "id": "00935322-e168-42dc-9974-b7659368e1ef",
-    "text": "Email about arnona address change/switch to email",
+    "id": "749d7dff-7ae1-44e1-b7f5-d9273d14f634",
+    "text": "Call maccabi about labs",
     "section": "morning_pz_dropoff",
     "recurrence_rule": {
-      "type": "occasional"
+      "date": "2026-11-11",
+      "type": "once"
     },
     "active": true,
-    "sort_order": -10,
-    "created_at": "2026-11-04T21:09:42.105355+00:00"
+    "sort_order": -15,
+    "created_at": "2026-11-10T19:33:20.085281+00:00"
   },
   {
     "id": "7897d245-f18e-47da-8162-463092940c4e",
@@ -11402,17 +11464,6 @@
     "created_at": "2026-11-04T21:07:18.117792+00:00"
   },
   {
-    "id": "a5b3c7c2-99e2-4a94-8b7b-5abf2a95d096",
-    "text": "10 min home app/ prof dev",
-    "section": "evening_pz",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": -5,
-    "created_at": "2026-11-10T10:57:05.244324+00:00"
-  },
-  {
     "id": "af9b4803-3108-4682-9c1d-f8fa93ad2a9f",
     "text": "10 min home app/ prof dev",
     "section": "evening_rebecca",
@@ -11422,5 +11473,38 @@
     "active": true,
     "sort_order": -20,
     "created_at": "2026-11-10T10:57:27.32112+00:00"
+  },
+  {
+    "id": "00935322-e168-42dc-9974-b7659368e1ef",
+    "text": "Call about arnona address change/switch to email",
+    "section": "morning_pz_dropoff",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": true,
+    "sort_order": -10,
+    "created_at": "2026-11-04T21:09:42.105355+00:00"
+  },
+  {
+    "id": "b1839dce-9100-4ddd-8a99-3bcee1d04f09",
+    "text": "Bill Jonathan",
+    "section": "morning_rebecca",
+    "recurrence_rule": {
+      "type": "occasional"
+    },
+    "active": false,
+    "sort_order": 0,
+    "created_at": "2026-11-04T21:24:24.122579+00:00"
+  },
+  {
+    "id": "a5b3c7c2-99e2-4a94-8b7b-5abf2a95d096",
+    "text": "10 min home app/ prof dev",
+    "section": "evening_pz",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": false,
+    "sort_order": -5,
+    "created_at": "2026-11-10T10:57:05.244324+00:00"
   }
 ]
