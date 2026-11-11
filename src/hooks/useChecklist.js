@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { supabase } from '../lib/supabase'
+import { isDueOn } from '../lib/recurrence'
 
 // Parse YYYY-MM-DD as local time to get day of week (avoids UTC midnight shifts)
 function dowFromDateStr(dateStr) {
@@ -48,18 +49,14 @@ export function useChecklist(user, viewDate) {
     const textOverrideMap = Object.fromEntries((textOverrides || []).map(t => [t.item_id, t.display_text]))
 
     const activeOccasional = new Set((overrides || []).map(o => o.item_id))
-    const dow = dowFromDateStr(viewDate)
 
     const historicalIds = new Set(historicalItems.map(i => i.id))
     const dayItems = (allItems || []).filter(item => {
       if (historicalIds.has(item.id)) return true // always show historically completed items
       if (skippedIds.has(item.id)) return false
-      const rule = item.recurrence_rule
-      if (rule.type === 'daily') return true
-      if (rule.type === 'weekly') return rule.days.includes(dow)
-      if (rule.type === 'occasional') return activeOccasional.has(item.id)
-      if (rule.type === 'once') return rule.date === viewDate
-      return false
+      // Any item can be added to a specific day by hand (Tracked items always work this way)
+      if (activeOccasional.has(item.id)) return true
+      return isDueOn(item.recurrence_rule, viewDate)
     }).map(item => ({
       ...item,
       ...(textOverrideMap[item.id] !== undefined ? { displayText: textOverrideMap[item.id] } : {}),
