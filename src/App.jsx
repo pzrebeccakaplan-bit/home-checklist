@@ -5,7 +5,7 @@ import { useSections } from './hooks/useSections'
 import { useSchedule } from './hooks/useSchedule'
 import { Login } from './components/Login'
 import { TodayView } from './components/TodayView'
-import { OccasionalPicker } from './components/OccasionalPicker'
+import { OccasionalsPanel } from './components/OccasionalsPanel'
 import { ItemManager } from './components/ItemManager'
 
 
@@ -29,7 +29,7 @@ function dowFromDateStr(dateStr) {
 export default function App() {
   const { user, profile, loading: authLoading, signIn, signOut } = useAuth()
   const [viewDate, setViewDate] = useState(todayLocal)
-  const { items, completions, occasionalActive, loading: listLoading, toggleItem, toggleOccasional, skipItem, deleteItem, refetch } = useChecklist(user, viewDate)
+  const { items, completions, loading: listLoading, toggleItem, skipItem, deleteItem, refetch } = useChecklist(user, viewDate)
   const { sections, loading: sectionsLoading, addSection, fetchSections, updateSectionTags } = useSections()
   const { schedule, loading: scheduleLoading, tagsForDay, updateDayTags, fetchSchedule } = useSchedule()
   const [showPicker, setShowPicker] = useState(false)
@@ -82,13 +82,12 @@ export default function App() {
         onJumpToDate={setViewDate}
       />
       {showPicker && (
-        <OccasionalPicker
+        <OccasionalsPanel
           sections={sections}
-          occasionalActive={occasionalActive}
-          onToggle={toggleOccasional}
-          onClose={() => setShowPicker(false)}
           viewDate={viewDate}
-          onEdit={item => { setShowPicker(false); setEditItem(item); setShowManager(true) }}
+          user={user}
+          onClose={() => setShowPicker(false)}
+          onChanged={refetch}
         />
       )}
       {showManager && (

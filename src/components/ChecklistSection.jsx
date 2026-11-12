@@ -3,6 +3,7 @@ import { useDroppable } from '@dnd-kit/core'
 import { SortableContext, verticalListSortingStrategy, useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { supabase } from '../lib/supabase'
+import { focusProgress } from '../lib/recurrence'
 
 function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onDelete, onConvertToSection, onSaved, viewDate, readOnly }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
@@ -39,6 +40,7 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onD
   }
 
   const recType = item.recurrence_rule?.type ?? 'daily'
+  const focus = viewDate ? focusProgress(item.recurrence_rule, viewDate) : null
 
   return (
     <div ref={setNodeRef} style={style} className={`checklist-item-row recurrence-${recType}`}>
@@ -72,6 +74,7 @@ function SortableChecklistItem({ item, completion, onToggle, onEdit, onSkip, onD
             onClick={() => !readOnly && setEditingText(true)}
           >{displayText}</span>
         )}
+        {focus && <span className="item-badge" title="Focus item">Day {focus.day}/{focus.total}</span>}
         {isChecked && checkedBy && <span className="checked-by">{checkedBy}</span>}
       </div>
       {!readOnly && (
@@ -294,7 +297,7 @@ export function ChecklistSection({ section, label, items, completedItems, comple
               { value: 'once', label: 'One-time' },
               { value: 'daily', label: 'Every day' },
               { value: 'weekly', label: 'Specific days' },
-              { value: 'occasional', label: 'Occasional' },
+              { value: 'occasional', label: 'Tracked' },
             ].map(({ value, label }) => (
               <label key={value}>
                 <input type="radio" name={`rec-${section}`} value={value}

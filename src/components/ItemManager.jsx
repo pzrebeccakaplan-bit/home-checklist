@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { supabase } from '../lib/supabase'
+import { describeRule } from '../lib/recurrence'
+import { RuleFields, ruleIsValid } from './RuleFields'
 
 const DAY_LABELS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 const DAY_NAMES  = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
@@ -161,7 +163,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
   const [items, setItems] = useState([])
   const [futureOverrides, setFutureOverrides] = useState([])
   const [loading, setLoading] = useState(true)
-  const [form, setForm] = useState({ text: '', section: sections[0]?.id || '', recurrence_type: 'daily', recurrence_days: [] })
+  const [form, setForm] = useState({ text: '', section: sections[0]?.id || '', rule: { type: 'daily' } })
   const [editingId, setEditingId] = useState(null)
   const [saving, setSaving] = useState(false)
   const [filterSection, setFilterSection] = useState('all')
@@ -197,24 +199,20 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
   function startEdit(item) {
     const rule = item.recurrence_rule
     setEditingId(item.id)
-    setForm({ text: item.text, section: item.section, recurrence_type: rule.type, recurrence_days: rule.days || [] })
+    setForm({ text: item.text, section: item.section, rule: { ...rule } })
     modalRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   function cancelEdit() {
     setEditingId(null)
-    setForm({ text: '', section: sections[0]?.id || '', recurrence_type: 'daily', recurrence_days: [] })
+    setForm({ text: '', section: sections[0]?.id || '', rule: { type: 'daily' } })
   }
 
-  function buildRule() {
-    if (form.recurrence_type === 'weekly') return { type: 'weekly', days: form.recurrence_days }
-    return { type: form.recurrence_type }
-  }
 
   async function saveItem() {
-    if (!form.text.trim()) return
+    if (!form.text.trim() || !ruleIsValid(form.rule)) return
     setSaving(true)
-    const payload = { text: form.text.trim(), section: form.section, recurrence_rule: buildRule() }
+    const payload = { text: form.text.trim(), section: form.section, recurrence_rule: form.rule }
     if (editingId) {
       await supabase.from('checklist_items').update(payload).eq('id', editingId)
     } else {
@@ -300,24 +298,16 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     fetchItems()
   }
 
-  function toggleDay(day) {
-    setForm(f => ({ ...f, recurrence_days: f.recurrence_days.includes(day) ? f.recurrence_days.filter(d => d !== day) : [...f.recurrence_days, day] }))
-  }
 
   function recurrenceMeta(item) {
     const rule = item.recurrence_rule
-    if (rule.type === 'daily') return 'Every day'
-    if (rule.type === 'weekly') return DAY_LABELS.filter((_, i) => rule.days?.includes(i)).join(', ')
     if (rule.type === 'occasional') {
       const dates = futureOverridesByItem[item.id]
-      if (dates?.length) return dates.map(d => { const [y, m, dd] = d.split('-').map(Number); return new Date(y, m - 1, dd).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) }).join(', ')
-      return 'Occasional (no upcoming dates)'
+      const base = describeRule(rule)
+      if (dates?.length) return `${base} · ` + dates.map(d => { const [y, m, dd] = d.split('-').map(Number); return new Date(y, m - 1, dd).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) }).join(', ')
+      return base
     }
-    if (rule.type === 'once') {
-      const [y, m, d] = rule.date.split('-').map(Number)
-      return `Once: ${new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`
-    }
-    return rule.type
+    return describeRule(rule)
   }
 
   const searchLower = search.trim().toLowerCase()
@@ -328,6 +318,8 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
     if (filterRecurrence === 'daily') return type === 'daily' && item.active
     if (filterRecurrence === 'weekly') return type === 'weekly' && item.active
     if (filterRecurrence === 'occasional') return type === 'occasional' && item.active
+    if (filterRecurrence === 'interval') return type === 'interval' && item.active
+    if (filterRecurrence === 'range') return type === 'range' && item.active
     if (filterRecurrence === 'future-oneoffs') return type === 'occasional' && item.active && (futureOverridesByItem[item.id]?.length > 0)
     if (filterRecurrence === 'once') return type === 'once' && item.active
     if (filterRecurrence === 'everything') return true
@@ -373,22 +365,8 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
               <select className="form-input" value={form.section} onChange={e => setForm(f => ({ ...f, section: e.target.value }))}>
                 {SECTIONS.map(s => <option key={s.value} value={s.value}>{s.label}</option>)}
               </select>
-              <div className="recurrence-row">
-                {[['daily','Every day'],['weekly','Specific days'],['occasional','Occasional']].map(([val, lbl]) => (
-                  <label key={val}>
-                    <input type="radio" name="rec" value={val} checked={form.recurrence_type === val} onChange={() => setForm(f => ({ ...f, recurrence_type: val }))} />
-                    {' '}{lbl}
-                  </label>
-                ))}
-              </div>
-              {form.recurrence_type === 'weekly' && (
-                <div className="day-picker">
-                  {DAY_LABELS.map((label, i) => (
-                    <button key={i} type="button" className={`day-btn ${form.recurrence_days.includes(i) ? 'selected' : ''}`} onClick={() => toggleDay(i)}>{label}</button>
-                  ))}
-                </div>
-              )}
-              {form.recurrence_type === 'occasional' && editingId && (
+              <RuleFields value={form.rule} onChange={rule => setForm(f => ({ ...f, rule }))} baseDate={todayLocal()} showTypePicker />
+              {form.rule.type === 'occasional' && editingId && (
                 <div className="scheduled-dates">
                   <p className="scheduled-dates-label">Scheduled dates</p>
                   {!(futureOverridesByItem[editingId]?.length) ? (
@@ -414,7 +392,7 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
               )}
               <div className="form-actions" style={{ justifyContent: 'flex-end' }}>
                 {editingId && <button className="btn-secondary" onClick={cancelEdit}>Cancel</button>}
-                <button className="btn-primary" onClick={saveItem} disabled={saving}>{saving ? 'Saving…' : editingId ? 'Save Changes' : 'Add Item'}</button>
+                <button className="btn-primary" onClick={saveItem} disabled={saving || !ruleIsValid(form.rule)}>{saving ? 'Saving…' : editingId ? 'Save Changes' : 'Add Item'}</button>
               </div>
             </div>
 
@@ -428,7 +406,9 @@ export function ItemManager({ sections, onClose, initialEditItem, onSectionAdded
                 <option value="all">All types</option>
                 <option value="daily">Daily</option>
                 <option value="weekly">Specific days</option>
-                <option value="occasional">Occasional</option>
+                <option value="occasional">Tracked</option>
+                <option value="interval">Recurring</option>
+                <option value="range">Focus</option>
                 <option value="once">One-time items</option>
                 <option value="future-oneoffs">Upcoming one-offs</option>
               </select>

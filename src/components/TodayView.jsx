@@ -5,6 +5,7 @@ import {
 } from '@dnd-kit/core'
 import { arrayMove } from '@dnd-kit/sortable'
 import { supabase } from '../lib/supabase'
+import { IS_PREVIEW } from '../lib/env'
 import { ChecklistSection } from './ChecklistSection'
 
 function UnassignedItem({ item, sections, completion, onToggle, onAssigned }) {
@@ -296,7 +297,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     <div className="today-view">
       <header className="app-header">
         <div className="header-left">
-          <h1 className="app-title">Home Checklist</h1>
+          <h1 className="app-title">Home Checklist{IS_PREVIEW && <span className="test-badge">TEST</span>}</h1>
           <div className="date-nav">
             <input
               type="date"
@@ -319,7 +320,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
           <span className="progress-badge">{doneCount}/{totalItems}</span>
           <button className="header-btn undo-header-btn" onClick={executeUndo} disabled={!undoAction} title={undoAction?.label}>↩ Undo</button>
           <button className={`header-btn ${showSearch ? 'active' : ''}`} onClick={() => { setShowSearch(s => !s); setSearchQuery('') }} title="Search items">🔍</button>
-          <button className="header-btn" onClick={onOpenPicker}>Occasional</button>
+          <button className="header-btn" onClick={onOpenPicker}>Occasionals</button>
           <button className="header-btn" onClick={onOpenManager}>Template</button>
           <button className="header-btn secondary" onClick={onSignOut}>
             {profile?.display_name || 'Sign out'}
@@ -492,7 +493,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
                         { value: 'once', label: 'One-time' },
                         { value: 'daily', label: 'Every day' },
                         { value: 'weekly', label: 'Specific days' },
-                        { value: 'occasional', label: 'Occasional' },
+                        { value: 'occasional', label: 'Tracked' },
                       ].map(({ value, label }) => (
                         <label key={value}>
                           <input type="radio" name={`crec-${sec.id}`} value={value}
