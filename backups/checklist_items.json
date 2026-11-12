@@ -486,6 +486,17 @@
     "created_at": "2026-07-02T12:42:11.614803+00:00"
   },
   {
+    "id": "c97ed913-e122-4ad2-8f23-21142cc51d71",
+    "text": "Food away",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
     "id": "71923441-1d17-4017-9c14-eb3cabe22320",
     "text": "Headphones x2",
     "section": "morning_pz_work",
@@ -495,17 +506,6 @@
     "active": true,
     "sort_order": 170,
     "created_at": "2026-07-29T09:42:39.053932+00:00"
-  },
-  {
-    "id": "c97ed913-e122-4ad2-8f23-21142cc51d71",
-    "text": "Food away",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 120,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "a53a9a5a-c950-483d-ac3c-fce77bde105f",
@@ -783,17 +783,6 @@
     "active": true,
     "sort_order": 120,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
-  },
-  {
-    "id": "8dac19df-3a70-478e-8654-a7423d8e2899",
-    "text": "Wash and sterilize the bottles",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 210,
-    "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
     "id": "ee0fb329-b2c1-4267-b369-6788f49f2947",
@@ -1236,6 +1225,17 @@
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
+    "id": "8dac19df-3a70-478e-8654-a7423d8e2899",
+    "text": "Wash and sterilize the bottles",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-07-29T09:46:41.983666+00:00"
+  },
+  {
     "id": "d9acdf98-7ecc-4153-8b0f-5e32596c722f",
     "text": "Put Caya away",
     "section": "morning_rebecca",
@@ -1254,7 +1254,18 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 30,
+    "sort_order": 10,
+    "created_at": "2026-07-29T09:46:15.987663+00:00"
+  },
+  {
+    "id": "03c8bcdc-bcbc-4219-8a1c-c5f330d85261",
+    "text": "Moisturize belly",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 20,
     "created_at": "2026-07-29T09:46:15.987663+00:00"
   },
   {
@@ -1291,17 +1302,6 @@
     "created_at": "2026-07-29T09:46:15.605002+00:00"
   },
   {
-    "id": "03c8bcdc-bcbc-4219-8a1c-c5f330d85261",
-    "text": "Moisturize belly",
-    "section": "evening_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-07-29T09:46:15.987663+00:00"
-  },
-  {
     "id": "facc1703-884f-4e45-b173-51b1cdc5cf9b",
     "text": "Try swapping fan bulb",
     "section": "morning_shared",
@@ -1312,6 +1312,17 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-08-06T20:34:51.961658+00:00"
+  },
+  {
+    "id": "ec2c1212-313e-4b14-9ccb-90492384ce9f",
+    "text": "Wash non-dishwasher dishes",
+    "section": "evening_shared",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 50,
+    "created_at": "2026-08-08T21:46:53.709481+00:00"
   },
   {
     "id": "5d9688a9-5ada-432d-bb00-f1dbdc6cad70",
@@ -1655,7 +1666,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 220,
+    "sort_order": 40,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1754,7 +1765,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 350,
+    "sort_order": 100,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -1899,17 +1910,6 @@
     "active": true,
     "sort_order": 70,
     "created_at": "2026-07-29T09:47:02.393471+00:00"
-  },
-  {
-    "id": "ec2c1212-313e-4b14-9ccb-90492384ce9f",
-    "text": "Wash non-dishwasher dishes",
-    "section": "evening_shared",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 230,
-    "created_at": "2026-08-08T21:46:53.709481+00:00"
   },
   {
     "id": "df016071-1bc4-4329-a8ad-712407d9f733",
@@ -2478,7 +2478,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 90,
+    "sort_order": 70,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -3240,7 +3240,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 290,
+    "sort_order": 60,
     "created_at": "2026-07-29T09:46:41.983666+00:00"
   },
   {
@@ -5745,7 +5745,7 @@
       "type": "weekly"
     },
     "active": true,
-    "sort_order": 5,
+    "sort_order": 40,
     "created_at": "2026-08-20T12:48:24.500705+00:00"
   },
   {
@@ -7837,7 +7837,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 10,
+    "sort_order": 50,
     "created_at": "2026-09-05T21:37:07.274845+00:00"
   },
   {
@@ -9468,7 +9468,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 20,
+    "sort_order": 90,
     "created_at": "2026-08-01T18:39:24.521034+00:00"
   },
   {
@@ -10844,7 +10844,7 @@
       "type": "daily"
     },
     "active": true,
-    "sort_order": 10,
+    "sort_order": 80,
     "created_at": "2026-10-12T20:32:56.891301+00:00"
   },
   {
@@ -11441,18 +11441,6 @@
     "created_at": "2026-11-08T20:58:24.214536+00:00"
   },
   {
-    "id": "749d7dff-7ae1-44e1-b7f5-d9273d14f634",
-    "text": "Call maccabi about labs",
-    "section": "morning_pz_dropoff",
-    "recurrence_rule": {
-      "date": "2026-11-11",
-      "type": "once"
-    },
-    "active": true,
-    "sort_order": -15,
-    "created_at": "2026-11-10T19:33:20.085281+00:00"
-  },
-  {
     "id": "7897d245-f18e-47da-8162-463092940c4e",
     "text": "Download pdf of labs",
     "section": "morning_pz_dropoff",
@@ -11462,17 +11450,6 @@
     "active": true,
     "sort_order": -5,
     "created_at": "2026-11-04T21:07:18.117792+00:00"
-  },
-  {
-    "id": "af9b4803-3108-4682-9c1d-f8fa93ad2a9f",
-    "text": "10 min home app/ prof dev",
-    "section": "evening_rebecca",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": -20,
-    "created_at": "2026-11-10T10:57:27.32112+00:00"
   },
   {
     "id": "00935322-e168-42dc-9974-b7659368e1ef",
@@ -11506,5 +11483,41 @@
     "active": false,
     "sort_order": -5,
     "created_at": "2026-11-10T10:57:05.244324+00:00"
+  },
+  {
+    "id": "2bb80882-fdf9-4bde-b2b2-1b67bbf8fd6d",
+    "text": "Chicken soup",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 25,
+    "created_at": "2026-11-11T19:50:16.707057+00:00"
+  },
+  {
+    "id": "d2dd9bdc-f846-47b0-9afc-ccf68c0c063f",
+    "text": "Food shopping",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 20,
+    "created_at": "2026-11-11T19:50:50.997681+00:00"
+  },
+  {
+    "id": "61aa6e9e-2b64-4d05-af57-4b06d4ac3a00",
+    "text": "Shopping list",
+    "section": "morning_shared",
+    "recurrence_rule": {
+      "date": "2026-11-12",
+      "type": "once"
+    },
+    "active": true,
+    "sort_order": 15,
+    "created_at": "2026-11-11T19:50:58.199206+00:00"
   }
 ]
