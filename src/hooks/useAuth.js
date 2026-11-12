@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
+import { IS_PREVIEW } from '../lib/env'
 
-const DEV_MODE = import.meta.env.DEV
+const DEV_MODE = import.meta.env.DEV || IS_PREVIEW
 const DEV_USER = { id: 'dev-user', email: 'dev@local' }
 
 export function useAuth() {

@@ -5,6 +5,7 @@ import {
 } from '@dnd-kit/core'
 import { arrayMove } from '@dnd-kit/sortable'
 import { supabase } from '../lib/supabase'
+import { IS_PREVIEW } from '../lib/env'
 import { ChecklistSection } from './ChecklistSection'
 
 function UnassignedItem({ item, sections, completion, onToggle, onAssigned }) {
@@ -296,7 +297,7 @@ export function TodayView({ sections, items, completions, onToggle, onEdit, onDe
     <div className="today-view">
       <header className="app-header">
         <div className="header-left">
-          <h1 className="app-title">Home Checklist</h1>
+          <h1 className="app-title">Home Checklist{IS_PREVIEW && <span className="test-badge">TEST</span>}</h1>
           <div className="date-nav">
             <input
               type="date"

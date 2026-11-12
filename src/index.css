@@ -885,3 +885,10 @@ input, select { font: inherit; }
   .occ-icon-btn { padding: 0.3rem 0.25rem; }
   .occ-toolbar { flex-wrap: wrap; }
 }
+
+/* ── Preview / test-database marker ─────────────────────── */
+.test-badge {
+  margin-left: 0.5rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em;
+  padding: 0.15rem 0.45rem; border-radius: 6px; background: #f2cf8a; color: #6b4a00;
+  vertical-align: middle;
+}
