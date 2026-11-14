@@ -2769,17 +2769,6 @@
     "created_at": "2026-08-06T21:29:16.861934+00:00"
   },
   {
-    "id": "08b30181-5a8b-4e7d-9e3d-fe4101cb5eda",
-    "text": "Put away laundry",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 40,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "e622fd95-6d5b-455e-9362-a13755a556b9",
     "text": "Beets",
     "section": "shabbat_cooking",
@@ -3179,6 +3168,17 @@
     },
     "active": true,
     "sort_order": 80,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
+  },
+  {
+    "id": "08b30181-5a8b-4e7d-9e3d-fe4101cb5eda",
+    "text": "Put away laundry",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -10590,17 +10590,6 @@
     "created_at": "2026-10-16T07:31:28.652384+00:00"
   },
   {
-    "id": "1bd430b3-7732-4a57-8def-1fdd1e42fc40",
-    "text": "Clean floors",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 20,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
     "id": "76e9225c-89f7-4cdd-991a-c81f4414aaea",
     "text": "Clean kitchen counters",
     "section": "shabbat_cleaning",
@@ -10609,17 +10598,6 @@
     },
     "active": true,
     "sort_order": 60,
-    "created_at": "2026-08-06T10:39:47.506546+00:00"
-  },
-  {
-    "id": "28818c1d-8798-47f5-b838-12d4cacdbcf4",
-    "text": "Vacuum cooking areas",
-    "section": "shabbat_cleaning",
-    "recurrence_rule": {
-      "type": "daily"
-    },
-    "active": true,
-    "sort_order": 50,
     "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
@@ -10820,6 +10798,17 @@
     "active": true,
     "sort_order": -10,
     "created_at": "2026-10-25T20:20:19.797196+00:00"
+  },
+  {
+    "id": "1bd430b3-7732-4a57-8def-1fdd1e42fc40",
+    "text": "Clean floors",
+    "section": "shabbat_cleaning",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 10,
+    "created_at": "2026-08-06T10:39:47.506546+00:00"
   },
   {
     "id": "94d3dd05-0ad9-44b0-ab32-cda7b90e9f27",
@@ -11544,5 +11533,16 @@
     "active": true,
     "sort_order": 10,
     "created_at": "2026-11-11T19:53:13.587436+00:00"
+  },
+  {
+    "id": "af9b4803-3108-4682-9c1d-f8fa93ad2a9f",
+    "text": "10 min home app/ prof dev",
+    "section": "evening_rebecca",
+    "recurrence_rule": {
+      "type": "daily"
+    },
+    "active": true,
+    "sort_order": 30,
+    "created_at": "2026-11-10T10:57:27.32112+00:00"
   }
 ]
